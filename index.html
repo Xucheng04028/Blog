@@ -97,6 +97,151 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
+                <a class="clearlink" href="15243553635986.html">
+                
+                  <h1>终端上的 Mac App Store「mas」让应用的安装与更新无比轻松</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<blockquote>
+<p>本文被少数派精选并推荐至首页：<a href="https://sspai.com/post/40382">点此查看</a></p>
+</blockquote>
+
+<p>以下这 3 点是不是你在用 Mac App Store 时想要的？<br/>
+1. 不想再忍受 Mac App Store 缓慢的打开速度；<br/>
+2. 批量安装或更新 Mac App Store 应用；<br/>
+3. 快速切换 Mac App Store 账号。</p>
+
+<p>如果是的话，你必须得试试终端上的 Mac App Store —— <a href="https://github.com/mas-cli/mas">mas</a>。</p>
+
+<h2 id="toc_0">安装</h2>
+
+<p><a href="https://brew.sh/index_zh-cn.html">Homebrew</a> 是安装 mas 的最好方式，在只要把以下代码复制到终端（Terminal）后运行即可：</p>
+
+<pre><code>brew install mas
+</code></pre>
+
+<p>如未安装过 Homebrew 可参照 <a href="https://brew.sh/index_zh-cn.html">官网命令</a> 安装：</p>
+
+<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+
+<h2 id="toc_1">查询与安装应用</h2>
+
+<p>mas 作为终端上的 Mac App Store，其劣势是无法随意浏览众多应用、没有编辑推荐、没有排行榜… 但也因为不用加载这么多东西，甚至不用加载图片，它才有着惊人的速度。</p>
+
+<p>Mac App Store 中每一个应用都有自己的应用识别码（Product Identifier），这可以在每个应用的链接中看到。mas 就是根据 Product Identifier 安装与更新应用，也提供了查询应用 ID 的命令。</p>
+
+<pre><code>由 1Password 的链接可知其识别码为 443987910  
+https://itunes.apple.com/cn/app/1password/id443987910?mt=12
+</code></pre>
+
+<p>除了查看链接，有以下 x 种方法获取应用的识别码：<br/>
+1. 用命令 <code>mas search 关键词</code> 查询应用。比如在终端中执行 <code>mas search xcode</code>，大概 1 秒就显示了结果；<br/>
+2. 用命令 <code>mas list</code> 查询已安装应用及其识别码。</p>
+
+<p><img src="media/15243553635986/15243558670489.png" alt="mas search Xcode &amp; mas list"/></p>
+
+<p>安装应用只需知道此应用的识别码就可以安装具体软件。比如安装 Bear，流程如下：<br/>
+第一步：由命令 <code>mas search bear</code> 得知应用 Bear 的识别码为 1091189122；<br/>
+第二步：使用命令 <code>mas install 1091189122</code> 安装。</p>
+
+<p>注意：</p>
+
+<ol>
+<li>应用必须在商店登陆账号的已购列表中，因为命令行无法完成「购买」这个操作；</li>
+<li>对于新上架的应用，可能无法查询到其识别码。因为 mas 的查询列表在缓存文件中，目前尚不清楚其列表更新周期，但若由其他途径（如应用链接）得知新上架应用识别码，仍可正常安装。</li>
+</ol>
+
+<p><img src="media/15243553635986/15243580714614.jpg" alt=""/></p>
+
+<p>我们不仅可以使用命令行安装单个应用，还可以批量安装应用，只需在应用识别码之间加上空格：  </p>
+
+<pre><code>mas install 甲应用识别码 乙应用识别码 丙应用识别码
+</code></pre>
+
+<h2 id="toc_2">更新应用</h2>
+
+<p>如果要更新所有 Mac App Store 应用，只需终端执行一句命令：</p>
+
+<pre><code>mas upgrade
+</code></pre>
+
+<p>如果更新特定应用，需要使用命令 <code>mas outdated</code> 先查询待更新列表以获取应用识别码，再更新一个或几个应用：</p>
+
+<pre><code>mas upgrade 甲应用识别码  
+mas upgrade 甲应用识别码 乙应用识别码 丙应用识别码
+</code></pre>
+
+<p><img src="media/15243553635986/15243581331434.jpg" alt=""/></p>
+
+<p>但要注意，mas 无法用于系统更新，即只能更新显示在 Mac App Store 中的应用。但可以使用命令 <code>softwareupdate -l</code> 获取系统更新列表，然后使用 <code>sudo softwareupdate -iva</code> 进行更新。</p>
+
+<h2 id="toc_3">切换 Mac App Store 账号</h2>
+
+<p>这是多区账号拥有者的福音，我们终于可以更方便地下载和更新其他区的应用了。如果忘记了当前帐号，使用命令 <code>mas account</code> 查询。可用命令 <code>mas signout</code> 退出当前帐号，并按如下命令登陆新的账号：</p>
+
+<pre><code>mas signin Apple ID &quot;密码&quot;  
+如：mas signin mas@example.com &quot;mypassword&quot;
+</code></pre>
+
+<p>也可以设置命令别名以得到更爽快的体验，在隐藏文件 <code>.bashrc</code> 中添加以下内容：其路径为 <code>~/.bashrc</code>，同时按 <code>shift + command + .</code> 可显示隐藏文件。</p>
+
+<pre><code>alias masus=&#39;mas signout &amp;&amp; mas signin myusappleid &quot;mypassword&quot;&#39;  
+alias mascn=&#39;mas signout &amp;&amp; mas signin mycnappleid &quot;mypassword&quot;&#39;  
+alias mas?=&#39;mas account&#39; 
+</code></pre>
+
+<p>需重新打开终端以载入设置，那么在终端中执行 <code>masus</code> 即可切换到美区帐号，<code>mascn</code> 即切到中区，<code>mas?</code> 可查询目前登陆帐号。但如果开启了双重认证，可能遇到错误信息：</p>
+
+<pre><code>Error: Sign in failed: The operation couldn’t be completed. (mas.MASError error 1.)
+</code></pre>
+
+<p>关闭双重认证则一切正常，但并不建议这样做，可以考虑关闭非重要帐号的双重认证，但 iOS 10.3 或 macOS Sierra 10.12.4 及更高版本中创建的某些帐户，<a href="https://support.apple.com/zh-cn/HT204915">无法关闭双重认证</a>。mas 团队正在着手处理开启双重认证无法登陆的问题，可去 <a href="https://github.com/mas-cli/mas/issues/56">督促一番</a>。</p>
+
+<p>在问题解决之前该怎么办：在 Mac App Store 中登陆帐号，然后重新打开终端（Terminal）即可。</p>
+
+<h2 id="toc_4">总结与美好的设想</h2>
+
+<p>我们可以在 GitHub 上的 <a href="https://github.com/mas-cli/mas">mas 项目</a> 查看官方使用说明，或以 <code>mas help</code> 查看所有命令及其说明。之前介绍过 <a href="https://sspai.com/post/40321">Homebrew Cask 如何安装应用</a>，它的作用对象是非 Mac App Store 应用，而 mas 的对象是 Mac App Store 应用，两者互补无憾矣。</p>
+
+<p>也许我们可以考虑如何合并两者，我觉着至少 <code>查询与安装应用</code> 阶段是可以融合的，<code>brew cask search 关键字</code> 与 <code>mas search 关键字</code> 这两个命令合为 <code>cmas search 关键字</code>，输出的结果可以是如下样子，而安装命令 <code>cmas install 应用识别码或应用名称</code> 关键字如果是应用识别码则从 mas 下载安装，如果是应用名称则从官网下载安装。</p>
+
+<pre><code>cmas search pai  
+sspai 6666666 (mas &amp; NMAS)  
+ddpat 9999999 (mas Only)  
+onlypai (NMAS Only)  
+</code></pre>
+
+<!-- 谢谢让 [JailbreakHum](https://sspai.com/user/681230/updates) 忙碌的人，谢谢 JailbreakHum 因忙碌而告诉我这个超级棒的技巧，谢谢 JailbreakHum 的指导…… -->
+
+<p><em>本文应用版本：<br/>
+1. mas v1.3.1：mas 是一个活跃项目，可以 <a href="https://github.com/mas-cli/mas/releases">点此查看</a> 其最新版本更新信息；<br/>
+2. Homebrew v1.3.0：可以 <a href="https://github.com/Homebrew/brew/releases">在此</a> 查看其最新版本更新信息。</em></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/12</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
                 <a class="clearlink" href="15242849335257.html">
                 
                   <h1>关于独立博客的想法</h1>
@@ -104,11 +249,11 @@
                       
                       <div class="a-content-text">
                         
-                        	<p>20180421 13:48:37</p>
+                        	<p>更新于 20180421 13:48:37</p>
 
-<p>在 GitHub Issues 写博客也面临数个问题：<br/>
-1. 图片的插入，采用第三方 Issues 客户端时图片并不会上传至 GitHub 服务器，而是三方客户端的服务器，这显然增加了图片丢失风险；<br/>
-2. 借助 Mirror 呈现内容在博客 <code>blog.tangxiaozhu.com</code> 地址，但搜索引擎只能检索到 Issues，这并不是我想要的；<br/>
+<p>在 GitHub Issues 写博客也面临数个问题：
+1. 图片的插入，采用第三方 Issues 客户端时图片并不会上传至 GitHub 服务器，而是三方客户端的服务器，这显然增加了图片丢失风险；
+2. 借助 Mirror 呈现内容在博客 <code>blog.tangxiaozhu.com</code> 地址，但搜索引擎只能检索到 Issues，这并不是我想要的；
 3. 数据的备份也是个问题，虽然利用 IFTTT 进行备份，但格式错乱且只能备份每一篇 Issues 第一次发布时的内容。</p>
 
 <p>因此，我决定重启 GitHub Pages，并将博客同步到多个平台，原来不愿意这样做是手工太累，但现在可以一键同步的工具越来越多，也越加好用。</p>
@@ -117,7 +262,7 @@
 
 <hr/>
 
-<p>20170927 19:14:48</p>
+<p>更新于 20170927 19:14:48</p>
 
 <p>也许对博客相关的事情折腾够了，或者是觉着我这种以分享为目的的独立博客也没必要再折腾了，所以我开始使用 GitHub Issues 写博客了，然后展示在 <code>blog.tangxiaozhu.com</code> 即我的博客网址。一番复杂之后，又开始崇尚简单，似乎有种看山初是山、不是山、又是山的感悟，比较满意现在写独立博客的方式，再找来一个备份功能就完美了。</p>
 
@@ -125,12 +270,12 @@
 
 <p>因为简书经常将我的一篇博文设置为仅自己可查看，所以放弃使用。目前使用 Blogger 作为博客的镜像，同时也发布一些不便于在独立博客出现的内容。</p>
 
-<p>同时也开始使用 MWeb 作为博客编辑器：<br/>
-1. 支持 iOS &amp; macOS，这大大方便了我随时修改文章内容；<br/>
+<p>同时也开始使用 MWeb 作为博客编辑器：
+1. 支持 iOS &amp; macOS，这大大方便了我随时修改文章内容；
 2. 支持直接发布和更新至 Blogger 等平台，iOS &amp; macOS 都能发布这点大大提升了 iPad 在我心中的地位。</p>
 
-<p>几点想法：<br/>
-- 虽然百度检索不到了，但是百度能检索到的内容会越来越少，我只是提前离开了。当然，不涉及敏感内容的独立博客还是可以被检索到的。<br/>
+<p>几点想法：
+- 虽然百度检索不到了，但是百度能检索到的内容会越来越少，我只是提前离开了。当然，不涉及敏感内容的独立博客还是可以被检索到的。
 - 维基百科式的更新方式会使博文最后附加了许多内容，因为我经常更新博文，仔细考虑后，决定将有必要讲的更改历史直接放到博文中。像本文这篇只是关于想法的博文，适合以分割线的方式更新；涉及到技术的适合前面说的也即全文修改的方式。</p>
 
 <p>如果疑虑某篇文章有没有更新，在独立博客上是有显示更新时间的，如果更新时间在很久以前，还请注意其是否已不适用。</p>
@@ -143,16 +288,16 @@
 
 <p>在转移原有博文的过程中，也遇到些问题。虽然已放弃使用知乎和新浪博客作为镜像，但还是列出这些问题。</p>
 
-<p>新浪博客：<br/>
-1. 从微博和博客客户端无法查看博文表格，只有从新浪博客网页版查看表格才会正常显示；<br/>
-2. 微博和博客客户端中查看博文，换行显示有问题，新浪博客网页版一切正常；<br/>
-3. 微博和博客客户端中代码支持欠佳，而网页版较为正常；<br/>
-4. 微博和博客客户端中空格似乎是全角的，网页版是正常的。<br/>
+<p>新浪博客：
+1. 从微博和博客客户端无法查看博文表格，只有从新浪博客网页版查看表格才会正常显示；
+2. 微博和博客客户端中查看博文，换行显示有问题，新浪博客网页版一切正常；
+3. 微博和博客客户端中代码支持欠佳，而网页版较为正常；
+4. 微博和博客客户端中空格似乎是全角的，网页版是正常的。
 所以新浪太奇葩，自家的东西解析方式千奇百怪。</p>
 
-<p>知乎：<br/>
-1. 不支持粘贴图片；<br/>
-2. 不支持表格；<br/>
+<p>知乎：
+1. 不支持粘贴图片；
+2. 不支持表格；
 3. 不支持分隔线。</p>
 
 <p>标记语言 Markdown 既简单又较为全面，使我们可以脱离鼠标写一篇排版良好的博客。虽然在不同的应用中，可以设置快捷键来达到同样的目的，但如果绝大部分应用都支持 Markdown，我们也不用费力地为不同的应用设置快捷键。况且，网页端编辑器很多不支持快捷键。我试试定期给一些提供博客服务的企业发送反馈，建议直接采用 Markdown，或改进再采用，或确定一种新标记语言。当然，可视化界面不必非要和 Markdown 语言对应。</p>
@@ -245,6 +390,12 @@
                 <div class="side-content">
                 <ul class="posts-list">
 	      
+		      
+			      <li class="post">
+			        <a href="15243553635986.html">终端上的 Mac App Store「mas」让应用的安装与更新无比轻松</a>
+			      </li>
+		     
+		  
 		      
 			      <li class="post">
 			        <a href="15242849335257.html">关于独立博客的想法</a>
