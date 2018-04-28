@@ -4,13 +4,95 @@
   <title><![CDATA[唐小筑]]></title>
   <link href="https://blog.tangxiaozhu.com/atom.xml" rel="self"/>
   <link href="https://blog.tangxiaozhu.com/"/>
-  <updated>2018-04-22T16:16:57+08:00</updated>
+  <updated>2018-04-28T22:33:52+08:00</updated>
   <id>https://blog.tangxiaozhu.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[每周分享第 1 期]]></title>
+    <link href="https://blog.tangxiaozhu.com/15246446693895.html"/>
+    <updated>2018-04-25T16:24:29+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15246446693895.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li>
+<a href="#toc_0">疑问</a>
+<ul>
+<li>
+<a href="#toc_1">Markdown 为何两次回车才能换行？</a>
+</li>
+<li>
+<a href="#toc_2">Bash 是什么？</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_3">工具</a>
+<ul>
+<li>
+<a href="#toc_4">SourceTree：Git 和 Hg 客户端</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_5">好文</a>
+<ul>
+<li>
+<a href="#toc_6">Git 深入浅出 Git 权限校验（最熟悉的陌生概念）</a>
+</li>
+<li>
+<a href="#toc_7">搬进 GitHub</a>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h2 id="toc_0">疑问</h2>
+
+<h3 id="toc_1">Markdown 为何两次回车才能换行？</h3>
+
+<ol>
+<li>在写 MD 文件时通常首行不会空格，在切换下一个自然段时，如果仅仅一个回车就换行，即产生 <code>&lt;br&gt;</code> 标签，那么相邻自然段之间就没有足够的空白，会使文章难以阅读；</li>
+<li>如果一个回车就换行，产生 <code>&lt;p&gt;</code> 标签，那么在列表换行和代码内部换行时，将会产生额外的空白，会使文章难以阅读；请注意，<code>&lt;br&gt;</code> 标签只是开始新的一行，浏览器解析时相邻自然段中行间距通常较小，而当浏览器遇到 <code>&lt;p&gt;</code> 标签时，通常会在相邻的段落之间插入一些垂直的间距；</li>
+<li>如果确实需要 <code>&lt;br&gt;</code> 标签的话，在需要处键入两个以上的空格后回车。</li>
+<li>⚠️ 如果是单回车产生 <code>&lt;br&gt;</code>，双回车产生 <code>&lt;p&gt;</code> 呢？这显然更加符合我的想法～ 但目前一些编辑器可以设置回车转换为 <code>&lt;br&gt;</code> 标签，也即单回车产生一个 <code>&lt;br&gt;</code>，双回车产生俩 <code>&lt;br&gt;</code> 标签，这对浏览器友好么？</li>
+</ol>
+
+<pre><code>&lt;br&gt; 标签是空标签，意味着它没有结束标签，因此 &lt;br&gt;&lt;/br&gt; 的写法是错误的；
+但在 XHTML 中，要求空标签也需结束标签，且把结束标签放在开始标签中，也就是 &lt;br /&gt;。
+</code></pre>
+
+<h3 id="toc_2">Bash 是什么？</h3>
+
+<p>在 macOS 上打开终端，标题栏上总有 <code>bash</code> 字眼，那么这是啥？Bash，Unix shell 的一种，是一个命令处理器，通常运行于文本窗口中，并能执行用户直接输入的命令，在 1987 年由布莱恩·福克斯（Brian J. Fox）为了 GNU 计划而编写。</p>
+
+<p>Unix shell 是啥？一种壳层与命令行界面，是 Unix 操作系统下传统的用户和计算机的交互界面，之所以被称作 shell 是因为它隐藏了操作系统低层的细节，Unix 操作系统下的 shell 既是用户交互的界面，也是控制系统的脚本语言。shell 是啥？壳层，指作业系统中，提供存取内核所提供之服务的程式，也泛指所有为用户提供操作界面的程序。通常将 shell 分为两类：命令列与图形界面。命令列壳层提供一个命令行界面（CLI），而图形壳层提供一个图形使用者界面（GUI）。与之相对的是程序内核（Kernel），内核不提供和用户的交互功能。</p>
+
+<h2 id="toc_3">工具</h2>
+
+<h3 id="toc_4">SourceTree：Git 和 Hg 客户端</h3>
+
+<p>SourceTree 支持添加 GitHub 与 Bitbucket 多账号，支持 Mercurial 和 Git 两种分散式版本管理系统，由 Atlassian 公司开发。暂未深度使用，但初见观感甚好。</p>
+
+<h2 id="toc_5">好文</h2>
+
+<h3 id="toc_6"><a href="https://ruby-china.org/topics/30298">Git 深入浅出 Git 权限校验（最熟悉的陌生概念）</a></h3>
+
+<p>讲清楚了 Git 权限问题，对于在一台电脑上设置多个 GitHub 账号大有裨益。</p>
+
+<p>其在另篇文章 <a href="http://debugtalk.com/post/trap-in-GitHub-authority-verification/">GitHub 权限校验失败给我的启发</a> 中讲明了 macOS 上 Git 用户信息存储位置。</p>
+
+<h3 id="toc_7"><a href="http://gitbeijing.com/">搬进 GitHub</a></h3>
+
+<p>较为通俗的 GitHub 入门教程。</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[终端上的 Mac App Store「mas」让应用的安装与更新无比轻松]]></title>
@@ -22,16 +104,19 @@
 <p>本文被少数派精选并推荐至首页：<a href="https://sspai.com/post/40382">点此查看</a></p>
 </blockquote>
 
-<p>以下这 3 点是不是你在用 Mac App Store 时想要的？<br/>
-1. 不想再忍受 Mac App Store 缓慢的打开速度；<br/>
-2. 批量安装或更新 Mac App Store 应用；<br/>
-3. 快速切换 Mac App Store 账号。</p>
+<p>以下这 3 点是不是你在用 Mac App Store 时想要的？</p>
+
+<ol>
+<li>不想再忍受 Mac App Store 缓慢的打开速度； </li>
+<li>批量安装或更新 Mac App Store 应用；</li>
+<li>快速切换 Mac App Store 账号。</li>
+</ol>
 
 <p>如果是的话，你必须得试试终端上的 Mac App Store —— <a href="https://github.com/mas-cli/mas">mas</a>。</p>
 
 <span id="more"></span><!-- more -->
 
-<h2>安装</h2>
+<h2 id="toc_0">安装</h2>
 
 <p><a href="https://brew.sh/index_zh-cn.html">Homebrew</a> 是安装 mas 的最好方式，在只要把以下代码复制到终端（Terminal）后运行即可：</p>
 
@@ -43,25 +128,31 @@
 <pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 </code></pre>
 
-<h2>查询与安装应用</h2>
+<h2 id="toc_1">查询与安装应用</h2>
 
 <p>mas 作为终端上的 Mac App Store，其劣势是无法随意浏览众多应用、没有编辑推荐、没有排行榜… 但也因为不用加载这么多东西，甚至不用加载图片，它才有着惊人的速度。</p>
 
 <p>Mac App Store 中每一个应用都有自己的应用识别码（Product Identifier），这可以在每个应用的链接中看到。mas 就是根据 Product Identifier 安装与更新应用，也提供了查询应用 ID 的命令。</p>
 
-<pre><code>由 1Password 的链接可知其识别码为 443987910  
+<pre><code>由 1Password 的链接可知其识别码为 443987910
 https://itunes.apple.com/cn/app/1password/id443987910?mt=12
 </code></pre>
 
-<p>除了查看链接，有以下 x 种方法获取应用的识别码：<br/>
-1. 用命令 <code>mas search 关键词</code> 查询应用。比如在终端中执行 <code>mas search xcode</code>，大概 1 秒就显示了结果；<br/>
-2. 用命令 <code>mas list</code> 查询已安装应用及其识别码。</p>
+<p>除了查看链接，有以下 x 种方法获取应用的识别码：</p>
+
+<ol>
+<li>用命令 <code>mas search 关键词</code> 查询应用。比如在终端中执行 <code>mas search xcode</code>，大概 1 秒就显示了结果；</li>
+<li>用命令 <code>mas list</code> 查询已安装应用及其识别码。</li>
+</ol>
 
 <p><img src="media/15243553635986/15243558670489.png" alt="mas search Xcode &amp; mas list"/></p>
 
-<p>安装应用只需知道此应用的识别码就可以安装具体软件。比如安装 Bear，流程如下：<br/>
-第一步：由命令 <code>mas search bear</code> 得知应用 Bear 的识别码为 1091189122；<br/>
-第二步：使用命令 <code>mas install 1091189122</code> 安装。</p>
+<p>安装应用只需知道此应用的识别码就可以安装具体软件。比如安装 Bear，流程如下：</p>
+
+<ol>
+<li>由命令 <code>mas search bear</code> 得知应用 Bear 的识别码为 1091189122；</li>
+<li>第二步：使用命令 <code>mas install 1091189122</code> 安装。</li>
+</ol>
 
 <p>注意：</p>
 
@@ -72,12 +163,12 @@ https://itunes.apple.com/cn/app/1password/id443987910?mt=12
 
 <p><img src="media/15243553635986/15243580714614.jpg" alt=""/></p>
 
-<p>我们不仅可以使用命令行安装单个应用，还可以批量安装应用，只需在应用识别码之间加上空格：  </p>
+<p>我们不仅可以使用命令行安装单个应用，还可以批量安装应用，只需在应用识别码之间加上空格：</p>
 
 <pre><code>mas install 甲应用识别码 乙应用识别码 丙应用识别码
 </code></pre>
 
-<h2>更新应用</h2>
+<h2 id="toc_2">更新应用</h2>
 
 <p>如果要更新所有 Mac App Store 应用，只需终端执行一句命令：</p>
 
@@ -86,7 +177,7 @@ https://itunes.apple.com/cn/app/1password/id443987910?mt=12
 
 <p>如果更新特定应用，需要使用命令 <code>mas outdated</code> 先查询待更新列表以获取应用识别码，再更新一个或几个应用：</p>
 
-<pre><code>mas upgrade 甲应用识别码  
+<pre><code>mas upgrade 甲应用识别码
 mas upgrade 甲应用识别码 乙应用识别码 丙应用识别码
 </code></pre>
 
@@ -94,17 +185,17 @@ mas upgrade 甲应用识别码 乙应用识别码 丙应用识别码
 
 <p>但要注意，mas 无法用于系统更新，即只能更新显示在 Mac App Store 中的应用。但可以使用命令 <code>softwareupdate -l</code> 获取系统更新列表，然后使用 <code>sudo softwareupdate -iva</code> 进行更新。</p>
 
-<h2>切换 Mac App Store 账号</h2>
+<h2 id="toc_3">切换 Mac App Store 账号</h2>
 
 <p>这是多区账号拥有者的福音，我们终于可以更方便地下载和更新其他区的应用了。如果忘记了当前帐号，使用命令 <code>mas account</code> 查询。可用命令 <code>mas signout</code> 退出当前帐号，并按如下命令登陆新的账号：</p>
 
-<pre><code>mas signin Apple ID &quot;密码&quot;  
+<pre><code>mas signin Apple ID &quot;密码&quot;
 如：mas signin mas@example.com &quot;mypassword&quot;
 </code></pre>
 
 <p>也可以设置命令别名以得到更爽快的体验，在隐藏文件 <code>.bashrc</code> 中添加以下内容：其路径为 <code>~/.bashrc</code>，同时按 <code>shift + command + .</code> 可显示隐藏文件。</p>
 
-<pre><code>alias masus=&#39;mas signout &amp;&amp; mas signin myusappleid &quot;mypassword&quot;&#39;  
+<pre><code>alias masus=&#39;mas signout &amp;&amp; mas signin myusappleid &quot;mypassword&quot;&#39;
 alias mascn=&#39;mas signout &amp;&amp; mas signin mycnappleid &quot;mypassword&quot;&#39;  
 alias mas?=&#39;mas account&#39; 
 </code></pre>
@@ -118,7 +209,7 @@ alias mas?=&#39;mas account&#39;
 
 <p>在问题解决之前该怎么办：在 Mac App Store 中登陆帐号，然后重新打开终端（Terminal）即可。</p>
 
-<h2>总结与美好的设想</h2>
+<h2 id="toc_4">总结与美好的设想</h2>
 
 <p>我们可以在 GitHub 上的 <a href="https://github.com/mas-cli/mas">mas 项目</a> 查看官方使用说明，或以 <code>mas help</code> 查看所有命令及其说明。之前介绍过 <a href="https://sspai.com/post/40321">Homebrew Cask 如何安装应用</a>，它的作用对象是非 Mac App Store 应用，而 mas 的对象是 Mac App Store 应用，两者互补无憾矣。</p>
 
@@ -132,11 +223,11 @@ onlypai (NMAS Only)
 
 <!-- 谢谢让 [JailbreakHum](https://sspai.com/user/681230/updates) 忙碌的人，谢谢 JailbreakHum 因忙碌而告诉我这个超级棒的技巧，谢谢 JailbreakHum 的指导…… -->
 
-<p><br></p>
+<p><br/></p>
 
 <blockquote>
-<p>本文应用版本：<br/>
-1. mas v1.3.1：mas 是一个活跃项目，可以 <a href="https://github.com/mas-cli/mas/releases">点此查看</a> 其最新版本更新信息；<br/>
+<p>本文应用版本：<br/><br/>
+1. mas v1.3.1：mas 是一个活跃项目，可以 <a href="https://github.com/mas-cli/mas/releases">点此查看</a> 其最新版本更新信息；<br/><br/>
 2. Homebrew v1.3.0：可以 <a href="https://github.com/Homebrew/brew/releases">在此</a> 查看其最新版本更新信息。</p>
 </blockquote>
 
@@ -149,9 +240,9 @@ onlypai (NMAS Only)
     <updated>2018-04-21T12:28:53+08:00</updated>
     <id>https://blog.tangxiaozhu.com/15242849335257.html</id>
     <content type="html"><![CDATA[
-<p>在 GitHub Issues 写博客也面临数个问题：
-1. 图片的插入，采用第三方 Issues 客户端时图片并不会上传至 GitHub 服务器，而是三方客户端的服务器，这显然增加了图片丢失风险；
-2. 借助 Mirror 呈现内容在博客 <code>blog.tangxiaozhu.com</code> 地址，但搜索引擎只能检索到 Issues，这并不是我想要的；
+<p>在 GitHub Issues 写博客也面临数个问题：<br/>
+1. 图片的插入，采用第三方 Issues 客户端时图片并不会上传至 GitHub 服务器，而是三方客户端的服务器，这显然增加了图片丢失风险；<br/>
+2. 借助 Mirror 呈现内容在博客 <code>blog.tangxiaozhu.com</code> 地址，但搜索引擎只能检索到 Issues，这并不是我想要的；<br/>
 3. 数据的备份也是个问题，虽然利用 IFTTT 进行备份，但格式错乱且只能备份每一篇 Issues 第一次发布时的内容。</p>
 
 <p>因此，我决定重启 GitHub Pages，并将博客同步到多个平台，原来不愿意这样做是手工太累，但现在可以一键同步的工具越来越多，也越加好用。</p>
@@ -170,12 +261,12 @@ onlypai (NMAS Only)
 
 <p>因为简书经常将我的一篇博文设置为仅自己可查看，所以放弃使用。目前使用 Blogger 作为博客的镜像，同时也发布一些不便于在独立博客出现的内容。</p>
 
-<p>同时也开始使用 MWeb 作为博客编辑器：
-1. 支持 iOS &amp; macOS，这大大方便了我随时修改文章内容；
+<p>同时也开始使用 MWeb 作为博客编辑器：<br/>
+1. 支持 iOS &amp; macOS，这大大方便了我随时修改文章内容；<br/>
 2. 支持直接发布和更新至 Blogger 等平台，iOS &amp; macOS 都能发布这点大大提升了 iPad 在我心中的地位。</p>
 
-<p>几点想法：
-- 虽然百度检索不到了，但是百度能检索到的内容会越来越少，我只是提前离开了。当然，不涉及敏感内容的独立博客还是可以被检索到的。
+<p>几点想法：<br/>
+- 虽然百度检索不到了，但是百度能检索到的内容会越来越少，我只是提前离开了。当然，不涉及敏感内容的独立博客还是可以被检索到的。<br/>
 - 维基百科式的更新方式会使博文最后附加了许多内容，因为我经常更新博文，仔细考虑后，决定将有必要讲的更改历史直接放到博文中。像本文这篇只是关于想法的博文，适合以分割线的方式更新；涉及到技术的适合前面说的也即全文修改的方式。</p>
 
 <p>如果疑虑某篇文章有没有更新，在独立博客上是有显示更新时间的，如果更新时间在很久以前，还请注意其是否已不适用。</p>
@@ -188,16 +279,16 @@ onlypai (NMAS Only)
 
 <p>在转移原有博文的过程中，也遇到些问题。虽然已放弃使用知乎和新浪博客作为镜像，但还是列出这些问题。</p>
 
-<p>新浪博客：
-1. 从微博和博客客户端无法查看博文表格，只有从新浪博客网页版查看表格才会正常显示；
-2. 微博和博客客户端中查看博文，换行显示有问题，新浪博客网页版一切正常；
-3. 微博和博客客户端中代码支持欠佳，而网页版较为正常；
-4. 微博和博客客户端中空格似乎是全角的，网页版是正常的。
+<p>新浪博客：<br/>
+1. 从微博和博客客户端无法查看博文表格，只有从新浪博客网页版查看表格才会正常显示；<br/>
+2. 微博和博客客户端中查看博文，换行显示有问题，新浪博客网页版一切正常；<br/>
+3. 微博和博客客户端中代码支持欠佳，而网页版较为正常；<br/>
+4. 微博和博客客户端中空格似乎是全角的，网页版是正常的。<br/>
 所以新浪太奇葩，自家的东西解析方式千奇百怪。</p>
 
-<p>知乎：
-1. 不支持粘贴图片；
-2. 不支持表格；
+<p>知乎：<br/>
+1. 不支持粘贴图片；<br/>
+2. 不支持表格；<br/>
 3. 不支持分隔线。</p>
 
 <p>标记语言 Markdown 既简单又较为全面，使我们可以脱离鼠标写一篇排版良好的博客。虽然在不同的应用中，可以设置快捷键来达到同样的目的，但如果绝大部分应用都支持 Markdown，我们也不用费力地为不同的应用设置快捷键。况且，网页端编辑器很多不支持快捷键。我试试定期给一些提供博客服务的企业发送反馈，建议直接采用 Markdown，或改进再采用，或确定一种新标记语言。当然，可视化界面不必非要和 Markdown 语言对应。</p>
