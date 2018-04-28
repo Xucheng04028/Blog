@@ -4,7 +4,7 @@
   <title><![CDATA[唐小筑]]></title>
   <link href="https://blog.tangxiaozhu.com/atom.xml" rel="self"/>
   <link href="https://blog.tangxiaozhu.com/"/>
-  <updated>2018-04-28T22:33:52+08:00</updated>
+  <updated>2018-04-29T07:29:25+08:00</updated>
   <id>https://blog.tangxiaozhu.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -66,6 +66,8 @@
 <pre><code>&lt;br&gt; 标签是空标签，意味着它没有结束标签，因此 &lt;br&gt;&lt;/br&gt; 的写法是错误的；
 但在 XHTML 中，要求空标签也需结束标签，且把结束标签放在开始标签中，也就是 &lt;br /&gt;。
 </code></pre>
+
+<span id="more"></span><!-- more -->
 
 <h3 id="toc_2">Bash 是什么？</h3>
 
