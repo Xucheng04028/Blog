@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  每周分享 - 唐小筑
+  唐小筑
   
   </title>
   
@@ -101,61 +101,21 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
-                <a class="clearlink" href="15246446693895.html">
+                <a class="clearlink" href="15242849335257.html">
                 
-                  <h1>每周分享第 1 期</h1>
+                  <h1>关于独立博客的想法</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<ul>
-<li>
-<a href="#toc_0">疑问</a>
-<ul>
-<li>
-<a href="#toc_1">Markdown 为何两次回车才能换行？</a>
-</li>
-<li>
-<a href="#toc_2">Bash 是什么？</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#toc_3">工具</a>
-<ul>
-<li>
-<a href="#toc_4">SourceTree：Git 和 Hg 客户端</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#toc_5">好文</a>
-<ul>
-<li>
-<a href="#toc_6">Git 深入浅出 Git 权限校验（最熟悉的陌生概念）</a>
-</li>
-<li>
-<a href="#toc_7">搬进 GitHub</a>
-</li>
-</ul>
-</li>
-</ul>
+                        	<p>在 GitHub Issues 写博客也面临数个问题：<br/>
+1. 图片的插入，采用第三方 Issues 客户端时图片并不会上传至 GitHub 服务器，而是三方客户端的服务器，这显然增加了图片丢失风险；<br/>
+2. 借助 Mirror 呈现内容在博客 <code>blog.tangxiaozhu.com</code> 地址，但搜索引擎只能检索到 Issues，这并不是我想要的；<br/>
+3. 数据的备份也是个问题，虽然利用 IFTTT 进行备份，但格式错乱且只能备份每一篇 Issues 第一次发布时的内容。</p>
 
+<p>因此，我决定重启 GitHub Pages，并将博客同步到多个平台，原来不愿意这样做是手工太累，但现在可以一键同步的工具越来越多，也越加好用。</p>
 
-<h2 id="toc_0">疑问</h2>
-
-<h3 id="toc_1">Markdown 为何两次回车才能换行？</h3>
-
-<ol>
-<li>在写 MD 文件时通常首行不会空格，在切换下一个自然段时，如果仅仅一个回车就换行，即产生 <code>&lt;br&gt;</code> 标签，那么相邻自然段之间就没有足够的空白，会使文章难以阅读；</li>
-<li>如果一个回车就换行，产生 <code>&lt;p&gt;</code> 标签，那么在列表换行和代码内部换行时，将会产生额外的空白，会使文章难以阅读；请注意，<code>&lt;br&gt;</code> 标签只是开始新的一行，浏览器解析时相邻自然段中行间距通常较小，而当浏览器遇到 <code>&lt;p&gt;</code> 标签时，通常会在相邻的段落之间插入一些垂直的间距；</li>
-<li>如果确实需要 <code>&lt;br&gt;</code> 标签的话，在需要处键入两个以上的空格后回车。</li>
-<li>⚠️ 如果是单回车产生 <code>&lt;br&gt;</code>，双回车产生 <code>&lt;p&gt;</code> 呢？这显然更加符合我的想法～ 但目前一些编辑器可以设置回车转换为 <code>&lt;br&gt;</code> 标签，也即单回车产生一个 <code>&lt;br&gt;</code>，双回车产生俩 <code>&lt;br&gt;</code> 标签，这对浏览器友好么？</li>
-</ol>
-
-<pre><code>&lt;br&gt; 标签是空标签，意味着它没有结束标签，因此 &lt;br&gt;&lt;/br&gt; 的写法是错误的；
-但在 XHTML 中，要求空标签也需结束标签，且把结束标签放在开始标签中，也就是 &lt;br /&gt;。
-</code></pre>
+<p>此外，我决定不再随意修改已发布文章，这也是最后一次更新本文。今后对待每一篇博客都要严肃认真，要做到我之出品，必为精品，一旦发布除非有错别字、格式错误等问题，绝不修改。内容过时问题是我之前担忧所在，现在我也有了新的想法：写文章时标注好内容适用范围，即便未来过时了，也不失为一种历史参考资料，代表了过去的回忆。</p>
 
 
                         
@@ -164,11 +124,9 @@
                 </a>
                 <div class="read-more clearfix">
                   <div class="more-left left">
-                   <a href="15246446693895.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2018/4/25</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html'>每周分享</a></span>
+                   <a href="15242849335257.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2017/4/21</span>
+                    
           				   
                   </div>
                   <div class="more-right right">
@@ -187,7 +145,7 @@
 			<div class="row">
 			  <div class="large-6 columns">
 			  <p class="text-left" style="padding-top:25px;">
-			   
+			   <a href="all.html">&laquo; Prev Page</a>  
 			  </p>
 			  </div>
 			  <div class="large-6 columns">

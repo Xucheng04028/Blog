@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  唐小筑
+  PDF 应用评测：Adobe Acrobat VS PDF Expert VS PDFelement - 唐小筑
   
   </title>
   
@@ -92,340 +92,36 @@
        
 
  <script type="text/javascript">
-	$(function(){
-		$('#menu_item_index').addClass('is_active');
-	});
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
 </script>
 <div class="row">
-	<div class="large-8 medium-8 columns">
-		<div class="markdown-body home-categories">
-		
-			<div class="article">
-                <a class="clearlink" href="15246446693895.html">
-                
-                  <h1>每周分享第 1 期</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<ul>
-<li>
-<a href="#toc_0">疑问</a>
-<ul>
-<li>
-<a href="#toc_1">Markdown 为何两次回车才能换行？</a>
-</li>
-<li>
-<a href="#toc_2">Bash 是什么？</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#toc_3">工具</a>
-<ul>
-<li>
-<a href="#toc_4">SourceTree：Git 和 Hg 客户端</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#toc_5">好文</a>
-<ul>
-<li>
-<a href="#toc_6">Git 深入浅出 Git 权限校验（最熟悉的陌生概念）</a>
-</li>
-<li>
-<a href="#toc_7">搬进 GitHub</a>
-</li>
-</ul>
-</li>
-</ul>
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>PDF 应用评测：Adobe Acrobat VS PDF Expert VS PDFelement</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2017/8/9</span>
 
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='%E5%B0%91%E6%95%B0%E6%B4%BE.html'>少数派</a></span>
+           
+         
+          <span class="comments">
+            
 
-<h2 id="toc_0">疑问</h2>
+            
+          </span>
 
-<h3 id="toc_1">Markdown 为何两次回车才能换行？</h3>
+        </div>
+      </div><!-- article -->
 
-<ol>
-<li>在写 MD 文件时通常首行不会空格，在切换下一个自然段时，如果仅仅一个回车就换行，即产生 <code>&lt;br&gt;</code> 标签，那么相邻自然段之间就没有足够的空白，会使文章难以阅读；</li>
-<li>如果一个回车就换行，产生 <code>&lt;p&gt;</code> 标签，那么在列表换行和代码内部换行时，将会产生额外的空白，会使文章难以阅读；请注意，<code>&lt;br&gt;</code> 标签只是开始新的一行，浏览器解析时相邻自然段中行间距通常较小，而当浏览器遇到 <code>&lt;p&gt;</code> 标签时，通常会在相邻的段落之间插入一些垂直的间距；</li>
-<li>如果确实需要 <code>&lt;br&gt;</code> 标签的话，在需要处键入两个以上的空格后回车。</li>
-<li>⚠️ 如果是单回车产生 <code>&lt;br&gt;</code>，双回车产生 <code>&lt;p&gt;</code> 呢？这显然更加符合我的想法～ 但目前一些编辑器可以设置回车转换为 <code>&lt;br&gt;</code> 标签，也即单回车产生一个 <code>&lt;br&gt;</code>，双回车产生俩 <code>&lt;br&gt;</code> 标签，这对浏览器友好么？</li>
-</ol>
-
-<pre><code>&lt;br&gt; 标签是空标签，意味着它没有结束标签，因此 &lt;br&gt;&lt;/br&gt; 的写法是错误的；
-但在 XHTML 中，要求空标签也需结束标签，且把结束标签放在开始标签中，也就是 &lt;br /&gt;。
-</code></pre>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="15246446693895.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2018/4/25</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html'>每周分享</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15249764881993.html">
-                
-                  <h1>Zotero 如何添加文章检索引擎</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<blockquote>
-<p>本文被少数派精选：<a href="https://sspai.com/post/40458">点此查看</a></p>
-</blockquote>
-
-<p>Zotero 是优秀的免费开源个人知识管理工具，一般用于管理学术文献，其以跨 macOS、Windows、Linux 三大平台、强大易用的功能闻名于学术圈。如果你是新生或者还未使用文献管理工具，如果你需要知识管理工具，Zotero 可能是你最好的选择之一。关于 Zotero 的使用教程数不胜数，但本文所讲的问题「如何添加文章（文献）检索引擎」任何其他教程都没有给出解决方案，我也是探索良久才得出解决办法。</p>
-
-<blockquote>
-<p>添加列表中没有的检索引擎，请在浏览器中访问检索引擎网页，并从 Zotero 的“定位”菜单中，选择“添加”。但崩溃的是按照此提示的操作，无法添加检索引擎。</p>
-</blockquote>
-
-<p><img src="media/15249764881993/15249765544916.png" alt="先放一张效果图"/></p>
-
-<h2 id="toc_0">添加教程</h2>
-
-<p>从 Zotero <code>首选项</code> -&gt; <code>高级</code> -&gt; <code>文件和文件夹</code> 打开数据库文件 ，再打开控制检索引擎的 <code>locate/engines.json</code> 文件。如下图所示，<code>CrossRef Lookup</code>、<code>Google Scholar Search</code>、<code>Pubget Lookup</code> 是默认的三个检索引擎。那么如何添加新的检索引擎，比如知网？</p>
-
-<p><img src="media/15249764881993/15249765853476.png" alt="三个默认检索引擎"/></p>
-
-<h3 id="toc_1">以添加知网检索引擎为例</h3>
-
-<p>可以看到，上图中三对 <code>{}</code> 括号中的代码代表着三个默认的检索引擎。添加其他检索引擎只需添加类似代码。下文所示代码是知网引擎，在指定位置添加半角逗号以后，将代码复制到自己的 <code>engines.json</code> 文件中保存即可。重新打开 Zotero 即可发现知网检索引擎已被添加。</p>
-
-<pre><code>        &quot;_iconSourceURI&quot;: &quot;http://pubget.com/favicon.ico&quot;
-    },   此处要加英文（半角）逗号，然后从下面开始复制并添加文末位置
-    {
-        &quot;name&quot;: &quot;CNKI Search&quot;,
-        &quot;alias&quot;: &quot;CNKI&quot;,
-        &quot;icon&quot;: null,
-        &quot;_urlTemplate&quot;: &quot;http://search.cnki.net/kns/brief/Default_Result.aspx?code=SCDB&amp;kw={z:title}&quot;,
-        &quot;description&quot;: &quot;CNKI&quot;,
-        &quot;hidden&quot;: true,
-        &quot;_urlParams&quot;: [],
-        &quot;_urlNamespaces&quot;: {
-            &quot;rft&quot;: &quot;info:ofi/fmt:kev:mtx:journal&quot;,
-            &quot;z&quot;: &quot;http://www.zotero.org/namespaces/openSearch#&quot;,
-            &quot;&quot;: &quot;http://a9.com/-/spec/opensearch/1.1/&quot;
-        },
-        &quot;_iconSourceURI&quot;: &quot;http://static.wanfangdata.com.cn/wfks/img/logo_new.png&quot;
-    }
-</code></pre>
-
-<p>对于 IP 用户，可直接添加知网、万方、维普等检索引擎，就可以无忧无虑地下载文献。但对于使用学校代理的用户，需要更改 <code>_urlTemplate</code>。添加其他检索引擎事实上也只需重点修改 <code>_urlTemplate</code> 中的搜索网址。</p>
-
-<h3 id="toc_2">如何确定搜索网址</h3>
-
-<p>那么如何确定 <code>_urlTemplate</code> 中的搜索网址？以万方为例：假设我们在万方搜索 <code>唐小筑</code>，网址是这样的形式 <code>http://s.wanfangdata.com.cn/Paper.aspx?q=唐小筑&amp;f=top</code>，注意到其中 <code>唐小筑</code> 即为我们的搜索目标， 而参数 <code>{z:title}</code> 代表着 Zotero 中条目名称，那么 <code>_urlTemplate</code> 中的搜索网址就应该是：</p>
-
-<pre><code>http://s.wanfangdata.com.cn/Paper.aspx?q={z:title}&amp;f=top
-</code></pre>
-
-<h2 id="toc_3">总结</h2>
-
-<p>Zotero 是开源应用，每一个功能对应的文件都可自行修改，但大部分人应该跟我一样，几乎不懂编程，但也不要对此恐惧。遇到问题也不妨试着找找这个问题对应功能的控制文件，无论是模仿修改还是向其他人求教都会有所帮助。</p>
-
-<p>若对 Zotero 的使用有疑问欢迎讨论……</p>
-
-<p><br></p>
-
-<blockquote>
-<p>本文应用版本：<br/>
-Zotero 5.0.34.6 for macOS </p>
-</blockquote>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/17</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E5%B0%91%E6%95%B0%E6%B4%BE.html'>少数派</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15249731448826.html">
-                
-                  <h1>再谈 Homebrew Cask 在 macOS 上的应用安装</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<blockquote>
-<p>本文被少数派精选：<a href="https://sspai.com/post/40321">点此查看</a></p>
-</blockquote>
-
-<p>以新手的视角说说 Homebrew Cask，通过此文，希望同为新手的我们可以更加理解 Homebrew Cask，也更频繁地使用它安装不上架 Mac App Store 的应用，让生活少一些繁琐。</p>
-
-<p>Homebrew 是一款开源的软件包管理系统，用以简化 macOS 上的软件安装过程，可以类比于 Windows 上软件管家的一键安装。Homebrew 在 2009 年由马克斯·霍威尔（Max Howell）写成，它在 GitHub 上拥有大量贡献者，目前仍处于活跃状态。</p>
-
-<p>Homebrew Cask 是 Homebrew 的扩展，借助它可以方便地在 macOS 上安装图形界面程序，即我们常用的各类应用。Homebrew 中文含义为自制、自酿酒，Cask 中文含义为桶、木桶，桶装酒是一种成品，也就是说每一个 <code>homebrew cask</code> 都可以直接使用的，比如 Atom 的 Cask 名称为 atom，那么就可以使用如下命令安装：</p>
-
-<pre><code>brew cask install atom
-</code></pre>
-
-<p><img src="media/15249731448826/15249752711518.gif" alt="from homebrew-cask"/></p>
-
-<p>甚至也可以提交新的 Cask，比如假设有桌面客户端少数派，则用 <code>brew cask create sspai</code> 创建新的名称为 <code>sspai</code> 的 Cask，当然还要提供官网下载链接、官方主页、应用版本等信息，可以参照 <a href="https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md">官方教程</a>，此处就不再细说。</p>
-
-<h2 id="toc_0">安装 Homebrew Cask</h2>
-
-<p>如未安装过 Homebrew 可参照 <a href="https://brew.sh/index_zh-cn.html">官网方式</a> 安装：</p>
-
-<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-</code></pre>
-
-<p>将以上命令粘贴至终端中执行。然后执行 <a href="https://caskroom.github.io/">命令</a> <code>brew tap caskroom/cask</code> 获取 Homebrew Cask。</p>
-
-<p>如果有错误提示，可在终端中执行 <code>xcode-select --install</code>，在弹出的窗口选择 Install 以安装 Command Line Tools，路径为 <code>/Library/Developer/CommandLineTools</code>，如要卸载，删除此文件夹即可。当然也可以到 Mac App Store 安装体积庞大的 Xcode。</p>
-
-<h2 id="toc_1">如何使用 Homebrew Cask</h2>
-
-<pre><code>brew cask install 应用名称
-brew cask install &lt;甲应用名称&gt; &lt;乙应用名称&gt; &lt;丙应用名称&gt;
-</code></pre>
-
-<p>前文已经讲过这个安装命令，但一个问题是：如何确认它支持所要安装的应用？</p>
-
-<pre><code>brew cask search 关键字
-</code></pre>
-
-<p>比如要确定是否支持应用 gooooooogle，可搜索关键字 goo，即可显示所有包含 goo 的应用。如果不加关键字，会显示出所有支持的应用名称。</p>
-
-<p><img src="media/15249731448826/15249753281052.jpg" alt="" class="mw_img_center" style="width:500px;display: block; clear:both; margin: 0 auto;"/></p>
-
-<p>由于 Homebrew Cask 还不支持更新应用，故建议使用应用自带的方式进行更新。欲要查看其他命令，可在终端执行 <code>brew cask help</code> 以显示所有 commands，比如发现查看应用 Cask 信息的命令是 <code>info</code>，则在终端执行 <code>brew cask info 应用名称</code> 即可显示该应用信息。 </p>
-
-<p><img src="media/15249731448826/15249753582673.jpg" alt="" class="mw_img_center" style="width:500px;display: block; clear:both; margin: 0 auto;"/></p>
-
-<h2 id="toc_2">Homebrew Cask 原理</h2>
-
-<p>之前，是用软链接的方式将应用链接到 Application 文件夹，有人说这样的方式会导致 Spotlight 无法检索到。但现在，它是将应用直接移动到 Application 文件夹，这与我们自己去官网下载应用再安装是完全一致的，后续更新或卸载也按平常的方式即可。</p>
-
-<p>当然，也可以用 <code>brew cask uninstall 应用名称</code> 的方式，这种方式才会删除路径 <code>/usr/local/Caskroom</code> 中保留的应用信息文件，这样当我们用命令 <code>brew cask list</code> 查询已安装列表时，已卸载的应用才不会仍显示。也就是说，如果按照平常的方式，比如直接移到废纸篓，那么还需手动删除 Caskroom 中的应用信息文件。当然，不删除也没啥影响，因为一般没必要查看已安装列表，已安装应用在 Launchpad 中查看就好。</p>
-
-<h2 id="toc_3">总结</h2>
-
-<p>我们可以查阅 <a href="https://github.com/caskroom/homebrew-cask/blob/master/USAGE.md">官方使用说明</a> 以了解 Homebrew Cask 命令别名、高级搜索语法等用法。通过这种方式安装应用，与我们平时的方式安装应用，两者除了方式没有任何其他区别，那为何不尝试尝试这种轻松的方式呢？只一句命令，没有那些点击，没有那些拖动…… Homebrew Cask 让非 Mac App Store 应用的安装更轻松，若你也想以更轻松的方式安装和更新 Mac App Store 应用，请参阅 <a href="https://sspai.com/post/40382">终端上的 Mac App Store「mas」让应用的安装与更新无比轻松</a>。</p>
-
-<p><br></p>
-
-<blockquote>
-<p>本文应用版本：<br/>
-Homebrew v1.3.1<br/>
-Homebrew-Cask v1.3.1</p>
-</blockquote>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/12</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E5%B0%91%E6%95%B0%E6%B4%BE.html'>少数派</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15243553635986.html">
-                
-                  <h1>终端上的 Mac App Store「mas」让应用的安装与更新无比轻松</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<blockquote>
-<p>本文被少数派精选并推荐至首页：<a href="https://sspai.com/post/40382">点此查看</a></p>
-</blockquote>
-
-<p>以下这 3 点是不是你在用 Mac App Store 时想要的？</p>
-
-<ol>
-<li>不想再忍受 Mac App Store 缓慢的打开速度； </li>
-<li>批量安装或更新 Mac App Store 应用；</li>
-<li>快速切换 Mac App Store 账号。</li>
-</ol>
-
-<p>如果是的话，你必须得试试终端上的 Mac App Store —— <a href="https://github.com/mas-cli/mas">mas</a>。</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="15243553635986.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/8/12</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E5%B0%91%E6%95%B0%E6%B4%BE.html'>少数派</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15249605684127.html">
-                
-                  <h1>PDF 应用评测：Adobe Acrobat VS PDF Expert VS PDFelement</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<blockquote>
+      <div class="article-content">
+      <blockquote>
 <p>本文被少数派精选：<a href="https://sspai.com/post/40293">点此查看</a></p>
 </blockquote>
 
@@ -680,46 +376,57 @@ PDF Expert 2.2.1 for macOS <br/>
 PDFelement 6 Pro 6.2.0.2988 for macOS </p>
 </blockquote>
 
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/9</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E5%B0%91%E6%95%B0%E6%B4%BE.html'>少数派</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
 
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-              
+    
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="15243553635986.html" 
+          title="Previous Post: 终端上的 Mac App Store「mas」让应用的安装与更新无比轻松">&laquo; 终端上的 Mac App Store「mas」让应用的安装与更新无比轻松</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="15242849335257.html" 
+          title="Next Post: 关于独立博客的想法">关于独立博客的想法 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          <div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  //id: '页面 ID', // 可选。默认为 location.href
+  owner: 'heytxz',
+  repo: 'heytxz.github.io',
+  oauth: {
+    client_id: '67dfbd6866509375efbc',
+    client_secret: 'd9e031bd0b5194fe3e199d18f8fdbfe8054ea205',
+  },
+})
+gitment.render('container')
+</script>
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
 
 
-			<div class="row">
-			  <div class="large-6 columns">
-			  <p class="text-left" style="padding-top:25px;">
-			   
-			  </p>
-			  </div>
-			  <div class="large-6 columns">
-			<p class="text-right" style="padding-top:25px;">
-			 <a href="all_1.html">&raquo; Next Page</a> 
-			</p>
-			  </div>
-			</div>
-		</div>
-	</div><!-- large 8 -->
+
 
  <div class="large-4 medium-4 columns">
   <div class="hide-for-small">
