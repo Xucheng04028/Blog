@@ -1,0 +1,692 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  使用 Hexo 搭建博客的深度优化与定制 - 唐小筑
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="唐小筑" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:blog.tangxiaozhu.com ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="self" href="index.html">Home</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">Archives</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; 唐小筑</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+       
+       <li><a href="index.html">HOME</a></li>
+    <li><a href="archives.html">Archives</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="%E5%B0%91%E6%95%B0%E6%B4%BE.html">少数派</a></li>
+        
+            <li><a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html">每周分享</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>使用 Hexo 搭建博客的深度优化与定制</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2017/8/17</span>
+
+          
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p>由于操作失误出现未知错误，不得不重新来过，同时也萌发写教程的打算。关于 Hexo 建立博客的文章数不胜数，本文只是简要介绍这点，重点是深度优化与定制部分。</p>
+
+<p>移除：卸载 Git 和 Node 后，删除所有博客文件即为移除。如果遭遇文件夹无法删除的情况，使用命令 <code>rd/s/q</code> 可强制删除。</p>
+
+<p>安装：利用基于 Node.js 的 Hexo 可以快速搭建一个博客网站。搭建前必须安装 <a href="https://nodejs.org/en/">Node.js</a> 和 <a href="https://git-scm.com/">Git</a>。Node.js 是一款开源且跨平台的服务器端和网络应用，使用 JavaScript 开发。Git 是一款免费、开源的分布式版本控制系统。安装过程中全点下一步即可。之后，请参照 <a href="https://hexo.io/zh-cn/docs/index.html">官方中文文档</a> 进行 Hexo 的安装。</p>
+
+<p>网站初始化：在指定文件夹初始化网站文件。在你想存储网站文件的文件夹中，鼠标右键后，打开 <code>Git Bash Here</code>，然后输入 <code>hexo init blog</code>，<code>blog</code> 是文件名，可任意取。成功后会出现 <code>INFO  Start blogging with Hexo!</code> 提示信息。Windows 用户由于自带的记事本简陋难用，故建议安装 <a href="https://notepad-plus-plus.org/">Notepad++</a> 以编辑 .yml 文件。</p>
+
+<p>主题：在此建议使用最受欢迎的 NexT 主题，参照其 <a href="http://theme-next.iissnan.com/getting-started.html">官方文档</a> 可轻易完成配置。安装插件的命令要在博客根目录下执行。</p>
+
+<h2 id="toc_0">深度优化</h2>
+
+<h3 id="toc_1">文章链接唯一化</h3>
+
+<p>也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。安装此插件后，不要在 <code>hexo s</code> 模式下更改文章文件名，否则文章将成空白。</p>
+
+<pre><code>npm install hexo-abbrlink --save
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中查找代码 <code>permalink:</code>，将其更改为:</p>
+
+<pre><code>permalink: posts/:abbrlink/  # “posts/” 可自行更换 
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中添加如下代码：</p>
+
+<pre><code># abbrlink config
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32 
+  rep: hex    # 进制：dec(default) and hex
+</code></pre>
+
+<p>可参照样例以选择：</p>
+
+<pre><code>crc16 &amp; hex
+https://post.zz173.com/posts/66c8.html
+
+crc16 &amp; dec
+https://post.zz173.com/posts/65535.html
+
+crc32 &amp; hex
+https://post.zz173.com/posts/8ddf18fb.html
+
+crc32 &amp; dec
+https://post.zz173.com/posts/1690090958.html
+</code></pre>
+
+<h3 id="toc_2">语法优化</h3>
+
+<h4 id="toc_3">引用</h4>
+
+<p>默认的语法无法添加角标（footnotes）以注明引用，这种可来回跳转的引用还是挺有用处的。</p>
+
+<pre><code>npm install hexo-footnotes --save
+</code></pre>
+
+<p>安装完毕请确认是否生效，如不生效，在 <code>站点配置文件</code> 中添加如下代码以手动启用：</p>
+
+<pre><code>plugins:
+  - hexo-footnotes
+</code></pre>
+
+<p><img src="media/15250922329733/15250923179919.jpg" alt=""/></p>
+
+<h4 id="toc_4">折叠代码或文字</h4>
+
+<p><code>&lt;head&gt;</code> 后添加一下代码：</p>
+
+<pre><code>  &lt;script&gt;
+    function ishidden(odiv){
+      var vdiv = document.getElementById(odiv);
+      vdiv.style.display = (vdiv.style.display == &#39;none&#39;)?&#39;block&#39;:&#39;none&#39;;
+    }
+  &lt;/script&gt;
+</code></pre>
+
+<pre><code>&lt;div onclick=&quot;ishidden(&#39;X&#39;)&quot;&gt;点击此处展开内容&lt;/div&gt;
+&lt;div id=&quot;X&quot; style=&quot;display:none;&quot;&gt;需要折叠的代码或文字放在这里&lt;/div&gt;
+</code></pre>
+
+<p>X 为标记，任意设置，在同一文章中，各不相同即可。</p>
+
+<h3 id="toc_5">搜索引擎优化</h3>
+
+<p>我在简书同步发布文章，搜索结果里简书排在首位，我的独立博客可能找不到，必须要进行 SEO 优化。</p>
+
+<h4 id="toc_6">添加网站地图</h4>
+
+<pre><code>npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中添加如下代码。</p>
+
+<pre><code># hexo sitemap 
+sitemap:
+path: sitemap.xml
+baidusitemap:
+path: baidusitemap.xml
+</code></pre>
+
+<p>配置成功后，会生成 <code>sitemap.xml</code> 和 <code>baidusitemap.xml</code>，前者适合提交给谷歌搜素引擎，后者适合提交百度搜索引擎。其次，在 <code>robots.txt</code> 中添加下面的一段代码：</p>
+
+<pre><code>Sitemap: http://blog.tangxiaozhu.com/sitemap.xml
+Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
+</code></pre>
+
+<h4 id="toc_7">添加蜘蛛协议</h4>
+
+<p><code>robots.txt</code> 放置在 <code>\source</code>  目录下。</p>
+
+<pre><code>#hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://blog.tangxiaozhu.com/search.xml
+
+Sitemap: http://blog.tangxiaozhu.com/sitemap.xml
+Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
+</code></pre>
+
+<p>此协议内容上与其他相比，增加了 <code>Sitemap: http://blog.tangxiaozhu.com/search.xml</code>，当然我也忘了为何增加。</p>
+
+<h4 id="toc_8">限制出站链接</h4>
+
+<p>网络爬虫会在当前页面搜索所有的链接，故有可能跳到别的网站。<code>nofollow</code> 标签是由谷歌领头创新的一个 “反垃圾链接” 的标签，并被各大搜索引擎广泛支持，引用 <code>nofollow</code> 标签的目的是：用于指示搜索引擎不要追踪（即抓取）网页上的带有 <code>nofollow</code> 属性的任何出站链接，以减少垃圾链接的分散网站权重。</p>
+
+<pre><code>npm install hexo-autonofollow --save
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中添加如下代码。</p>
+
+<pre><code>nofollow:
+    enable: true
+    exclude: # 例外的链接，可将友情链接放置此处
+    - exclude1.com
+    - exclude2.com
+</code></pre>
+
+<h4 id="toc_9">主动推送新链接</h4>
+
+<p>解决百度爬虫被禁止访问的问题，提升网站收录质量和速度。</p>
+
+<pre><code>npm install hexo-baidu-url-submit --save
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中添加如下代码。</p>
+
+<pre><code>baidu_url_submit:
+  count: 5 ## 比如3，代表提交最新的三个链接
+  host: blog.tangxiaozhu.com ## 在百度站长平台中注册的域名
+  token:  ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+</code></pre>
+
+<h3 id="toc_10">启用 https</h3>
+
+<p>注册 <a href="https://www.cloudflare.com">CloudFlare</a>，然后添加网站地址（顶级域名），会提示将 DNS 换为：</p>
+
+<pre><code>charles.ns.cloudflare.com
+ivy.ns.cloudflare.com
+</code></pre>
+
+<p>DNSPod 等不能与 CloudFlare 混用，为减少麻烦，一次使用一个 Name Server 比较好。此时等待一段时间 <code>Overview</code> 中状态会变为 <code>Active</code>。然后在 <code>Page Rules</code> 中设置总是使用 <code>https</code>，如图所示。</p>
+
+<p><img src="media/15250922329733/15250924123144.png" alt=""/></p>
+
+<p>但是在搞定以后，却无法变成小绿锁，因为七牛的图床外链是 <code>http</code>，似乎收费或者绑定自定义域名并备案才可以申请使用 <code>https</code>，<a href="https://github.com/Suxiaogang/WeiboPicBed">新浪微博图床</a> 支持返回 <code>https</code> 安全协议的图片地址。但最终我又用回 <code>http</code>，因为不确认微博图床的可靠性，然后最好清除下浏览器缓存。</p>
+
+<p><img src="media/15250922329733/15250924310356.png" alt=""/></p>
+
+<h3 id="toc_11">加速国内访问</h3>
+
+<p>同时部署到 <code>Coding.net</code>，在 DnsPod 设置默认访问 <code>you.coding.me</code>，国外访问 <code>you.github.io</code>即可。</p>
+
+<h2 id="toc_12">深度定制</h2>
+
+<p>也许只适用于 NexT 主题，而深度优化是通用的。所有内容是 NexT 主题 <a href="http://theme-next.iissnan.com/getting-started.html">官方文档</a> 所没有的。</p>
+
+<h3 id="toc_13">每篇文章后面加文字</h3>
+
+<p><code>layout/_macro/post.swig</code> 修改：</p>
+
+<pre><code> {{ post.content }}
+          {% endif %}
+        {% endif %}
+      {% else %}
+        {{ post.content }}
+        
+# 大家好，这里是 NexT 主题下的文章内容底部位置
+# 既然来啦，写点什么这里吧，写上去，所有文章底部都看到哦
+        
+      {% endif  %}
+</code></pre>
+
+<h3 id="toc_14">修改链接文字样式</h3>
+
+<p>将链接文本设置为蓝色，鼠标划过时文字颜色加深，并显示下划线。</p>
+
+<p><code>themes\next\source\css\_common\components\post\post.styl</code> 添加以下代码：</p>
+
+<pre><code>.post-body p a{
+  color: #0593d3;
+  border-bottom: none;
+
+  &amp;:hover {
+    color: #0477ab;
+    text-decoration: underline;
+  }
+}
+</code></pre>
+
+<p>选择 <code>.post-body</code> 是为了不影响标题，选择 <code>p</code> 是为了不影响首页“阅读全文”的显示样式。</p>
+
+<p>参考：<a href="http://www.wuxubj.cn/2016/08/Hexo-nexT-build-personal-blog/">http://www.wuxubj.cn/2016/08/Hexo-nexT-build-personal-blog/</a></p>
+
+<h3 id="toc_15">目录默认全展开</h3>
+
+<p><code>~/themes/next/source/css/_custom/custom.styl</code> 中添加以下代码：</p>
+
+<pre><code>.post-toc .nav .nav-child { display: block; }
+</code></pre>
+
+<p>这样会导致目录太长，以至于在一个页面中无法全部显示。不过并不会影响阅读体验。</p>
+
+<h3 id="toc_16">删除上下篇按钮</h3>
+
+<p><code>themes\next\layout\_macro\post</code></p>
+
+<pre><code> rel=&quot;tag&quot;&gt;#{{ tag.name }}&lt;/a&gt;
+          {% endfor %}
+        &lt;/div&gt;
+      {% endif %}
+
+删除开始    {% if not is_index and (post.prev or post.next) and not navlessPost %}
+        &lt;div class=&quot;post-nav&quot;&gt;
+          &lt;div class=&quot;post-nav-next post-nav-item&quot;&gt;
+            {% if post.next %}
+              &lt;a href=&quot;{{ url_for(post.next.path) }}&quot; rel=&quot;next&quot; title=&quot;{{ post.next.title }}&quot;&gt;
+                &lt;i class=&quot;fa fa-chevron-left&quot;&gt;&lt;/i&gt; {{ post.next.title }}
+              &lt;/a&gt;
+            {% endif %}
+          &lt;/div&gt;
+
+          &lt;div class=&quot;post-nav-prev post-nav-item&quot;&gt;
+            {% if post.prev %}
+              &lt;a href=&quot;{{ url_for(post.prev.path) }}&quot; rel=&quot;prev&quot; title=&quot;{{ post.prev.title }}&quot;&gt;
+                {{post.prev.title}} &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            {% endif %}
+          &lt;/div&gt;
+        &lt;/div&gt;
+结束    {% endif %}
+&lt;/div&gt;
+</code></pre>
+
+<p>注意：利用最上方的代码可以定位，如果后悔可再添加删除的代码。</p>
+
+<h3 id="toc_17">修改授权协议图标</h3>
+
+<p>在 <a href="https://creativecommons.org/about/downloads/">授权协议官网</a> 下载想要的矢量图片，替换即可。</p>
+
+<h3 id="toc_18">添加其他分享</h3>
+
+<p>添加跟我博客同样的分享条，请看 <a href="http://wiki.mob.com/sharesdk-for-web%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90/">官方文档</a>，具体的操作方式请看 <a href="http://https://segmentfault.com/a/1190000004979461">Magicer 的教程</a>。</p>
+
+<pre><code>&lt;!--MOB SHARE BEGIN--&gt;
+&lt;div class=&quot;-mob-share-ui-button -mob-share-open&quot;&gt;分享&lt;/div&gt;
+&lt;div class=&quot;-mob-share-ui&quot; style=&quot;display: none&quot;&gt;
+    &lt;ul class=&quot;-mob-share-list&quot;&gt;
+        &lt;li class=&quot;-mob-share-weibo&quot;&gt;&lt;p&gt;新浪微博&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-tencentweibo&quot;&gt;&lt;p&gt;腾讯微博&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-qzone&quot;&gt;&lt;p&gt;QQ空间&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-qq&quot;&gt;&lt;p&gt;QQ好友&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-renren&quot;&gt;&lt;p&gt;人人网&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-kaixin&quot;&gt;&lt;p&gt;开心网&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-douban&quot;&gt;&lt;p&gt;豆瓣&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-facebook&quot;&gt;&lt;p&gt;Facebook&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-twitter&quot;&gt;&lt;p&gt;Twitter&lt;/p&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;-mob-share-close&quot;&gt;取消&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;-mob-share-ui-bg&quot;&gt;&lt;/div&gt;
+&lt;script id=&quot;-mob-share&quot; src=&quot;http://f1.webshare.mob.com/code/mob-share.js?appkey=你的appkey&quot;&gt;&lt;/script&gt;
+&lt;!--MOB SHARE END--&gt;  
+</code></pre>
+
+<p>注意 <code>appkey</code> 要修改为自己的。</p>
+
+<h2 id="toc_19">一键图床</h2>
+
+<p>适用于两种平台的免费软件，可以一键上传图片到七牛等服务器，同时获取外链。没有提供自动压缩功能实在遗憾，可惜我又不会编程。</p>
+
+<ol>
+<li>macOS 平台：<a href="http://www.lzqup.com/">U 图床</a> &amp; <a href="https://github.com/liufsd/PhotoCloud">PhotoCloud</a> &amp; iPic</li>
+<li>Windows 平台：<a href="http://mpic.lzhaofu.cn/">MPic</a></li>
+</ol>
+
+<h2 id="toc_20">错误信息</h2>
+
+<h3 id="toc_21">LF will be replaced</h3>
+
+<p>Windows 提交命令的时候出现 <code>warning: LF will be replaced by CRLF in XXXXXXXXXXXXXX</code> 的警告。输入命令：</p>
+
+<pre><code>git config --global core.autocrlf false
+</code></pre>
+
+<h3 id="toc_22">无法生成 html</h3>
+
+<p>输入<code>Hexo g</code> 后没有生成 <code>html</code> 文件，此时只需将根目录下 <code>package.json</code> 中 <code>dependencies</code> 的所有项都添加 <code>站点配置文件</code> 的 <code>plugins</code> 下。网上并没有相应的解决办法，知乎上也有提问却并没有回答，我也是不断试错，最后明白有时候手动启用插件才是正途。比如：</p>
+
+<pre><code>plugins: 
+  - hexo
+  - hexo-abbrlink
+  - hexo-baidu-url-submit
+  - hexo-deployer-git
+  - hexo-footnotes
+  - hexo-generator-archive
+  - hexo-generator-baidu-sitemap
+  - hexo-generator-category
+  - hexo-generator-feed
+  - hexo-generator-index
+  - hexo-generator-searchdb
+  - hexo-generator-sitemap
+  - hexo-generator-tag
+  - hexo-renderer-ejs
+  - hexo-renderer-marked
+  - hexo-renderer-stylus
+  - hexo-server
+</code></pre>
+
+<h2 id="toc_23">题外话</h2>
+
+<h3 id="toc_24">标题优化</h3>
+
+<p>将标题、关键字、描述连在一起，固然有利于 SEO 但并不美观，故我拒绝。</p>
+
+<h3 id="toc_25">为何要使用图床</h3>
+
+<p>GitHub 建议 Pages 网站总量不要超过 1 GB，如果超过会发送邮件要求缩减体积，只是你也可以无视这个提醒，但过度使用的话一定会被限制的。GitHub 提供每月 100 GB 的流量。从这个角度来看，使用 GitHub 本身作为图床确实没问题，也即将图片放在 <code>source</code> 下再引用是完全可行的。甚至有人利用 GitHub 开发图床服务。</p>
+
+<p>然而还要考虑这些问题。首先，国内与 GitHub 的连接是比较缓慢的，故会减缓网站访问速度和增加部署时间；其次，总量越来越大，如果网络是计流量的话将难以承担。</p>
+
+
+    
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="15250920685912.html" 
+          title="Previous Post: 删除此电脑中的六个文件">&laquo; 删除此电脑中的六个文件</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="15250918783638.html" 
+          title="Next Post: 我的密码管理心得">我的密码管理心得 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          <div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  //id: '页面 ID', // 可选。默认为 location.href
+  owner: 'heytxz',
+  repo: 'heytxz.github.io',
+  oauth: {
+    client_id: '67dfbd6866509375efbc',
+    client_secret: 'd9e031bd0b5194fe3e199d18f8fdbfe8054ea205',
+  },
+})
+gitment.render('container')
+</script>
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="logo.jpg" /></div>
+            
+                <h1>唐小筑</h1>
+                <div class="site-des"></div>
+                <div class="social">
+
+<a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
+
+
+
+<a target="_blank" class="quora" href="https://www.quora.com/profile/TANG-XIAOZHU" title="Quora">Quora</a>
+<a target="_blank" class="instagram" href="https://www.instagram.com/heytxz/" title="Instagram">Instagram</a>
+<a target="_blank" class="weibo" href="https://weibo.com/u/6502478659" title="weibo">Weibo</a>
+<a target="_blank" class="twitter" target="_blank" href="https://twitter.com/heytxz" title="Twitter">Twitter</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/heytxz" title="GitHub">GitHub</a>
+<a target="_blank" class="email" href="mailto:heytxz@gmail.com" title="Email">Email</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
+                
+              	 </div>
+          	</div>
+
+             
+
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Categories</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="%E5%B0%91%E6%95%B0%E6%B4%BE.html"><strong>少数派</strong></a>
+        
+            <a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html"><strong>每周分享</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>Recent Posts</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="15250509803819.html">关于我：2018</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15246446693895.html">每周分享第 1 期</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15250965271937.html">输入法的选择</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15250972560875.html">SimpRead：简悦你的知识消化历程</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15250970230512.html">Apple Watch 堪为最佳的伴侣</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2018 唐小筑  
+<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
+</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+    
+    
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118380825-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118380825-1');
+</script>
+
+  </body>
+</html>

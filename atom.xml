@@ -4,13 +4,34 @@
   <title><![CDATA[唐小筑]]></title>
   <link href="https://blog.tangxiaozhu.com/atom.xml" rel="self"/>
   <link href="https://blog.tangxiaozhu.com/"/>
-  <updated>2018-04-29T23:16:35+08:00</updated>
+  <updated>2018-04-30T23:13:15+08:00</updated>
   <id>https://blog.tangxiaozhu.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[关于我：2018]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250509803819.html"/>
+    <updated>2018-04-30T09:16:20+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250509803819.html</id>
+    <content type="html"><![CDATA[
+<p>2018 年对我来说是很重要的一年，年初于北京参加工作。空暇之余重新梳理了博客，我觉着自己是一个爱分享的人，但现在不太爱在现实中主动分享，因为遭遇了不少次好心分享却被认为是推销的情形，所以我更多地会在网上与诸位分享，有所需求的人找到这里，大概不会再认为我在推销，或利益导向。</p>
+
+<p>我确定了两个昵称：一个是唐小筑，这是我最初随缘确定的笔名，在 2014 年刚用 Hexo 开设博客时还不是这个昵称，当时钟意的名字都没了，荒废后于 2016 年重开博客，虽然丢失了之前的文章，但是得了这个缘分笔名；另一个还未到公布时候，另一个名号主要分享我的思考，唐小筑偏于技术。因此，我弃用了之前以真实姓名为 ID 的账号，留给跟我同名的大量朋友使用…… </p>
+
+<p>我一向反感占着资源却不使用，比如本科时期经常有占座的，如果所有人都不占座，那每个人到达自习室应该都会有座位可坐。总之，唐小筑也是借着不易的缘分所得，虽然有小姐姐告诉我比较女性化，虽然也真有人是这个名字，虽然唐小筑这个昵称在不少平台也有人使用了…… 英文昵称为 <code>TANG XIAOZHU</code>，实在是懒得再去琢磨英文名字，就按着一般的规则吧。</p>
+
+<p>若要关注我的动态，建议关注 <a href="http://weibo.com/6502478659">微博</a> ，最好同时关注 <a href="https://twitter.com/heytxz">Twitter</a>，我的微博账号因为未知原因已被封禁，按照提示却无法解封，我也从未在微博或其他任何网站发布不当言论，总共微博数也不过数十条，却由于莫名原因导致账号无法使用，微博官方甚至没有告知原因。最后询问客服，被告知冻结原因是点赞太多骚扰了其他用户，已为我恢复账号。总共才赞了五条微博… </p>
+
+<blockquote>
+<p>您当前使用的账号存在异常，请完成以下操作解除异常状态。</p>
+</blockquote>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周分享第 1 期]]></title>
@@ -97,613 +118,954 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Zotero 如何添加文章检索引擎]]></title>
-    <link href="https://blog.tangxiaozhu.com/15249764881993.html"/>
-    <updated>2018-04-29T12:34:48+08:00</updated>
-    <id>https://blog.tangxiaozhu.com/15249764881993.html</id>
+    <title type="html"><![CDATA[输入法的选择]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250965271937.html"/>
+    <updated>2018-04-30T21:55:27+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250965271937.html</id>
+    <content type="html"><![CDATA[
+<p>在 iOS &amp; macOS 上我只使用原声输入法。一是对三方输入法安全性自身的担忧，毕竟它是可以完全记录我们所有输入的信息；二是原声输入法也挺好用，其简洁美深得我心。</p>
+
+<h2 id="toc_0">输入模式</h2>
+
+<h3 id="toc_1">音调输入</h3>
+
+<p><a href="https://www.zhihu.com/question/40883993">https://www.zhihu.com/question/40883993</a>  </p>
+
+<p><img src="media/15250965271937/15250965803715.gif" alt=""/></p>
+
+<h3 id="toc_2">笔画模式</h3>
+
+<p>U</p>
+
+<h3 id="toc_3">拆分输入</h3>
+
+<p>shift + 空格</p>
+
+<h2 id="toc_4">快捷键</h2>
+
+<p>向后删除 <code>fn</code> + <code>del</code></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SimpRead：简悦你的知识消化历程]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250972560875.html"/>
+    <updated>2018-04-30T22:07:36+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250972560875.html</id>
     <content type="html"><![CDATA[
 <blockquote>
-<p>本文被少数派精选：<a href="https://sspai.com/post/40458">点此查看</a></p>
+<p>本文被少数派精选：<a href="https://sspai.com/post/43606">点此查看</a></p>
 </blockquote>
 
-<p>Zotero 是优秀的免费开源个人知识管理工具，一般用于管理学术文献，其以跨 macOS、Windows、Linux 三大平台、强大易用的功能闻名于学术圈。如果你是新生或者还未使用文献管理工具，如果你需要知识管理工具，Zotero 可能是你最好的选择之一。关于 Zotero 的使用教程数不胜数，但本文所讲的问题「如何添加文章（文献）检索引擎」任何其他教程都没有给出解决方案，我也是探索良久才得出解决办法。</p>
+<p>在互联网上如少数派这样排版良好的网站不少，但排版欠佳的也不少，类似 Safari 阅读模式的功能就比较重要了。而且无论排版好差，我们晚间也许更偏爱暗色背景。遇到好文，也许还想保存或备份到 Pocket、OneNote、印象笔记以温习或整理。</p>
 
-<blockquote>
-<p>添加列表中没有的检索引擎，请在浏览器中访问检索引擎网页，并从 Zotero 的“定位”菜单中，选择“添加”。但崩溃的是按照此提示的操作，无法添加检索引擎。</p>
-</blockquote>
+<p>目前，在 Chrome Web Store 中可以检索到的阅读模式扩展程序仅有个位数，如 Just Read、Read Mode、阅读模式等，<a href="http://ksria.com/simpread/">SimpRead（简悦）</a>是其中集大成者，达成「简单阅读，愉悦心情」之目的。</p>
 
-<p><img src="media/15249764881993/15249765544916.png" alt="先放一张效果图"/></p>
+<h2 id="toc_0">源于 Safari 但更胜之的阅读模式</h2>
 
-<h2 id="toc_0">添加教程</h2>
+<p>相较于 Safari 只能调节字体大小、类型、背景颜色和自动进入阅读模式的功能，SimpRead 还可以调整版面布局、生成目录大纲、显示阅读进度，甚至可以 DIY 样式。除了阅读模式，SimpRead 还提供稍后读、聚焦模式，可谓将阅读网页这件事情做向了极致。</p>
 
-<p>从 Zotero <code>首选项</code> -&gt; <code>高级</code> -&gt; <code>文件和文件夹</code> 打开数据库文件 ，再打开控制检索引擎的 <code>locate/engines.json</code> 文件。如下图所示，<code>CrossRef Lookup</code>、<code>Google Scholar Search</code>、<code>Pubget Lookup</code> 是默认的三个检索引擎。那么如何添加新的检索引擎，比如知网？</p>
+<p><img src="media/15250972560875/15250972925636.png" alt="阅读模式"/></p>
 
-<p><img src="media/15249764881993/15249765853476.png" alt="三个默认检索引擎"/></p>
+<h2 id="toc_1">连接生产力工具</h2>
 
-<h3 id="toc_1">以添加知网检索引擎为例</h3>
+<p>万物互联会产生更大的生产力，SimpRead 可以连接 OneNote、印象笔记、Pocket、Google Drive、Dropbox、Kindle 等工具，你可以一键将任意文章保存至这些工具中，然后阅读、加工，乃至消化。除此之外，SimpRead 还可以将文章转为 MD、PDF、PNG、EPUB 格式文件，或分享至微博、Twitter、Telegram 等社交工具。 </p>
 
-<p>可以看到，上图中三对 <code>{}</code> 括号中的代码代表着三个默认的检索引擎。添加其他检索引擎只需添加类似代码。下文所示代码是知网引擎，在指定位置添加半角逗号以后，将代码复制到自己的 <code>engines.json</code> 文件中保存即可。重新打开 Zotero 即可发现知网检索引擎已被添加。</p>
+<p><img src="media/15250972560875/15250973208027.png" alt="各类服务"/></p>
 
-<pre><code>        &quot;_iconSourceURI&quot;: &quot;http://pubget.com/favicon.ico&quot;
-    },   此处要加英文（半角）逗号，然后从下面开始复制并添加文末位置
-    {
-        &quot;name&quot;: &quot;CNKI Search&quot;,
-        &quot;alias&quot;: &quot;CNKI&quot;,
-        &quot;icon&quot;: null,
-        &quot;_urlTemplate&quot;: &quot;http://search.cnki.net/kns/brief/Default_Result.aspx?code=SCDB&amp;kw={z:title}&quot;,
-        &quot;description&quot;: &quot;CNKI&quot;,
-        &quot;hidden&quot;: true,
-        &quot;_urlParams&quot;: [],
-        &quot;_urlNamespaces&quot;: {
-            &quot;rft&quot;: &quot;info:ofi/fmt:kev:mtx:journal&quot;,
-            &quot;z&quot;: &quot;http://www.zotero.org/namespaces/openSearch#&quot;,
-            &quot;&quot;: &quot;http://a9.com/-/spec/opensearch/1.1/&quot;
-        },
-        &quot;_iconSourceURI&quot;: &quot;http://static.wanfangdata.com.cn/wfks/img/logo_new.png&quot;
-    }
-</code></pre>
+<h2 id="toc_2">快捷键</h2>
 
-<p>对于 IP 用户，可直接添加知网、万方、维普等检索引擎，就可以无忧无虑地下载文献。但对于使用学校代理的用户，需要更改 <code>_urlTemplate</code>。添加其他检索引擎事实上也只需重点修改 <code>_urlTemplate</code> 中的搜索网址。</p>
+<p>SimpRead 支持 <a href="https://github.com/Kenshin/simpread/wiki/%E5%BF%AB%E6%8D%B7%E9%94%AE">快捷键</a> 操作，按 <code>s</code> <code>r</code> 键开启或关闭快捷键模式，当此模式开启时，按 <code>,</code> 键可以一览所有快捷键，比如按 <code>o</code> <code>n</code> 键即保存到 OneNote，按 <code>g</code> <code>r</code> 键即保存到 Google Drive，按 <code>m</code> <code>d</code> 键即导出为 MD 文件。借助快捷键简化流程，可轻松愉悦地将文章保存至各种工具或转为各种格式等待消化。</p>
 
-<h3 id="toc_2">如何确定搜索网址</h3>
+<p>⚠️ 只有在英文输入状态下，按 <code>,</code> 键才会显示所有快捷键，其他快捷键中英文输入状态皆可。</p>
 
-<p>那么如何确定 <code>_urlTemplate</code> 中的搜索网址？以万方为例：假设我们在万方搜索 <code>唐小筑</code>，网址是这样的形式 <code>http://s.wanfangdata.com.cn/Paper.aspx?q=唐小筑&amp;f=top</code>，注意到其中 <code>唐小筑</code> 即为我们的搜索目标， 而参数 <code>{z:title}</code> 代表着 Zotero 中条目名称，那么 <code>_urlTemplate</code> 中的搜索网址就应该是：</p>
+<p><img src="media/15250972560875/15250973489919.png" alt=""/></p>
 
-<pre><code>http://s.wanfangdata.com.cn/Paper.aspx?q={z:title}&amp;f=top
-</code></pre>
+<h2 id="toc_3">更多功能等你发现</h2>
 
-<h2 id="toc_3">总结</h2>
+<p>SimpRead 不仅仅是提供类 Safari 阅读模式的工具，其诸多功能可以完成的事情众多。比如我还用来备份文章：五年前我搭了博客，但又遗弃了，本地备份也误删了，导致数十篇博客就此消失。重新开设博客并在少数派投稿时，我就在盘算怎么备份文章… 而 SimpRead 可将文章以 MD 文件形式保存在 Google Drive 等云盘，解决了我的需求。可在 <a href="https://github.com/Kenshin/simpread/wiki">官方维基</a> 详细查看各类功能。</p>
 
-<p>Zotero 是开源应用，每一个功能对应的文件都可自行修改，但大部分人应该跟我一样，几乎不懂编程，但也不要对此恐惧。遇到问题也不妨试着找找这个问题对应功能的控制文件，无论是模仿修改还是向其他人求教都会有所帮助。</p>
+<p><img src="media/15250972560875/15250973751790.png" alt=""/></p>
 
-<p>若对 Zotero 的使用有疑问欢迎讨论……</p>
+<p>总而言之，SimpRead（简悦）青出于蓝而胜于蓝，既在阅读模式上做到了极致，又连接众多生产力工具提高了知识消化率，还可以完成更多的事情，却不显得臃肿。可以说，在这个小领域里，SimpRead 是无可挑剔的五星级工具。</p>
 
 <p><br></p>
 
 <blockquote>
 <p>本文应用版本：<br/>
-Zotero 5.0.34.6 for macOS </p>
+SimpRead 1.1.0 </p>
 </blockquote>
 
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[再谈 Homebrew Cask 在 macOS 上的应用安装]]></title>
-    <link href="https://blog.tangxiaozhu.com/15249731448826.html"/>
-    <updated>2018-04-29T11:39:04+08:00</updated>
-    <id>https://blog.tangxiaozhu.com/15249731448826.html</id>
+    <title type="html"><![CDATA[Apple Watch 堪为最佳的伴侣]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250970230512.html"/>
+    <updated>2018-04-30T22:03:43+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250970230512.html</id>
     <content type="html"><![CDATA[
 <blockquote>
-<p>本文被少数派精选：<a href="https://sspai.com/post/40321">点此查看</a></p>
+<p>本文被少数派精选：<a href="https://sspai.com/post/41832">点此查看</a></p>
 </blockquote>
 
-<p>以新手的视角说说 Homebrew Cask，通过此文，希望同为新手的我们可以更加理解 Homebrew Cask，也更频繁地使用它安装不上架 Mac App Store 的应用，让生活少一些繁琐。</p>
+<p>如果使用 Apple 设备，Apple Watch 堪为最佳伴侣，但也并非必需品，单身贵族一样可以过得好…… 但有个伴侣可能更好。</p>
 
-<p>Homebrew 是一款开源的软件包管理系统，用以简化 macOS 上的软件安装过程，可以类比于 Windows 上软件管家的一键安装。Homebrew 在 2009 年由马克斯·霍威尔（Max Howell）写成，它在 GitHub 上拥有大量贡献者，目前仍处于活跃状态。</p>
+<p>初入 Apple Watch 时，我以为它会成为我的效率工具，这也是劝服自己花钱的最主要理由。为此我特意下载了 OmniFocus 以示决心，不出两周我渐渐明白其实所谓效率工具的确只是我花钱的理由，而非内心对它真实的定位：一个好伙伴，可以帮我做一些事，让我能更懒。</p>
 
-<p>Homebrew Cask 是 Homebrew 的扩展，借助它可以方便地在 macOS 上安装图形界面程序，即我们常用的各类应用。Homebrew 中文含义为自制、自酿酒，Cask 中文含义为桶、木桶，桶装酒是一种成品，也就是说每一个 <code>homebrew cask</code> 都可以直接使用的，比如 Atom 的 Cask 名称为 atom，那么就可以使用如下命令安装：</p>
+<p><img src="media/15250970230512/15250971106823.png" alt="OmniFocus" class="mw_img_center" style="width:650px;display: block; clear:both; margin: 0 auto;"/></p>
 
-<pre><code>brew cask install atom
-</code></pre>
+<p>运动，Apple Watch 主要宣传的功能之一，也的确予人欣悦。开通一号多端业务后，AW 3 就成了 iPhone 分身，无需再携带手机，只需手腕处的 AW 跑步、游泳就不会再漏掉电话，也能以更舒适的方式监测运动，搭配 AirPods 听着音乐也成了更赏心悦目的美事。单独的 Apple Watch 像是龙游浅水，接打电话、听音乐均外放的话，不仅太傻乎，也可能太耗电。对于 Apple 设备，AirPods 无愧于最具明天属性的无线蓝牙耳机，与 Apple Watch 搭配更是天作之合。  </p>
 
-<p><img src="media/15249731448826/15249752711518.gif" alt="from homebrew-cask"/></p>
+<p><img src="media/15250970230512/15250971322878.png" alt="Running" class="mw_img_center" style="width:650px;display: block; clear:both; margin: 0 auto;"/></p>
 
-<p>甚至也可以提交新的 Cask，比如假设有桌面客户端少数派，则用 <code>brew cask create sspai</code> 创建新的名称为 <code>sspai</code> 的 Cask，当然还要提供官网下载链接、官方主页、应用版本等信息，可以参照 <a href="https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md">官方教程</a>，此处就不再细说。</p>
+<p><img src="media/15250970230512/15250971479550.jpg" alt="Swimming" class="mw_img_center" style="width:650px;display: block; clear:both; margin: 0 auto;"/></p>
 
-<h2 id="toc_0">安装 Homebrew Cask</h2>
+<p>运动是主要的生活方式，一般每天一次，但并不是我最频繁的行动：</p>
 
-<p>如未安装过 Homebrew 可参照 <a href="https://brew.sh/index_zh-cn.html">官网方式</a> 安装：</p>
+<p>① 在繁忙时候我常需要在特定时间起床，现在终于有了 Apple Watch 默默叫醒我，而不必影响到室友，还可以设定睡眠监测。设定闹钟提醒其他事项的体验也怡人；</p>
 
-<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-</code></pre>
+<p>② 之前借助 iPhone 三方应用解锁 Mac 的体验并不好，而 AW 可以无缝实现；</p>
 
-<p>将以上命令粘贴至终端中执行。然后执行 <a href="https://caskroom.github.io/">命令</a> <code>brew tap caskroom/cask</code> 获取 Homebrew Cask。</p>
+<p>③ 番茄工作法可以随时进行、打断或停止，远比手机、电脑来得方便；</p>
 
-<p>如果有错误提示，可在终端中执行 <code>xcode-select --install</code>，在弹出的窗口选择 Install 以安装 Command Line Tools，路径为 <code>/Library/Developer/CommandLineTools</code>，如要卸载，删除此文件夹即可。当然也可以到 Mac App Store 安装体积庞大的 Xcode。</p>
+<p>④ 听音乐、聊微信、打电话等，连接着 AirPods 体验更美好。</p>
 
-<h2 id="toc_1">如何使用 Homebrew Cask</h2>
-
-<pre><code>brew cask install 应用名称
-brew cask install &lt;甲应用名称&gt; &lt;乙应用名称&gt; &lt;丙应用名称&gt;
-</code></pre>
-
-<p>前文已经讲过这个安装命令，但一个问题是：如何确认它支持所要安装的应用？</p>
-
-<pre><code>brew cask search 关键字
-</code></pre>
-
-<p>比如要确定是否支持应用 gooooooogle，可搜索关键字 goo，即可显示所有包含 goo 的应用。如果不加关键字，会显示出所有支持的应用名称。</p>
-
-<p><img src="media/15249731448826/15249753281052.jpg" alt="" class="mw_img_center" style="width:500px;display: block; clear:both; margin: 0 auto;"/></p>
-
-<p>由于 Homebrew Cask 还不支持更新应用，故建议使用应用自带的方式进行更新。欲要查看其他命令，可在终端执行 <code>brew cask help</code> 以显示所有 commands，比如发现查看应用 Cask 信息的命令是 <code>info</code>，则在终端执行 <code>brew cask info 应用名称</code> 即可显示该应用信息。 </p>
-
-<p><img src="media/15249731448826/15249753582673.jpg" alt="" class="mw_img_center" style="width:500px;display: block; clear:both; margin: 0 auto;"/></p>
-
-<h2 id="toc_2">Homebrew Cask 原理</h2>
-
-<p>之前，是用软链接的方式将应用链接到 Application 文件夹，有人说这样的方式会导致 Spotlight 无法检索到。但现在，它是将应用直接移动到 Application 文件夹，这与我们自己去官网下载应用再安装是完全一致的，后续更新或卸载也按平常的方式即可。</p>
-
-<p>当然，也可以用 <code>brew cask uninstall 应用名称</code> 的方式，这种方式才会删除路径 <code>/usr/local/Caskroom</code> 中保留的应用信息文件，这样当我们用命令 <code>brew cask list</code> 查询已安装列表时，已卸载的应用才不会仍显示。也就是说，如果按照平常的方式，比如直接移到废纸篓，那么还需手动删除 Caskroom 中的应用信息文件。当然，不删除也没啥影响，因为一般没必要查看已安装列表，已安装应用在 Launchpad 中查看就好。</p>
-
-<h2 id="toc_3">总结</h2>
-
-<p>我们可以查阅 <a href="https://github.com/caskroom/homebrew-cask/blob/master/USAGE.md">官方使用说明</a> 以了解 Homebrew Cask 命令别名、高级搜索语法等用法。通过这种方式安装应用，与我们平时的方式安装应用，两者除了方式没有任何其他区别，那为何不尝试尝试这种轻松的方式呢？只一句命令，没有那些点击，没有那些拖动…… Homebrew Cask 让非 Mac App Store 应用的安装更轻松，若你也想以更轻松的方式安装和更新 Mac App Store 应用，请参阅 <a href="https://sspai.com/post/40382">终端上的 Mac App Store「mas」让应用的安装与更新无比轻松</a>。</p>
-
-<p><br></p>
-
-<blockquote>
-<p>本文应用版本：<br/>
-Homebrew v1.3.1<br/>
-Homebrew-Cask v1.3.1</p>
-</blockquote>
+<p>简而言之，简单的任务 Apple Watch 都可以完成，体验比手机更美好，频繁看手机的习惯也变成了看手表。然而，它并非不可或缺的伴侣，钱花在不可或缺的事物上会更好，但在可或缺的事物中，Apple Watch 可能最不可或缺。</p>
 
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[终端上的 Mac App Store「mas」让应用的安装与更新无比轻松]]></title>
-    <link href="https://blog.tangxiaozhu.com/15243553635986.html"/>
-    <updated>2018-04-22T08:02:43+08:00</updated>
-    <id>https://blog.tangxiaozhu.com/15243553635986.html</id>
+    <title type="html"><![CDATA[设备与系统的选择]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250963823631.html"/>
+    <updated>2018-04-30T21:53:02+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250963823631.html</id>
+    <content type="html"><![CDATA[
+<p>理性的发展使越来越多的人也不再争论 Windows PC &amp; MacBook、iPhone &amp; Android 或 Windows &amp; macOS &amp; Linux、iOS &amp; Android 之间的优劣，实际上双方各有优势，一些人也就使用两种或以上的系统或设备。</p>
+
+<p>关于电脑，目前我认为最好的选择是 MacBook &amp; Surface，虽然新 MacBook Pro 键盘两边的密集孔有些眨扎眼，Surface Pro 在颜值细节上还有许多提升。关于手机，iPhone &amp; 坚果 Pro 在颜值上我最满意。</p>
+
+<p>我有安卓手机，但为什么不作为主要使用设备？因为安卓的安全性太差，几乎任何应用都可以安装，即使是商店的应用也没有极其专业的团队进行检查。使用安卓的过程中，我曾禁止微博访问通讯录，但发现它还能访问，百思不解，也就不敢再同步通讯录。iOS 可以在最大程度上保证应用权限被限定在允许范围内，隐私也可以得到更高的保护。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[墙内开花墙外香，也许是最优秀的全能型 PDF 应用]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250523863337.html"/>
+    <updated>2018-04-30T09:39:46+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250523863337.html</id>
     <content type="html"><![CDATA[
 <blockquote>
-<p>本文被少数派精选并推荐至首页：<a href="https://sspai.com/post/40382">点此查看</a></p>
+<p>本文被少数派精选：<a href="https://sspai.com/post/38950">点此查看</a></p>
 </blockquote>
 
-<p>以下这 3 点是不是你在用 Mac App Store 时想要的？</p>
+<p>谈到 macOS 上的 PDF 应用，大概都会想起预览、Skim 及其衍生品、Adobe Acrobat，以及声名远扬的 PDF Expert，但你也许不曾注意到一款墙内开花墙外香的全能型 PDF 应用：PDFelement，由 万兴科技（Wondershare）出品。在 <a href="https://www.wondershare.cn/">万兴科技中国官网</a> 可以查看全世界用户的热力图。</p>
 
-<ol>
-<li>不想再忍受 Mac App Store 缓慢的打开速度； </li>
-<li>批量安装或更新 Mac App Store 应用；</li>
-<li>快速切换 Mac App Store 账号。</li>
-</ol>
+<p>不夸张地讲，PDFelement 不逊色于任何我们所想起的 PDF 应用，它功能全面但每一项又如此专业，堪称匠心独具的工具和艺术品。最初 Wondershare 家的 PDF 相关作品是各自独立的，15 年才将所有功能融合并推出 All-in-One 应用 PDFelement 5，于 17 年 4 月推出新应用，也即让我心血来潮写测评的 PDFelement 6，这是一款令我无限接近满意的作品。</p>
 
-<p>如果是的话，你必须得试试终端上的 Mac App Store —— <a href="https://github.com/mas-cli/mas">mas</a>。</p>
+<blockquote>
+<p>PDFelement 6 <code>Pro</code> = 综合性 PDF 工具套装 = PDF 阅读器 + PDF 注释器 + PDF 编辑器 + PDF 转换器 + PDF 创建器 + 表单填写和创建 + <code>OCR 字符识别</code> + <code>数据提取</code> + <code>批量处理</code> + 更多……</p>
+</blockquote>
+
+<p><img src="media/15250523863337/15250525241605.png" alt=""/></p>
 
 <span id="more"></span><!-- more -->
 
-<h2 id="toc_0">安装</h2>
+<h2 id="toc_0">Chapter 1 颜值是第一生产力</h2>
 
-<p><a href="https://brew.sh/index_zh-cn.html">Homebrew</a> 是安装 mas 的最好方式，在只要把以下代码复制到终端（Terminal）后运行即可：</p>
+<p>PDFelement 的首页相当简约，元素排版很难挑剔出毛病，贴心的是鼠标移到六个板块上还会自动放大并显示解释。但有处女座心的我还是略有不满，首页最上部与六个板块的文字「中英文」之间均无空格。</p>
 
-<pre><code>brew install mas
-</code></pre>
+<p><img src="media/15250523863337/15250525636736.gif" alt="" class="mw_img_center" style="width:650px;display: block; clear:both; margin: 0 auto;"/></p>
 
-<p>如未安装过 Homebrew 可参照 <a href="https://brew.sh/index_zh-cn.html">官网命令</a> 安装：</p>
+<p>在极短的时间内打开一份 357 页的书籍，可以看到 PDFelement 的默认阅读界面尽可能地节约了屏幕空间，此时指针默认是手型，方便快速拖拽页面。需要选中文字以执行复制或注释功能时，点选菜单栏「选择」或「注释」即可。在 PDFelement 5 中默认界面会自动显示右侧栏，影响了阅读体验，这也是我之前不写测评的原因之一。</p>
 
-<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-</code></pre>
+<p><img src="media/15250523863337/15250525927958.png" alt=""/></p>
 
-<h2 id="toc_1">查询与安装应用</h2>
+<h2 id="toc_1">Chapter 2 全面且专业的众多功能</h2>
 
-<p>mas 作为终端上的 Mac App Store，其劣势是无法随意浏览众多应用、没有编辑推荐、没有排行榜… 但也因为不用加载这么多东西，甚至不用加载图片，它才有着惊人的速度。</p>
+<p>PDFelement 的菜单栏中有八个选项：手型、选择、编辑、页面、注释、表单、保护、转换，每一个选项都包含着大量的实用功能，分八点一一介绍，第九点是补充的左侧边栏功能。</p>
 
-<p>Mac App Store 中每一个应用都有自己的应用识别码（Product Identifier），这可以在每个应用的链接中看到。mas 就是根据 Product Identifier 安装与更新应用，也提供了查询应用 ID 的命令。</p>
-
-<pre><code>由 1Password 的链接可知其识别码为 443987910
-https://itunes.apple.com/cn/app/1password/id443987910?mt=12
-</code></pre>
-
-<p>除了查看链接，有以下 x 种方法获取应用的识别码：</p>
+<p><img src="media/15250523863337/15250526101187.png" alt=""/></p>
 
 <ol>
-<li>用命令 <code>mas search 关键词</code> 查询应用。比如在终端中执行 <code>mas search xcode</code>，大概 1 秒就显示了结果；</li>
-<li>用命令 <code>mas list</code> 查询已安装应用及其识别码。</li>
+<li>手型：快速拖拽；</li>
+<li>选择：执行复制、各种格式的标注功能，也可以添加签章或签名；
+
+<ul>
+<li>标注功能除了包含常用的高亮、下划线等，还可以添加任意图形。文本框、文本标注、文本注释是形式不同的标注功能，文本框是实体背景，文本注释是透明背景，本文标注是带箭头的文本框；
+<img src="media/15250523863337/15250526394427.png" alt=""/></li>
+<li>铅笔是鼠标手写注释功能，遗憾的是目前并不支持触控板手写，但实际上平时也很少用到。签名也暂时不支持，但可以通过图像或摄像头导入手写签名。</li>
+</ul></li>
+<li>编辑： 这是 PDFelement 的一大核心优势，编辑或添加任何内容、提取图片、裁剪、添加水印、改变背景、添加页眉页脚……几乎无所不能；
+
+<ul>
+<li>编辑功能可以使我们编辑任何内容，比如修改字体类型、大小、颜色；图片提取功能让我们能轻松获取任何 PDF 文档的插图；<p>
+<img src="media/15250523863337/15250527063592.png" alt=""/></li>
+<li>编辑模块的功能太多，我觉着还是自己体验为好。OCR 功能将在后面介绍。</li>
+</ul></li>
+<li>页面：删除、插入或替换 PDF 文档任意页，或者将任意页提取出来合并成新文档；</li>
+<li>注释：这与「选择」是完全一致的，为什么这样设计？因为也许有些人是想选中文字执行复制等操作，而有些人是想直接注释，但这两个目的要执行的操作相似性很高；</li>
+<li>表单：我本人几乎不会用到这个功能；</li>
+<li>保护：标记密文功能让我们可以将涉及隐私等文字用纯色块遮盖，也有添加或移除口令的功能；</li>
+<li>转换：可以转为 Word、Excel、PowerPoint、图像、ePub、纯文本、Pages、Html、RTF；</li>
+<li>左侧边栏：可以编辑书签（目录）并实现准确的定位；注释的显示相当友好，之前试用 Foxit Reader 时其注释中并不直接显示高亮、下划线等标注的文本；搜索功能也有了改善，搜索结果以页码的方式并列展示，并且可以将选定的搜索结果标记为密文。PDFelement 并不支持如 PDF Expert 那般的多 PDF 文件搜索功能，但我个人也不认为这个功能是必不可少的，至少我从来没有遇到过类似的需求……</li>
 </ol>
 
-<p><img src="media/15243553635986/15243558670489.png" alt="mas search Xcode &amp; mas list"/></p>
+<h2 id="toc_2">Chapter 3 强大的 OCR 能力</h2>
 
-<p>安装应用只需知道此应用的识别码就可以安装具体软件。比如安装 Bear，流程如下：</p>
+<p>PDFelement 安装包不到 30 MB，如此小的体量却有那样多的功能，这实在令我赞叹。可要想识别扫描文档则需安装 OCR 插件，大小约 500 MB，但我认真地告诉诸位：这完全值得。</p>
 
-<ol>
-<li>由命令 <code>mas search bear</code> 得知应用 Bear 的识别码为 1091189122；</li>
-<li>第二步：使用命令 <code>mas install 1091189122</code> 安装。</li>
-</ol>
+<p><img src="media/15250523863337/15250528529919.png" alt=""/></p>
 
-<p>注意：</p>
+<p>OCR（光学字符识别）功能支持简繁、英、法、德、意、日、韩等 26 种语言，总体来看转换效果相当不错。以《<a href="https://onedrive.live.com/?id=F5B0090663FEEADA%21828&amp;cid=F5B0090663FEEADA">如何阅读一本书</a>》为例。</p>
 
-<ol>
-<li>应用必须在商店登陆账号的已购列表中，因为命令行无法完成「购买」这个操作；</li>
-<li>对于新上架的应用，可能无法查询到其识别码。因为 mas 的查询列表在缓存文件中，目前尚不清楚其列表更新周期，但若由其他途径（如应用链接）得知新上架应用识别码，仍可正常安装。</li>
-</ol>
+<p><img src="media/15250523863337/15250528692341.png" alt=""/></p>
 
-<p><img src="media/15243553635986/15243580714614.jpg" alt=""/></p>
+<p>从实际阅读效果上看，扫描文档经 OCR 转换后文字更清晰了，但截图似乎没有凸显这一点。中英文的识别都基本没有问题，但有一处英文转换错误，原因是这处英文的字体并不是常用的。可以确定的是，文献以及绝大多数正式文档都能被 OCR 较完美地转换为可编辑的文档。</p>
 
-<p>我们不仅可以使用命令行安装单个应用，还可以批量安装应用，只需在应用识别码之间加上空格：</p>
+<h2 id="toc_3">Chapter 4 简单的总结</h2>
 
-<pre><code>mas install 甲应用识别码 乙应用识别码 丙应用识别码
-</code></pre>
+<p>第一章的配图展示了 PDFelement 还有批量处理和 PDF 模版库功能。批量处理指可以批量转换、去水印、提取数据等，这里着重介绍下 <code>批量提取数据</code> 功能，假设某天因为社团或公司工作，我们需要将大量报名表中信息整合到 Excel 中，人工处理也许需要数天，但使用批量提取数据操作可在一杯咖啡的时间完成这类工作；PDF 模版库这个功能使 PDFelement 成为能保持最初格式的 Word，在官网有大量的 PDF 英文模版。</p>
 
-<h2 id="toc_2">更新应用</h2>
+<p>总的来讲，PDFelement 不啻于一款优秀的 PDF 应用，她还是为我们解决各类 PDF 相关问题的伙伴。尤其是 PDFelement 6，我拜倒在她令我惊艳的颜值和功能的石榴裙下，PDFelement 5 就别想有这种待遇……</p>
 
-<p>如果要更新所有 Mac App Store 应用，只需终端执行一句命令：</p>
+<p>其实 PDFelement 还支持 iOS 与 Windows 平台，并且都很优秀。iOS 客户端支持 PDF 编辑、注释、拍照扫描、转换格式等操作，但其似乎还未来得及与桌面版完全同步；Windows 客户端的界面和 Office 相似度很高，功能和 macOS 基本一致。</p>
 
-<pre><code>mas upgrade
-</code></pre>
-
-<p>如果更新特定应用，需要使用命令 <code>mas outdated</code> 先查询待更新列表以获取应用识别码，再更新一个或几个应用：</p>
-
-<pre><code>mas upgrade 甲应用识别码
-mas upgrade 甲应用识别码 乙应用识别码 丙应用识别码
-</code></pre>
-
-<p><img src="media/15243553635986/15243581331434.jpg" alt=""/></p>
-
-<p>但要注意，mas 无法用于系统更新，即只能更新显示在 Mac App Store 中的应用。但可以使用命令 <code>softwareupdate -l</code> 获取系统更新列表，然后使用 <code>sudo softwareupdate -iva</code> 进行更新。</p>
-
-<h2 id="toc_3">切换 Mac App Store 账号</h2>
-
-<p>这是多区账号拥有者的福音，我们终于可以更方便地下载和更新其他区的应用了。如果忘记了当前帐号，使用命令 <code>mas account</code> 查询。可用命令 <code>mas signout</code> 退出当前帐号，并按如下命令登陆新的账号：</p>
-
-<pre><code>mas signin Apple ID &quot;密码&quot;
-如：mas signin mas@example.com &quot;mypassword&quot;
-</code></pre>
-
-<p>也可以设置命令别名以得到更爽快的体验，在隐藏文件 <code>.bashrc</code> 中添加以下内容：其路径为 <code>~/.bashrc</code>，同时按 <code>shift + command + .</code> 可显示隐藏文件。</p>
-
-<pre><code>alias masus=&#39;mas signout &amp;&amp; mas signin myusappleid &quot;mypassword&quot;&#39;
-alias mascn=&#39;mas signout &amp;&amp; mas signin mycnappleid &quot;mypassword&quot;&#39;  
-alias mas?=&#39;mas account&#39; 
-</code></pre>
-
-<p>需重新打开终端以载入设置，那么在终端中执行 <code>masus</code> 即可切换到美区帐号，<code>mascn</code> 即切到中区，<code>mas?</code> 可查询目前登陆帐号。但如果开启了双重认证，可能遇到错误信息：</p>
-
-<pre><code>Error: Sign in failed: The operation couldn’t be completed. (mas.MASError error 1.)
-</code></pre>
-
-<p>关闭双重认证则一切正常，但并不建议这样做，可以考虑关闭非重要帐号的双重认证，但 iOS 10.3 或 macOS Sierra 10.12.4 及更高版本中创建的某些帐户，<a href="https://support.apple.com/zh-cn/HT204915">无法关闭双重认证</a>。mas 团队正在着手处理开启双重认证无法登陆的问题，可去 <a href="https://github.com/mas-cli/mas/issues/56">督促一番</a>。</p>
-
-<p>在问题解决之前该怎么办：在 Mac App Store 中登陆帐号，然后重新打开终端（Terminal）即可。</p>
-
-<h2 id="toc_4">总结与美好的设想</h2>
-
-<p>我们可以在 GitHub 上的 <a href="https://github.com/mas-cli/mas">mas 项目</a> 查看官方使用说明，或以 <code>mas help</code> 查看所有命令及其说明。之前介绍过 <a href="https://sspai.com/post/40321">Homebrew Cask 如何安装应用</a>，它的作用对象是非 Mac App Store 应用，而 mas 的对象是 Mac App Store 应用，两者互补无憾矣。</p>
-
-<p>也许我们可以考虑如何合并两者，我觉着至少 <code>查询与安装应用</code> 阶段是可以融合的，<code>brew cask search 关键字</code> 与 <code>mas search 关键字</code> 这两个命令合为 <code>cmas search 关键字</code>，输出的结果可以是如下样子，而安装命令 <code>cmas install 应用识别码或应用名称</code> 关键字如果是应用识别码则从 mas 下载安装，如果是应用名称则从官网下载安装。</p>
-
-<pre><code>cmas search pai  
-sspai 6666666 (mas &amp; NMAS)  
-ddpat 9999999 (mas Only)  
-onlypai (NMAS Only)  
-</code></pre>
-
-<!-- 谢谢让 [JailbreakHum](https://sspai.com/user/681230/updates) 忙碌的人，谢谢 JailbreakHum 因忙碌而告诉我这个超级棒的技巧，谢谢 JailbreakHum 的指导…… -->
-
-<p><br></p>
-
-<blockquote>
-<p>本文应用版本：<br/><br/>
-1. mas v1.3.1：mas 是一个活跃项目，可以 <a href="https://github.com/mas-cli/mas/releases">点此查看</a> 其最新版本更新信息；<br/><br/>
-2. Homebrew v1.3.0：可以 <a href="https://github.com/Homebrew/brew/releases">在此</a> 查看其最新版本更新信息。</p>
-</blockquote>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[PDF 应用评测：Adobe Acrobat VS PDF Expert VS PDFelement]]></title>
-    <link href="https://blog.tangxiaozhu.com/15249605684127.html"/>
-    <updated>2018-04-29T08:09:28+08:00</updated>
-    <id>https://blog.tangxiaozhu.com/15249605684127.html</id>
-    <content type="html"><![CDATA[
-<blockquote>
-<p>本文被少数派精选：<a href="https://sspai.com/post/40293">点此查看</a></p>
-</blockquote>
-
-<p>我一直有考虑如何选择一个无可挑剔的 PDF 应用，这也许是一个强迫症的自我修养，因为总想以一个优美、简洁、全能的应用完成作业。如果你觉得 CAJ Viewer 等即能满足需求，而且没有感到任何不妥，那么本文可能并不适合您。</p>
-
-<p>经过一番思考，我选择了 Adobe Acrobat、PDF Expert、PDFelement 三者进行横向分析。Adobe Acrobat 是鼻祖，谈到 PDF 就不能绕过它；PDF Expert 是 macOS 上最受欢迎的 PDF 应用，其为 Mac App Store 编辑精选、2015 年最佳应用、收费应用冠军；PDFelement 是我 <a href="https://sspai.com/post/38950">之前推荐</a> 的全能型应用，其开发者最近向我约了一份稿《Adobe Acrobat VS PDFelement》并愿意支付稿费，我愉快地接受了约稿，但拒绝了稿费，虽然 PDFelement 是我欣赏的应用，也解决了我遇到的一些问题，可我写文章一向是基于个人喜好的公正，暂时不需要稿费来改善生活。当然我很乐意再次推荐 PDFelement，因为新版 PDFelement 是参与活动所赠……</p>
-
-<p>本文以两份中文 PDF 文件为例，平台为 macOS，其中 Adobe Acrobat、PDFelement 也提供 Windows 版本。福昕阅读器 macOS 版本的功能较为基础，在 Windows 下虽然很强大，比如有一些插件，但因其个人用户免费的策略也难免会有欠缺美感的广告，这也是福昕没有入选本文的原因，其他应用如预览、Skim 等要么功能太基础，要么美感不够，如果还有别的令人惊艳的 PDF 应用还望告知。本文选取的应用均是个人认为的代表之作，目的是彻底解决 PDF 的相关问题，也让自己少一个密切关注的问题。 </p>
-
-<h2 id="toc_0">价格</h2>
-
-<p>免费的优秀应用实在太少，绝大多数 PDF 免费应用更是让我难以忍受，较好的免费应用比如福昕也有致命缺点，比如 macOS 版无法编辑 PDF。原来我倾向于使用免费应用，现在倾向于使用相对便宜的收费应用，如 Parallel Desktop 这类难以替代的应用也只能忍痛掏钱。Adobe Acrobat、PDF Expert、PDFelement 在低需求下可以相互替代，但这三者的原本定价都不便宜，还好有中国特价、周年庆、教育优惠、代理商城优惠，也可关注赠码活动。比如 PDF Expert 官方十周年五折优惠与教育优惠叠加后约 101 元，这只是特殊时期的价格。</p>
-
-<p><strong>Adobe Acrobat</strong> <br/>
-<a href="https://acrobat.adobe.com/cn/zh-Hans/pricing/pricing.html">官网价格</a>：标准版约 ¥ 2018 &amp; 专业版约 ¥ 3030<br/>
-<a href="http://shop.adobe.com/store/adbesttw/list/categoryID.63641600/ThemeID.30575500?id=HomeOffersPage&amp;SiteID=adbesttw">官网教育优惠</a>：专业版约 ¥  1077</p>
-
-<p><strong>PDF Expert</strong> <br/>
-Mac App Store 价格：¥ 396<br/>
-<a href="https://pdfexpert.com/zh/store">中国官网特价</a>：¥ 139.99<br/>
-<a href="https://item.taobao.com/item.htm?id=539462360053">数码荔枝商城</a>：¥ 129</p>
-
-<p><strong>PDFelement</strong> <br/>
-Mac App Store 价格：标准版 ¥ 198 &amp; 专业版 ¥ 648<br/>
-<a href="https://pdf.wondershare.cn/store/buy-pdfelement-mac.html">中国官方特价</a>：标准版 ¥ 199 &amp; 专业版 ¥ 299<br/>
-<a href="https://item.taobao.com/item.htm?id=549281178145">数码荔枝商城</a>：标准版 ¥ 129 &amp; 专业版 ¥ 199 <br/>
-<a href="https://turnpage.com/wondershare-pdfelement">翻页软件商城</a>：标准版 ¥ 129 &amp; 专业版 ¥ 199</p>
-
-<p>PDF Expert 也有教育优惠，但还没有中国官网便宜，在中网并没有教育优惠入口。PDFelement 也可以申请批量教育优惠许可证，我所使用的大多数应用，其开发者都提供教育优惠（独立开发者一般没有），通常优惠五折，甚至免费。而且，虽然我所购应用均为自费，但再给我一次机会的话，我会考虑找导师报销…… 相当不满意目前的报销制度，比如不能开发票的小东西，积少成多也是一笔巨款。如果我做导师，会想办法解决学生的一切学术所需之费用，包括正版软件、无法开具发票的物品与部分话费等。</p>
-
-<h2 id="toc_1">界面</h2>
-
-<p>在界面上，三者的左面板有些区别。对 Adobe Acrobat 与 PDFelement 来说，书签是 PDF 的目录大纲；在 PDF Expert 中书签是自定义的书签，点击页面右上角的标志即可添加书签，而大纲才是目录大纲，这对阅读书籍类 PDF 相当友好。</p>
-
-<p><img src="media/15249605684127/15249735904213.jpg" alt=""/></p>
-
-<h2 id="toc_2">功能</h2>
-
-<p>Adobe Acrobat、PDF Expert、PDFelement 三者安装完毕后的大小分别约为 990 MB、37 MB、31 MB（可选 OCR 插件约为 550 MB），Acrobat 虽然庞大也确实有其强大之处。 Adobe Acrobat 可以说是超级型 PDF 应用，PDF Expert 是通用型 PDF 应用，PDFelement 是全能型 PDF 应用。</p>
-
-<p>我认为的核心功能：① 阅读与批注；② 搜索；③ 可编辑；④ OCR；⑤ 云服务。在「独到之处」部分也会阐述令人耳目一新的功能，不过倒是可以先介绍 PDFelement 提供的 <a href="https://pdf.wondershare.com/templates/">PDF 模版库</a>，此处有大量免费与收费模版并划为数十分类，其中最受欢迎的简历模版还确实挺好看。</p>
-
-<h3 id="toc_3">阅读与批注</h3>
-
-<p>在此方面，Acrobat 的表现最差，PDF Expert 的表现最令我满意，PDFelement 的表现中规中矩：</p>
-
-<p>① 只有 Acrobat 不支持多标签页；<br/>
-② 只有 Acrobat 不能方便地使用不同颜色批注，即使将「注释」工具打开也较为不便；<br/>
-③ 放大倍数较大时，PDFelement 滑动页面的流畅度下降。</p>
-
-<p>批注功能没有多少可说的内容，三者的差别较小，阅读体验方面是我关注的重点。使用快捷键快速调整视图，这是阅读方面不可或缺的重要功能，而三者的视图快捷键也略有不同：</p>
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center">缩放</th>
-<th style="text-align: center">Acrobat</th>
-<th style="text-align: center">PDF Expert</th>
-<th style="text-align: center">PDFelement</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align: center">放大</td>
-<td style="text-align: center">⌘+</td>
-<td style="text-align: center">⌘+</td>
-<td style="text-align: center">⌘+</td>
-</tr>
-<tr>
-<td style="text-align: center">缩小</td>
-<td style="text-align: center">⌘-</td>
-<td style="text-align: center">⌘-</td>
-<td style="text-align: center">⌘-</td>
-</tr>
-<tr>
-<td style="text-align: center">实际大小</td>
-<td style="text-align: center">⌘1</td>
-<td style="text-align: center">无</td>
-<td style="text-align: center">⌘1</td>
-</tr>
-<tr>
-<td style="text-align: center">适合宽度</td>
-<td style="text-align: center">⌘2</td>
-<td style="text-align: center">⌘9</td>
-<td style="text-align: center">⌘2</td>
-</tr>
-<tr>
-<td style="text-align: center">适合高度</td>
-<td style="text-align: center">⌘3</td>
-<td style="text-align: center">无</td>
-<td style="text-align: center">⌘3</td>
-</tr>
-<tr>
-<td style="text-align: center">适合页面</td>
-<td style="text-align: center">⌘0</td>
-<td style="text-align: center">⌘8</td>
-<td style="text-align: center">⌘4</td>
-</tr>
-</tbody>
-</table>
-
-<p>当然也有些独特功能更好地服务了阅读的目的，这在细节上改善了阅读体验，也带给我惊喜，只不过 PDFelement 在此方面仅有基础功能。</p>
-
-<p>Acrobat：<br/>
-① 重排（⌘4），根据应用界面大小重新排列 PDF 内容，类似于多看阅读的重排效果；<br/>
-② 比较文档：可显示 PDF 两个版本之间的差异，可自定义选项（如页数、内容类型）来显示比较结果。</p>
-
-<p>PDF Expert：<br/>
-① 拆分视图（水平 ⌘5；垂直 ⌘6）：在同一页面阅览两份 PDF 文档，以左右或上下（水平或垂直）的布局；<br/>
-② 缩放到 100%（⌘0）：个人认为这是一个贴心的小功能；<br/>
-③ 主题：有日间（⌥⌘W）、纸质（⌥⌘S）、夜间（⌥⌘N）三种模式。</p>
-
-<h3 id="toc_4">搜索</h3>
-
-<p>搜索功能也是服务于阅读的，但考虑到这是一项关键功能，故而单独说道说道。</p>
-
-<p>Adobe Acrobat、PDF Expert、PDFelement 三者中仅 PDFelement 不支持「多文档」搜索，PDF Expert 支持搜索所有打开的 PDF 文件，而 Acrobat 甚至支持搜索指定目录下的所有 PDF 文件。但在搜索时，Acrobat 滑动页面的操作变慢；PDFelement 搜索完毕才能进行操作，这是一个亟待解决的问题；而 PDF Expert 可如常使用。</p>
-
-<p><img src="media/15249605684127/15249746935309.png" alt="Adobe Acrobat" class="mw_img_center" style="width:300px;display: block; clear:both; margin: 0 auto;"/></p>
-
-<h3 id="toc_5">编辑</h3>
-
-<p>这部分没有太多可说的，三者的编辑体验类似，但 Adobe Acrobat 与 PDF Expert 都遇到了问题。Acrobat 提示当前字体不可用，转为系统字体；PDF Expert 编辑后字体发生变化。 </p>
-
-<h3 id="toc_6">OCR</h3>
-
-<p>Adobe Acrobat 支持 42 种语言，PDF Expert 不支持 OCR，PDFelement 支持 25 种语言。与其搜索功能一样，Acrobat 也可以识别多文档，PDFelement 也可。Acrobat 有一处令我满意的功能：如果文档是扫描件，试图编辑某页内容时，Acrobat 会提示是否将本页转为可编辑的文本。PDFelement 的做法是当打开扫描件时，它会提示是否进行 OCR 操作，我认为 Acrobat 的逻辑更人性化。 </p>
-
-<p>在识别时，Acrobat 只能选择一种语言，PDFelement 在识别文件时可以选择多语言，但若一份 PDF 中文里夹杂着少量英文的话，同时选中文、英文与只选中文也没有区别。借助 PDFelement 转换功能将 OCR 前与后的译言页面转为图像，合并如图进行比较：Acrobat 的识别效果实在是惊人，不仅识别完全准确，与原文档相比也几乎没有任何区别；PDFelement 在识别少见字体的文字方面还是力不足。</p>
-
-<p><img src="media/15249605684127/15249750585983.jpg" alt=""/></p>
-
-<h3 id="toc_7">云服务</h3>
-
-<p>我认为桌面端并不太需要云服务，电脑上的文件管理方式削减了对云服务的需求。但不可否认的是，在没有安装云盘客户端的情况下，应用直接支持云服务还是比较便利的。Acrobat 支持 Adobe Document Cloud、Adobe Creative Cloud、Box、Dropbox、OneDrive、SharePoint 站点；PDFelement 支持 Dropbox；PDF Expert 桌面版不支持任何云服务。不过移动端的云服务支持才是最重要的部分，这方面 PDF Expert 是表现最好的，它完美地集成了 iCloud 云服务，也可以将其他云盘中的文件夹设为「同步文件夹」以保持内容的一致。</p>
-
-<h3 id="toc_8">应用打分</h3>
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center">项目</th>
-<th style="text-align: center">阅读与批注</th>
-<th style="text-align: center">搜索</th>
-<th style="text-align: center">编辑</th>
-<th style="text-align: center">OCR</th>
-<th style="text-align: center">云服务</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align: center">Acrobat</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★★☆☆</td>
-</tr>
-<tr>
-<td style="text-align: center">PDF Expert</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★★★☆</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">☆☆☆☆☆</td>
-<td style="text-align: center">★★★★★</td>
-</tr>
-<tr>
-<td style="text-align: center">PDFelement</td>
-<td style="text-align: center">★★★★☆</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★☆☆</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="toc_9">独到之处</h2>
-
-<p>Adobe Acrobat 在批处理方面表现优异，PDF Expert 在阅读体验方面表现优异，PDFelement 在格式转换与部分批处理方面的表现优异。</p>
-
-<h3 id="toc_10">Adobe Acrobat</h3>
-
-<p>Acrobat 的功能实在是太多，而且很细致，无愧于一款超级型 PDF 应用。如果遇到其他应用无法解决的问题，那么 Adobe Acrobat 应该可以解决，只是也许会需要高级技巧。如借助「动作向导」工具可以批量完成各类任务，甚至可以在<a href="https://acrobatusers.com/actions-exchange?trackingid=JZXYQ">更多动作</a>下载一些 Actions，如 Delete all Comments、Convert PDF to PowerPoint、Convert PDF File to PS File、Optimize PDF for SEO、Find, Highlight, and Extract Words 等。如果有更复杂的需求，可以借助「JavaScript」工具完成。</p>
-
-<p><img src="media/15249605684127/15249750922498.jpg" alt=""/></p>
-
-<h3 id="toc_11">PDF Expert</h3>
-
-<p>PDF Expert 的功能实在是太少，但是它在阅读与批注方面的体验无人能及。可以这样说，它就是最好的 PDF 阅读器的样子。在设备协同方面做到了业界第一：Readdle Transfer 可以将 iOS 与 macOS 设备无缝连接；iOS 端云服务支持方面的工作也独树一帜，给了我完美的体验。</p>
-
-<h3 id="toc_12">PDFelement</h3>
-
-<p>格式转换，可将 PDF 或其选定页面转为 Word、Excel、PowerPoint、图像、ePub、纯文本、Pages、Html、RTF 文件，如转换为图像就可以方便地在文章中使用。Adobe Acrobat 虽然也可完成格式转换，但过程不易，而且部分格式的转换可能需要自造轮子。</p>
-
-<p>批处理功能，如批量格式转换、批量去除水印、批量数据提取等，其中「批量数据提取」功能若使用 Adobe Acrobat 就比较麻烦，PDFelemnt 的优点就在于优化了这个过程。比如，当遇到大量报名表、发票等文件，如果非 PDF 格式则使用「批量格式转换」功能将其转为 PDF 文件，那么所有 PDF 文档的结构是相同的，数据提取时选定部分区域（所有文档的区域都是相同位置）即可将所有数据提取到 Excel 表单中。<a href="http://weibo.com/ttarticle/p/show?id=2309404097926317129991">在这里</a>可以查看使用方式与效果。</p>
-
-<p><img src="media/15249605684127/15249751064950.jpg" alt=""/></p>
-
-<h2 id="toc_13">总结</h2>
-
-<p>Adobe Acrobat 在功能上无人能及，但阅读体验较差，价格太贵；PDF Expert 在阅读体验上独领风骚，也是最懂 Apple 风格的应用，只是缺一些专业的功能；PDFelement 则是各方面中规中矩，在批处理方面稍突出，但它没有鲜明的长短处，如果有一坐标轴，Acrobat 在最左，PDF Expert 在最右，那么 PDFelement 位于中间再稍偏右的位置。</p>
-
-<p>如果只是想选择一个 PDF 阅读器的话，那么「编辑目录」的功能不可或缺，这点就将许多应用拒之门外。若要免费，似乎只能选择福昕阅读器。若要付费：</p>
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center">项目</th>
-<th style="text-align: center">阅读体验</th>
-<th style="text-align: center">功能</th>
-<th style="text-align: center">价格</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align: center">Adobe Acrobat</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★☆☆☆</td>
-</tr>
-<tr>
-<td style="text-align: center">PDF Expert</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★★☆</td>
-</tr>
-<tr>
-<td style="text-align: center">PDFelement</td>
-<td style="text-align: center">★★★★☆</td>
-<td style="text-align: center">★★★★☆</td>
-<td style="text-align: center">★★★★☆</td>
-</tr>
-</tbody>
-</table>
-
-<p>① 若更追求完美的阅读体验：只能选择 PDF Expert；<br/>
-② 若更在意一些专业功能，也要求较好的阅读体验：只能选择 PDFelement；<br/>
-③ 若极其在意功能的完备性：只能选择 Adobe Acrobat。</p>
-
-<p><strong>天下之大，何时才会出现一款全五星的 PDF 应用？</strong></p>
+<p>可以在 <a href="https://pdf.wondershare.cn/?utm_source=Weibo&amp;utm_campaign=profile"> Wondershare 官网</a> 下载体验 macOS 或 Windows 客户端，也可在 Mac App Store 免费下载体验 PDFelement 6 或专业版（内置 OCR），但需内购以解锁部分限制。</p>
 
 <p><br></p>
 
 <blockquote>
 <p>本文应用版本：<br/>
-Adobe Acrobat Pro DC 2015.006.30306 for macOS <br/>
-PDF Expert 2.2.1 for macOS <br/>
-PDFelement 6 Pro 6.2.0.2988 for macOS </p>
+PDFelement 6.0.0 for macOS </p>
 </blockquote>
 
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[关于独立博客的想法]]></title>
-    <link href="https://blog.tangxiaozhu.com/15242849335257.html"/>
-    <updated>2018-04-21T12:28:53+08:00</updated>
-    <id>https://blog.tangxiaozhu.com/15242849335257.html</id>
+    <title type="html"><![CDATA[对我而言 iPad Pro 距完全替代电脑仅有一步]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250534149188.html"/>
+    <updated>2018-04-30T09:56:54+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250534149188.html</id>
     <content type="html"><![CDATA[
-<p>在 GitHub Issues 写博客也面临数个问题：<br/>
-1. 图片的插入，采用第三方 Issues 客户端时图片并不会上传至 GitHub 服务器，而是三方客户端的服务器，这显然增加了图片丢失风险；<br/>
-2. 借助 Mirror 呈现内容在博客 <code>blog.tangxiaozhu.com</code> 地址，但搜索引擎只能检索到 Issues，这并不是我想要的；<br/>
-3. 数据的备份也是个问题，虽然利用 IFTTT 进行备份，但格式错乱且只能备份每一篇 Issues 第一次发布时的内容。</p>
+<blockquote>
+<p>本文被少数派精选：<a href="https://sspai.com/post/39760">点此查看</a></p>
+</blockquote>
 
-<p>因此，我决定重启 GitHub Pages，并将博客同步到多个平台，原来不愿意这样做是手工太累，但现在可以一键同步的工具越来越多，也越加好用。</p>
+<p>我在 6.13 收到 10.5 寸 iPad Pro，本来的目的是为了批注论文，然后实际上却替代了许多电脑上完成的任务，且以我自身的需求为行文结构听我慢慢道来。</p>
 
-<p>此外，我决定不再随意修改已发布文章，这也是最后一次更新本文。今后对待每一篇博客都要严肃认真，要做到我之出品，必为精品，一旦发布除非有错别字、格式错误等问题，绝不修改。内容过时问题是我之前担忧所在，现在我也有了新的想法：写文章时标注好内容适用范围，即便未来过时了，也不失为一种历史参考资料，代表了过去的回忆。</p>
+<h2 id="toc_0">外设的选择</h2>
+
+<p>买 Pro 不买笔，不如回家削铅笔。不得不说 Apple Pencil 是 iPad Pro 的必需品，否则不如购买 iPad 其他系列。我同时淘宝了一个专用笔袋来放置 Apple Pencil 及转接头、擦拭布、取卡针。关于键盘，我想了很久。最优先考虑的是 Slim Combo 键盘 &amp; 保护壳，为此我多次催促 Apple 客服，但最后却没有购买。原因有二：Slim Combo 是可拆卸式键盘，无法合盖以覆盖屏幕，也就不能随意将 iPad 放入书包；虚拟键盘才是最常用的，因为许多应用对虚拟键盘做了优化，有许多实用的快捷按钮，而实体键盘可能只需要在大量打字的时候使用。故我认为如果不得不使用键盘，最佳的组合是 Apple 官方皮革款保护套与罗技 K480 或 K380 等蓝牙键盘。</p>
+
+<p>本章小结：我认为并不需要保护套有一个放 Apple Pencil 的位置，虽然最初我是被 Slim Combo 这点所吸引。总之，上述的外设是我经过深思熟虑后最能接受的组合，平时我也会尽量尝试虚拟键盘或语音输入。</p>
+
+<h2 id="toc_1">文献的管理与批注</h2>
+
+<p>如果只用 iPad Pro 管理与批注文献，Papers for iOS 是最佳的选择，颜值与功能堪称最佳。Papers 与其他文献管理工具一样（如 Zotero）可以借助书签从 Safari 上收集文献，并且可以在 Word 等应用中插入神奇引用代码，这意味着你完全可以在 Word for iOS 上写论文，但还有不得不做的一步：在电脑上格式化神奇引用代码。如果在 iPad 上可以做到「格式化」这点，那就真得完全可以脱离电脑了。</p>
 
 <span id="more"></span><!-- more -->
 
-<hr/>
+<p>咳咳，但是我目前并没用使用 Papers，因为我已经使用 Zotero 有数年的时间了，正在写的论文也都是它为我插入的参考文献。目前我借助 Zotero 的著名插件 ZotFile 同步文献至 iPad 或在电脑上取回已批注的文献，即这样的流程比较依赖电脑。我的草稿「再谈 iPad Pro 的学术生产力」详细介绍了如何利用 Zotero 协同电脑与 iPad 以达到舒适的学习环境。但我感到未来我会逐渐全面转向 Papers，在去年三月份 Papers 被 ReadCube 收购，客服表示两个团队在协力开发出一款全新的文献管理应用，我相信它会在不久后上线。当然，Zotero 无疑是一款优秀的免费开源应用，其唯一的短板是移动端，PaperShip 曾是最佳的 Zotero for iOS 应用，但其开发者莫名失踪，再无音信……</p>
 
-<p>更新于 20170927 19:14:48</p>
+<p>文献的批注自然需要一款最好的 PDF 阅读应用，而在移动端，PDF Expert 是符合我需求的。我在少数派第一篇的文章是介绍全能型 PDF 应用 PDFelement，但移动端的它确实太弱了，甚至没有目录导航，而 PDF Expert 都可以编辑目录。而且 PDF Expert 还可以设置云盘如 Dropbox 同步文件夹，这是与电脑协同不可或缺的功能。</p>
 
-<p>也许对博客相关的事情折腾够了，或者是觉着我这种以分享为目的的独立博客也没必要再折腾了，所以我开始使用 GitHub Issues 写博客了，然后展示在 <code>blog.tangxiaozhu.com</code> 即我的博客网址。一番复杂之后，又开始崇尚简单，似乎有种看山初是山、不是山、又是山的感悟，比较满意现在写独立博客的方式，再找来一个备份功能就完美了。</p>
+<p><img src="media/15250534149188/15250535435158.jpg" alt="" class="mw_img_center" style="width:600px;display: block; clear:both; margin: 0 auto;"/></p>
 
-<hr/>
+<p>本章小结：仅在 iPad 上管理文献是可行的，Papers &amp; Mendeley 等都可以做到，但在 Word 插入引用文献也只有 Papers 的神奇引用可以做到，可这也需要在电脑上进行一次格式化操作。故目前还无法只借助 iPad Pro 完成论文，但我相信这不远了。而文献的批注在 iPad 上也许只有 PDF Expert 一个好选择，不仅功能强大，还可以利用 Readdle Transfer 与 PDF Expert for macOS 协作。同时也可以使用 Notability 写写阅读笔记，而系统备忘录无法调整笔画粗细致使其在分屏下的使用体验很槽糕。</p>
 
-<p>因为简书经常将我的一篇博文设置为仅自己可查看，所以放弃使用。目前使用 Blogger 作为博客的镜像，同时也发布一些不便于在独立博客出现的内容。</p>
+<h2 id="toc_2">博客或稿件的撰写</h2>
 
-<p>同时也开始使用 MWeb 作为博客编辑器：<br/>
-1. 支持 iOS &amp; macOS，这大大方便了我随时修改文章内容；<br/>
-2. 支持直接发布和更新至 Blogger 等平台，iOS &amp; macOS 都能发布这点大大提升了 iPad 在我心中的地位。</p>
+<p>我有一个 <a href="https://blog.tangxiaozhu.com/">独立博客</a>，虽然我现在主要在少数派写东西了…… 总之，我需要一个闭环的写作流程，同时也要考虑到与电脑的协同，因为暂时还无法脱离电脑。</p>
 
-<p>几点想法：<br/>
-- 虽然百度检索不到了，但是百度能检索到的内容会越来越少，我只是提前离开了。当然，不涉及敏感内容的独立博客还是可以被检索到的。<br/>
-- 维基百科式的更新方式会使博文最后附加了许多内容，因为我经常更新博文，仔细考虑后，决定将有必要讲的更改历史直接放到博文中。像本文这篇只是关于想法的博文，适合以分割线的方式更新；涉及到技术的适合前面说的也即全文修改的方式。</p>
+<p><img src="media/15250534149188/15250535828930.jpg" alt="" class="mw_img_center" style="width:600px;display: block; clear:both; margin: 0 auto;"/></p>
 
-<p>如果疑虑某篇文章有没有更新，在独立博客上是有显示更新时间的，如果更新时间在很久以前，还请注意其是否已不适用。</p>
+<p>毫无疑问，MWeb 是我唯一的好选择。Ulysses 我也尝试过，都挺好只是它独特的 Markdown 语法令我不知所措。MWeb 与 Ulysses 都可以设置同步文件夹，如 iCloud、Dropbox，可以和电脑无缝同步。</p>
 
-<hr/>
+<p>还有一个关键问题是插入图片，也就是图床功能，这一点 MWeb 恐怕是做得最好的，它自带本地图片上传服务，支持 Google Photos、Imgur、七牛与自定义配置。虽然我主要是用 Workflow 上传到微博图床，但不得不说，文字工作者有了 MWeb 似乎就有完全脱离电脑的可能了，毕竟 MWeb 还自带多个平台的发布功能。</p>
 
-<p>2014 年，也就是大四的时候，我建立了<a href="http://blog.tangxiaozhu.com">独立博客</a>，在那之前我偶尔混迹于新浪博客。2016 年，我那荒废已久的独立博客又更新了，但之前的博文都删了。而且一个无法避免的问题是独立博客的访问量太低了，Google 还可以搜索到，而百度就很难检索到了，那就可能有人遇到了同样的问题却找不到我写的博文。故我决定将三方平台当作镜像博客，也就是 <del>简书</del>。如果独立博客内容有所更改，我会手动同步。</p>
+<p><img src="media/15250534149188/15250536556179.jpg" alt="" class="mw_img_center" style="width:600px;display: block; clear:both; margin: 0 auto;"/></p>
 
-<p>每次有新想法，会在 MarkEditor 中完成稿子，发布到独立博客，然后手动同步到。我认为一篇文章最好不断更新，防止之后的时间里误导了别人，实在无法更新也应该注明可能失效的提示。所以，我会将我的博文以维基百科的方式进行更新。写博客是兴趣，如果觉着还好想要转载的话，需注明作者是唐小筑和附原文链接。</p>
+<p>本章小结：文字工作者是可以只用 iPad Pro 工作的，而 MWeb 与 Workflow 也许是最佳的辅助工具。</p>
 
-<p>在转移原有博文的过程中，也遇到些问题。虽然已放弃使用知乎和新浪博客作为镜像，但还是列出这些问题。</p>
+<h2 id="toc_3">零碎的其他需求</h2>
 
-<p>新浪博客：<br/>
-1. 从微博和博客客户端无法查看博文表格，只有从新浪博客网页版查看表格才会正常显示；<br/>
-2. 微博和博客客户端中查看博文，换行显示有问题，新浪博客网页版一切正常；<br/>
-3. 微博和博客客户端中代码支持欠佳，而网页版较为正常；<br/>
-4. 微博和博客客户端中空格似乎是全角的，网页版是正常的。<br/>
-所以新浪太奇葩，自家的东西解析方式千奇百怪。</p>
+<p>以上是我的主要需求，iPad Pro 的表现还挺称心如意，我还有一些其他次要需求，在此简要讲讲如何满足的：</p>
 
-<p>知乎：<br/>
-1. 不支持粘贴图片；<br/>
-2. 不支持表格；<br/>
-3. 不支持分隔线。</p>
+<ol>
+<li>Anki 复习文献阅读过程中遇到的困难单词；</li>
+<li>OmniOutliner 记录实验室师生关系，比如谁是谁的学生或导师，也用来整理论文结构；</li>
+<li>MarginNote 阅读大部头书籍；</li>
+<li>WikiLinks 查阅维基百科；</li>
+<li>Aboboo 练习听力或口语；</li>
+<li>Playgrounds 学习简单的编程知识；</li>
+<li>TIG 管理和部署 GitHub 仓库；</li>
+<li>Dayone 写日记，这个是大家耳熟能详的，但我要多说一点的是可以开启「端对端」加密功能，这时候又要建议使用 1Password 管理密钥了，1Password 也内置了二步验证功能。当然，这些大家基本都知道，我觉着诸位基本都了解的也就不再一一赘述了。<p>
+<img src="media/15250534149188/15250536993353.jpg" alt="" class="mw_img_center" style="width:600px;display: block; clear:both; margin: 0 auto;"/></li>
+</ol>
 
-<p>标记语言 Markdown 既简单又较为全面，使我们可以脱离鼠标写一篇排版良好的博客。虽然在不同的应用中，可以设置快捷键来达到同样的目的，但如果绝大部分应用都支持 Markdown，我们也不用费力地为不同的应用设置快捷键。况且，网页端编辑器很多不支持快捷键。我试试定期给一些提供博客服务的企业发送反馈，建议直接采用 Markdown，或改进再采用，或确定一种新标记语言。当然，可视化界面不必非要和 Markdown 语言对应。</p>
+<p>本章小结：iPad Pro 在满足其他需求的方面给了我极佳的体验，也使我的时间多数都分配在了 iPad Pro 上面。</p>
+
+<h2 id="toc_4">全文总结</h2>
+
+<p>题目中写到：对我而言 iPad Pro 距完全替代电脑仅有一步，其实我主要是指插入引用文献这一操作，但我相信 iPad Pro 距完全取代电脑的步数也不多了。现阶段，我主要的观点是 iPad Pro 与 MacBook 系列电脑配合的体验比较完美，比如通用剪贴板功能、Handoff 等。以上的所有流程似乎显示 Apple Pencil 并非不可或缺的，但实际上 Apple Pencil 是用来做笔记或细节操作的，这其中没啥好说的。</p>
+
+<p>就目前而言，如果你是刚经过高考的新生并且手头没有电脑，我的主要建议还是 Surface Pro，可能细节体验不如 MacBook Pro &amp; iPad Pro，但它相对花销更少且能干所有的事情。探索 iPad Pro 距完全替代电脑的路程还是交给我这样爱折腾或手有余钱的老油条吧…… </p>
+
+<p><br></p>
+
+<blockquote>
+<p>本文应用版本：<br/>
+MWeb 2.3.4 for iOS </p>
+</blockquote>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[申请 Google Voice 号码]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250963459244.html"/>
+    <updated>2018-04-30T21:52:25+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250963459244.html</id>
+    <content type="html"><![CDATA[
+<p>最重要的就是拥有一个美国本地号码，而我只推荐使用 TextNow 获取美国号码，因为这是目前发现还有效的唯一一款可以免费获取号码，它有网页版和多平台客户端。但是号码十数天不用，就会被回收并无法再找回。</p>
+
+<p>目前已失效的工具：</p>
+
+<ul>
+<li>Pinger Text Free
+可以注册，但获得的号码会一直变动。其客服回复只在美国和加拿大地区提供服务。</li>
+</ul>
+
+<p>收费的工具：</p>
+
+<ul>
+<li>叮咚</li>
+</ul>
+
+<p>此外，Google 很可能识别出号码是虚拟号码或者号码已被大量使用，所以就无法获得谷歌语音号码，但是有漏洞的。在点击后提示无法取得号码的界面，以约 100 ms 的间隔点击确认，也许十几分钟、也许数个小时、也许一夜就可以成功获得一枚 Google Voice 美国号码。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[英文版 Word 如何设置首行缩进两个字符]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250962655327.html"/>
+    <updated>2018-04-30T21:51:05+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250962655327.html</id>
+    <content type="html"><![CDATA[
+<p>Very Easy</p>
+
+<p>在段落设置中虽然显示为 <code>cm</code>，但直接输入 <code>2 ch</code> 即可。</p>
+
+<p>最近又把所有设备语言调为英文了，最主要的原因就是无法容忍一些糟糕的中英文排版：</p>
+
+<ol>
+<li>有些中英文之间没有空格；</li>
+<li>有些中英文混在一起非常别扭；</li>
+<li>有些中英文字体不搭。</li>
+</ol>
+
+<p>总之，我是无法继续忍受了，与此相应的，调成英文后部分本土化的改进无法再享受到，但由于地区还是中国，所以还好。但不得不说，全英文界面看起来舒爽太多，很满意。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[配镜经历与收集的资料]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250962190820.html"/>
+    <updated>2018-04-30T21:50:19+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250962190820.html</id>
+    <content type="html"><![CDATA[
+<p>验光数据为：右眼近视 225°，左眼散光 100°</p>
+
+<p>配镜店的一个实习学生认为验光过程中我更适应 250°，所以眼镜度数为右眼近视 250°，左眼散光 100°。而我是在读研究生，绝大多数时间都在看电脑，夜晚常看手机至零点，偶尔至凌晨一二点，所以镜片防蓝光（蓝光波长约 475 nm），感觉有点效果。</p>
+
+<p>配镜店的实习生明显经验不足，起初左镜片为近视 50°，说是将散光度数转为近视度数。但验光的医院告诉我最好按照验光数据配镜。所以我又联系他们，他们也困惑，问了老师，但两个老师意见相左，一个认为应该按照验光数据，一个认为可以转换为近视度数。</p>
+
+<p>总之，还是比学校里眼镜店的验光仪器和工作人员专业点，但是经验上还是不足。我会定期测视力，追踪情况。</p>
+
+<p>配镜后每次视力检测的数据：</p>
+
+<ol>
+<li>近视 250°，散光 75°</li>
+<li>近视 250°，散光 75°</li>
+</ol>
+
+<h2 id="toc_0">配镜询问</h2>
+
+<p>1.球面还是非球面？<br/>
+最好是非球面。非球面镜片更接近裸眼的视觉，镜片边沿的变形也小一些，视野更大一点，已经是主流的配制了。但并非每个人都适应，有些人就只能适应球面镜片。而且，非球面镜片已经非常成熟，价格上的差异很小。</p>
+
+<p>2.矫正视力是多少？<br/>
+有些验光师教条地把矫正视力设定在 1.0 甚至 1.2，而不是依据被验光者的实际需求。对于近用为主（如长时间用电脑工作的人群）人来说，这样的矫正视力偏高了。调整在 0.8 的矫正视力（也只是参考值，具体到个人，要在验光中反复确认最佳点）可能要舒适得多。</p>
+
+<p>3.散光度数还是近视度数？<br/>
+知乎回答：比如有 200 度散光，他把这 200 度折成 100 或 150 度近视加上去，导致你近视度数越来越高，上升越来越来快。我在上中学时中此招，后来多次避开这类陷阱。肯定还有很多人，明明有散光，却一直带纯近视镜，所以常常感慨眼睛累啊累啊。</p>
+
+<p>散光没有加对，只能提高度数，效果还不好。有散光的一定要加散光，效果非常显著，世界一下就变得清晰了。其实散光度和光度一样，过矫或欠矫更容易导致度数增加。</p>
+
+<p>50° 及以下的散光，验光师对于是否加上散光度的意见非常不统一。要由验光师在验光中反复尝试不同的参数匹配，并以被验光者的眼睛的最佳效果为标准，不能机械地做下结论。</p>
+
+<h2 id="toc_1">验光</h2>
+
+<p>验光虽然都可粗分为电脑验光、综合验光仪验光、插片试戴三块</p>
+
+<h2 id="toc_2">注意事项</h2>
+
+<p>千万不要相信什么不适应新眼镜，除非旧有的眼镜严重变形导致的本身斜视，或者眼睛问题。否则，带上不舒服就是配错了，就是做工问题。</p>
+
+<p>加工的环节：很多时候验光都对没什么问题，可是加工师傅活太糙也出问题，65 的瞳距，给你做出 67/68 来，散光轴位差出 5° 以上也是对消费者的毒害啊，所以镜子配完，要求店家在焦度计上量一下看是否和验光单一致。</p>
+
+<h2 id="toc_3">选镜片</h2>
+
+<p>近视镜片是凹透镜，中间薄两边厚。</p>
+
+<h3 id="toc_4">陷阱</h3>
+
+<p>1.高折射率陷阱<br/>
+除了经常加工的老师傅，就咱们普通消费者来讲，1.67 和 1.74 的你真分不出来啊，可是价格差几百上千呢。500 度以上的再选折射率大的镜片就好，就是我们一般会说的加薄镜片，低度数的没必要花这个冤枉钱。你度数不到 500 根本用不上什么 1.67、1.74 射射率的镜片。视觉感受上来说折射率不是越高越好，反而是越低越好，因为折射率越高阿贝数就越低，阿贝数低也就是成像效果越差。但如果是打孔眼镜最好选择 1.67 以上折射率的镜片，柔韧性较好不容易炸孔。</p>
+
+<p>2.镜片陷阱<br/>
+知乎回答：镜片其实依视路就好，我好多基本都是 200、300 块钱的依视路，功能性镜片有一定效果，什么渐进多焦点、减负镜，还有最近的塑形镜，但是请根据自身的经济情况，几十块钱的镜片也不会对眼睛有什么损伤。市面上大部分抗疲劳、渐进多焦点、防辐射等镜片，都明显夸大了功效，且价格昂贵，请慎选。</p>
+
+<p>有时有伙伴为节约费用或更适应原镜片，会将以前的镜片在原基础上磨小后，配在尺寸小的镜架上，但这样光学中心很难完全契合，会有瞳距及瞳高误差。</p>
+
+<p>镜片的加工技术非常重要，需要长时间持续积累技能和经验，并不是仅凭高科技自动化设备就可以完全保障的。相比之下，国内镜片工厂大多数技术较国外差别还是很大的。</p>
+
+<h3 id="toc_5">镜片品牌</h3>
+
+<p>依视路、豪雅<br/>
+国内知名品牌：凯米、大明、万新、明月<br/>
+品牌品质都非常优异：诗乐或林德博格</p>
+
+<h3 id="toc_6">镜片材质</h3>
+
+<ul>
+<li>玻璃片：现在使用率较低，且工厂也主要做高折射率为主，如：1.8、1.9 的折射率。</li>
+<li>树脂片：目前还是最主流的材质，表面强化后硬度较高。当然不如玻璃镜片。</li>
+<li>PC 片：国内品牌的成熟度还有待确认，但其镜片轻、韧性高不碎裂是显著优点。</li>
+</ul>
+
+<p>材质上是树脂镜片的透光率高一些，而 PC 轻一些，柔韧性强更适合配无框等对韧性要求高的结构。</p>
+
+<h3 id="toc_7">问题及解答</h3>
+
+<p>1.折射率越高越好？<br/>
+并非很多销售人员说的越高越好，而是在厚度和重量能接受的前提下，越低越好。</p>
+
+<p>注：折射率选择参考：（可以参考一下但不要机械对照）<br/>
+1.56：0 —400°（-4.00D）<br/>
+1.60：300°（-3.00D）—600°（-6.00D）<br/>
+1.67：400°（-4.00D）—800°（-8.00D）<br/>
+1.74：800°（-8.00D）以上</p>
+
+<p>1.67 折射率的材质特殊，如佩戴有不适，选 1.60 为好。</p>
+
+<p>2.非球面比球面高级？<br/>
+非球面镜片的确更接近裸眼的视觉，镜片边沿的变形也小一些，视野更大一点，已经是主流的配制了。但并非每个人都适应，有些人就只能适应球面镜片。而且，非球面镜片已经非常成熟，价格上的差异很小。</p>
+
+<p>3.双非球面镜片？<br/>
+虽然已推出好多年，但目前成熟稳定的双非球面镜片还主要集中在一线品牌（如：蔡司、豪雅、依视路等）以及凯米上，特别是 1.60 双非球面镜片，他们选用的 MR-8 材质阿贝数达 40，比 1.67 的 MR-7 的 32 高了很多，厚度、重量很接近，而清晰度更高，视野也更宽一些。只不过目前价格还比较高（如果普及程度高的话，应该能降低一些）。其他品牌我觉得还需要再观察一段时间再做结论。</p>
+
+<p>4.渐进镜片<br/>
+知乎回答：带了十年的渐进眼镜说一下感受。中学的时候因为学习压力大度数长得太快，用了渐进，确实不涨了，而且眼睛也不累。十年里换了三副，一共涨了 200 度，从150 涨到 350。今年重新换镜，测量时医生给我测了眼睛的焦距转换的时间长短的一个指数，发现我比常人低非常多，简直就是渣中之渣。因为用了渐进，眼球的自我弹性久而久之就下降飞快，完全不能在正常时间看清远近转换。后来果断不用渐进了！也建议别人不要用了。</p>
+
+<p>5.渐进多焦点镜片？<br/>
+渐进多焦点镜片本来是为失去部分调节能力的老花带近视的人群研发的，对验光、加工的要求更高，不适合远程服务，技术不靠谱的机构也无法准确验配。把这类镜片用于青少年据我所知在发达国家还没有。</p>
+
+<p>6.内渐进多焦点？<br/>
+是渐进多焦点的改良产品，据很多使用者说，舒适性比较好，但价格很高。</p>
+
+<p>7.抗疲劳镜片？<br/>
+以“抗疲劳”表述镜片明显有夸大事实。其实就是渐进多焦点镜片的简易版产品。对验配技术的要求（验光、加工）都很高。也并非都能适应。</p>
+
+<p>8.品牌镜片与非品牌镜片之间有什么差距？<br/>
+镜片生产企业的技术含量很高，品牌镜片企业的技术力量与研发积累要雄厚得多。就产品品质来说，光学指标更稳定可靠，更耐用、舒适度高、不良风险较小。而且，实际的售价也很接近。选用品牌镜片，综合性价比更好。可根据自己的配镜周期考虑国内品牌或国外品牌。</p>
+
+<p>9.如何判断品牌镜片的真伪？<br/>
+在没有仪器检测的情况下能断定镜片真伪的，大部分是因为做的太假了。实际情况是，镜片、防伪标识、包装、验证码都可以作伪，而且难度不大。找靠谱的商家更简单有效。</p>
+
+<p>10.哪些功能镜片靠谱？</p>
+
+<ul>
+<li>防辐射：效果仅仅只是镜片范围，而且电磁波也并非完全直线传播。对眼睛的危害也有待进一步的实证结论。而且，正规镜片厂商出品的镜片都有防辐射膜层，不需要增加新的费用。</li>
+<li>抗紫外线：正规镜片厂商的光学镜片都防紫外线（大于等于 uv380），不需要为此增加费用。</li>
+<li>防蓝光：蓝光的危害还不算有系统性地科学论证，只是佩戴起来确实会舒适一点。但已经成为又一个让炒家兴奋不已的新卖点，问题是很多镜片根本就不是防蓝光镜片，他们把蓝光当成蓝色的光线了。实际是，最需要防的蓝光是 415-455 nm 的高能蓝光。</li>
+</ul>
+
+<h2 id="toc_8">选镜架</h2>
+
+<p>选镜架的时候建议选深圳、厦门工厂的产品，一般在眼镜吊牌上能看到。每个产业链都有品质的定位，基本上工艺、零配件厂商、多年经验技师都会沉淀下来。温州丹阳的产品无论从材料、工艺、表面处理（喷漆、电镀）、做工的细致度等等都有很大的距离，这是长期做国外的低端订单养成的作业模式，很难改变。我强调一下加工的环节，很多时候验光都对没什么问题，可是加工师傅活太糙也出问题，65 的瞳距，给你做出 67/68 来，散光轴位差出 5° 以上也是对消费者的毒害啊，所以镜子配完，<strong>要求</strong>店家在焦度计上量一下看是否和验光单一致。</p>
+
+<p>镜片镜框的价钱不重要 我的同学永远不知道我哪个镜框是十块钱戴了三年 哪个是 1000+ 的然后不足三个月被我弄丢了</p>
+
+<p>最好的方式当然是大量试戴，直观比对试戴效果更直接可靠，多花些时间总会找到适合自己的款式。就像你选择你的穿着一样，你不能要求自己只用一次尝试就能确立自己一生的穿着风格。</p>
+
+<p>另外，在舒适性和美观允许的情况下，尺寸尽量大一点，这样视野会大一些。但也有些验光的参数对镜架选择有限制。比如：瞳距很小，选尺寸太大的就不太适合。</p>
+
+<p>尽量不要选表面喷漆的产品，耐用时长比较短（当然，品质好的至少也保障 2 年）。</p>
+
+<p>特别注意，TR、塑钢、不锈钢、木制、β 钛的镜脚都不能调整，试戴时要注意试戴镜架还未加上镜片的重量，以免配制好后，发现配戴不适（如镜框容易下滑）的问题。</p>
+
+<p>爱出汗的人最好选择板材或海马尼材质（没有喷漆，所以汗液不会腐蚀镜架从而掉漆）或是 IP 电镀的金属架 。喷漆的金属镜架或是 TR 镜架还有现在很流行的航空材质镜架（TR材质、航空材质是注塑材料所以镜架都是喷漆）爱出汗的人就最好不要选了。</p>
+
+<h3 id="toc_9">镜架材质</h3>
+
+<p>爱出汗的人最好选择板材或海马尼材质（没有喷漆，所以汗液不会腐蚀镜架从而掉漆）或是IP电镀的金属架 。喷漆的金属镜架或是 TR 镜架还有现在很流行的航空材质镜架（TR 材质、航空材质是注塑材料所以镜架都是喷漆）爱出汗的人就最好不要选了。</p>
+
+<h4 id="toc_10">金属类</h4>
+
+<p>特征：主要体现在其金属的可塑性强，质感较好，耐磨性良好等。分类：一般分为含量较高的纯金属类如铜，金，银，钛等还有合金类。</p>
+
+<ul>
+<li><p>合金材质：有白铜（以铜为主，主要添加镍、锌等）、锰镍（以锰为主，主要添加镍等）、高镍（以镍为主，添加铬、锰等）、镍铜（以镍为主，添加铜等）等合金材质，在强度、耐腐蚀性等物理化学性能方面略有差异。<br/>
+优点：材料价格较低（特别是白铜）。加工难度低。易于调整镜架。缺点：电镀附着力较差，易腐蚀生锈。部分人易金属过敏。易受挤压变形。较重。</p></li>
+<li><p>不锈钢材质：基本上是以薄片不锈钢材料冲压成型。<br/>
+优点：柔韧性好，耐变形。重量轻。表面IP电镀处理的，耐用性强。缺点：不能调整。度数高的镜片较厚，影响美观。表面喷漆处理的镜架易脱漆，不耐用。</p></li>
+<li><p>纯钛材质：比较理想的金属镜架材质<br/>
+优点：强度高，不易变形，但可调整镜架。不易金属过敏。IP电镀后附着力高，耐用性高。质轻。缺点：材料价格高，加工难度大，导致价格较高。</p></li>
+<li><p>β 钛材质：广泛用于细丝状镜脚、鼻秋、纤细镜框等高弹性要求的镜架中<br/>
+优点：柔韧性好，不易变形。质轻。缺点：不适合高度数人群（镜框前端重量过重易下滑，镜片过厚影响美观），不能调整。材料价格高加工难度大，价格较高。</p></li>
+</ul>
+
+<p>纯钛镜架，就是单一金属镜架，而想要辨别自己买的是不是纯钛镜架，可以看镜架是否有以下标志：T-P，TITAN-P 。至于说现在比较受欢迎的记忆钛和 β 钛。记忆钛特点：有超强的弹性，可以弯折180度；不一定抗过敏；定价不高 。β 钛特点：有弹性，可以弯折90度；超轻；抗过敏。</p>
+
+<h4 id="toc_11">塑胶镜架</h4>
+
+<p>主要为：PC、塑钢、TR、板料、海马尼。</p>
+
+<p>1.注塑成型材质：注塑成型工艺是将塑料米（目前主要为PC、塑钢、TR）熔融，注射进模具内冷却成型。优点是整批的尺寸稳定性较高，加工速度快，综合成本低。缺点是大多数经过表面喷漆处理，不耐磨易褪色，易漆层剥落。具体如下：</p>
+
+<ul>
+<li><p>PC 材质：就是曾被营销为“太空片”的材料，超过10mm就是防弹玻璃。<br/>
+优点：材料价格较低。有一定的柔韧性。耐冲击（这就是被称为太空片的原因），皲裂但不会有碎屑崩裂。<br/>
+缺点：表面喷漆不环保，漆层易剥落。舒适性较差，耐用性也不好。镜架无法因应不同脸型做出调整。</p></li>
+<li><p>TR 材质：目前被大量使用的材料。柔韧性优异，曾被营销为“记忆塑料”。如 TR90 这个材料的确是便宜货，便宜虽然是便宜，但是有点明显啊，轻、弹性好，耐高温，不易氧化，</p></li>
+</ul>
+
+<p>优点：材质透明度高。柔韧性好，可以迁就不同尺寸的需求，耐挤压踩踏（会断裂的是因为加入再生料所致）。质地很轻。<br/>
+缺点：表面喷漆处理，不环保，喷漆技术差的漆层也会很快剥落（好的大约2年）。因为弹性很好，镜架无法调整，镜框的柔软也给技术差的加工镜片师傅以最大的宽容度，就是说做很差的镜片很容易装入镜架。</p>
+
+<ul>
+<li><p>塑钢材质：也被称为钨钛，最近2年来越来越普及。<br/>
+优点：强度及表面硬度比TR好。柔韧性比TR略低，比PC高。质轻。因强度高，可以做出非常纤细的圈形，可以做出最接近金属镜架的超细镜框，当然，掌握这项技术的企业还不多。表面漆层附着力较高。<br/>
+缺点：表面亚光质感，需要喷漆处理，对喷漆技术的要求很高，技术不过关的镜架喷漆后会导致镜架容易脆断。</p></li>
+<li><p>碳素纤维：主要用于装饰性配件和镜脚<br/>
+优点：质地轻盈，高强度、耐高温、表面有独特的质感。<br/>
+缺点：大幅度弯折易断裂。</p></li>
+</ul>
+
+<p>2.板材材质：预先制作成板状（约5-8mm）原材料，再根据实际需要切割成需要的框型或者镜脚的形状。</p>
+
+<ul>
+<li><p>醋酸纤维素材质：市面上最多的板材料，市面上的板材料几乎都是醋酸纤维素。<br/>
+优点：表面硬度高。不需表面处理，质感高贵。耐磨。可以根据不同的脸部尺寸做适当的舒适性调整。是国际服饰类品牌眼镜品类产品中较多选用的成熟材质。<br/>
+缺点：材质较硬如果调整不恰当舒适性较差。酸性料不能配PC材质的镜片（会导致镜片开裂）。较重。会回平（因为是由平板切割而成）需要调整，镜脚需铜芯定型。</p></li>
+<li><p>海马尼材质：市面上不多，但已在国外市场超过6年。<br/>
+优点：市面上比较完美地解决包裹内容物（薄片状的真实干花、不锈钢薄片、牛仔布料、蕾丝等等）的材料，呈现的质感更有立体感和层次感。表面无喷漆电镀处理，经久耐用。质地较醋酸纤维素轻。柔韧性也较醋酸纤维素好。可以适度调整镜架以更加贴合脸部尺寸。<br/>
+缺点：表面硬度较醋酸纤维素低。表面质感不如醋酸纤维素好。</p></li>
+<li><p>板材（醋酸纤维）<br/>
+雷朋都是板材架，板材里外颜色都是一致的，啥创伤也不会掉漆。</p></li>
+</ul>
+
+<h4 id="toc_12">天然材料类</h4>
+
+<p>竹子，象牙，木头等。由于天然材料往往象征着逼格，质量难以保证，所以实际应用的并不多 。</p>
+
+<h2 id="toc_13">问题及解答</h2>
+
+<ol>
+<li><p>戴眼镜配上之后度数会越来越高？<br/>
+近视属于屈光不正的一种，平行光线进入眼内后在网膜之前形成焦点，物体在网膜不能形成清晰的影像，青少年发育期间合理度数上涨是正常现象。并不是带上眼镜才涨度数，这就像有的慢性病不能治疗康复但可以缓解和控制病情恶化。</p></li>
+<li><p>眼镜不能长时间戴眼睛都变形了？<br/>
+不知道大家遇见这个说法没有，但是我家遇到不止一次一次有人说，眼镜长时间戴，戴的人眼睛都凹下去了。我每次都是~(<em>+﹏+</em>)~，眼镜要是有这个效果建议有减肥的朋友可以买个天天放在小腹上。<br/>
+眼镜简单来说就是凹凸镜，正常人透过眼镜看你的眼睛时候也是变形的。你平时看一个人佩戴眼镜的形象习惯后，拿下眼镜高度数眼睛和佩戴时候自然是不一样的。</p></li>
+<li><p>眼镜能够将视力戴好？ <br/>
+这个需要正确区分那就是是否是斜弱视和假性近视或者是正常的近视前者根据具体情况是可以治疗的，但需要早期发现这个需要家长注意，有条件的可以到大的知名眼科医院进行检查，早发现早治疗一般可以治疗好。后面近视一般情况下是在年满18周岁在条件许可的情况下可以考虑激光或者是飞秒手术(建议是推迟一点因为每一个人发育情况不同可在视力稳定后进行手术)，不要过分相信夸大宣传，不要过分相信夸大宣传，不要过分相信夸大宣传，重要的事情说三遍。本人90后，印象中从开始的欧欧眼保仪到后面一系列类似产品出现都提到可以治疗近视，当然现在一般也开始改变宣传近视度数控制不涨。还是然并卵，有人问我家是否有什么可以把眼睛戴好的时候，我爸告诉别人，如果有，医生会戴眼镜吗？领导人会需要戴吗？</p></li>
+<li><p>有散光为什么可以佩戴纯度数的<br/>
+我们常常遇到的就是有需要佩戴隐形眼镜情况下，隐形眼镜通过度数换算隐形眼镜是没有散光的。<br/>
+因为散光隐形眼镜一般不是圆形是菱形状，并不方便佩戴，有人提到框架眼镜有将散光换算的，一般应该是散光度数较低的。具体等我回去问一下我姐或者我爸。</p></li>
+<li><p>老花眼与近视是否有中和效果<br/>
+确实一般来说近视眼不会老花(即远视)，我个人更赞同是因为，视力疲劳度下降，视力才有所恢复。我在家帮忙看店去年遇到过一个初三学生，暑期检查视力有提高的(这种现象很少遇见)，不过今年更有中年人度数上升的，因为现在的电子产品使用过度。<br/>
+还有就是人到中年有些人度数并没有提高，佩戴效果变差，应该和自身调节能力下降有关。</p></li>
+<li><p>激光与现在常说的飞秒半飞秒有什么区别 。<br/>
+眼科手术在激光之前是手术治疗的，那个确实应该是有风险的，因为手术不精确。我有两个同学的妈妈都在上个世纪山东那边应该是军医院做过 ，不过效果不理想。而激光治疗应该是可以的，毕竟成熟稳定没有一些人想像那么严重，但是激光手术不是每个人都可以做需要检查眼底，并且需要去正规大的医院进行检查，私立医院可能会出于利益考虑，将模棱两可的同样建议手术。<br/>
+但手术前请考虑几点就是<br/>
+1.眼部发育是否成熟稳定，度数没有变化<br/>
+2.手术需要应该近2个月不能看电脑电视不能见强光，<br/>
+3.以后如果从事行业还要多接触电脑可以暂缓考虑，因为再近视可能性更大<br/>
+PS:本人一次在家，我爸和别的配镜小孩说等你上大学，度数稳定可以去激光手术。那个小孩说他不去激光因为以后可能有方法甚至不用激光就能治疗的<br/>
+借用百度百科:飞秒激光是一种以脉冲形式发射的激光，持续时间只有几个飞秒（1飞秒=千万亿分之一秒），是目前人类在实验条件下所能获得的最短脉冲。飞秒激光被用于眼科手术，被誉为继波前像差技术之后“屈光手术的又一次革命”。飞秒激光是属于锦上添花的技术，仅仅依靠飞秒激光技术是不能获得完美视力的。</p></li>
+</ol>
+
+<p>飞秒技术应该是比激光更有效治疗的技术，更加稳定安全。当然价格也高很多，相信随着普及应该会价格更加亲民。</p>
+
+<h2 id="toc_14">术语缩写</h2>
+
+<p>RGP：硬性隐形眼镜</p>
+
+<h2 id="toc_15">参考资料</h2>
+
+<p><a href="https://www.zhihu.com/question/20123451">https://www.zhihu.com/question/20123451</a><br/>
+<a href="https://zhuanlan.zhihu.com/freeview">https://zhuanlan.zhihu.com/freeview</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[关于订阅制的思考]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250961744312.html"/>
+    <updated>2018-04-30T21:49:34+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250961744312.html</id>
+    <content type="html"><![CDATA[
+<p>总的来说，我认为订阅制更多地是件好事：</p>
+
+<ol>
+<li>抑制盗版市场，遏制冲动消费；</li>
+<li>开发者的收入长期稳定，可以更好地满足使用者的个性化需求。</li>
+</ol>
+
+<p>这对真正需要的客户是件好事，对开发者也是好事。但是，为啥订阅价格那么贵？不论是 1Password 还是 office 365 等，其一年的订阅价格差不多等于买断价格的一半或更少，但是就我而言，我之前购买了 Parallel Desktop 11，至今已使用快有三年。所以，目前我对订阅价格不太满意，但承认订阅制也是比较好的策略。</p>
+
+<p>Ulysses 之前作为最具口碑的 Markdown 写作工具，但它取消了买断版，不像 1Password 仍有独立版在售，这对老用户是较大的伤害。虽然 Ulysses 的开发者写了一篇长文章介绍了为何这么做及订阅制的优势，但我还是觉得他们太武断了。</p>
+
+<p>我还认为，由于鲜有人愿意为很多应用按月或年付账，订阅制会迫使我们不得不依赖越来越少的工具。可能原来我们买了这个买了那个，可以这个用一点那个用一点，但随着订阅制成为主流，未来我们可能主要只使用几个应用。</p>
+
+<p>然而我觉得这也许也是一件好事，因为我们之前可能多数应用都是浅尝辄止，但现在会有动力探究这些应用的高级用法，这对于效率到底是提高还是降低我还不好做判断。我只是觉得应用少了可我们对每个工具都越来越熟悉了，切换工具的成本就可以避免了，我们会更专注于内容创作。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Spotlight 搜索结果禁止显示开发者文件]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250961376551.html"/>
+    <updated>2018-04-30T21:48:57+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250961376551.html</id>
+    <content type="html"><![CDATA[
+<pre><code>cd /Applications
+touch Xcode.app
+</code></pre>
+
+<p>然后转到 Spotlight 首选项并取消选中 Developer（可能需要重新启动系统偏好设置）</p>
+
+<p>即使更改设置，您也需要保留虚拟 Xcode.app，删除将导致设置恢复。<br/>
+另一个解决方案是安装 Xcode 本身。</p>
+
+<p>本文参照：<br/>
+<a href="https://forums.macrumors.com/threads/spotlight-developer-and-web-searches-cant-be-disabled.1193533/">https://forums.macrumors.com/threads/spotlight-developer-and-web-searches-cant-be-disabled.1193533/</a><br/>
+<a href="https://gxnotes.com/article/127849.html">https://gxnotes.com/article/127849.html</a></p>
+
+<p>命令 <code>touch</code>：一是用于把已存在文件的时间标签更新为系统当前的时间（默认方式），它们的数据将原封不动地保留下来；二是用来创建新的空文件。</p>
+
+<p>来自: <a href="http://man.linuxde.net/touch">http://man.linuxde.net/touch</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[购入一支普通的录音笔]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250960832958.html"/>
+    <updated>2018-04-30T21:48:03+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250960832958.html</id>
+    <content type="html"><![CDATA[
+<p>虽然手机都有录音功能，但我还是需要一支普通的录音笔，因为在一些情况下确实需要录音，但手机续航时间略感人。在淘宝检索时，发现一些小型录音（窃听）、录像设备销量很高，真是恐怖啊！</p>
+
+<p>下面这些牌子的录音笔多数都提供一键录音，我最终选择了炳捷，但说实话使用频率并不高，如果没有刚需，不建议购买。</p>
+
+<p><strong>环客</strong> <br/>
+节日前涨价，然后半价<br/>
+<strong>索尼</strong> <br/>
+太贵了<br/>
+<strong>飞利浦</strong> <br/>
+官方天猫店没卖<br/>
+<strong>爱国者</strong> <br/>
+录音笔太老<br/>
+<strong>Mrobo</strong> <br/>
+挺不错，与琥客外形相似度很高<br/>
+<strong>锐族</strong> <br/>
+还行，但 MP3 功能不需要<br/>
+<strong>琥客</strong> <br/>
+品牌源自韩国，服务中国，颜值很高<br/>
+<strong>升迈</strong> <br/>
+中规中矩，数据存在外置卡<br/>
+<strong>萨发</strong> <br/>
+颜值不错，功能比琥客还强<br/>
+<strong>现代笔</strong> <br/>
+有 U 盘式，还行<br/>
+<strong>JNN</strong> <br/>
+有 U 盘式，还行<br/>
+<strong>纽曼</strong> <br/>
+中规中矩<br/>
+<strong>炳捷</strong> <br/>
+颜值最高</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[专业的高颜值 GIF 录制应用：Gifox]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250968423301.html"/>
+    <updated>2018-04-30T22:00:42+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250968423301.html</id>
+    <content type="html"><![CDATA[
+<blockquote>
+<p>本文被少数派精选：<a href="https://sspai.com/post/40626">点此查看</a></p>
+</blockquote>
+
+<p>无论是开源的 <a href="https://getkap.co">Kap</a> 还是 Mac App Store 中的 <a href="https://itunes.apple.com/cn/app/gif-brewery-by-gfycat-capture-make-video-gifs/id1081413713?mt=12&amp;uo=4&amp;at=10lJSw">GIF Brewery</a>、<a href="https://itunes.apple.com/cn/app/giphy-capture-the-gif-maker/id668208984?mt=12&amp;uo=4&amp;at=10lJSw">GIPHY Capture</a> 等，这些 GIF 录制应用我都用过，其共同点是免费，这也是我很久之前选择应用的倾向。后不满于这类应用的体验，在 Mac App Store 和搜索引擎以 GIF 为关键字检索：</p>
+
+<ol>
+<li>GIPHY 等免费 GIF 录制应用较为醒目；</li>
+<li>有一些优秀的应用是录制视频，后将视频转为 GIF，或是直接将图片、视频转为 GIF；</li>
+<li>借助多个应用，如 QuickTime、ffmpeg、gifsicle 三者，也是将视频转为 GIF。</li>
+</ol>
+
+<p>GIPHY 等免费且知名的应用的缺陷是没有窗口录制模式；视频、图片转 GIF 类应用又增加了步骤，而且通常这类应用也不是专为 GIF 设计，故难免臃肿；借助多个应用无疑更增加了工作量。</p>
+
+<p>我同时也发现了 <a href="https://itunes.apple.com/cn/app/gifox-gif-recording-and-sharing/id1082624744?mt=12&amp;uo=4&amp;at=10lJSw">Gifox</a>，当时在 Mac App Store 没有一则评论，检索也很难发现有人推荐。但，大概它是目前唯一一款专为 GIF 录制所设计并支持窗口录屏的应用，专注、轻量、优美、快速。 </p>
+
+<h2 id="toc_0">GIF 窗口录制模式</h2>
+
+<p><img src="media/15250968423301/15250969064862.png" alt="窗口录屏（左）&amp;（右）区域录屏"/></p>
+
+<p>这也是我给予它最强 GIF 录制工具评价的主要原因之一，GIPHY Capture、Kap、GIF Brewery 等 GIF 录制应用都没有这个功能，它们都只有区域录制功能，这也许是 GIF 界的独苗。而窗口录制模式的体验实在美好。当然，确实也可以选择支持窗口录屏的应用，然后输出为 GIF，它的劣势我前面也讲过。</p>
+
+<h2 id="toc_1">GIF 录制控制</h2>
+
+<ol>
+<li>设置输出目录，一般桌面是最方便的选择；</li>
+<li>设置图像捕捉方式：勾选 Cursor 表示录制光标，勾选 Windows shadow 表示也录制类似截屏的阴影，勾选 Desktop backgroud 表示录制桌面背景；</li>
+<li>控制压缩比例：亲测设为 0.5 时体积减小了三分之二；</li>
+<li>控制「录制和播放」的每秒显示帧数（FPS），低帧数可以减少 GIF 体积，但也会影响播放流畅度；</li>
+<li>设置播放循环次数及播放间隔。</li>
+</ol>
+
+<p><img src="media/15250968423301/15250969526659.png" alt=""/></p>
+
+<h2 id="toc_2">压缩功能</h2>
+
+<p>Gifox 的默认压缩算法总是选择近期最好的两种，老式算法只作为备选方案，我们可以设置具体的选项：</p>
+
+<ol>
+<li>减小 <code>Max. colours</code> 以缩减 GIF 文件体积，但也会因为色彩过少使照片的观感降低；</li>
+<li>指定 <code>Palettle</code> 即调色板，<code>First frame</code> 指以第一帧为基础生成调色板，好处是可以减小 GIF 体积；</li>
+<li>上一步指定了调色板，需要借助 Dither（抖动）使调色板色彩尽量达到原色彩的程度，GIF 最大只能设置为 256 色调色板，所以需要使用 Dither 以模拟出更多的色彩。形象地讲：比如色彩限定在 100 种，但实际录制的画面包含 1000 种色彩，Dither 可以使 100 种色彩更好地表现出 1000 种色彩的效果，使人难以察觉其中的差别；</li>
+<li>设置 Dither 算法：规则抖动算法 Bayer 抖动因其简单有效而较常用，<code>Bayer scale</code> 是 Bayer 抖动的参数，数值越高 GIF 质量越好。误差分散算法 Floyd-Steinberg 抖动虽然可以产生更好的图像效果，但资源占据较多。若要了解其他算法还请参阅文献。</li>
+</ol>
+
+<p><img src="media/15250968423301/15250969745391.png" alt=""/></p>
+
+<p>Gifox 支持一键分享功能，可以绑定自己的 Dropbox、Google Drive 等账号，不像 GIF Brewery 等需要注册它们的账号，而且官网表明新版本会支持 Slack、Box、GIPHY。当然，它也支持设置快捷键以快速录制和停止。如果对 Gifox 仍有疑问，点击界面右下角的 <code>?</code> 可以看到对功能的详细解释。</p>
+
+<p>但 Gifox 也有不足，无法对录制的 GIF 进行编辑，这只适合一次录制即成品，但也难免出差错，还好可使用预览，来删除无用帧或者添加字幕。关于这点我也会向开发者反馈。</p>
+
+<p>你可以在 Mac App Store 下载 <a href="https://itunes.apple.com/cn/app/gifox-gif-recording-and-sharing/id1082624744?mt=12&amp;uo=4&amp;at=10lJSw">Gifox</a>（30 元），我之前评测过 PDF 应用，曾感慨全五星应用实在难得，但在 GIF 领域 Gifox 就是一款颜值与功能都无可挑剔的应用，如果未来增加编辑功能，那它就无愧于 GIF 领域的全五星应用。</p>
+
+<p><br></p>
+
+<blockquote>
+<p>本文应用版本：<br/>
+Gifox 1.4.0 </p>
+</blockquote>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[星际争霸地图凯甘瑞生存教程]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250960386017.html"/>
+    <updated>2018-04-30T21:47:18+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250960386017.html</id>
+    <content type="html"><![CDATA[
+<p>对于人类来说，这个是生存游戏，反击是后期的事情。也即，前期无论如何也不是虫族的对手，抱团更是送上门的肉。</p>
+
+<h2 id="toc_0">人族</h2>
+
+<h3 id="toc_1">科学家</h3>
+
+<h3 id="toc_2">灵魂</h3>
+
+<p>我最喜欢的角色，最喜欢气流。</p>
+
+<h3 id="toc_3">晋升者</h3>
+
+<h3 id="toc_4">游牧民</h3>
+
+<h3 id="toc_5">辅助型角色：先知</h3>
+
+<ol>
+<li><strong>堵路</strong>：除水晶之外的所有建筑都是隐形的，所以利用这点可以堵路。一般使用星门堵路。不要在隐形建筑外边造建筑，这样会暴露队友的，虫族 K 可以反隐，且都有雷达探测。</li>
+<li><strong>侦查</strong>：视野结界用得好，队友夸你真是好。如前期灵魂塔攻击范围为 5，但视野很小只有 1，所以视野结界是一大助力。在堵路附近隐蔽位置放视野结界也可提前预警，确定合适的跑路时机。</li>
+<li><strong>经济</strong>：萃取结界放在队友经济建筑旁边即可，一般最多三次叠加，即一个经济点的萃取结界最好不要超过三个。此外，虫族攻来务必回收结界，因为打碎结界虫族会得到大量瓦斯。</li>
+<li><strong>防守</strong>：爆炸结界</li>
+</ol>
+
+<h3 id="toc_6">辅助型角色：隐刀</h3>
+
+<h2 id="toc_7">虫族</h2>
+
+<h3 id="toc_8">凯瑞甘（Kerra）</h3>
+
+<h3 id="toc_9">德哈卡</h3>
+
+<h3 id="toc_10">扎克拉</h3>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2017 年度主力应用]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250959408231.html"/>
+    <updated>2018-04-30T21:45:40+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250959408231.html</id>
+    <content type="html"><![CDATA[
+<p>入选原则：</p>
+
+<ul>
+<li>使用频率较高；</li>
+<li>系统自带应用还是单列吧；</li>
+<li>想到什么就写什么，所以间歇性更新……</li>
+</ul>
+
+<p>目的：</p>
+
+<ul>
+<li>大致看下主力应用的花销，抑制冲动消费；</li>
+<li>在不断精减应用之路走得更远。</li>
+</ul>
+
+<h3 id="toc_0">免费</h3>
+
+<ol>
+<li>Wechat &amp; QQ</li>
+<li>Chrome</li>
+<li>Office：教育版，用于论文的写作</li>
+<li>OneNote：个人 Wiki</li>
+<li>Ship</li>
+<li>Zotero：文献管理工具</li>
+<li>Anki</li>
+<li>效率应用：谈不上主力，但确实让我很懒的应用</li>
+<li>Desktop Ghost：临时隐藏桌面所有文件图标</li>
+</ol>
+
+<h3 id="toc_1">收费</h3>
+
+<ol>
+<li>Parallel Desktop：Windows 虚拟机，融合模式体验极好</li>
+<li>1Password Pro：macOS 是 Read Only 状态，主要在 iPad Pro 上使用</li>
+<li>OmniFocus Pro：尝试用它连接一切</li>
+<li>MWeb：最好的 MD 应用</li>
+<li>aText：输入当前日期……</li>
+<li>PinCap：管理图片</li>
+<li>Zoommy：好多无版权限制的图片</li>
+<li>奇点（Singularity）：微博三方客户端，可以永久保存微博，哪怕根据相关政策已删除</li>
+<li>效率应用：谈不上主力，但确实让我很懒的应用</li>
+<li>Wondershare PDF Password Remover：移除 PDF 口令</li>
+<li>PDFelement：对 PDF 编辑、合并等几乎所有操作</li>
+<li>订阅服务只有 Apple Music（已暂停） &amp; iCloud</li>
+</ol>
+
+<h3 id="toc_2">系统自带应用</h3>
+
+<ol>
+<li>Mail</li>
+<li>Notes：存储笔记、日记、隐私照片等</li>
+<li>Safari</li>
+<li>iTunes：听订阅的音乐</li>
+</ol>
+
+<h3 id="toc_3">弃用</h3>
+
+<ol>
+<li>Day One：无法认同日记应用变为订阅制，也无法接受不再提供 iCloud 同步功能</li>
+<li>Saprk：每次关机就它在那里墨迹</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Smart Cover 皮革款与普通款的区别]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250957696485.html"/>
+    <updated>2018-04-30T21:42:49+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250957696485.html</id>
+    <content type="html"><![CDATA[
+<p>我一直在为 10.5 iPad Pro 物色一款最满意的保护套，在决定之前，我淘宝了一个七八十的保护套，用了一段时间就不满意了。iPad 保护套是必需品，因为它要站起来… 官方保护套是主要选择，但淘宝上也有一些颜值很高的选择。总之，现在我决定先了解下官方保护套皮革款与普通款的区别。</p>
+
+<p>有人说，普通款采用聚氨酯，也即人造革，这是一种优秀的合成材料，有很多优点：质地轻，可抗多种酸碱和有机溶剂的腐蚀，一般而言其制品具有耐磨、耐温、密封、隔音、加工性能好、可降解等优异性能。而且 Apple 不会卖假货，人造革的质量也有保证。</p>
+
+<p>但皮革款的颜值要比普通款高出一个档次，而且作为真皮有较好的透气性。等等，我要透气性干嘛？</p>
+
+<p>当然，以上所谓的优点并不多重要，我最关心的是可清洁性！所以我还要等客服回复，故此文待续。</p>
+
+<p>客服回复说皮革款更易清洁。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Chromium 无法登陆 Google 账号]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250956435934.html"/>
+    <updated>2018-04-30T21:40:43+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250956435934.html</id>
+    <content type="html"><![CDATA[
+<blockquote>
+<p>缺少 Google API 密钥，因此 Chromium 的部分功能将无法使用</p>
+</blockquote>
+
+<p>安装 Chromium 后却无法登陆成功，也就无法同步书签、扩展等内容，对此表示心急。检索许多却只发现了 Windows 下的解决方案，还好最后发现了这篇文章：<a href="http://www.jianshu.com/p/c7da087e0b38">El Captain 设置环境变量</a>，虽然标题不显，但内容确实也解决了「Chromium 无法登陆账号」的问题，因无法登陆也是同样的原因，只需添加环境变量即可解决 </p>
+
+<p>1）在目录 <code>~/Library/LaunchAgents/</code> 创建一个文件 <code>environment.plist</code>，并将以下内容复制进去：</p>
+
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+  &lt;key&gt;Label&lt;/key&gt;
+  &lt;string&gt;my.startup&lt;/string&gt;
+  &lt;key&gt;ProgramArguments&lt;/key&gt;
+  &lt;array&gt;
+    &lt;string&gt;sh&lt;/string&gt;
+    &lt;string&gt;-c&lt;/string&gt;
+    &lt;string&gt;
+        launchctl setenv GOOGLE_API_KEY AIzaSyCkfPOPZXDKNn8hhgu3JrA62wIgC93d44k
+        launchctl setenv GOOGLE_DEFAULT_CLIENT_ID 811574891467.apps.googleusercontent.com
+        launchctl setenv GOOGLE_DEFAULT_CLIENT_SECRET kdloedMFGdGla2P1zacGjAQh
+    &lt;/string&gt;
+  &lt;/array&gt;
+  &lt;key&gt;RunAtLoad&lt;/key&gt;
+  &lt;true/&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</code></pre>
+
+<p>2）在终端执行 <code>launchctl load ~/Library/LaunchAgents/environment.plist</code> 以使其立即生效。</p>
+
+<p>也可以在 <a href="https://stackoverflow.com/questions/25385934/setting-environment-variables-via-launchd-conf-no-longer-works-in-os-x-yosemite">stack overflow</a> 查看原教程。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[为何 Office for Mac 字体总变为 M S 明朝]]></title>
+    <link href="https://blog.tangxiaozhu.com/15250958886575.html"/>
+    <updated>2018-04-30T21:44:48+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15250958886575.html</id>
+    <content type="html"><![CDATA[
+<p>将 Office 更新至最新版本即可。如果检查更新无法检查到 Office 更新资源，比如我的就是，可到官网下载手动安装。目前我更新到 170919 版本，变字体的问题已消除：</p>
+
+<ol>
+<li>自动变 M S 明朝，如网页复制；</li>
+<li>无法将 M S 明朝字体更改为宋体等字体；</li>
+<li>检查不到 Office 更新资源的问题也消除了。</li>
+</ol>
+
+<p>Office for macOS 确实不如 for Windows，如果需要常用 Office 不建议购买 Mac 系列，或者购买 Mac 系列的同时也购买 Parallel Desktop 来装 Windows 虚拟机。</p>
 
 ]]></content>
   </entry>
