@@ -4,13 +4,75 @@
   <title><![CDATA[唐小筑]]></title>
   <link href="https://blog.tangxiaozhu.com/atom.xml" rel="self"/>
   <link href="https://blog.tangxiaozhu.com/"/>
-  <updated>2018-05-01T09:52:02+08:00</updated>
+  <updated>2018-05-10T20:43:38+08:00</updated>
   <id>https://blog.tangxiaozhu.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[自学 Python 第 1 期]]></title>
+    <link href="https://blog.tangxiaozhu.com/15251484115051.html"/>
+    <updated>2018-05-01T12:20:11+08:00</updated>
+    <id>https://blog.tangxiaozhu.com/15251484115051.html</id>
+    <content type="html"><![CDATA[
+<p>为了掌握一门编程语言，我从 2014 年就可以考虑学习 Python，看过一些教程和书籍，但全部半途而废，准确地说是很快就放弃了。学习 Python 不仅是一件锻炼思维的事情，也可能关系我未来的职业发展。所以，我下定决心了，要坚持把 Python 慢慢消化透点，成为第一门我掌握的编程语言。</p>
+
+<p>网络教程以廖雪峰的 Python 3 教程为主，但这份教程也有一些不足之处，我会结合自己的思考，加以完善，在记录自己学习过程的同时，也能给予你参考，我就比较满意了。自学系列基于 macOS，倘若使用 Windows，只需按照廖雪峰教程即可。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">安装 Python</h2>
+
+<p>macOS 终端中输入 <code>python -V</code> 显示当前版本，我的 macOS 10.13.4 其 Python 版本为 2.7.10，而目前 Python 版本众多（2.x、3.x），为了更好地管理 Python，可使用版本管理工具 pyenv，在此之前，请去了解 Homebrew 相关内容。</p>
+
+<p>根据 <a href="https://github.com/pyenv/pyenv#homebrew-on-mac-os-x">官方安装教程</a> 安装 pyenv：</p>
+
+<pre><code>brew update
+brew install pyenv
+</code></pre>
+
+<p>然后根据 <a href="https://github.com/pyenv/pyenv#basic-github-checkout">Basic GitHub Checkout</a> 步骤 3 进行激活：</p>
+
+<pre><code>$ echo -e &#39;if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval &quot;$(pyenv init -)&quot;\nfi&#39; &gt;&gt; ~/.bash_profile
+</code></pre>
+
+<p>最后重启终端，并输入 <code>exec &quot;$SHELL&quot;</code> 以使 Path 生效。至此，pyenv 就安装和配置完毕。</p>
+
+<p><a href="https://github.com/pyenv/pyenv#how-it-works">点击这里了解 pyenv 工作原理 </a></p>
+
+<p>不太理解为啥要先输入 <code>brew update</code> 更新 Homebrew，我观察到只在终端输入 <code>brew install pyenv</code> 也会自动更新。</p>
+
+<p><strong>小插曲：</strong>在设置了终端代理的情况，输入 <code>brew update</code> 命令总报错，所以根据 <a href="https://docs.brew.sh/FAQ">官方文档</a> 卸载重新安装了 Homerew，报错原因应该是很久之前更换过国内镜像源……</p>
+
+<pre><code>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)&quot;
+ 
+ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+
+<p>言归正传，pyenv 安装完毕后，则可查询可安装的 Python 版本：</p>
+
+<pre><code>pyenv install --list
+</code></pre>
+
+<p>廖雪峰的 Python 3 教程要求安装 3.6.x 版本，所以我安装了此时最新的稳定版本 3.6.5：</p>
+
+<pre><code>pyenv install 3.6.5
+</code></pre>
+
+<p>然后全局启用 Python 3.6.5:</p>
+
+<pre><code>pyenv global 3.6.5
+</code></pre>
+
+<p>然后就可以正常启用教程中的 Python 代码运行助手……</p>
+
+<p>自学 Python 第 1 期到此结束。</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[关于我：2018]]></title>
@@ -159,6 +221,8 @@ shift + 空格，比如你知道三个牛组成的字怎么打么？<code>niuniu
 <p>在互联网上如少数派这样排版良好的网站不少，但排版欠佳的也不少，类似 Safari 阅读模式的功能就比较重要了。而且无论排版好差，我们晚间也许更偏爱暗色背景。遇到好文，也许还想保存或备份到 Pocket、OneNote、印象笔记以温习或整理。</p>
 
 <p>目前，在 Chrome Web Store 中可以检索到的阅读模式扩展程序仅有个位数，如 Just Read、Read Mode、阅读模式等，<a href="http://ksria.com/simpread/">SimpRead（简悦）</a>是其中集大成者，达成「简单阅读，愉悦心情」之目的。</p>
+
+<span id="more"></span><!-- more -->
 
 <h2 id="toc_0">源于 Safari 但更胜之的阅读模式</h2>
 
@@ -1045,25 +1109,6 @@ Gifox 1.4.0 </p>
 <p>2）在终端执行 <code>launchctl load ~/Library/LaunchAgents/environment.plist</code> 以使其立即生效。</p>
 
 <p>也可以在 <a href="https://stackoverflow.com/questions/25385934/setting-environment-variables-via-launchd-conf-no-longer-works-in-os-x-yosemite">stack overflow</a> 查看原教程。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[为何 Office for Mac 字体总变为 M S 明朝]]></title>
-    <link href="https://blog.tangxiaozhu.com/15250958886575.html"/>
-    <updated>2018-04-30T21:44:48+08:00</updated>
-    <id>https://blog.tangxiaozhu.com/15250958886575.html</id>
-    <content type="html"><![CDATA[
-<p>将 Office 更新至最新版本即可。如果检查更新无法检查到 Office 更新资源，比如我的就是，可到官网下载手动安装。目前我更新到 170919 版本，变字体的问题已消除：</p>
-
-<ol>
-<li>自动变 M S 明朝，如网页复制；</li>
-<li>无法将 M S 明朝字体更改为宋体等字体；</li>
-<li>检查不到 Office 更新资源的问题也消除了。</li>
-</ol>
-
-<p>Office for macOS 确实不如 for Windows，如果需要常用 Office 不建议购买 Mac 系列，或者购买 Mac 系列的同时也购买 Parallel Desktop 来装 Windows 虚拟机。</p>
 
 ]]></content>
   </entry>
