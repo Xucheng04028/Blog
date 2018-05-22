@@ -103,6 +103,66 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
+                <a class="clearlink" href="15250960832958.html">
+                
+                  <h1>购入一支普通的录音笔</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>虽然手机都有录音功能，但我还是需要一支普通的录音笔，因为在一些情况下确实需要录音，但手机续航时间略感人。在淘宝检索时，发现一些小型录音（窃听）、录像设备销量很高，真是恐怖啊！</p>
+
+<p>下面这些牌子的录音笔多数都提供一键录音，我最终选择了炳捷，但说实话使用频率并不高，如果没有刚需，不建议购买。</p>
+
+<p><strong>环客</strong> <br/>
+节日前涨价，然后半价<br/>
+<strong>索尼</strong> <br/>
+太贵了<br/>
+<strong>飞利浦</strong> <br/>
+官方天猫店没卖<br/>
+<strong>爱国者</strong> <br/>
+录音笔太老<br/>
+<strong>Mrobo</strong> <br/>
+挺不错，与琥客外形相似度很高<br/>
+<strong>锐族</strong> <br/>
+还行，但 MP3 功能不需要<br/>
+<strong>琥客</strong> <br/>
+品牌源自韩国，服务中国，颜值很高<br/>
+<strong>升迈</strong> <br/>
+中规中矩，数据存在外置卡<br/>
+<strong>萨发</strong> <br/>
+颜值不错，功能比琥客还强<br/>
+<strong>现代笔</strong> <br/>
+有 U 盘式，还行<br/>
+<strong>JNN</strong> <br/>
+有 U 盘式，还行<br/>
+<strong>纽曼</strong> <br/>
+中规中矩<br/>
+<strong>炳捷</strong> <br/>
+颜值最高</p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/9/6</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
                 <a class="clearlink" href="15250968423301.html">
                 
                   <h1>专业的高颜值 GIF 录制应用：Gifox</h1>
@@ -385,69 +445,6 @@ Gifox 1.4.0 </p>
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="15250956435934.html">
-                
-                  <h1>Chromium 无法登陆 Google 账号</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<blockquote>
-<p>缺少 Google API 密钥，因此 Chromium 的部分功能将无法使用</p>
-</blockquote>
-
-<p>安装 Chromium 后却无法登陆成功，也就无法同步书签、扩展等内容，对此表示心急。检索许多却只发现了 Windows 下的解决方案，还好最后发现了这篇文章：<a href="http://www.jianshu.com/p/c7da087e0b38">El Captain 设置环境变量</a>，虽然标题不显，但内容确实也解决了「Chromium 无法登陆账号」的问题，因无法登陆也是同样的原因，只需添加环境变量即可解决 </p>
-
-<p>1）在目录 <code>~/Library/LaunchAgents/</code> 创建一个文件 <code>environment.plist</code>，并将以下内容复制进去：</p>
-
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
-&lt;plist version=&quot;1.0&quot;&gt;
-&lt;dict&gt;
-  &lt;key&gt;Label&lt;/key&gt;
-  &lt;string&gt;my.startup&lt;/string&gt;
-  &lt;key&gt;ProgramArguments&lt;/key&gt;
-  &lt;array&gt;
-    &lt;string&gt;sh&lt;/string&gt;
-    &lt;string&gt;-c&lt;/string&gt;
-    &lt;string&gt;
-        launchctl setenv GOOGLE_API_KEY AIzaSyCkfPOPZXDKNn8hhgu3JrA62wIgC93d44k
-        launchctl setenv GOOGLE_DEFAULT_CLIENT_ID 811574891467.apps.googleusercontent.com
-        launchctl setenv GOOGLE_DEFAULT_CLIENT_SECRET kdloedMFGdGla2P1zacGjAQh
-    &lt;/string&gt;
-  &lt;/array&gt;
-  &lt;key&gt;RunAtLoad&lt;/key&gt;
-  &lt;true/&gt;
-&lt;/dict&gt;
-&lt;/plist&gt;
-</code></pre>
-
-<p>2）在终端执行 <code>launchctl load ~/Library/LaunchAgents/environment.plist</code> 以使其立即生效。</p>
-
-<p>也可以在 <a href="https://stackoverflow.com/questions/25385934/setting-environment-variables-via-launchd-conf-no-longer-works-in-os-x-yosemite">stack overflow</a> 查看原教程。</p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/29</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -523,13 +520,19 @@ Gifox 1.4.0 </p>
 	      
 		      
 			      <li class="post">
+			        <a href="15254917496629.html">每周分享第 2 期</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15251484115051.html">自学 Python 第 1 期</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15250509803819.html">关于我：2018</a>
+			        <a href="15250509803819.html">关于我 2018</a>
 			      </li>
 		     
 		  
@@ -542,12 +545,6 @@ Gifox 1.4.0 </p>
 		      
 			      <li class="post">
 			        <a href="15250965271937.html">输入法的选择</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15250972560875.html">SimpRead：简悦你的知识消化历程</a>
 			      </li>
 		     
 		  

@@ -103,6 +103,69 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
+                <a class="clearlink" href="15250956435934.html">
+                
+                  <h1>Chromium 无法登陆 Google 账号</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<blockquote>
+<p>缺少 Google API 密钥，因此 Chromium 的部分功能将无法使用</p>
+</blockquote>
+
+<p>安装 Chromium 后却无法登陆成功，也就无法同步书签、扩展等内容，对此表示心急。检索许多却只发现了 Windows 下的解决方案，还好最后发现了这篇文章：<a href="http://www.jianshu.com/p/c7da087e0b38">El Captain 设置环境变量</a>，虽然标题不显，但内容确实也解决了「Chromium 无法登陆账号」的问题，因无法登陆也是同样的原因，只需添加环境变量即可解决 </p>
+
+<p>1）在目录 <code>~/Library/LaunchAgents/</code> 创建一个文件 <code>environment.plist</code>，并将以下内容复制进去：</p>
+
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+  &lt;key&gt;Label&lt;/key&gt;
+  &lt;string&gt;my.startup&lt;/string&gt;
+  &lt;key&gt;ProgramArguments&lt;/key&gt;
+  &lt;array&gt;
+    &lt;string&gt;sh&lt;/string&gt;
+    &lt;string&gt;-c&lt;/string&gt;
+    &lt;string&gt;
+        launchctl setenv GOOGLE_API_KEY AIzaSyCkfPOPZXDKNn8hhgu3JrA62wIgC93d44k
+        launchctl setenv GOOGLE_DEFAULT_CLIENT_ID 811574891467.apps.googleusercontent.com
+        launchctl setenv GOOGLE_DEFAULT_CLIENT_SECRET kdloedMFGdGla2P1zacGjAQh
+    &lt;/string&gt;
+  &lt;/array&gt;
+  &lt;key&gt;RunAtLoad&lt;/key&gt;
+  &lt;true/&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</code></pre>
+
+<p>2）在终端执行 <code>launchctl load ~/Library/LaunchAgents/environment.plist</code> 以使其立即生效。</p>
+
+<p>也可以在 <a href="https://stackoverflow.com/questions/25385934/setting-environment-variables-via-launchd-conf-no-longer-works-in-os-x-yosemite">stack overflow</a> 查看原教程。</p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/29</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
                 <a class="clearlink" href="15250958886575.html">
                 
                   <h1>为何 Office for Mac 字体总变为 M S 明朝</h1>
@@ -288,45 +351,6 @@ WindowsServer 65 MB _windowserver
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="15250955371581.html">
-                
-                  <h1>人究竟是否孤独</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>绝大多数时候，我一直认为人生而孤独，充其量在某些具体事物的看法可以一致，但绝不会在大多数时候思想上达到共鸣。可也得承认，常常也会产生错觉，比如在高铁上、滴滴上常遇到很聊得来的人，难免感慨人生亦有知我者。</p>
-
-<p>所以，此时此刻，我想哭，但眼睛湿了，却又不会落泪。这样的感觉多了，却也流不下泪了。</p>
-
-<p>我想到了女友，这是我喜爱的人儿，所以我在想是否要分手。察觉到在想法上难以有很多的沟通，绝大多数的沟通都只是在爱情或琐事等，每天一个电话也就没了它重大的意义。如果不分手，我岂不是要辜负这样一个好女孩？爱她柔弱的孩子气，爱她纤细的身材与精致的脸蛋，可仅是这样，可以长久地做她的知心人么？可以呵护她不受一点委屈么？事实上，我们也已经因为类似的原因闹过矛盾了。</p>
-
-<p>想起高铁上、滴滴上与路人聊得来的情形，多么舒爽的感觉。但理智告诉我，一旦深交，必然不如初见，出于这份恐惧，我从不主动留联系方式。人究竟孤独与否，这问题其实不必要一问再问，因为答案从始至终都是确定的……</p>
-
-<p>只是这答案是让我淡然，还是让我茫然？</p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/20</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -402,13 +426,19 @@ WindowsServer 65 MB _windowserver
 	      
 		      
 			      <li class="post">
+			        <a href="15254917496629.html">每周分享第 2 期</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15251484115051.html">自学 Python 第 1 期</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15250509803819.html">关于我：2018</a>
+			        <a href="15250509803819.html">关于我 2018</a>
 			      </li>
 		     
 		  
@@ -421,12 +451,6 @@ WindowsServer 65 MB _windowserver
 		      
 			      <li class="post">
 			        <a href="15250965271937.html">输入法的选择</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15250972560875.html">SimpRead：简悦你的知识消化历程</a>
 			      </li>
 		     
 		  
