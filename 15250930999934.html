@@ -152,8 +152,11 @@ fatal: unable to access &#39;https://github.com/tcitry/tcitry.github.io.git/&#39
 
 <p>这应该不是 SSH KEY 的问题，应该也不是升级系统的原因。使用 HTTPS 连接会要求输入账户密码（这是加密连接，有些公司内网只支持此种连接方式）。但是，必须确保此时的公钥与私钥是正确对应的，尤其是经过诸多测试后。</p>
 
-<p><strong>确认秘钥</strong><br/>
-请看 <a href="https://help.github.com/articles/error-permission-denied-publickey/">官方帮助文档</a> 提供的故障排除详细指南。如果问题仍在，那应该是没仔细观阅。</p>
+<ul>
+<li><strong>确认秘钥</strong>：</li>
+</ul>
+
+<p>请看 <a href="https://help.github.com/articles/error-permission-denied-publickey/">官方帮助文档</a> 提供的故障排除详细指南。如果问题仍在，那应该是没仔细观阅。</p>
 
 <p>尤其注意 <code>ssh -vT git@github.com</code> 命令的运行结果：</p>
 
@@ -166,8 +169,11 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
 
 <p>即使再生成也没有影响，两者默认命名是不同的，不会覆盖。</p>
 
-<p><strong>郁闷</strong><br/>
-但是我的的客户端昨天还好好的，今天就得改下远程库地址连接方式才能提交。好诡异。寻找原因中。愿与诸位共讨论。</p>
+<ul>
+<li><strong>郁闷</strong></li>
+</ul>
+
+<p>但是我的的客户端昨天还好好的，今天就得改下远程库地址连接方式才能提交。好诡异。寻找原因中。愿与诸位共讨论。</p>
 
 
     

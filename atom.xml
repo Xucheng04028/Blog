@@ -4,7 +4,7 @@
   <title><![CDATA[唐小筑]]></title>
   <link href="https://blog.tangxiaozhu.com/atom.xml" rel="self"/>
   <link href="https://blog.tangxiaozhu.com/"/>
-  <updated>2018-05-23T07:10:12+08:00</updated>
+  <updated>2018-05-25T20:25:43+08:00</updated>
   <id>https://blog.tangxiaozhu.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -46,6 +46,8 @@
 <h3 id="toc_1">初学者可以考虑选择 Python</h3>
 
 <p>我一直都想掌握一门编程语言，因为我感到如果未来不了解编程语言，会增加生存难度…… <a href="https://36kr.com/p/5084329.html">IEEE 发布 2017 年编程语言排行榜：Python 高居首位，PHP 第八</a> 也说明了 Python 的流行和重要性。<a href="http://www.techug.com/post/most-popular-programming-languages-best-for-developers.html">前 10 大编程语言你会几种</a> 也认为初学者使用 Python 是不错的选择。廖雪峰教程也大力夸赞 Python，所以如果没有特别目的，完全可以考虑学习 Python 这门语言，它功能强大，且相较之下易掌握。</p>
+
+<span id="more"></span><!-- more -->
 
 <h2 id="toc_2">疑问</h2>
 
@@ -556,18 +558,9 @@ MWeb 2.3.4 for iOS </p>
     <content type="html"><![CDATA[
 <p>最重要的就是拥有一个美国本地号码，而我只推荐使用 TextNow 获取美国号码，因为这是目前发现还有效的唯一一款可以免费获取号码，它有网页版和多平台客户端。但是号码十数天不用，就会被回收并无法再找回。</p>
 
-<p>目前已失效的工具：</p>
+<p>目前已失效的工具，Pinger Text Free，虽然可以注册，但获得的号码会一直变动。其客服回复只在美国和加拿大地区提供服务。</p>
 
-<ul>
-<li>Pinger Text Free
-可以注册，但获得的号码会一直变动。其客服回复只在美国和加拿大地区提供服务。</li>
-</ul>
-
-<p>收费的工具：</p>
-
-<ul>
-<li>叮咚</li>
-</ul>
+<p>也可使用收费的工具：叮咚。</p>
 
 <p>此外，Google 很可能识别出号码是虚拟号码或者号码已被大量使用，所以就无法获得谷歌语音号码，但是有漏洞的。在点击后提示无法取得号码的界面，以约 100 ms 的间隔点击确认，也许十几分钟、也许数个小时、也许一夜就可以成功获得一枚 Google Voice 美国号码。</p>
 
@@ -603,6 +596,64 @@ MWeb 2.3.4 for iOS </p>
     <updated>2018-04-30T21:50:19+08:00</updated>
     <id>https://blog.tangxiaozhu.com/15250962190820.html</id>
     <content type="html"><![CDATA[
+<ul>
+<li>
+<a href="#toc_0">配镜询问</a>
+</li>
+<li>
+<a href="#toc_1">验光</a>
+</li>
+<li>
+<a href="#toc_2">注意事项</a>
+</li>
+<li>
+<a href="#toc_3">选镜片</a>
+<ul>
+<li>
+<a href="#toc_4">陷阱</a>
+</li>
+<li>
+<a href="#toc_5">镜片品牌</a>
+</li>
+<li>
+<a href="#toc_6">镜片材质</a>
+</li>
+<li>
+<a href="#toc_7">问题及解答</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_8">选镜架</a>
+<ul>
+<li>
+<a href="#toc_9">镜架材质</a>
+<ul>
+<li>
+<a href="#toc_10">金属类</a>
+</li>
+<li>
+<a href="#toc_11">塑胶镜架</a>
+</li>
+<li>
+<a href="#toc_12">天然材料类</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_13">问题及解答</a>
+</li>
+<li>
+<a href="#toc_14">术语缩写</a>
+</li>
+<li>
+<a href="#toc_15">参考资料</a>
+</li>
+</ul>
+
+
 <p>验光数据为：右眼近视 225°，左眼散光 100°</p>
 
 <p>配镜店的一个实习学生认为验光过程中我更适应 250°，所以眼镜度数为右眼近视 250°，左眼散光 100°。而我是在读研究生，绝大多数时间都在看电脑，夜晚常看手机至零点，偶尔至凌晨一二点，所以镜片防蓝光（蓝光波长约 475 nm），感觉有点效果。</p>
@@ -875,14 +926,18 @@ touch Xcode.app
 
 <p>然后转到 Spotlight 首选项并取消选中 Developer（可能需要重新启动系统偏好设置）</p>
 
-<p>即使更改设置，您也需要保留虚拟 Xcode.app，删除将导致设置恢复。<br/>
-另一个解决方案是安装 Xcode 本身。</p>
+<p>即使更改设置，您也需要保留虚拟 Xcode.app，删除将导致设置恢复。</p>
 
-<p>本文参照：<br/>
-<a href="https://forums.macrumors.com/threads/spotlight-developer-and-web-searches-cant-be-disabled.1193533/">https://forums.macrumors.com/threads/spotlight-developer-and-web-searches-cant-be-disabled.1193533/</a><br/>
-<a href="https://gxnotes.com/article/127849.html">https://gxnotes.com/article/127849.html</a></p>
+<p>另一个解决方案是安装 Xcode 本身。</p>
 
-<p>命令 <code>touch</code>：一是用于把已存在文件的时间标签更新为系统当前的时间（默认方式），它们的数据将原封不动地保留下来；二是用来创建新的空文件。</p>
+<p>本文参照：</p>
+
+<ol>
+<li><a href="https://forums.macrumors.com/threads/spotlight-developer-and-web-searches-cant-be-disabled.1193533/">https://forums.macrumors.com/threads/spotlight-developer-and-web-searches-cant-be-disabled.1193533/</a></li>
+<li><a href="https://gxnotes.com/article/127849.html">https://gxnotes.com/article/127849.html</a></li>
+</ol>
+
+<p><code>touch</code> 命令：一是用于把已存在文件的时间标签更新为系统当前的时间（默认方式），它们的数据将原封不动地保留下来；二是用来创建新的空文件。</p>
 
 <p>来自: <a href="http://man.linuxde.net/touch">http://man.linuxde.net/touch</a></p>
 
@@ -899,32 +954,20 @@ touch Xcode.app
 
 <p>下面这些牌子的录音笔多数都提供一键录音，我最终选择了炳捷，但说实话使用频率并不高，如果没有刚需，不建议购买。</p>
 
-<p><strong>环客</strong> <br/>
-节日前涨价，然后半价<br/>
-<strong>索尼</strong> <br/>
-太贵了<br/>
-<strong>飞利浦</strong> <br/>
-官方天猫店没卖<br/>
-<strong>爱国者</strong> <br/>
-录音笔太老<br/>
-<strong>Mrobo</strong> <br/>
-挺不错，与琥客外形相似度很高<br/>
-<strong>锐族</strong> <br/>
-还行，但 MP3 功能不需要<br/>
-<strong>琥客</strong> <br/>
-品牌源自韩国，服务中国，颜值很高<br/>
-<strong>升迈</strong> <br/>
-中规中矩，数据存在外置卡<br/>
-<strong>萨发</strong> <br/>
-颜值不错，功能比琥客还强<br/>
-<strong>现代笔</strong> <br/>
-有 U 盘式，还行<br/>
-<strong>JNN</strong> <br/>
-有 U 盘式，还行<br/>
-<strong>纽曼</strong> <br/>
-中规中矩<br/>
-<strong>炳捷</strong> <br/>
-颜值最高</p>
+<p><strong>环客</strong>，节日前涨价，然后半价<br/>
+<strong>索尼</strong>，太贵了<br/>
+<strong>飞利浦</strong>，官方天猫店没卖<br/>
+<strong>爱国者</strong>，录音笔太老<br/>
+<strong>纽曼</strong>，中规中矩<br/>
+<strong>升迈</strong>，中规中矩，数据存在外置卡<br/>
+<strong>现代笔</strong>，有 U 盘式，还行<br/>
+<strong>JNN</strong>，有 U 盘式，还行<br/>
+<strong>锐族</strong>，还行，但 MP3 功能不需要</p>
+
+<p><strong>琥客</strong>，品牌源自韩国，服务中国，颜值很高<br/>
+<strong>Mrobo</strong>，挺不错，与琥客外形相似度很高<br/>
+<strong>萨发</strong>，颜值不错，功能比琥客还强<br/>
+<strong>炳捷</strong>，颜值最高</p>
 
 ]]></content>
   </entry>
@@ -1008,17 +1051,12 @@ Gifox 1.4.0 </p>
 
 <h2 id="toc_0">人族</h2>
 
-<h3 id="toc_1">科学家</h3>
-
-<h3 id="toc_2">灵魂</h3>
-
-<p>我最喜欢的角色，最喜欢气流。</p>
-
-<h3 id="toc_3">晋升者</h3>
-
-<h3 id="toc_4">游牧民</h3>
-
-<h3 id="toc_5">辅助型角色：先知</h3>
+<p><strong>科学家</strong><br/>
+<strong>灵魂</strong>，我最喜欢的角色，最喜欢气流。<br/>
+<strong>晋升者</strong><br/>
+<strong>游牧民</strong><br/>
+<strong>隐刀</strong>（辅助型角色）<br/>
+<strong>先知</strong>（辅助型角色）：</p>
 
 <ol>
 <li><strong>堵路</strong>：除水晶之外的所有建筑都是隐形的，所以利用这点可以堵路。一般使用星门堵路。不要在隐形建筑外边造建筑，这样会暴露队友的，虫族 K 可以反隐，且都有雷达探测。</li>
@@ -1027,15 +1065,11 @@ Gifox 1.4.0 </p>
 <li><strong>防守</strong>：爆炸结界</li>
 </ol>
 
-<h3 id="toc_6">辅助型角色：隐刀</h3>
+<h2 id="toc_1">虫族</h2>
 
-<h2 id="toc_7">虫族</h2>
-
-<h3 id="toc_8">凯瑞甘（Kerra）</h3>
-
-<h3 id="toc_9">德哈卡</h3>
-
-<h3 id="toc_10">扎克拉</h3>
+<p><strong>凯瑞甘</strong>（Kerra）：我最喜欢的角色，大杀四方 :)<br/>
+<strong>德哈卡</strong><br/>
+<strong>扎克拉</strong></p>
 
 ]]></content>
   </entry>

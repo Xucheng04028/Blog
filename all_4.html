@@ -103,85 +103,40 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
-                <a class="clearlink" href="15250956435934.html">
+                <a class="clearlink" href="15250928793081.html">
                 
-                  <h1>Chromium 无法登陆 Google 账号</h1>
+                  <h1>教育优惠与节日优惠</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<blockquote>
-<p>缺少 Google API 密钥，因此 Chromium 的部分功能将无法使用</p>
-</blockquote>
+                        	<p>许多优秀的产品都对学生有较大的优惠，虽然国内一些人爱钻空子并滥用致使一些产品取消了 EDU.CN 邮箱的认证，或者不接受国内的申请。但仍然有许多优惠。</p>
 
-<p>安装 Chromium 后却无法登陆成功，也就无法同步书签、扩展等内容，对此表示心急。检索许多却只发现了 Windows 下的解决方案，还好最后发现了这篇文章：<a href="http://www.jianshu.com/p/c7da087e0b38">El Captain 设置环境变量</a>，虽然标题不显，但内容确实也解决了「Chromium 无法登陆账号」的问题，因无法登陆也是同样的原因，只需添加环境变量即可解决 </p>
-
-<p>1）在目录 <code>~/Library/LaunchAgents/</code> 创建一个文件 <code>environment.plist</code>，并将以下内容复制进去：</p>
-
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
-&lt;plist version=&quot;1.0&quot;&gt;
-&lt;dict&gt;
-  &lt;key&gt;Label&lt;/key&gt;
-  &lt;string&gt;my.startup&lt;/string&gt;
-  &lt;key&gt;ProgramArguments&lt;/key&gt;
-  &lt;array&gt;
-    &lt;string&gt;sh&lt;/string&gt;
-    &lt;string&gt;-c&lt;/string&gt;
-    &lt;string&gt;
-        launchctl setenv GOOGLE_API_KEY AIzaSyCkfPOPZXDKNn8hhgu3JrA62wIgC93d44k
-        launchctl setenv GOOGLE_DEFAULT_CLIENT_ID 811574891467.apps.googleusercontent.com
-        launchctl setenv GOOGLE_DEFAULT_CLIENT_SECRET kdloedMFGdGla2P1zacGjAQh
-    &lt;/string&gt;
-  &lt;/array&gt;
-  &lt;key&gt;RunAtLoad&lt;/key&gt;
-  &lt;true/&gt;
-&lt;/dict&gt;
-&lt;/plist&gt;
-</code></pre>
-
-<p>2）在终端执行 <code>launchctl load ~/Library/LaunchAgents/environment.plist</code> 以使其立即生效。</p>
-
-<p>也可以在 <a href="https://stackoverflow.com/questions/25385934/setting-environment-variables-via-launchd-conf-no-longer-works-in-os-x-yosemite">stack overflow</a> 查看原教程。</p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/29</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15250958886575.html">
-                
-                  <h1>为何 Office for Mac 字体总变为 M S 明朝</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>将 Office 更新至最新版本即可。如果检查更新无法检查到 Office 更新资源，比如我的就是，可到官网下载手动安装。目前我更新到 170919 版本，变字体的问题已消除：</p>
+<h3 id="toc_0">教育免费</h3>
 
 <ol>
-<li>自动变 M S 明朝，如网页复制；</li>
-<li>无法将 M S 明朝字体更改为宋体等字体；</li>
-<li>检查不到 Office 更新资源的问题也消除了。</li>
+<li><a href="http://www.originlab.com/OriginProLearning.aspx">Origin</a></li>
+<li>AutoCAD</li>
 </ol>
 
-<p>Office for macOS 确实不如 for Windows，如果需要常用 Office 不建议购买 Mac 系列，或者购买 Mac 系列的同时也购买 Parallel Desktop 来装 Windows 虚拟机。</p>
+<h3 id="toc_1">教育优惠</h3>
+
+<ol>
+<li><a href="https://estore.onthehub.com">OnTheHub</a></li>
+<li><a href="http://shop.edu.cn/">赛尔校园先锋</a>：支持支付宝与网银</li>
+</ol>
+
+<h3 id="toc_2">节日优惠</h3>
+
+<p>这里与教育优惠无关，但优惠力度超过教育优惠。</p>
+
+<p><strong>双十一半价</strong>：</p>
+
+<ol>
+<li>Parallels Desktop：358 ---&gt; 179</li>
+<li>Office 365 个人版：399 ---&gt; 199 ---&gt; 99</li>
+<li>优酷会员半价：198 -&gt; 99</li>
+</ol>
 
                         
                       </div>
@@ -190,7 +145,7 @@
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2017/8/27</span>
+                    <span class="date">2017/8/18</span>
                     
           				   
                   </div>
@@ -205,28 +160,164 @@
               </div><!-- article -->
         
 			<div class="article">
-                <a class="clearlink" href="15250958564749.html">
+                <a class="clearlink" href="15250926629285.html">
                 
-                  <h1>探究 MacBook Pro 变慢的原因及解决方案</h1>
+                  <h1>我的 macOS 使用心得</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<p>MacBook Pro Late 2013 变慢后内存占用状况：</p>
+                        	<p>之前做了大量关于 macOS 的使用笔记，有些确实很有参考价值，但也许是误删导致丢失了。现在我的文档管理已经相当有条理了，丢失的现象也不会再发生。重新记录 macOS 的使用心得及遇到的问题。</p>
 
-<pre><code>虚拟内存 3 GB
-kernel_task ? root
-WindowsServer ? _windowserver
+<h2 id="toc_0">阅读和写作</h2>
+
+<p>阅读电子书我一般使用 Kindle 或者 iBook 客户端，而 PDF Expert（预览 -&gt; Skim -&gt; Foxit -&gt; PDFelement -&gt; PDF Expert）是我心里在 macOS 上最好的 PDF 阅读器。</p>
+
+<p>写短篇文章几乎任何文字处理程序都可以胜任，但胜任长篇甚至是大型电子书写作的就不多了。考虑过写小说的我试过以下应用，但后来不再试着写小说。</p>
+
+<ul>
+<li>iBook Author，可以说是功能最为齐全的写作工具，这也使它比较重；</li>
+<li>小黑屋，可惜颜值不高；</li>
+<li>GitBook，可以与 GitHub 仓库绑定，可以协作写书和发表， 最新版对中文字体的支持也已改善；</li>
+<li>Type.im（已改名为妙笔），是一款很轻也很美的写作工具，支持 Markdown，独特的是支持为每个文件添加备注。</li>
+<li>壹写作，全平台，支持大纲、人物关系图示、发布到诸多如腾讯文学的小说网站。</li>
+</ul>
+
+<p>我无事就会写写博客，目前最常用 MWeb（Mou -&gt; MacDown -&gt; Typora -&gt; MarkEditor -&gt; MWeb），这是横空出世的重量级产品！但 MarkEditor 对文件的排序更聪明，也有其他的好功能，虽然它只支持到二级目录，但它还是我的常用工具。</p>
+
+<h2 id="toc_1">游戏和娱乐</h2>
+
+<p><a href="http://www.openra.net/">经典红色警戒</a> macOS &amp; Windows &amp; Linux<br/>
+魔兽争霸之冰封王座 macOS &amp; Windows<br/>
+Steam macOS &amp; Windows<br/>
+战网 macOS &amp; Windows</p>
+
+<h2 id="toc_2">技巧</h2>
+
+<p>三指滑动可以选择文本……</p>
+
+<p><strong>快捷键</strong>，有时候觉着 macOS 没有 Windows 方便，但其实是没发现 macOS 不易被发现的便利：</p>
+
+<ol>
+<li>复制文件路径 <code>option + command + c</code></li>
+<li>锁屏 <code>control + shift + power</code></li>
+<li>显示与隐藏文件 <code>shift + command + .</code></li>
+<li>先复制再剪切 <code>command + option + v</code> </li>
+</ol>
+
+<p><strong>替身、软硬链接</strong>：<a href="http://h2appy.blog.51cto.com/609721/1354001">这篇文章</a> 详细阐述了各自的特点。总的来说，<strong>替身</strong>，移动源文件位置替身依旧有效，但是替身并不包含路径信息，即应用并不能识别替身；对于<strong>软连接</strong>，如果移动了源文件那么这个链接也就无效了，但是软链接可以被应用识别，比如你将应用的资料文件移到同步盘，然后生成软链接并放在原来资料文件所在的位置，这时应用仍能识别；硬链接的使用情景很少，就不做介绍。</p>
+
+<p>生成软链接：<code>ln -s 源文件路径 软链接路径</code></p>
+
+<p><strong>验证哈希值</strong>：</p>
+
+<ol>
+<li>计算 MD5 值：<code>md5 &lt;文件路径&gt;</code> </li>
+<li>计算 SHA1 值：<code>shasum -a 1 &lt;文件路径&gt;</code> </li>
+<li>计算 SHA256 值：<code>shasum -a 256 &lt;文件路径&gt;</code> </li>
+</ol>
+
+<p><strong>安卓共享网络</strong>：由于缺乏驱动，安卓手机一般是无法与 Macintosh 通过数据线共享网络的。幸好 <a href="http://joshuawise.com/">Joshua Wise</a> 的作品 <a href="http://joshuawise.com/horndis">HoRNDIS</a> 使 Macintosh 具备了这项能力。</p>
+
+<h2 id="toc_3">问题</h2>
+
+<ul>
+<li><p>SciDAVis 1.14 行数字显示不全；SciDAVis 1.D8 行数字显示正常。</p></li>
+<li><p>Chrome 更新失败。Chrome 更新失败（错误 11，12）确认可通过此方法解决。退出 Chrome 浏览器, 并进入到指定目录。我直接复制命令到终端提示不存在这样的目录，但可以直接从 Finder 前往此目录。然后在 <code>Resources</code> 下执行以下命令。参考了 <a href="http://www.v1en.com/2016/04/26/chrome_for_mac_update_err_11/">梦寒</a> 文章。</p></li>
+</ul>
+
+<pre><code>cd /Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/Contents/Resources/GoogleSoftwareUpdateAgent.app/Contents/Resources/
+
+卸载 KeyStone：sudo ./ksinstall --uninstall
+删除 chrome 更新目录：sudo rm -rf /Library/Google/GoogleSoftwareUpdate/
 </code></pre>
 
-<p>重启后内存占用状况：</p>
+<ul>
+<li><p>无法响应。更新系统之后，在主系统打开许多应用，然后打开 Windows 10 虚拟机，机器就基本死机了，只能缓慢动弹。原因未知。此问题在最近又自己消失了……</p></li>
+<li><p>长期待机将会导致 macOS 睡眠和虚拟内存文件庞大起来，建议每月关机一次释放空间。而且，关机以后才会触发 FileVault 硬盘加密，这意味着如果没有关机而电脑被偷走，是有被破解的可能，关机杜绝了这个可能。 </p></li>
+</ul>
 
-<pre><code>虚拟内存 1 GB
-kernel_task 700 MB root
-WindowsServer 65 MB _windowserver
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/18</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250920685912.html">
+                
+                  <h1>删除此电脑中的六个文件</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>强迫症总要为一些奇葩的问题奔波，Windows 系统让强迫症抓狂……</p>
+
+<p><img src="media/15250920685912/15250920907321.png" alt=""/></p>
+
+<h2 id="toc_0">方法一</h2>
+
+<p>使用注册表删除法，复制粘贴一下内容，保存为 REG 文件，双击，确定，即可。可以全部删除，也可以部分删除。</p>
+
+<h3 id="toc_1">Windows 8.1 &amp; 10 1507 及之前</h3>
+
+<pre><code>同样适用于旧版本 WIN 10
+========= 复制下面内容 ========= 去除减号 &#39;-&#39; 再运行即可还原
+Windows Registry Editor Version 5.00
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{374DE290-123F-4565-9164-39C4925E467B}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
 </code></pre>
 
-<p>解决方案：如果开启了 Parallel Desktop 虚拟机，务必重启；平时最好每过数天重启，当然最好的解决方案时购买新 MacBook Pro……</p>
+<h3 id="toc_2">Windows 10 1511 及之后</h3>
+
+<pre><code>适用于的新版本 WIN 10 （自 2015 年 12 月后）
+========= 复制下面内容 ========= 去除减号 &#39;-&#39; 再运行即可还原
+Windows Registry Editor Version 5.00
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{d3162b92-9365-467a-956b-92703aca08af}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}]
+</code></pre>
+
+<h2 id="toc_3">方法二</h2>
+
+<p>在搜索框输入 “regedit” 进入注册表编辑器，找到 <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions</code>之后，再找到下列六项，分别将 <code>PropertyBag</code>中的 <code>ThisPCPolicy</code> 由 <code>show</code> 改为 <code>Hide</code> 即可。若要还原再改回 <code>show</code> 即可。</p>
+
+<pre><code>　&gt; “图片”：{0ddd015d-b06c-45d5-8c4c-f59713854639}\PropertyBag
+　&gt; “视频”：{35286a68-3c57-41a1-bbb1-0eae73d76c95}\PropertyBag
+　&gt; “下载”：{7d83ee9b-2244-4e70-b1f5-5393042af1e4}\PropertyBag
+　&gt; “音乐”：{a0c69a99-21c8-4671-8703-7934162fcf1d}\PropertyBag
+　&gt; “桌面”：{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}\PropertyBag
+　&gt; “文档”：{f42ee2d3-909f-4907-8871-4c22fc0bf756}\PropertyBag
+</code></pre>
+
+<p><img src="media/15250920685912/15250921882531.png" alt=""/></p>
+
+<p>方法一源自：<a href="http://www.myxzy.com/post-431.html">星知苑</a><br/>
+方法二源自：<a href="http://www.pconline.com.cn/win10/741/7412340.html">太平洋电脑网</a></p>
+
+<p>此两种方法风险极小，注册表可保持完整，网上也有其他涉及到删除指定注册表的方法，若要采用务必备份注册表以防意外。</p>
 
                         
                       </div>
@@ -235,7 +326,7 @@ WindowsServer 65 MB _windowserver
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2017/8/27</span>
+                    <span class="date">2017/8/18</span>
                     
           				   
                   </div>
@@ -250,20 +341,67 @@ WindowsServer 65 MB _windowserver
               </div><!-- article -->
         
 			<div class="article">
-                <a class="clearlink" href="15250958303004.html">
+                <a class="clearlink" href="15250925649984.html">
                 
-                  <h1>如何解绑飞猪的酒店会员卡</h1>
+                  <h1>警惕爱国主义</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<p>飞猪 -&gt; 我的会员卡：万豪酒店卡、如家酒店卡等</p>
+                        	<h2 id="toc_0">国家的定义</h2>
 
-<p>飞猪技术人员回复：飞猪平台没有权限解绑，需要自行联系各酒店官网解绑会员卡。</p>
+<p>在谈论爱国时，不免对“国”之定义有疑惑。</p>
 
-<p>我尝试联系开元酒店卡以解绑会员卡，在一番沟通后，酒店客服声称已经删除账号，但是飞猪中依然存在此会员卡。</p>
+<p>西方思想家西塞罗给出了一个国家定义：国家是人民的事业，但人民不是某种随意聚集在一起的人的集合体，而是大量的民众基于法的一致和利益的共同而结合起来的联合体。他的定义有这样的特征，以人民为中心，以正义与合法为准则。但是西塞罗所谓的正义是倾向于自然正义，也即弱者应该服从强者。</p>
 
-<p>故目前似乎无法删除。</p>
+<p>基督教思想家奥古斯丁以神的正义替代了自然的正义，而神是至高的，神的正义也即真正的正义，而这却是极为艰难的，与社会主义的最终走向是趋于一致的。奥古斯丁这样定义国家：国家是人民的事业，但人民不是某种随意聚集在一起的人的集合体，而是由某种一致拥有的爱的对象而联系在一起的理性动物的集合体。</p>
+
+<p>在近代历史上，马克思这样论述国家：国家是阶级统治的机关，是一个阶级压迫另一个阶级的机关。而社会主义国家是人民当家作主，即多数人对少数人进行阶级压迫，这相较于少数人压迫多数人是一种巨大的进步。但是，难道没有一个国家是全部公民共同管理也即消除阶级的存在？</p>
+
+<h2 id="toc_1">爱国的定义</h2>
+
+<p>爱国是人类长远以来一种美好的情感。对中国人民来说，爱国既表现在对祖国大好河山、悠久文化历史的热爱，也体现在把这种热爱之情融入到建设社会主义现代化的实践中。故乡之情、乡土之情乃至爱国之情是人类难以避免的人之常情。</p>
+
+<p><img src="media/15250925649984/15250925984190.png" alt=""/></p>
+
+<p>由于涉及文化、地理和政治等，对爱国主义下定义是一件极难的事情，多数定义边界模糊。《韦伯斯特大词典》将爱国主义定义为对国家的热爱或奉献。《简明牛津政治辞典》中，爱国主义一般被定义为对祖国的热爱或保卫祖国利益的热情，但并不一定会形成具体行动。此两种定义倾向于对己国家利益的维护。《布莱克韦尔政治思想百科全书》将爱国主义定义为更多的是对所生活的土地或其生活方式的忠诚，而较少关心民族主义的核心问题即抽象的国家概念。此种定义倾向于人类对己所生活及己土地的热爱之情，这种情感是人类的天性所生，并不强调对国之热爱和维护。</p>
+
+<p>关于爱国主义，列宁也有一些描述。爱国主义是由于千百年来各自的祖国彼此隔离而形成的一种极其深厚的感情。列宁在这里指出了爱国主义局限性的一面，即由于各自的祖国千百年来彼此隔离，从而形成了人们极其深厚的爱国感情。而列宁对这种深厚情感的态度是“如果你是一个社会主义者，你就应当为了国际革命而牺牲自己的一切爱国主义情感”。列宁阐释说“爱国主义，这正是小私有者的经济生活条件造成的一种情感”。小私有者的经济是封闭的自然经济，一直以来都是自给自足，眼中只看到自己那一片天地。且由于自己的经济地位，小资产阶级相较于资产阶级和无产阶级都更加爱国。列宁这里所谓爱国是爱己国，是维护其稳定以保障自身的利益或生活的稳定，列宁对此是倾向于持批判态度的。</p>
+
+<h2 id="toc_2">爱国主义之利弊</h2>
+
+<p>爱国有狭义与广义之分。爱国主义在《布莱克韦尔政治思想百科全书》中的定义也应是狭义的，它倾向于拜土地，此为第一种狭义爱国。列宁所指应当是狭义的爱国，即由于祖国彼此隔离、生活环境封闭而产生的爱国情感，此为第二种狭义爱国。而广义的爱国，不应当只是爱己国，也应是爱异国，是倾向于博爱的，是对全人类共同命运的担忧。</p>
+
+<p>第一种狭义爱国主义，因其由人拜土地天性而形成，是一种极私人的情感。</p>
+
+<p>第二种狭义爱国主义，是由各自祖国长久彼此隔离而形成。爱己国的主体必然是一群人，而非少数个人。由于隔离而导致相互无知，产生了敌视或向往心理。</p>
+
+<p>社会主义核心价值观所倡导的爱国，倾向于是第二种狭义爱国主义。多数中国人民与外国人民交流及对外国了解皆甚少。这一方面导致了对日本、韩国等有历史积怨国家的偏见，另一方面部分增长了对美国等发达国家的向往或偏见。社会所倡导的爱国，过于强调爱己国，构建了爱国边界。这有助于提高自我对祖国的热爱与自豪感，但也有助于爱国主义的泛滥。伴随爱国主义增长的也许是对其他国家或民族的轻视和歧视或自卑和自艾。美国政治家塞缪尔·约翰逊这样评述爱国主义：爱国主义是流氓无赖的最后藏身所。约翰逊主要针对滥用爱国主义的政党和政客，但这也在提醒警惕爱国主义。</p>
+
+<p>广义的爱国主义，是对地球上所有国度皆有爱，这已经升华到对人类共同命运的担忧，是全人类和谐相处和全人类文明得以保存的福音。</p>
+
+<h2 id="toc_3">应有之态度</h2>
+
+<p>国家应秉承维护世界和平之信念，在社会主义核心价值观中对爱国进行更多的阐述。在中国梦之实现和中华民族之崛起过程中，拥有对其他国家或民族的真切关怀。资本主义所产生的倾向利益至上思想应为国家所警惕，国与国之间的重要纽带不仅仅是利益关系。</p>
+
+<p>爱国是美好的感情，不仅仅是爱己国，爱异国也是一种美好的情感。</p>
+
+<p>社会应逐渐持有宽阔的包容之心。勿争辩爱国否，而互扣帽子。勿将社会主义核心价值观作为武器。而现在在现实和网络中，社会舆论是倾向于偏激的。对于个人尤其是名人说出或做出有悖于爱国主义的话或事，社会舆论几乎一边倒地去指责。 </p>
+
+<p>个人应逐渐持有敬畏之心。警惕教条主义，勿将话语捧为真理，也勿蔑视话语。警惕爱国主义，警惕对异国异族的偏见，警惕被煽动。多存疑惑，思虑何为爱国，何为爱国主义。爱国主义种类繁多，意大利人发明的法西斯主义是爱国主义的一种，法国人发明的大国沙文主义是爱国主义的一种，德国人的纳粹主义虽然严格说是民族主义，但也可以归纳为一种爱国主义，还有一个在西方延续了两千多年的军国主义也是一种爱国主义。这些爱国主义相对极端，但皆是由第二种狭义爱国发展而来。</p>
+
+<p>个人而言，应该主动消除相互无知的困扰。可以主动了解异域异邦，了解那里的历史和文化，和那里的人民成为朋友。这时，广义的爱国主义，也不是那么难真正接受了。</p>
+
+<h2 id="toc_4">参考文献</h2>
+
+<p>[1] 陈秀丽．社会主义核心价值观的凝练[J]．求知，2014 (2)：15-17．<br/>
+[2] 沈蕾．浅谈社会主义核心价值观[J]．新疆社科论坛，2007(4)：8-10．<br/>
+[3] 王汉文．以社会主义核心价值观引领大学生思想政治教育[J]．江汉大学学报(社会科学版)，2010(2)：72-75．<br/>
+[4] 西塞罗．论国家[A]．王焕生译．论共和国论法律[C]．北京：中国政法大学出版社，1997．<br/>
+[5] 王晓朝．论西方古代国家定义的演进[J]．西北师大学报(社会科学版)，2010(1)：1-6．<br/>
+[6] Webster’s Revised Unabridged Dictionary, MICRA Inc. , 1998.<br/>
+[7] Mclean and McMillan eds. , The Concise Oxford Dictionary of Politics, p.400.<br/>
+[8] David Miller eds. , The Blackwell Encyclopedia of Political Thought, London: Blackwell Reference, 1987, p.369.</p>
 
                         
                       </div>
@@ -272,7 +410,7 @@ WindowsServer 65 MB _windowserver
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2017/8/27</span>
+                    <span class="date">2017/8/17</span>
                     
           				   
                   </div>
@@ -287,48 +425,457 @@ WindowsServer 65 MB _windowserver
               </div><!-- article -->
         
 			<div class="article">
-                <a class="clearlink" href="15250955628409.html">
+                <a class="clearlink" href="15250922329733.html">
                 
-                  <h1>iCloud 设备备份数据 180 天后会删除么</h1>
+                  <h1>使用 Hexo 搭建博客的深度优化与定制</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<p>我的 iPhone、iPad 都备份到了 iCloud，但惊闻如果 180 天以内没有更新备份，数据可能会被删除…… 被删除又意味着什么呢？我仔细考虑了下，这对多数用户并没有影响。</p>
+                        	<ul>
+<li>
+<a href="#toc_0">深度优化</a>
+<ul>
+<li>
+<a href="#toc_1">文章链接唯一化</a>
+</li>
+<li>
+<a href="#toc_2">语法优化</a>
+<ul>
+<li>
+<a href="#toc_3">引用</a>
+</li>
+<li>
+<a href="#toc_4">折叠代码或文字</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_5">搜索引擎优化</a>
+<ul>
+<li>
+<a href="#toc_6">添加网站地图</a>
+</li>
+<li>
+<a href="#toc_7">添加蜘蛛协议</a>
+</li>
+<li>
+<a href="#toc_8">限制出站链接</a>
+</li>
+<li>
+<a href="#toc_9">主动推送新链接</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_10">启用 https</a>
+</li>
+<li>
+<a href="#toc_11">加速国内访问</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_12">深度定制</a>
+<ul>
+<li>
+<a href="#toc_13">每篇文章后面加文字</a>
+</li>
+<li>
+<a href="#toc_14">修改链接文字样式</a>
+</li>
+<li>
+<a href="#toc_15">目录默认全展开</a>
+</li>
+<li>
+<a href="#toc_16">删除上下篇按钮</a>
+</li>
+<li>
+<a href="#toc_17">修改授权协议图标</a>
+</li>
+<li>
+<a href="#toc_18">添加其他分享</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_19">一键图床</a>
+</li>
+<li>
+<a href="#toc_20">错误信息</a>
+<ul>
+<li>
+<a href="#toc_21">LF will be replaced</a>
+</li>
+<li>
+<a href="#toc_22">无法生成 html</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_23">题外话</a>
+<ul>
+<li>
+<a href="#toc_24">标题优化</a>
+</li>
+<li>
+<a href="#toc_25">为何要使用图床</a>
+</li>
+</ul>
+</li>
+</ul>
 
-<p>但也有一个情景可能会比较苦恼：更换设备，但上任设备已经坏掉或丢失，且 180 以内没有备份，所以只能当作全新设备使用，但谁又会想设备回到 180 天以前的状态呢？不过，对一些人来说 iCloud 中 180 天前的照片应该值得恢复。但无论怎样，180 天后可能会删除数据还是让我不爽…… 因为空间足够储存这些数据，无论有没有用都不应该删除不是么？</p>
 
-<p>查询 <a href="https://www.apple.com/legal/internet-services/icloud/cn_si/terms.html">iCloud 条款和条件</a> 得知：如果设备的备份数据半年内没有更新，那么确实可能会被删除。<a href="http://www.thepaper.cn/newsDetail_forward_1704407">澎湃新闻的报道</a> 也说明了确实有人的备份数据被删除，关于这个问题，我与 Apple 客服有一个有意思的电话。</p>
+<p>由于操作失误出现未知错误，不得不重新来过，同时也萌发写教程的打算。关于 Hexo 建立博客的文章数不胜数，本文只是简要介绍这点，重点是深度优化与定制部分。</p>
 
-<blockquote>
-<p>如装置未备份至 iCloud 已达一百八十（180）天，苹果公司保留删除与该装置相关的备份的权利。备份仅限于装置设置、装置特性、照片和视频、文件、信息（iMessage、短信和彩信）、铃声、应用程序数据（包括 Health 应用程序数据）、位置设置（例如您所设置的基于位置的提醒）以及主页屏幕和应用程序组织。</p>
-</blockquote>
+<p>移除：卸载 Git 和 Node 后，删除所有博客文件即为移除。如果遭遇文件夹无法删除的情况，使用命令 <code>rd/s/q</code> 可强制删除。</p>
 
-<p>Apple 高级顾问表示：</p>
+<p>安装：利用基于 Node.js 的 Hexo 可以快速搭建一个博客网站。搭建前必须安装 <a href="https://nodejs.org/en/">Node.js</a> 和 <a href="https://git-scm.com/">Git</a>。Node.js 是一款开源且跨平台的服务器端和网络应用，使用 JavaScript 开发。Git 是一款免费、开源的分布式版本控制系统。安装过程中全点下一步即可。之后，请参照 <a href="https://hexo.io/zh-cn/docs/index.html">官方中文文档</a> 进行 Hexo 的安装。</p>
 
-<blockquote>
-<p>免费用户拥有 5 G 空间，只要在设备上登陆了 Apple 账号，那么即使断网搁置半年，数据也将永久保存。如果此 Apple 账号没有在任何设备上登陆，那么 Apple 可能删除数据。</p>
+<p>网站初始化：在指定文件夹初始化网站文件。在你想存储网站文件的文件夹中，鼠标右键后，打开 <code>Git Bash Here</code>，然后输入 <code>hexo init blog</code>，<code>blog</code> 是文件名，可任意取。成功后会出现 <code>INFO  Start blogging with Hexo!</code> 提示信息。Windows 用户由于自带的记事本简陋难用，故建议安装 <a href="https://notepad-plus-plus.org/">Notepad++</a> 以编辑 .yml 文件。</p>
 
-<p>有关付费用户的情况需要咨询高级工程师，后面再回复于我。</p>
-</blockquote>
+<p>主题：在此建议使用最受欢迎的 NexT 主题，参照其 <a href="http://theme-next.iissnan.com/getting-started.html">官方文档</a> 可轻易完成配置。安装插件的命令要在博客根目录下执行。</p>
 
-<p>至于 <a href="https://www.apple.com/legal/internet-services/icloud/cn_si/terms.html">iCloud 条款和条件</a> 的陈述，Apple 高级顾问表示此条款表达的意思与她告诉我的含义是一致的，也即只有 Apple 账号没有在任意设备上登陆，半年后数据才可能被删除。</p>
+<h2 id="toc_0">深度优化</h2>
 
-<p>但由 <a href="http://www.thepaper.cn/newsDetail_forward_1704407">澎湃新闻的报道</a> 的描述知，此用户的 Apple 账号应该在 iPhone 或 iPad 登陆着：</p>
+<h3 id="toc_1">文章链接唯一化</h3>
 
-<blockquote>
-<p>一次清理存储空间过程中，浦女士偶然发现她去年 11 月份存储在 iCloud 的一部分数据不见了…… 再次查看自己的 iCloud 备份时，她发现，iPad 的备份由于超过 180 天未更新，也在她不知情的情况下被删除了。</p>
-</blockquote>
+<p>也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。安装此插件后，不要在 <code>hexo s</code> 模式下更改文章文件名，否则文章将成空白。</p>
 
-<p>对此，Apple 高级顾问表示其他网站的内容，其真实度不可靠。也即，客服认定如果 Apple 账号在设备上登陆了，备份数据是不可能被删除的。我也只能相信她的说法。</p>
+<pre><code>npm install hexo-abbrlink --save
+</code></pre>
 
-<p>至此正文已结束，关于付费用户的情况后面得到回复再补充。我为什么说这个电话有意思呢？在一个小时的通话过程中，客服小姐姐表示自己刚来，很多业务不熟悉，麻烦我耐心等待…… 一番沟通后，最后她表示需要转接高级顾问来回答我的问题，等待时会播放音乐，但可能是系统故障，我竟然偶尔听到了她说话：</p>
+<p>在 <code>站点配置文件</code> 中查找代码 <code>permalink:</code>，将其更改为:</p>
 
-<blockquote>
-<p>使用条款 ... 真是服了他 ... 连这 ... </p>
-</blockquote>
+<pre><code>permalink: posts/:abbrlink/  # “posts/” 可自行更换 
+</code></pre>
 
-<p>我只确定记得这些词，总共只听见了两次说话，第一次的完全不记得了。我只能说：新来的小姐姐，你也许第一次就遇到了我，我只想说，其实这是你的福气啊 🌝 </p>
+<p>在 <code>站点配置文件</code> 中添加如下代码：</p>
+
+<pre><code># abbrlink config
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32 
+  rep: hex    # 进制：dec(default) and hex
+</code></pre>
+
+<p>可参照样例以选择：</p>
+
+<pre><code>crc16 &amp; hex
+https://post.zz173.com/posts/66c8.html
+
+crc16 &amp; dec
+https://post.zz173.com/posts/65535.html
+
+crc32 &amp; hex
+https://post.zz173.com/posts/8ddf18fb.html
+
+crc32 &amp; dec
+https://post.zz173.com/posts/1690090958.html
+</code></pre>
+
+<h3 id="toc_2">语法优化</h3>
+
+<h4 id="toc_3">引用</h4>
+
+<p>默认的语法无法添加角标（footnotes）以注明引用，这种可来回跳转的引用还是挺有用处的。</p>
+
+<pre><code>npm install hexo-footnotes --save
+</code></pre>
+
+<p>安装完毕请确认是否生效，如不生效，在 <code>站点配置文件</code> 中添加如下代码以手动启用：</p>
+
+<pre><code>plugins:
+  - hexo-footnotes
+</code></pre>
+
+<p><img src="media/15250922329733/15250923179919.jpg" alt=""/></p>
+
+<h4 id="toc_4">折叠代码或文字</h4>
+
+<p><code>&lt;head&gt;</code> 后添加一下代码：</p>
+
+<pre><code>  &lt;script&gt;
+    function ishidden(odiv){
+      var vdiv = document.getElementById(odiv);
+      vdiv.style.display = (vdiv.style.display == &#39;none&#39;)?&#39;block&#39;:&#39;none&#39;;
+    }
+  &lt;/script&gt;
+</code></pre>
+
+<pre><code>&lt;div onclick=&quot;ishidden(&#39;X&#39;)&quot;&gt;点击此处展开内容&lt;/div&gt;
+&lt;div id=&quot;X&quot; style=&quot;display:none;&quot;&gt;需要折叠的代码或文字放在这里&lt;/div&gt;
+</code></pre>
+
+<p>X 为标记，任意设置，在同一文章中，各不相同即可。</p>
+
+<h3 id="toc_5">搜索引擎优化</h3>
+
+<p>我在简书同步发布文章，搜索结果里简书排在首位，我的独立博客可能找不到，必须要进行 SEO 优化。</p>
+
+<h4 id="toc_6">添加网站地图</h4>
+
+<pre><code>npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中添加如下代码。</p>
+
+<pre><code># hexo sitemap 
+sitemap:
+path: sitemap.xml
+baidusitemap:
+path: baidusitemap.xml
+</code></pre>
+
+<p>配置成功后，会生成 <code>sitemap.xml</code> 和 <code>baidusitemap.xml</code>，前者适合提交给谷歌搜素引擎，后者适合提交百度搜索引擎。其次，在 <code>robots.txt</code> 中添加下面的一段代码：</p>
+
+<pre><code>Sitemap: http://blog.tangxiaozhu.com/sitemap.xml
+Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
+</code></pre>
+
+<h4 id="toc_7">添加蜘蛛协议</h4>
+
+<p><code>robots.txt</code> 放置在 <code>\source</code>  目录下。</p>
+
+<pre><code>#hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://blog.tangxiaozhu.com/search.xml
+
+Sitemap: http://blog.tangxiaozhu.com/sitemap.xml
+Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
+</code></pre>
+
+<p>此协议内容上与其他相比，增加了 <code>Sitemap: http://blog.tangxiaozhu.com/search.xml</code>，当然我也忘了为何增加。</p>
+
+<h4 id="toc_8">限制出站链接</h4>
+
+<p>网络爬虫会在当前页面搜索所有的链接，故有可能跳到别的网站。<code>nofollow</code> 标签是由谷歌领头创新的一个 “反垃圾链接” 的标签，并被各大搜索引擎广泛支持，引用 <code>nofollow</code> 标签的目的是：用于指示搜索引擎不要追踪（即抓取）网页上的带有 <code>nofollow</code> 属性的任何出站链接，以减少垃圾链接的分散网站权重。</p>
+
+<pre><code>npm install hexo-autonofollow --save
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中添加如下代码。</p>
+
+<pre><code>nofollow:
+    enable: true
+    exclude: # 例外的链接，可将友情链接放置此处
+    - exclude1.com
+    - exclude2.com
+</code></pre>
+
+<h4 id="toc_9">主动推送新链接</h4>
+
+<p>解决百度爬虫被禁止访问的问题，提升网站收录质量和速度。</p>
+
+<pre><code>npm install hexo-baidu-url-submit --save
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中添加如下代码。</p>
+
+<pre><code>baidu_url_submit:
+  count: 5 ## 比如3，代表提交最新的三个链接
+  host: blog.tangxiaozhu.com ## 在百度站长平台中注册的域名
+  token:  ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+</code></pre>
+
+<h3 id="toc_10">启用 https</h3>
+
+<p>注册 <a href="https://www.cloudflare.com">CloudFlare</a>，然后添加网站地址（顶级域名），会提示将 DNS 换为：</p>
+
+<pre><code>charles.ns.cloudflare.com
+ivy.ns.cloudflare.com
+</code></pre>
+
+<p>DNSPod 等不能与 CloudFlare 混用，为减少麻烦，一次使用一个 Name Server 比较好。此时等待一段时间 <code>Overview</code> 中状态会变为 <code>Active</code>。然后在 <code>Page Rules</code> 中设置总是使用 <code>https</code>，如图所示。</p>
+
+<p><img src="media/15250922329733/15250924123144.png" alt=""/></p>
+
+<p>但是在搞定以后，却无法变成小绿锁，因为七牛的图床外链是 <code>http</code>，似乎收费或者绑定自定义域名并备案才可以申请使用 <code>https</code>，<a href="https://github.com/Suxiaogang/WeiboPicBed">新浪微博图床</a> 支持返回 <code>https</code> 安全协议的图片地址。但最终我又用回 <code>http</code>，因为不确认微博图床的可靠性，然后最好清除下浏览器缓存。</p>
+
+<p><img src="media/15250922329733/15250924310356.png" alt=""/></p>
+
+<h3 id="toc_11">加速国内访问</h3>
+
+<p>同时部署到 <code>Coding.net</code>，在 DnsPod 设置默认访问 <code>you.coding.me</code>，国外访问 <code>you.github.io</code>即可。</p>
+
+<h2 id="toc_12">深度定制</h2>
+
+<p>也许只适用于 NexT 主题，而深度优化是通用的。所有内容是 NexT 主题 <a href="http://theme-next.iissnan.com/getting-started.html">官方文档</a> 所没有的。</p>
+
+<h3 id="toc_13">每篇文章后面加文字</h3>
+
+<p><code>layout/_macro/post.swig</code> 修改：</p>
+
+<pre><code> {{ post.content }}
+          {% endif %}
+        {% endif %}
+      {% else %}
+        {{ post.content }}
+        
+# 大家好，这里是 NexT 主题下的文章内容底部位置
+# 既然来啦，写点什么这里吧，写上去，所有文章底部都看到哦
+        
+      {% endif  %}
+</code></pre>
+
+<h3 id="toc_14">修改链接文字样式</h3>
+
+<p>将链接文本设置为蓝色，鼠标划过时文字颜色加深，并显示下划线。</p>
+
+<p><code>themes\next\source\css\_common\components\post\post.styl</code> 添加以下代码：</p>
+
+<pre><code>.post-body p a{
+  color: #0593d3;
+  border-bottom: none;
+
+  &amp;:hover {
+    color: #0477ab;
+    text-decoration: underline;
+  }
+}
+</code></pre>
+
+<p>选择 <code>.post-body</code> 是为了不影响标题，选择 <code>p</code> 是为了不影响首页“阅读全文”的显示样式。</p>
+
+<p>参考：<a href="http://www.wuxubj.cn/2016/08/Hexo-nexT-build-personal-blog/">http://www.wuxubj.cn/2016/08/Hexo-nexT-build-personal-blog/</a></p>
+
+<h3 id="toc_15">目录默认全展开</h3>
+
+<p><code>~/themes/next/source/css/_custom/custom.styl</code> 中添加以下代码：</p>
+
+<pre><code>.post-toc .nav .nav-child { display: block; }
+</code></pre>
+
+<p>这样会导致目录太长，以至于在一个页面中无法全部显示。不过并不会影响阅读体验。</p>
+
+<h3 id="toc_16">删除上下篇按钮</h3>
+
+<p><code>themes\next\layout\_macro\post</code></p>
+
+<pre><code> rel=&quot;tag&quot;&gt;#{{ tag.name }}&lt;/a&gt;
+          {% endfor %}
+        &lt;/div&gt;
+      {% endif %}
+
+删除开始    {% if not is_index and (post.prev or post.next) and not navlessPost %}
+        &lt;div class=&quot;post-nav&quot;&gt;
+          &lt;div class=&quot;post-nav-next post-nav-item&quot;&gt;
+            {% if post.next %}
+              &lt;a href=&quot;{{ url_for(post.next.path) }}&quot; rel=&quot;next&quot; title=&quot;{{ post.next.title }}&quot;&gt;
+                &lt;i class=&quot;fa fa-chevron-left&quot;&gt;&lt;/i&gt; {{ post.next.title }}
+              &lt;/a&gt;
+            {% endif %}
+          &lt;/div&gt;
+
+          &lt;div class=&quot;post-nav-prev post-nav-item&quot;&gt;
+            {% if post.prev %}
+              &lt;a href=&quot;{{ url_for(post.prev.path) }}&quot; rel=&quot;prev&quot; title=&quot;{{ post.prev.title }}&quot;&gt;
+                {{post.prev.title}} &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            {% endif %}
+          &lt;/div&gt;
+        &lt;/div&gt;
+结束    {% endif %}
+&lt;/div&gt;
+</code></pre>
+
+<p>注意：利用最上方的代码可以定位，如果后悔可再添加删除的代码。</p>
+
+<h3 id="toc_17">修改授权协议图标</h3>
+
+<p>在 <a href="https://creativecommons.org/about/downloads/">授权协议官网</a> 下载想要的矢量图片，替换即可。</p>
+
+<h3 id="toc_18">添加其他分享</h3>
+
+<p>添加跟我博客同样的分享条，请看 <a href="http://wiki.mob.com/sharesdk-for-web%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90/">官方文档</a>，具体的操作方式请看 <a href="http://https://segmentfault.com/a/1190000004979461">Magicer 的教程</a>。</p>
+
+<pre><code>&lt;!--MOB SHARE BEGIN--&gt;
+&lt;div class=&quot;-mob-share-ui-button -mob-share-open&quot;&gt;分享&lt;/div&gt;
+&lt;div class=&quot;-mob-share-ui&quot; style=&quot;display: none&quot;&gt;
+    &lt;ul class=&quot;-mob-share-list&quot;&gt;
+        &lt;li class=&quot;-mob-share-weibo&quot;&gt;&lt;p&gt;新浪微博&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-tencentweibo&quot;&gt;&lt;p&gt;腾讯微博&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-qzone&quot;&gt;&lt;p&gt;QQ空间&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-qq&quot;&gt;&lt;p&gt;QQ好友&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-renren&quot;&gt;&lt;p&gt;人人网&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-kaixin&quot;&gt;&lt;p&gt;开心网&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-douban&quot;&gt;&lt;p&gt;豆瓣&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-facebook&quot;&gt;&lt;p&gt;Facebook&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-twitter&quot;&gt;&lt;p&gt;Twitter&lt;/p&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;-mob-share-close&quot;&gt;取消&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;-mob-share-ui-bg&quot;&gt;&lt;/div&gt;
+&lt;script id=&quot;-mob-share&quot; src=&quot;http://f1.webshare.mob.com/code/mob-share.js?appkey=你的appkey&quot;&gt;&lt;/script&gt;
+&lt;!--MOB SHARE END--&gt;  
+</code></pre>
+
+<p>注意 <code>appkey</code> 要修改为自己的。</p>
+
+<h2 id="toc_19">一键图床</h2>
+
+<p>适用于两种平台的免费软件，可以一键上传图片到七牛等服务器，同时获取外链。没有提供自动压缩功能实在遗憾，可惜我又不会编程。</p>
+
+<ol>
+<li>macOS 平台：<a href="http://www.lzqup.com/">U 图床</a> &amp; <a href="https://github.com/liufsd/PhotoCloud">PhotoCloud</a> &amp; iPic</li>
+<li>Windows 平台：<a href="http://mpic.lzhaofu.cn/">MPic</a></li>
+</ol>
+
+<h2 id="toc_20">错误信息</h2>
+
+<h3 id="toc_21">LF will be replaced</h3>
+
+<p>Windows 提交命令的时候出现 <code>warning: LF will be replaced by CRLF in XXXXXXXXXXXXXX</code> 的警告。输入命令：</p>
+
+<pre><code>git config --global core.autocrlf false
+</code></pre>
+
+<h3 id="toc_22">无法生成 html</h3>
+
+<p>输入<code>Hexo g</code> 后没有生成 <code>html</code> 文件，此时只需将根目录下 <code>package.json</code> 中 <code>dependencies</code> 的所有项都添加 <code>站点配置文件</code> 的 <code>plugins</code> 下。网上并没有相应的解决办法，知乎上也有提问却并没有回答，我也是不断试错，最后明白有时候手动启用插件才是正途。比如：</p>
+
+<pre><code>plugins: 
+  - hexo
+  - hexo-abbrlink
+  - hexo-baidu-url-submit
+  - hexo-deployer-git
+  - hexo-footnotes
+  - hexo-generator-archive
+  - hexo-generator-baidu-sitemap
+  - hexo-generator-category
+  - hexo-generator-feed
+  - hexo-generator-index
+  - hexo-generator-searchdb
+  - hexo-generator-sitemap
+  - hexo-generator-tag
+  - hexo-renderer-ejs
+  - hexo-renderer-marked
+  - hexo-renderer-stylus
+  - hexo-server
+</code></pre>
+
+<h2 id="toc_23">题外话</h2>
+
+<h3 id="toc_24">标题优化</h3>
+
+<p>将标题、关键字、描述连在一起，固然有利于 SEO 但并不美观，故我拒绝。</p>
+
+<h3 id="toc_25">为何要使用图床</h3>
+
+<p>GitHub 建议 Pages 网站总量不要超过 1 GB，如果超过会发送邮件要求缩减体积，只是你也可以无视这个提醒，但过度使用的话一定会被限制的。GitHub 提供每月 100 GB 的流量。从这个角度来看，使用 GitHub 本身作为图床确实没问题，也即将图片放在 <code>source</code> 下再引用是完全可行的。甚至有人利用 GitHub 开发图床服务。</p>
+
+<p>然而还要考虑这些问题。首先，国内与 GitHub 的连接是比较缓慢的，故会减缓网站访问速度和增加部署时间；其次，总量越来越大，如果网络是计流量的话将难以承担。</p>
 
                         
                       </div>
@@ -337,7 +884,274 @@ WindowsServer 65 MB _windowserver
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2017/8/27</span>
+                    <span class="date">2017/8/17</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250919948770.html">
+                
+                  <h1>风险的词源</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>写一篇论文涉及到了风险二字，突然好奇风险这个词的来历。熟悉的字词不知其背后的故事岂不是憾事？</p>
+
+<p><a href="http://www.zdic.net/c/e/15f/356920.htm">风险</a>：危险；遭受损失、伤害、不利或毁灭的可能性。<a href="http://www.zdic.net/c/e/15f/356920.htm">風險</a>：危險、危機。</p>
+
+<p><a href="http://www.zdic.net/z/28/xs/98CE.htm">风</a>，本意为空气流动的现象；动词意为刮风，风干，走逸，嬉戏；形容词意为传说的，放荡的；作副词时通“凡”。<a href="http://www.zdic.net/z/27/xs/9669.htm">险</a> ，本意为地势高低悬殊，名词意为险要之地，副词意为几乎。</p>
+
+<p>维基百科：<strong>风险</strong>是相对某有机体的，指某可能发生的事件（辞源于<strong>航海者</strong>），如果发生，能阻碍有机体的发展，甚至走向衰亡，<strong>风险</strong>是指事件发生与否的不确定性。危险﹑危机。</p>
+
+<p>百度百科：<strong>航海者</strong>是<a href="https://book.douban.com/subject/4881511/">伊索寓言全集</a>中第 307 个故事：有几个人乘船出海。大海的气候变化万千，船刚驶入海面时，恰恰碰上了狂风巨浪，船几乎被巨浪吞没。有个人撕破衣服，大声悲惨地痛哭，祈求庇护神，许愿说如能得救，定当还愿报恩。过了不久，风暴过去了，大海恢复了往日的平静，大家为幸免于难而互相祝福，手舞足蹈，高兴极了。老实的舵工却对他们说道：“朋友们，幸免于难确实值得高兴庆贺。但我们还必须勇敢地去面对说不定还会再来的狂风巨浪。”</p>
+
+<p>由此，我做出简要的结论：风险之所以为风险，源于海上狂风的危险。</p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/17</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250918783638.html">
+                
+                  <h1>我的密码管理心得</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>我现在全面使用 1Password 来管理我的账号密码及密保、软件许可等信息，在此简要地介绍 1Password 的优点：</p>
+
+<ol>
+<li>全平台且优美；</li>
+<li>支持指纹解锁；</li>
+<li>数据库可备份在自己的云盘，如 Dropbox 等；</li>
+<li>支持安全检查，如密码已使用时间、弱密码等；</li>
+<li>集成了二步验证系统。 </li>
+</ol>
+
+<hr/>
+
+<p>四年前我更换了手机号，尝到了帐号找回或重注册的种种烦恼，比如网易，我甚至上传了身份证照片以找回安全信息，后来也颇有后悔之意，因为我并不常用网易邮箱。如京东之类的帐号就删除订单记录等再重注册。且愿我的隐私信息还能称之为隐私。这段经历使我痛定思痛，又联想到更久远的时间丢失的帐号。于是，我就有了现在这一密码、密保等信息的管理方式，省心且放心。</p>
+
+<p>必须告诉诸位，这一方式极其容易上手，所要做的不过是 <strong>安装几个应用</strong>，只是录入信息较为消耗时间。也许大部分女同胞及部分男同学并不在乎账户的相关问题，无非再注册的事情。可将我们的虚拟财产加以适当的保护至少是件听着还不错的事，所以即使你的帐号、密码等大同小异，也不妨记录下来，尤其是密保信息。</p>
+
+<p><img src="media/15250918783638/15250919124376.png" alt=""/></p>
+
+<h2 id="toc_0">MacPass</h2>
+
+<p><a href="https://github.com/mstarke/MacPass">MacPass</a> 是 <a href="http://keepass.info/">KeePass</a> 官方推荐的第三方开源且免费的 Mac KeePass 客户端。<a href="https://minikeepass.github.io/">MiniKeePass</a> 是第三方开源且免费的 iOS KeePass 客户端。</p>
+
+<p>MacPass 默认是只保护密码，我则点选了保护所有项目。因为为了方便我会在<code>注释</code>里存储许多重要信息，并不使用<code>自定义</code>等功能。加密轮次可以点击测试，会自动推荐一个值。但实际上我并不了解这样做是否更安全。</p>
+
+<p>密码数据库后设置密码，任选一文件作为密钥文件或者新生成。将数据库存储在网盘同步盘，将密钥文件存储在另一网盘，分离存储也加强了安全性。若完全不愿意借助云，则可以存储在移动介质。</p>
+
+<h2 id="toc_1">MiniKeePass</h2>
+
+<p>在 iPhone 上使用 MiniKeePass 应用：在 Mac 上更新密码后，在 iPhone 上将网盘新同步的密码库导出到 MiniKeePass 中打开，原密码库将被覆盖。</p>
+
+<p>另外，可以在 MiniKeePass 中再新建一个数据库，在 iPhone 上注册新账号时，可以纪录用户名，并生成密码。之后，再在 Mac 上录入原数据库。<strong>不建议</strong> 在 MiniKeePass 中的原数据库（即网盘同步的数据库）纪录 iPhone 上注册的帐号，虽然从 MiniKeePass 可以导入到网盘，但有的网盘会自动覆盖掉原数据库，可能会丢失 Mac 上还没来得及同步的数据。</p>
+
+<h2 id="toc_2">辅助方案</h2>
+
+<p>iPhone 上也可使用 1Password 作两点用途：</p>
+
+<ol>
+<li>记录常用帐号密码，诸多应用已支持自动输入，但密保信息仅纪录在 KeePass 中；</li>
+<li>许多应用以支持 1Password 自动创建新账号和密码，而后在电脑上录入到 KeePass 客户端。</li>
+</ol>
+
+<p>在 Mac 上可以使用浏览器或扩展如 LastPass 记住常用密码，但不要纪录密保信息等。这个帐号管理方法我已尝试两年有余，方法安全且主要涉及的应用均免费开源。我几乎不再记忆任何密码，也再也不担忧丢失帐号信息。而且部分网站的密保系统再复杂我也可以轻松应对。</p>
+
+<p>最近，又对每次都要复制粘贴密码感到烦了。于是，我将自己的账号分为三个等级：</p>
+
+<ol>
+<li>第一序列：涉及到财产的账号；</li>
+<li>第二序列：不直接涉及财产但较为重要的；</li>
+<li>第三序列：一般账号。</li>
+</ol>
+
+<p>然后针对每一序列设计不同的密码规则，包含大小写字母、符号、数字，这样我就记住了所有密码。而 KeePass 最大的作用就是记录密保等关键信息。</p>
+
+<p>诗云：安能摧眉折腰记密码，使我不得开心颜！</p>
+
+<p><a href="http://mstarke.github.io/MacPass/">KeePass for Mac</a><br/>
+<a href="https://itunes.apple.com/us/app/minikeepass-secure-password/id451661808?mt=8">KeePass for iOS</a> <br/>
+<a href="http://keepass.info/download.html">KeePass for Windows</a><br/>
+<a href="http://www.keepassdroid.com/">KeePass for Android</a></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/17</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250917271061.html">
+                
+                  <h1>MacBook 升级方案</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>我持有的设备是 MacBook Pro，但是升级方案一般是通用的。我更建议在购买时一步到位，虽然贵很多，但后续升级要承担风险，并会失去保修资格。</p>
+
+<p>注意，2013 之后内存是无法升级的，除非完全更换主板，但价格、风险总体上高于收益。</p>
+
+<p>磁盘的扩容主要有三个途径：</p>
+
+<ol>
+<li>直接更换 SSD：<a href="https://eshop.macsales.com/shop/ssd/owc/macbook-pro-retina-display/2013-2014-2015">OWC Macsales</a>；</li>
+<li>装载 SD 卡：淘宝，<a href="http://www.dgtle.com/article-9657-1.html">Nifty</a>，<a href="https://cn.transcend-info.com/apple/jetdrivelite/">创见</a> ；</li>
+<li>装载 SD 融合卡：<a href="https://www.tardisk.com/pages/buy">TarDisk</a>。</li>
+</ol>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/17</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250914805050.html">
+                
+                  <h1>快速切换 Apple App Store 账号</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>Mac App Store：</p>
+
+<ol>
+<li>mas，<a href="https://sspai.com/post/40382">终端上的 Mac App Store「mas」让应用的安装与更新无比轻松</a>；</li>
+<li>Switcher，<a href="https://github.com/X140Yu/Switcher">Switcher for macOS</a>；</li>
+<li>Keyboard Maestro，<a href="http://readful.com/post/77044128470/%E5%88%A9%E7%94%A8-keyboard-maestro-%E5%88%87%E6%8D%A2-appstore-%E5%B8%90%E6%88%B7">利用 Keyboard Maestro 切换 Appstore 帐户</a>；</li>
+<li>Alfred，<a href="http://www.packal.org/workflow/apple-account-switcher">Apple Account Switcher</a>；</li>
+<li>AppleScript，找不到了……</li>
+</ol>
+
+<p>iOS App Store：</p>
+
+<ul>
+<li>使用 Workflow 换区。</li>
+</ul>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/17</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250906941645.html">
+                
+                  <h1>关于天大北洋苹果店的郁闷经历</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>可“化力气为浆糊”，却无法化干戈为玉帛，故出此文以慰昔日及今日之郁闷。</p>
+
+<p>最近感到不太满意电脑的性能和存储空间，遂想再购置一台电脑。在 <a href="http://buyersguide.macrumors.com/#Retina_MacBook_Pro">MacRumors</a> 查询了购买建议（建议诸君也这么做），发现 14 年款 MacBook Pro 是于 <a href="http://www.macrumors.com/2014/07/29/updated-retina-macbook-Pro-faster-haswell-more-ram/">2014年7月29日</a> 凌晨发布。想到自己原先的 <strong>MacBook Pro 2013 末</strong> 似乎也是在 14 年六七月份所购。</p>
+
+<p>遂找来在<code>天大北洋科技开发有限公司：苹果天大校园店</code>买电脑的签购单，确认购买一个月后新款 <strong>MacBook Pro 2014 中</strong> 就上市了，除了教育优惠还可以叠加新学期返校教育优惠，再优惠 600 人民币……</p>
+
+<p>导购员为何不给个建议呢？不过如果仅是这样的话，时至今日我大概也只是皱皱眉，因为毕竟是自己考虑不周。可一想到购买电脑时导购员的态度：是偏于随意的态度，两三人自顾聊着天，偶尔和我说两三句。还说教育优惠需要拍摄学生证，可却使用私人手机拍摄，我对自己信息的安全性表示一定的怀疑。</p>
+
+<p>可一想到电脑设置出现问题时去店里时遭到的待遇：是偏于无所谓的态度，眼睛男低着头摆弄着手机，话中意思大概是售后问题去找售后点，不关我们的事。这个其实是学校邮件设置问题，情况是只能接受邮件而无法发送，官方客服也不知如何是好。我自己解决后，特地告诉了官方客服并请求记录下解决方法。</p>
+
+<p>如果天大北洋苹果店态度稍好，我也不至于今日产生强烈的不满。后来，有位自称天大北洋店工程师的人欲加我微信好友，表示愿意帮助我解决问题。当时心情郁闷的我，加上问题也解决了，就任性地选择了忽视。不得开心颜的我，也就顺理成章地写了这篇吐槽文。诚然，天大北洋科技开发有限公司母校也参了股。当时选择在这购买主要就是看中了这点，后来同学也打算在这买，我自然以自己糟糕的体验为例去劝阻，莫要迷惑了双眼。</p>
+
+<p>衷心建议<code>天大北洋科技开发有限公司：苹果天大校园店</code>重视培养员工素质，不谈将客户视为上帝，至少也应该态度友好，真诚为顾客着想？既然你们店员说不提供售后，有使用问题也要找官方售后，既然贵店的服务体验也不佳，那又有何种理由在你店购物呢？打母校感情牌？抱歉我不会在你这购物了，甚至会劝阻朋友在你这购物。毕竟，解释某些操作时将我当作无知笨蛋的那种态度，前来问询时随口打发到官方售后店的做法......真有把自己当作母校的一份子？真有把我当作来自母校的朋友？</p>
+
+<p>终于舒展了当日与今天的郁闷之情。</p>
+
+<h2 id="toc_0">总结</h2>
+
+<p>苹果官网的商品一般都不会降价，即便在新品上市前。苹果只会在特殊时间段如开学季促销，这也导致了相当一部分人用了同样的价格却买到了真实价值下降的产品。而新品上市前，经销商从苹果拿到商品的成本价应该会降低，但面对顾客的售价很可能也不变。所以无论怎样，最终只能是消费者买单。</p>
+
+<p>我认为对顾客最友好的做法是按时间降价，似乎亚马逊原来就是这样的做法。突然降价的行为对购买者无疑是一种相当差的体验，新产品上市与旧产品同样价格的做法也是如此。这样的做法有助于企业得到最大化的利润，却深深地伤害了部分消费者的体验。我已经多次体会到了。然而我们又能怎么办呢？</p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/17</span>
                     
           				   
                   </div>

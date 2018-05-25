@@ -148,69 +148,48 @@ Steam macOS &amp; Windows<br/>
 
 <h2 id="toc_2">技巧</h2>
 
-<p>三指滑动可以选择文本</p>
+<p>三指滑动可以选择文本……</p>
 
-<h3 id="toc_3">快捷键</h3>
+<p><strong>快捷键</strong>，有时候觉着 macOS 没有 Windows 方便，但其实是没发现 macOS 不易被发现的便利：</p>
 
-<p>有时候觉着 Macintosh 没有 Windows 方便，但其实是没发现 Macintosh 不易被发现的便利。<br/>
-复制文件路径 <code>option + command + c</code><br/>
-锁屏 <code>control + shift + power</code><br/>
-显示与隐藏文件 <code>shift + command + .</code><br/>
-先复制再剪切 <code>command + option + v</code> </p>
+<ol>
+<li>复制文件路径 <code>option + command + c</code></li>
+<li>锁屏 <code>control + shift + power</code></li>
+<li>显示与隐藏文件 <code>shift + command + .</code></li>
+<li>先复制再剪切 <code>command + option + v</code> </li>
+</ol>
 
-<h3 id="toc_4">替身、软硬链接</h3>
-
-<p><a href="http://h2appy.blog.51cto.com/609721/1354001">这篇文章</a> 详细阐述了各自的特点。总的来说，<strong>替身</strong>，移动源文件位置替身依旧有效，但是替身并不包含路径信息，即应用并不能识别替身；对于<strong>软连接</strong>，如果移动了源文件那么这个链接也就无效了，但是软链接可以被应用识别，比如你将应用的资料文件移到同步盘，然后生成软链接并放在原来资料文件所在的位置，这时应用仍能识别；硬链接的使用情景很少，就不做介绍。</p>
+<p><strong>替身、软硬链接</strong>：<a href="http://h2appy.blog.51cto.com/609721/1354001">这篇文章</a> 详细阐述了各自的特点。总的来说，<strong>替身</strong>，移动源文件位置替身依旧有效，但是替身并不包含路径信息，即应用并不能识别替身；对于<strong>软连接</strong>，如果移动了源文件那么这个链接也就无效了，但是软链接可以被应用识别，比如你将应用的资料文件移到同步盘，然后生成软链接并放在原来资料文件所在的位置，这时应用仍能识别；硬链接的使用情景很少，就不做介绍。</p>
 
 <p>生成软链接：<code>ln -s 源文件路径 软链接路径</code></p>
 
-<h3 id="toc_5">验证哈希值</h3>
+<p><strong>验证哈希值</strong>：</p>
 
-<p>计算 MD5 值：<code>md5 &lt;文件路径&gt;</code> <br/>
-计算 SHA1 值：<code>shasum -a 1 &lt;文件路径&gt;</code> <br/>
-计算 SHA256 值：<code>shasum -a 256 &lt;文件路径&gt;</code> </p>
+<ol>
+<li>计算 MD5 值：<code>md5 &lt;文件路径&gt;</code> </li>
+<li>计算 SHA1 值：<code>shasum -a 1 &lt;文件路径&gt;</code> </li>
+<li>计算 SHA256 值：<code>shasum -a 256 &lt;文件路径&gt;</code> </li>
+</ol>
 
-<h2 id="toc_6">系统</h2>
+<p><strong>安卓共享网络</strong>：由于缺乏驱动，安卓手机一般是无法与 Macintosh 通过数据线共享网络的。幸好 <a href="http://joshuawise.com/">Joshua Wise</a> 的作品 <a href="http://joshuawise.com/horndis">HoRNDIS</a> 使 Macintosh 具备了这项能力。</p>
 
-<h3 id="toc_7">安卓共享网络</h3>
-
-<p>由于缺乏驱动，安卓手机一般是无法与 Macintosh 通过数据线共享网络的。幸好 <a href="http://joshuawise.com/">Joshua Wise</a> 的作品 <a href="http://joshuawise.com/horndis">HoRNDIS</a> 使 Macintosh 具备了这项能力。</p>
-
-<h2 id="toc_8">使用建议</h2>
-
-<p>长期待机将会导致 macOS 睡眠和虚拟内存文件庞大起来，建议每月关机一次释放空间。而且，关机以后才会触发 FileVault 硬盘加密，这意味着如果没有关机而电脑被偷走，是有被破解的可能，关机杜绝了这个可能。 </p>
-
-<h2 id="toc_9">拓展知识</h2>
-
-<p>dmg：disk image，即磁盘影像，是苹果系统上的镜像压缩文件，相当于在 Windows 上常见的 iso 文件。</p>
-
-<h2 id="toc_10">问题</h2>
-
-<p>SciDAVis 1.14 行数字显示不全；SciDAVis 1.D8 行数字显示正常。</p>
-
-<h3 id="toc_11">Chrome 更新失败</h3>
-
-<p>Chrome 更新失败（错误 11，12）确认可通过此方法解决。</p>
+<h2 id="toc_3">问题</h2>
 
 <ul>
-<li>退出 Chrome 浏览器, 并进入到指定目录。我直接复制命令到终端提示不存在这样的目录，但可以直接从 Finder 前往此目录。然后在 <code>Resources</code> 下执行以下命令。 </li>
+<li><p>SciDAVis 1.14 行数字显示不全；SciDAVis 1.D8 行数字显示正常。</p></li>
+<li><p>Chrome 更新失败。Chrome 更新失败（错误 11，12）确认可通过此方法解决。退出 Chrome 浏览器, 并进入到指定目录。我直接复制命令到终端提示不存在这样的目录，但可以直接从 Finder 前往此目录。然后在 <code>Resources</code> 下执行以下命令。参考了 <a href="http://www.v1en.com/2016/04/26/chrome_for_mac_update_err_11/">梦寒</a> 文章。</p></li>
 </ul>
 
 <pre><code>cd /Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/Contents/Resources/GoogleSoftwareUpdateAgent.app/Contents/Resources/
+
+卸载 KeyStone：sudo ./ksinstall --uninstall
+删除 chrome 更新目录：sudo rm -rf /Library/Google/GoogleSoftwareUpdate/
 </code></pre>
 
 <ul>
-<li>卸载 KeyStone
-<code>sudo ./ksinstall --uninstall</code></li>
-<li>删除 chrome 更新目录
-<code>sudo rm -rf /Library/Google/GoogleSoftwareUpdate/</code></li>
+<li><p>无法响应。更新系统之后，在主系统打开许多应用，然后打开 Windows 10 虚拟机，机器就基本死机了，只能缓慢动弹。原因未知。此问题在最近又自己消失了……</p></li>
+<li><p>长期待机将会导致 macOS 睡眠和虚拟内存文件庞大起来，建议每月关机一次释放空间。而且，关机以后才会触发 FileVault 硬盘加密，这意味着如果没有关机而电脑被偷走，是有被破解的可能，关机杜绝了这个可能。 </p></li>
 </ul>
-
-<p>参考：<a href="http://www.v1en.com/2016/04/26/chrome_for_mac_update_err_11/">梦寒</a></p>
-
-<h3 id="toc_12">无法响应</h3>
-
-<p>更新系统之后，在主系统打开许多应用，然后打开 Windows 10 虚拟机，机器就基本死机了，只能缓慢动弹。原因未知。此问题在最近又自己消失了……</p>
 
 
     
