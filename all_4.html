@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -128,6 +129,8 @@
                   <div class="more-right right">
                   <span class="comments">
                       
+                        <a href="https://blog.tangxiaozhu.com/15250932456564.html#disqus_thread">comments</a>
+                      
 
                        
                   </span>
@@ -147,7 +150,7 @@
 
 <p>出错信息：</p>
 
-<pre><code>2014-11-19 20:41:30.130 GitHub for Mac Login[2595:326257] AskPass with arguments: (
+<pre><code class="language-text">2014-11-19 20:41:30.130 GitHub for Mac Login[2595:326257] AskPass with arguments: (
     &quot;/Applications/GitHub.app/Contents/MacOS/GitHub for Mac Login&quot;,
     &quot;Username for &#39;https://github.com&#39;: &quot;
 )
@@ -182,12 +185,12 @@ fatal: unable to access &#39;https://github.com/tcitry/tcitry.github.io.git/&#39
 
 <p>尤其注意 <code>ssh -vT git@github.com</code> 命令的运行结果：</p>
 
-<pre><code>Offering RSA public key: /Users/you/.ssh/id_rsa 说明调用的 KEY
+<pre><code class="language-text">Offering RSA public key: /Users/you/.ssh/id_rsa 说明调用的 KEY
 
 Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
 </code></pre>
 
-<p>注意 GitHub客户端会自动生成 KEY（github_rsa &amp; github_rsa.pub）并自动添加公钥。所以不必再生成 KEY 了。</p>
+<p>注意 GitHub客户端会自动生成 KEY（github<u>rsa &amp; github</u>rsa.pub）并自动添加公钥。所以不必再生成 KEY 了。</p>
 
 <p>即使再生成也没有影响，两者默认命名是不同的，不会覆盖。</p>
 
@@ -210,6 +213,8 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
                   </div>
                   <div class="more-right right">
                   <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250930999934.html#disqus_thread">comments</a>
                       
 
                        
@@ -274,6 +279,8 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
                   <div class="more-right right">
                   <span class="comments">
                       
+                        <a href="https://blog.tangxiaozhu.com/15250930048334.html#disqus_thread">comments</a>
+                      
 
                        
                   </span>
@@ -330,6 +337,8 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
                   </div>
                   <div class="more-right right">
                   <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250928793081.html#disqus_thread">comments</a>
                       
 
                        
@@ -405,7 +414,7 @@ Steam macOS &amp; Windows<br/>
 <li><p>Chrome 更新失败。Chrome 更新失败（错误 11，12）确认可通过此方法解决。退出 Chrome 浏览器, 并进入到指定目录。我直接复制命令到终端提示不存在这样的目录，但可以直接从 Finder 前往此目录。然后在 <code>Resources</code> 下执行以下命令。参考了 <a href="http://www.v1en.com/2016/04/26/chrome_for_mac_update_err_11/">梦寒</a> 文章。</p></li>
 </ul>
 
-<pre><code>cd /Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/Contents/Resources/GoogleSoftwareUpdateAgent.app/Contents/Resources/
+<pre><code class="language-text">cd /Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/Contents/Resources/GoogleSoftwareUpdateAgent.app/Contents/Resources/
 
 卸载 KeyStone：sudo ./ksinstall --uninstall
 删除 chrome 更新目录：sudo rm -rf /Library/Google/GoogleSoftwareUpdate/
@@ -429,6 +438,8 @@ Steam macOS &amp; Windows<br/>
                   </div>
                   <div class="more-right right">
                   <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250926629285.html#disqus_thread">comments</a>
                       
 
                        
@@ -455,7 +466,7 @@ Steam macOS &amp; Windows<br/>
 
 <h3 id="toc_1">Windows 8.1 &amp; 10 1507 及之前</h3>
 
-<pre><code>同样适用于旧版本 WIN 10
+<pre><code class="language-text">同样适用于旧版本 WIN 10
 ========= 复制下面内容 ========= 去除减号 &#39;-&#39; 再运行即可还原
 Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
@@ -468,7 +479,7 @@ Windows Registry Editor Version 5.00
 
 <h3 id="toc_2">Windows 10 1511 及之后</h3>
 
-<pre><code>适用于的新版本 WIN 10 （自 2015 年 12 月后）
+<pre><code class="language-text">适用于的新版本 WIN 10 （自 2015 年 12 月后）
 ========= 复制下面内容 ========= 去除减号 &#39;-&#39; 再运行即可还原
 Windows Registry Editor Version 5.00
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
@@ -483,7 +494,7 @@ Windows Registry Editor Version 5.00
 
 <p>在搜索框输入 “regedit” 进入注册表编辑器，找到 <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions</code>之后，再找到下列六项，分别将 <code>PropertyBag</code>中的 <code>ThisPCPolicy</code> 由 <code>show</code> 改为 <code>Hide</code> 即可。若要还原再改回 <code>show</code> 即可。</p>
 
-<pre><code>　&gt; “图片”：{0ddd015d-b06c-45d5-8c4c-f59713854639}\PropertyBag
+<pre><code class="language-text">　&gt; “图片”：{0ddd015d-b06c-45d5-8c4c-f59713854639}\PropertyBag
 　&gt; “视频”：{35286a68-3c57-41a1-bbb1-0eae73d76c95}\PropertyBag
 　&gt; “下载”：{7d83ee9b-2244-4e70-b1f5-5393042af1e4}\PropertyBag
 　&gt; “音乐”：{a0c69a99-21c8-4671-8703-7934162fcf1d}\PropertyBag
@@ -511,6 +522,8 @@ Windows Registry Editor Version 5.00
                   </div>
                   <div class="more-right right">
                   <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250920685912.html#disqus_thread">comments</a>
                       
 
                        
@@ -595,6 +608,8 @@ Windows Registry Editor Version 5.00
                   </div>
                   <div class="more-right right">
                   <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250925649984.html#disqus_thread">comments</a>
                       
 
                        
@@ -721,17 +736,17 @@ Windows Registry Editor Version 5.00
 
 <p>也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。安装此插件后，不要在 <code>hexo s</code> 模式下更改文章文件名，否则文章将成空白。</p>
 
-<pre><code>npm install hexo-abbrlink --save
+<pre><code class="language-text">npm install hexo-abbrlink --save
 </code></pre>
 
 <p>在 <code>站点配置文件</code> 中查找代码 <code>permalink:</code>，将其更改为:</p>
 
-<pre><code>permalink: posts/:abbrlink/  # “posts/” 可自行更换 
+<pre><code class="language-text">permalink: posts/:abbrlink/  # “posts/” 可自行更换 
 </code></pre>
 
 <p>在 <code>站点配置文件</code> 中添加如下代码：</p>
 
-<pre><code># abbrlink config
+<pre><code class="language-text"># abbrlink config
 abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32 
   rep: hex    # 进制：dec(default) and hex
@@ -739,7 +754,7 @@ abbrlink:
 
 <p>可参照样例以选择：</p>
 
-<pre><code>crc16 &amp; hex
+<pre><code class="language-text">crc16 &amp; hex
 https://post.zz173.com/posts/66c8.html
 
 crc16 &amp; dec
@@ -758,12 +773,12 @@ https://post.zz173.com/posts/1690090958.html
 
 <p>默认的语法无法添加角标（footnotes）以注明引用，这种可来回跳转的引用还是挺有用处的。</p>
 
-<pre><code>npm install hexo-footnotes --save
+<pre><code class="language-text">npm install hexo-footnotes --save
 </code></pre>
 
 <p>安装完毕请确认是否生效，如不生效，在 <code>站点配置文件</code> 中添加如下代码以手动启用：</p>
 
-<pre><code>plugins:
+<pre><code class="language-text">plugins:
   - hexo-footnotes
 </code></pre>
 
@@ -773,7 +788,7 @@ https://post.zz173.com/posts/1690090958.html
 
 <p><code>&lt;head&gt;</code> 后添加一下代码：</p>
 
-<pre><code>  &lt;script&gt;
+<pre><code class="language-text">  &lt;script&gt;
     function ishidden(odiv){
       var vdiv = document.getElementById(odiv);
       vdiv.style.display = (vdiv.style.display == &#39;none&#39;)?&#39;block&#39;:&#39;none&#39;;
@@ -781,7 +796,7 @@ https://post.zz173.com/posts/1690090958.html
   &lt;/script&gt;
 </code></pre>
 
-<pre><code>&lt;div onclick=&quot;ishidden(&#39;X&#39;)&quot;&gt;点击此处展开内容&lt;/div&gt;
+<pre><code class="language-text">&lt;div onclick=&quot;ishidden(&#39;X&#39;)&quot;&gt;点击此处展开内容&lt;/div&gt;
 &lt;div id=&quot;X&quot; style=&quot;display:none;&quot;&gt;需要折叠的代码或文字放在这里&lt;/div&gt;
 </code></pre>
 
@@ -793,13 +808,13 @@ https://post.zz173.com/posts/1690090958.html
 
 <h4 id="toc_6">添加网站地图</h4>
 
-<pre><code>npm install hexo-generator-sitemap --save
+<pre><code class="language-text">npm install hexo-generator-sitemap --save
 npm install hexo-generator-baidu-sitemap --save
 </code></pre>
 
 <p>在 <code>站点配置文件</code> 中添加如下代码。</p>
 
-<pre><code># hexo sitemap 
+<pre><code class="language-text"># hexo sitemap 
 sitemap:
 path: sitemap.xml
 baidusitemap:
@@ -808,7 +823,7 @@ path: baidusitemap.xml
 
 <p>配置成功后，会生成 <code>sitemap.xml</code> 和 <code>baidusitemap.xml</code>，前者适合提交给谷歌搜素引擎，后者适合提交百度搜索引擎。其次，在 <code>robots.txt</code> 中添加下面的一段代码：</p>
 
-<pre><code>Sitemap: http://blog.tangxiaozhu.com/sitemap.xml
+<pre><code class="language-text">Sitemap: http://blog.tangxiaozhu.com/sitemap.xml
 Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
 </code></pre>
 
@@ -816,7 +831,7 @@ Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
 
 <p><code>robots.txt</code> 放置在 <code>\source</code>  目录下。</p>
 
-<pre><code>#hexo robots.txt
+<pre><code class="language-text">#hexo robots.txt
 User-agent: *
 Allow: /
 Allow: /archives/
@@ -840,12 +855,12 @@ Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
 
 <p>网络爬虫会在当前页面搜索所有的链接，故有可能跳到别的网站。<code>nofollow</code> 标签是由谷歌领头创新的一个 “反垃圾链接” 的标签，并被各大搜索引擎广泛支持，引用 <code>nofollow</code> 标签的目的是：用于指示搜索引擎不要追踪（即抓取）网页上的带有 <code>nofollow</code> 属性的任何出站链接，以减少垃圾链接的分散网站权重。</p>
 
-<pre><code>npm install hexo-autonofollow --save
+<pre><code class="language-text">npm install hexo-autonofollow --save
 </code></pre>
 
 <p>在 <code>站点配置文件</code> 中添加如下代码。</p>
 
-<pre><code>nofollow:
+<pre><code class="language-text">nofollow:
     enable: true
     exclude: # 例外的链接，可将友情链接放置此处
     - exclude1.com
@@ -856,12 +871,12 @@ Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
 
 <p>解决百度爬虫被禁止访问的问题，提升网站收录质量和速度。</p>
 
-<pre><code>npm install hexo-baidu-url-submit --save
+<pre><code class="language-text">npm install hexo-baidu-url-submit --save
 </code></pre>
 
 <p>在 <code>站点配置文件</code> 中添加如下代码。</p>
 
-<pre><code>baidu_url_submit:
+<pre><code class="language-text">baidu_url_submit:
   count: 5 ## 比如3，代表提交最新的三个链接
   host: blog.tangxiaozhu.com ## 在百度站长平台中注册的域名
   token:  ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
@@ -872,7 +887,7 @@ Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
 
 <p>注册 <a href="https://www.cloudflare.com">CloudFlare</a>，然后添加网站地址（顶级域名），会提示将 DNS 换为：</p>
 
-<pre><code>charles.ns.cloudflare.com
+<pre><code class="language-text">charles.ns.cloudflare.com
 ivy.ns.cloudflare.com
 </code></pre>
 
@@ -896,7 +911,7 @@ ivy.ns.cloudflare.com
 
 <p><code>layout/_macro/post.swig</code> 修改：</p>
 
-<pre><code> {{ post.content }}
+<pre><code class="language-text"> {{ post.content }}
           {% endif %}
         {% endif %}
       {% else %}
@@ -914,7 +929,7 @@ ivy.ns.cloudflare.com
 
 <p><code>themes\next\source\css\_common\components\post\post.styl</code> 添加以下代码：</p>
 
-<pre><code>.post-body p a{
+<pre><code class="language-text">.post-body p a{
   color: #0593d3;
   border-bottom: none;
 
@@ -933,7 +948,7 @@ ivy.ns.cloudflare.com
 
 <p><code>~/themes/next/source/css/_custom/custom.styl</code> 中添加以下代码：</p>
 
-<pre><code>.post-toc .nav .nav-child { display: block; }
+<pre><code class="language-text">.post-toc .nav .nav-child { display: block; }
 </code></pre>
 
 <p>这样会导致目录太长，以至于在一个页面中无法全部显示。不过并不会影响阅读体验。</p>
@@ -942,7 +957,7 @@ ivy.ns.cloudflare.com
 
 <p><code>themes\next\layout\_macro\post</code></p>
 
-<pre><code> rel=&quot;tag&quot;&gt;#{{ tag.name }}&lt;/a&gt;
+<pre><code class="language-text"> rel=&quot;tag&quot;&gt;#{{ tag.name }}&lt;/a&gt;
           {% endfor %}
         &lt;/div&gt;
       {% endif %}
@@ -979,7 +994,7 @@ ivy.ns.cloudflare.com
 
 <p>添加跟我博客同样的分享条，请看 <a href="http://wiki.mob.com/sharesdk-for-web%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90/">官方文档</a>，具体的操作方式请看 <a href="http://https://segmentfault.com/a/1190000004979461">Magicer 的教程</a>。</p>
 
-<pre><code>&lt;!--MOB SHARE BEGIN--&gt;
+<pre><code class="language-text">&lt;!--MOB SHARE BEGIN--&gt;
 &lt;div class=&quot;-mob-share-ui-button -mob-share-open&quot;&gt;分享&lt;/div&gt;
 &lt;div class=&quot;-mob-share-ui&quot; style=&quot;display: none&quot;&gt;
     &lt;ul class=&quot;-mob-share-list&quot;&gt;
@@ -1017,14 +1032,14 @@ ivy.ns.cloudflare.com
 
 <p>Windows 提交命令的时候出现 <code>warning: LF will be replaced by CRLF in XXXXXXXXXXXXXX</code> 的警告。输入命令：</p>
 
-<pre><code>git config --global core.autocrlf false
+<pre><code class="language-text">git config --global core.autocrlf false
 </code></pre>
 
 <h3 id="toc_22">无法生成 html</h3>
 
 <p>输入<code>Hexo g</code> 后没有生成 <code>html</code> 文件，此时只需将根目录下 <code>package.json</code> 中 <code>dependencies</code> 的所有项都添加 <code>站点配置文件</code> 的 <code>plugins</code> 下。网上并没有相应的解决办法，知乎上也有提问却并没有回答，我也是不断试错，最后明白有时候手动启用插件才是正途。比如：</p>
 
-<pre><code>plugins: 
+<pre><code class="language-text">plugins: 
   - hexo
   - hexo-abbrlink
   - hexo-baidu-url-submit
@@ -1070,6 +1085,8 @@ ivy.ns.cloudflare.com
                   <div class="more-right right">
                   <span class="comments">
                       
+                        <a href="https://blog.tangxiaozhu.com/15250922329733.html#disqus_thread">comments</a>
+                      
 
                        
                   </span>
@@ -1110,6 +1127,8 @@ ivy.ns.cloudflare.com
                   </div>
                   <div class="more-right right">
                   <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250919948770.html#disqus_thread">comments</a>
                       
 
                        
@@ -1200,6 +1219,8 @@ ivy.ns.cloudflare.com
                   <div class="more-right right">
                   <span class="comments">
                       
+                        <a href="https://blog.tangxiaozhu.com/15250918783638.html#disqus_thread">comments</a>
+                      
 
                        
                   </span>
@@ -1233,7 +1254,7 @@ ivy.ns.cloudflare.com
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -1351,9 +1372,8 @@ ivy.ns.cloudflare.com
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -1361,6 +1381,27 @@ ivy.ns.cloudflare.com
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -1380,7 +1421,7 @@ ivy.ns.cloudflare.com
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

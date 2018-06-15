@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -114,6 +115,8 @@
            
          
           <span class="comments">
+            
+              <a href="https://blog.tangxiaozhu.com/15249605684127.html#disqus_thread">comments</a>
             
 
             
@@ -368,9 +371,7 @@ Mac App Store 价格：标准版 ¥ 198 &amp; 专业版 ¥ 648<br/>
 ③ 若极其在意功能的完备性：只能选择 Adobe Acrobat。</p>
 
 <p><strong>天下之大，何时才会出现一款全五星的 PDF 应用？</strong></p>
-
-<p><br></p>
-
+<br>
 <blockquote>
 <p>本文应用版本：<br/>
 Adobe Acrobat Pro DC 2015.006.30306 for macOS <br/>
@@ -420,6 +421,8 @@ gitment.render('container')
 </script>
 
           
+            <div id="disqus_thread"></div>
+          
 
           
         </div>
@@ -438,7 +441,7 @@ gitment.render('container')
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -556,9 +559,8 @@ gitment.render('container')
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -566,6 +568,27 @@ gitment.render('container')
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -585,7 +608,7 @@ gitment.render('container')
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

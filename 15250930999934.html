@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -113,6 +114,8 @@
          
           <span class="comments">
             
+              <a href="https://blog.tangxiaozhu.com/15250930999934.html#disqus_thread">comments</a>
+            
 
             
           </span>
@@ -125,7 +128,7 @@
 
 <p>出错信息：</p>
 
-<pre><code>2014-11-19 20:41:30.130 GitHub for Mac Login[2595:326257] AskPass with arguments: (
+<pre><code class="language-text">2014-11-19 20:41:30.130 GitHub for Mac Login[2595:326257] AskPass with arguments: (
     &quot;/Applications/GitHub.app/Contents/MacOS/GitHub for Mac Login&quot;,
     &quot;Username for &#39;https://github.com&#39;: &quot;
 )
@@ -160,12 +163,12 @@ fatal: unable to access &#39;https://github.com/tcitry/tcitry.github.io.git/&#39
 
 <p>尤其注意 <code>ssh -vT git@github.com</code> 命令的运行结果：</p>
 
-<pre><code>Offering RSA public key: /Users/you/.ssh/id_rsa 说明调用的 KEY
+<pre><code class="language-text">Offering RSA public key: /Users/you/.ssh/id_rsa 说明调用的 KEY
 
 Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
 </code></pre>
 
-<p>注意 GitHub客户端会自动生成 KEY（github_rsa &amp; github_rsa.pub）并自动添加公钥。所以不必再生成 KEY 了。</p>
+<p>注意 GitHub客户端会自动生成 KEY（github<u>rsa &amp; github</u>rsa.pub）并自动添加公钥。所以不必再生成 KEY 了。</p>
 
 <p>即使再生成也没有影响，两者默认命名是不同的，不会覆盖。</p>
 
@@ -217,6 +220,8 @@ gitment.render('container')
 </script>
 
           
+            <div id="disqus_thread"></div>
+          
 
           
         </div>
@@ -235,7 +240,7 @@ gitment.render('container')
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -353,9 +358,8 @@ gitment.render('container')
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -363,6 +367,27 @@ gitment.render('container')
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -382,7 +407,7 @@ gitment.render('container')
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

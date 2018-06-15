@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -115,6 +116,8 @@
          
           <span class="comments">
             
+              <a href="https://blog.tangxiaozhu.com/15243553635986.html#disqus_thread">comments</a>
+            
 
             
           </span>
@@ -143,12 +146,12 @@
 
 <p><a href="https://brew.sh/index_zh-cn.html">Homebrew</a> 是安装 mas 的最好方式，在只要把以下代码复制到终端（Terminal）后运行即可：</p>
 
-<pre><code>brew install mas
+<pre><code class="language-text">brew install mas
 </code></pre>
 
 <p>如未安装过 Homebrew 可参照 <a href="https://brew.sh/index_zh-cn.html">官网命令</a> 安装：</p>
 
-<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+<pre><code class="language-text">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 </code></pre>
 
 <h2 id="toc_1">查询与安装应用</h2>
@@ -157,7 +160,7 @@
 
 <p>Mac App Store 中每一个应用都有自己的应用识别码（Product Identifier），这可以在每个应用的链接中看到。mas 就是根据 Product Identifier 安装与更新应用，也提供了查询应用 ID 的命令。</p>
 
-<pre><code>由 1Password 的链接可知其识别码为 443987910
+<pre><code class="language-text">由 1Password 的链接可知其识别码为 443987910
 https://itunes.apple.com/cn/app/1password/id443987910?mt=12
 </code></pre>
 
@@ -188,19 +191,19 @@ https://itunes.apple.com/cn/app/1password/id443987910?mt=12
 
 <p>我们不仅可以使用命令行安装单个应用，还可以批量安装应用，只需在应用识别码之间加上空格：</p>
 
-<pre><code>mas install 甲应用识别码 乙应用识别码 丙应用识别码
+<pre><code class="language-text">mas install 甲应用识别码 乙应用识别码 丙应用识别码
 </code></pre>
 
 <h2 id="toc_2">更新应用</h2>
 
 <p>如果要更新所有 Mac App Store 应用，只需终端执行一句命令：</p>
 
-<pre><code>mas upgrade
+<pre><code class="language-text">mas upgrade
 </code></pre>
 
 <p>如果更新特定应用，需要使用命令 <code>mas outdated</code> 先查询待更新列表以获取应用识别码，再更新一个或几个应用：</p>
 
-<pre><code>mas upgrade 甲应用识别码
+<pre><code class="language-text">mas upgrade 甲应用识别码
 mas upgrade 甲应用识别码 乙应用识别码 丙应用识别码
 </code></pre>
 
@@ -212,20 +215,20 @@ mas upgrade 甲应用识别码 乙应用识别码 丙应用识别码
 
 <p>这是多区账号拥有者的福音，我们终于可以更方便地下载和更新其他区的应用了。如果忘记了当前帐号，使用命令 <code>mas account</code> 查询。可用命令 <code>mas signout</code> 退出当前帐号，并按如下命令登陆新的账号：</p>
 
-<pre><code>mas signin Apple ID &quot;密码&quot;
+<pre><code class="language-text">mas signin Apple ID &quot;密码&quot;
 如：mas signin mas@example.com &quot;mypassword&quot;
 </code></pre>
 
 <p>也可以设置命令别名以得到更爽快的体验，在隐藏文件 <code>.bashrc</code> 中添加以下内容：其路径为 <code>~/.bashrc</code>，同时按 <code>shift + command + .</code> 可显示隐藏文件。</p>
 
-<pre><code>alias masus=&#39;mas signout &amp;&amp; mas signin myusappleid &quot;mypassword&quot;&#39;
+<pre><code class="language-text">alias masus=&#39;mas signout &amp;&amp; mas signin myusappleid &quot;mypassword&quot;&#39;
 alias mascn=&#39;mas signout &amp;&amp; mas signin mycnappleid &quot;mypassword&quot;&#39;  
 alias mas?=&#39;mas account&#39; 
 </code></pre>
 
 <p>需重新打开终端以载入设置，那么在终端中执行 <code>masus</code> 即可切换到美区帐号，<code>mascn</code> 即切到中区，<code>mas?</code> 可查询目前登陆帐号。但如果开启了双重认证，可能遇到错误信息：</p>
 
-<pre><code>Error: Sign in failed: The operation couldn’t be completed. (mas.MASError error 1.)
+<pre><code class="language-text">Error: Sign in failed: The operation couldn’t be completed. (mas.MASError error 1.)
 </code></pre>
 
 <p>关闭双重认证则一切正常，但并不建议这样做，可以考虑关闭非重要帐号的双重认证，但 iOS 10.3 或 macOS Sierra 10.12.4 及更高版本中创建的某些帐户，<a href="https://support.apple.com/zh-cn/HT204915">无法关闭双重认证</a>。mas 团队正在着手处理开启双重认证无法登陆的问题，可去 <a href="https://github.com/mas-cli/mas/issues/56">督促一番</a>。</p>
@@ -238,16 +241,14 @@ alias mas?=&#39;mas account&#39;
 
 <p>也许我们可以考虑如何合并两者，我觉着至少 <code>查询与安装应用</code> 阶段是可以融合的，<code>brew cask search 关键字</code> 与 <code>mas search 关键字</code> 这两个命令合为 <code>cmas search 关键字</code>，输出的结果可以是如下样子，而安装命令 <code>cmas install 应用识别码或应用名称</code> 关键字如果是应用识别码则从 mas 下载安装，如果是应用名称则从官网下载安装。</p>
 
-<pre><code>cmas search pai  
+<pre><code class="language-text">cmas search pai  
 sspai 6666666 (mas &amp; NMAS)  
 ddpat 9999999 (mas Only)  
 onlypai (NMAS Only)  
 </code></pre>
 
 <p>谢谢让 <a href="https://sspai.com/user/681230/updates">JailbreakHum</a> 忙碌的人，谢谢 JailbreakHum 因忙碌而告诉我这个超级棒的技巧，谢谢 JailbreakHum 的指导……</p>
-
-<p><br></p>
-
+<br>
 <blockquote>
 <p>本文应用版本： </p>
 
@@ -299,6 +300,8 @@ gitment.render('container')
 </script>
 
           
+            <div id="disqus_thread"></div>
+          
 
           
         </div>
@@ -317,7 +320,7 @@ gitment.render('container')
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -435,9 +438,8 @@ gitment.render('container')
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -445,6 +447,27 @@ gitment.render('container')
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -464,7 +487,7 @@ gitment.render('container')
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

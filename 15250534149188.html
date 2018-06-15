@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -114,6 +115,8 @@
            
          
           <span class="comments">
+            
+              <a href="https://blog.tangxiaozhu.com/15250534149188.html#disqus_thread">comments</a>
             
 
             
@@ -186,9 +189,7 @@
 <p>题目中写到：对我而言 iPad Pro 距完全替代电脑仅有一步，其实我主要是指插入引用文献这一操作，但我相信 iPad Pro 距完全取代电脑的步数也不多了。现阶段，我主要的观点是 iPad Pro 与 MacBook 系列电脑配合的体验比较完美，比如通用剪贴板功能、Handoff 等。以上的所有流程似乎显示 Apple Pencil 并非不可或缺的，但实际上 Apple Pencil 是用来做笔记或细节操作的，这其中没啥好说的。</p>
 
 <p>就目前而言，如果你是刚经过高考的新生并且手头没有电脑，我的主要建议还是 Surface Pro，可能细节体验不如 MacBook Pro &amp; iPad Pro，但它相对花销更少且能干所有的事情。探索 iPad Pro 距完全替代电脑的路程还是交给我这样爱折腾或手有余钱的老油条吧…… </p>
-
-<p><br></p>
-
+<br>
 <blockquote>
 <p>本文应用版本：<br/>
 MWeb 2.3.4 for iOS </p>
@@ -236,6 +237,8 @@ gitment.render('container')
 </script>
 
           
+            <div id="disqus_thread"></div>
+          
 
           
         </div>
@@ -254,7 +257,7 @@ gitment.render('container')
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -372,9 +375,8 @@ gitment.render('container')
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -382,6 +384,27 @@ gitment.render('container')
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -401,7 +424,7 @@ gitment.render('container')
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

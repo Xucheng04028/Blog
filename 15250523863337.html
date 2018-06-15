@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -114,6 +115,8 @@
            
          
           <span class="comments">
+            
+              <a href="https://blog.tangxiaozhu.com/15250523863337.html#disqus_thread">comments</a>
             
 
             
@@ -200,9 +203,7 @@
 <p>其实 PDFelement 还支持 iOS 与 Windows 平台，并且都很优秀。iOS 客户端支持 PDF 编辑、注释、拍照扫描、转换格式等操作，但其似乎还未来得及与桌面版完全同步；Windows 客户端的界面和 Office 相似度很高，功能和 macOS 基本一致。</p>
 
 <p>可以在 <a href="https://pdf.wondershare.cn/?utm_source=Weibo&amp;utm_campaign=profile"> Wondershare 官网</a> 下载体验 macOS 或 Windows 客户端，也可在 Mac App Store 免费下载体验 PDFelement 6 或专业版（内置 OCR），但需内购以解锁部分限制。</p>
-
-<p><br></p>
-
+<br>
 <blockquote>
 <p>本文应用版本：<br/>
 PDFelement 6.0.0 for macOS </p>
@@ -250,6 +251,8 @@ gitment.render('container')
 </script>
 
           
+            <div id="disqus_thread"></div>
+          
 
           
         </div>
@@ -268,7 +271,7 @@ gitment.render('container')
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -386,9 +389,8 @@ gitment.render('container')
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -396,6 +398,27 @@ gitment.render('container')
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -415,7 +438,7 @@ gitment.render('container')
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

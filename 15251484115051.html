@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -115,6 +116,8 @@
          
           <span class="comments">
             
+              <a href="https://blog.tangxiaozhu.com/15251484115051.html#disqus_thread">comments</a>
+            
 
             
           </span>
@@ -135,13 +138,13 @@
 
 <p>根据 <a href="https://github.com/pyenv/pyenv#homebrew-on-mac-os-x">官方安装教程</a> 安装 pyenv：</p>
 
-<pre><code>brew update
+<pre><code class="language-text">brew update
 brew install pyenv
 </code></pre>
 
 <p>然后根据 <a href="https://github.com/pyenv/pyenv#basic-github-checkout">Basic GitHub Checkout</a> 步骤 3 进行激活：</p>
 
-<pre><code>$ echo -e &#39;if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval &quot;$(pyenv init -)&quot;\nfi&#39; &gt;&gt; ~/.bash_profile
+<pre><code class="language-text">$ echo -e &#39;if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval &quot;$(pyenv init -)&quot;\nfi&#39; &gt;&gt; ~/.bash_profile
 </code></pre>
 
 <p>最后重启终端，并输入 <code>exec &quot;$SHELL&quot;</code> 以使 Path 生效。至此，pyenv 就安装和配置完毕。</p>
@@ -152,24 +155,24 @@ brew install pyenv
 
 <p><strong>小插曲：</strong>在设置了终端代理的情况，输入 <code>brew update</code> 命令总报错，所以根据 <a href="https://docs.brew.sh/FAQ">官方文档</a> 卸载重新安装了 Homerew，报错原因应该是很久之前更换过国内镜像源……</p>
 
-<pre><code>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)&quot;
+<pre><code class="language-text">ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)&quot;
  
 ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 </code></pre>
 
 <p>言归正传，pyenv 安装完毕后，则可查询可安装的 Python 版本：</p>
 
-<pre><code>pyenv install --list
+<pre><code class="language-text">pyenv install --list
 </code></pre>
 
 <p>廖雪峰的 Python 3 教程要求安装 3.6.x 版本，所以我安装了此时最新的稳定版本 3.6.5：</p>
 
-<pre><code>pyenv install 3.6.5
+<pre><code class="language-text">pyenv install 3.6.5
 </code></pre>
 
 <p>然后全局启用 Python 3.6.5:</p>
 
-<pre><code>pyenv global 3.6.5
+<pre><code class="language-text">pyenv global 3.6.5
 </code></pre>
 
 <p>然后就可以正常启用教程中的 Python 代码运行助手……</p>
@@ -218,6 +221,8 @@ gitment.render('container')
 </script>
 
           
+            <div id="disqus_thread"></div>
+          
 
           
         </div>
@@ -236,7 +241,7 @@ gitment.render('container')
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -354,9 +359,8 @@ gitment.render('container')
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -364,6 +368,27 @@ gitment.render('container')
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -383,7 +408,7 @@ gitment.render('container')
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

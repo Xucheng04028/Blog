@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -115,6 +116,8 @@
          
           <span class="comments">
             
+              <a href="https://blog.tangxiaozhu.com/15249764881993.html#disqus_thread">comments</a>
+            
 
             
           </span>
@@ -147,7 +150,7 @@
 
 <p>可以看到，上图中三对 <code>{}</code> 括号中的代码代表着三个默认的检索引擎。添加其他检索引擎只需添加类似代码。下文所示代码是知网引擎，在指定位置添加半角逗号以后，将代码复制到自己的 <code>engines.json</code> 文件中保存即可。重新打开 Zotero 即可发现知网检索引擎已被添加。</p>
 
-<pre><code>        &quot;_iconSourceURI&quot;: &quot;http://pubget.com/favicon.ico&quot;
+<pre><code class="language-text">        &quot;_iconSourceURI&quot;: &quot;http://pubget.com/favicon.ico&quot;
     },   此处要加英文（半角）逗号，然后从下面开始复制并添加文末位置
     {
         &quot;name&quot;: &quot;CNKI Search&quot;,
@@ -172,7 +175,7 @@
 
 <p>那么如何确定 <code>_urlTemplate</code> 中的搜索网址？以万方为例：假设我们在万方搜索 <code>唐小筑</code>，网址是这样的形式 <code>http://s.wanfangdata.com.cn/Paper.aspx?q=唐小筑&amp;f=top</code>，注意到其中 <code>唐小筑</code> 即为我们的搜索目标， 而参数 <code>{z:title}</code> 代表着 Zotero 中条目名称，那么 <code>_urlTemplate</code> 中的搜索网址就应该是：</p>
 
-<pre><code>http://s.wanfangdata.com.cn/Paper.aspx?q={z:title}&amp;f=top
+<pre><code class="language-text">http://s.wanfangdata.com.cn/Paper.aspx?q={z:title}&amp;f=top
 </code></pre>
 
 <h2 id="toc_3">总结</h2>
@@ -180,9 +183,7 @@
 <p>Zotero 是开源应用，每一个功能对应的文件都可自行修改，但大部分人应该跟我一样，几乎不懂编程，但也不要对此恐惧。遇到问题也不妨试着找找这个问题对应功能的控制文件，无论是模仿修改还是向其他人求教都会有所帮助。</p>
 
 <p>若对 Zotero 的使用有疑问欢迎讨论……</p>
-
-<p><br></p>
-
+<br>
 <blockquote>
 <p>本文应用版本：<br/>
 Zotero 5.0.34.6 for macOS </p>
@@ -230,6 +231,8 @@ gitment.render('container')
 </script>
 
           
+            <div id="disqus_thread"></div>
+          
 
           
         </div>
@@ -248,7 +251,7 @@ gitment.render('container')
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -366,9 +369,8 @@ gitment.render('container')
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -376,6 +378,27 @@ gitment.render('container')
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -395,7 +418,7 @@ gitment.render('container')
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

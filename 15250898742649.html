@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -113,6 +114,8 @@
          
           <span class="comments">
             
+              <a href="https://blog.tangxiaozhu.com/15250898742649.html#disqus_thread">comments</a>
+            
 
             
           </span>
@@ -123,7 +126,7 @@
       <div class="article-content">
       <p>关于基督教的两个疑问和想法</p>
 
-<pre><code>神唯一么
+<pre><code class="language-text">神唯一么
 </code></pre>
 
 <p>圣经：创世纪第四章叙述亚当的次子该隐杀了哥哥亚伯，耶和华要把他赶走，该隐害怕凡遇见我的必杀我，耶和华就给该隐一个记号，免得人遇见他就杀他。【创 4:15】</p>
@@ -134,7 +137,7 @@
 
 <p>我：以现代人观念和寿命去推理会陷入误区。</p>
 
-<pre><code>耶稣尸体埋的天数
+<pre><code class="language-text">耶稣尸体埋的天数
 </code></pre>
 
 <p>圣经：耶酥说，他要在土里给埋三天三夜，【太 12:40】。耶酥在第周六晚上被埋的，过了安息日也就是周一的清早坟墓就空了，共一天两夜，【可 15:42】、【约 20:1】。</p>
@@ -143,7 +146,7 @@
 
 <p>我：按这样理解，耶酥在第周六（现在的周五）晚上被埋的，过了安息日（周五晚至周六晚）也就是周一（现在的周日）的清早坟墓就空了，周五晚上到周日早上还是一天两夜？</p>
 
-<pre><code>简要的想法
+<pre><code class="language-text">简要的想法
 </code></pre>
 
 <p>我很难想象这世界存在着一个人格化的神，但所接触的基督徒大都有良好的知识素养和善良的品格，故我不信基督，却愿意与基督徒适当交流。</p>
@@ -208,6 +211,8 @@ gitment.render('container')
 </script>
 
           
+            <div id="disqus_thread"></div>
+          
 
           
         </div>
@@ -226,7 +231,7 @@ gitment.render('container')
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -344,9 +349,8 @@ gitment.render('container')
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -354,6 +358,27 @@ gitment.render('container')
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -373,7 +398,7 @@ gitment.render('container')
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

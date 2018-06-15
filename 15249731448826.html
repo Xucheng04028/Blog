@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -115,6 +116,8 @@
          
           <span class="comments">
             
+              <a href="https://blog.tangxiaozhu.com/15249731448826.html#disqus_thread">comments</a>
+            
 
             
           </span>
@@ -133,7 +136,7 @@
 
 <p>Homebrew Cask 是 Homebrew 的扩展，借助它可以方便地在 macOS 上安装图形界面程序，即我们常用的各类应用。Homebrew 中文含义为自制、自酿酒，Cask 中文含义为桶、木桶，桶装酒是一种成品，也就是说每一个 <code>homebrew cask</code> 都可以直接使用的，比如 Atom 的 Cask 名称为 atom，那么就可以使用如下命令安装：</p>
 
-<pre><code>brew cask install atom
+<pre><code class="language-text">brew cask install atom
 </code></pre>
 
 <p><img src="media/15249731448826/15249752711518.gif" alt="from homebrew-cask"/></p>
@@ -146,7 +149,7 @@
 
 <p>如未安装过 Homebrew 可参照 <a href="https://brew.sh/index_zh-cn.html">官网方式</a> 安装：</p>
 
-<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+<pre><code class="language-text">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 </code></pre>
 
 <p>将以上命令粘贴至终端中执行。然后执行 <a href="https://caskroom.github.io/">命令</a> <code>brew tap caskroom/cask</code> 获取 Homebrew Cask。</p>
@@ -155,13 +158,13 @@
 
 <h2 id="toc_1">如何使用 Homebrew Cask</h2>
 
-<pre><code>brew cask install 应用名称
+<pre><code class="language-text">brew cask install 应用名称
 brew cask install &lt;甲应用名称&gt; &lt;乙应用名称&gt; &lt;丙应用名称&gt;
 </code></pre>
 
 <p>前文已经讲过这个安装命令，但一个问题是：如何确认它支持所要安装的应用？</p>
 
-<pre><code>brew cask search 关键字
+<pre><code class="language-text">brew cask search 关键字
 </code></pre>
 
 <p>比如要确定是否支持应用 gooooooogle，可搜索关键字 goo，即可显示所有包含 goo 的应用。如果不加关键字，会显示出所有支持的应用名称。</p>
@@ -181,9 +184,7 @@ brew cask install &lt;甲应用名称&gt; &lt;乙应用名称&gt; &lt;丙应用�
 <h2 id="toc_3">总结</h2>
 
 <p>我们可以查阅 <a href="https://github.com/caskroom/homebrew-cask/blob/master/USAGE.md">官方使用说明</a> 以了解 Homebrew Cask 命令别名、高级搜索语法等用法。通过这种方式安装应用，与我们平时的方式安装应用，两者除了方式没有任何其他区别，那为何不尝试尝试这种轻松的方式呢？只一句命令，没有那些点击，没有那些拖动…… Homebrew Cask 让非 Mac App Store 应用的安装更轻松，若你也想以更轻松的方式安装和更新 Mac App Store 应用，请参阅 <a href="https://sspai.com/post/40382">终端上的 Mac App Store「mas」让应用的安装与更新无比轻松</a>。</p>
-
-<p><br></p>
-
+<br>
 <blockquote>
 <p>本文应用版本：<br/>
 Homebrew v1.3.1<br/>
@@ -232,6 +233,8 @@ gitment.render('container')
 </script>
 
           
+            <div id="disqus_thread"></div>
+          
 
           
         </div>
@@ -250,7 +253,7 @@ gitment.render('container')
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -368,9 +371,8 @@ gitment.render('container')
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -378,6 +380,27 @@ gitment.render('container')
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -397,7 +420,7 @@ gitment.render('container')
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

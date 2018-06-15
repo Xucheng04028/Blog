@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -113,6 +114,8 @@
          
           <span class="comments">
             
+              <a href="https://blog.tangxiaozhu.com/15250940334832.html#disqus_thread">comments</a>
+            
 
             
           </span>
@@ -134,7 +137,7 @@
 <li>在包含 <code>setup.exe</code>以及 <code>configuration.xml</code> 的文件夹上按右键的同时按着 ⇧ 键选择在此打开命令窗口，复制以下命令到命令窗口并回车以执行，就会跳出下图所示的窗口，大功告成。</li>
 </ol>
 
-<pre><code>setup.exe /configure configuration.xml 
+<pre><code class="language-text">setup.exe /configure configuration.xml 
 </code></pre>
 
 <p><img src="media/15250940334832/15250940622671.png" alt=""/></p>
@@ -147,15 +150,18 @@
 
 <p>按照提示修改命令即可：</p>
 
-<pre><code>.\setup.exe /configure configuration.xml 
+<pre><code class="language-text">.\setup.exe /configure configuration.xml 
 </code></pre>
 
-<p><em>以下是本质相同的旧教程</em><br/>
-1. 下载 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117">Office 2016 部署工具</a>，双击，根据提示解压到桌面<br/>
-2. 记事本打开 <code>configuration.xml</code> 并删除全部内容<br/>
-3. 复制以下内容到 <code>configuration.xml</code></p>
+<p><em>以下是本质相同的旧教程</em></p>
 
-<pre><code>&lt;Configuration&gt;
+<ol>
+<li>下载 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117">Office 2016 部署工具</a>，双击，根据提示解压到桌面</li>
+<li>记事本打开 <code>configuration.xml</code> 并删除全部内容</li>
+<li>复制以下内容到 <code>configuration.xml</code></li>
+</ol>
+
+<pre><code class="language-text">&lt;Configuration&gt;
 &lt;Add SourcePath=&quot;&quot; OfficeClientEdition=&quot;32&quot;&gt;
 &lt;Product ID=&quot;O365ProPlusRetail&quot;&gt;
 &lt;Language ID=&quot;zh-cn&quot; /&gt;
@@ -172,7 +178,7 @@
 
 <p>在包含 <code>setup.exe</code>以及 <code>configuration.xml</code> 的文件夹上按右键的同时按着 Shift 选择在此打开命令窗口，复制以下命令到命令窗口并回车以执行，就会跳出下图所示的窗口，大功告成。</p>
 
-<pre><code>setup.exe /configure configuration.xml 
+<pre><code class="language-text">setup.exe /configure configuration.xml 
 </code></pre>
 
 <p><img src="media/15250940334832/15250953095687.png" alt=""/></p>
@@ -181,7 +187,7 @@
 
 <p>或观阅 <a href="https://technet.microsoft.com/zh-cn/library/jj219422.aspx">微软官方提供的教程</a></p>
 
-<pre><code>&lt;Configuration&gt;
+<pre><code class="language-text">&lt;Configuration&gt;
 &lt;Add SourcePath=&quot;&quot; OfficeClientEdition=&quot;32&quot;&gt;  
     // SourcePath - 镜像文件的位置，保留空白意味着会自动下载安装包
     // OfficeClientEdition - 安装 32 或 64 位，微软通常建议安装 32 位
@@ -205,7 +211,7 @@
 
 <p>产品的对应 ID 如下：</p>
 
-<pre><code>ID=&quot;Access&quot;
+<pre><code class="language-text">ID=&quot;Access&quot;
 ID=&quot;Excel&quot;
 ID=&quot;Groove&quot;
 ID=&quot;InfoPath&quot;
@@ -268,6 +274,8 @@ gitment.render('container')
 </script>
 
           
+            <div id="disqus_thread"></div>
+          
 
           
         </div>
@@ -286,7 +294,7 @@ gitment.render('container')
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -404,9 +412,8 @@ gitment.render('container')
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -414,6 +421,27 @@ gitment.render('container')
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -433,7 +461,7 @@ gitment.render('container')
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
