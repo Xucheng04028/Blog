@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  安卓手机如何通过数据线给电脑共享网络 - 唐小筑
+  大版本更新，这次 MWeb 3.0 又带来了什么 - 唐小筑
   
   </title>
   
@@ -104,17 +104,19 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>安卓手机如何通过数据线给电脑共享网络</h1>
+          <h1>大版本更新，这次 MWeb 3.0 又带来了什么</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2017/8/18</span>
+          <span class="date">2018/6/28</span>
 
+          <span>posted in&nbsp;</span> 
           
+              <span class="posted-in"><a href='%E5%B0%91%E6%95%B0%E6%B4%BE.html'>少数派</a></span>
            
          
           <span class="comments">
             
-              <a href="https://blog.tangxiaozhu.com/15250953684096.html#disqus_thread">comments</a>
+              <a href="https://blog.tangxiaozhu.com/15301955259101.html#disqus_thread">comments</a>
             
 
             
@@ -124,16 +126,70 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <p>一般而言绝大部分安卓手机都可以通过 USB 正常给 Windows 共享网络， 而 iPhone 共享网络给 Windows 只需安装 iTunes 并信任此电脑。如果发现安卓手机无法通过 USB 给 Windows 共享网络，那么就可以按照百度经验的 <a href="http://jingyan.baidu.com/article/c1465413578afa0bfcfc4c99.html">这篇教程</a> 进行操作，但教程应该是不完全的转载，故仍有需补充的地方。</p>
+      <p>上月为大家介绍了 MarkEditor 2.0 大版本更新，MWeb 作为体验同样优秀的 Markdown 应用，在管理知识、写作、发布上持续发力，现在它更新了 3.0 大版本，本篇文章就带你领略其风采。</p>
 
-<p>教程中提到在<code>设备管理器</code>中找到 <code>Android Phone</code> 以确定设备 ID 号，但也许找不到，比如我。那就注意在带黄色问号的<code>其他设备</code>中是否有 <code>RNDIS</code>，它的 <code>PID</code> 和 <code>VID</code> 就是手机设备 ID 号。然后在 <a href="http://dllyes.com/tetherxp-inf/">这里</a> 下载 <code>tetherxp.inf</code> 并按照教程中添加设备 ID 信息即可。</p>
+<p>MWeb 是为数不多的优秀 Markdown 编辑器之一，在 macOS 平台 Markdown 编辑器同质化严重的今天，MWeb 以其出色的功能和体验独树一帜。2014 年发布至今，MWeb 付费用户可以始终可以免费更新，包括大版本，因为作者 <a href="http://coderforart.com/about.html">Otis</a> 认为软件没超过 3 年以上，都没有另起的理由。</p>
 
-<p>教程实际上就是安装 RNDIS 驱动，它是 Remote Network Driver Interface Specification（<br/>
-远程网络驱动程序接口规范）的首字母缩写，实际上的作用为 <code>TCP/IP over USB</code>，也即视 USB 设备（如手机）为网卡，从而使 Windows 可以通过 USB 设备连接网络。<code>TCP/IP 协议族</code>，简称为 <code>TCP/IP</code>， 其名称源于其最早的两个核心协议 TCP（Transmission Control Protocol，传输控制协议）和 IP （Internet Protocol，网际协议），它规定了设备连接网络的方式以及数据如何传输的标准。</p>
+<ul>
+<li>你是否需要一款体验优秀且跨 macOS 和 iOS 的双平台 Markdown 编辑器？</li>
+<li>是否需要数分钟内生成和发布静态博客，并用 GitHub 等平台托管图片资源？</li>
+<li>是否需要将文章图片上传到七牛、又拍云、Imgur、Google Photos 或自定义图床？</li>
+<li>是否需要直接发布文 WordPress、Medium、新浪博客等平台？</li>
+<li>是否需要搭建个人 Wiki 知识库和支持全局检索？</li>
+</ul>
 
-<h2 id="toc_0">安卓手机共享网络给 Macintosh</h2>
+<p>那么 MWeb 3.0 将是你的不二选择，作为一款专业的 Markdown 写作、记笔记、静态博客生成软件，此次大版本更新，表面来看仅增加了数个功能和改善了体验，但看不见的背后是大量代码的重构，如 iOS 11 升级至 iOS 12 一般。</p>
 
-<p>由于 macOS 缺乏 RNDIS 驱动，安卓手机一般是无法与 macOS 通过数据线共享网络的。在 macOS 上安装 <a href="http://joshuawise.com/horndis">HoRNDIS</a> 即可通过安卓手机共享网络。</p>
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">体验的提升</h2>
+
+<p>MWeb 3.0 在颜值方面的细节改进就不再叙述，这部分主要谈谈新功能带来的体验提升。</p>
+
+<p><strong>全局搜索</strong><br/>
+在 MWeb  3.0 中它被称作快速搜索，快捷键为 <code>command ⌘ + 字母 O</code>，但我更愿意称之为全局搜索，这个重大特性使它更适合于知识管理，或构建本地维基。</p>
+
+<p><img src="media/15301955259101/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-06-24%2012.52.18.png" alt="屏幕快照 2018-06-24 12.52.18" style="width:592px;"/><br/>
+<strong>标签过滤</strong><br/>
+标签过滤，MWeb 2.x 就有的功能，入口位于导航目录右下角图标，点击则会分别显示所有标签和当前目录下的标签，再配合层级目录，俨然另一个印象笔记，如果嫌弃印象笔记笨拙或缺乏对 Markdown 的支持，那么编辑工作可依赖 MWeb，然后通过发布服务将文章发送到印象笔记。</p>
+
+<p><strong>快速笔记</strong><br/>
+快速笔记功能，蛮好用的新功能，启用后，点击菜单栏 MWeb 即可输入。可以选择每隔多久新建一个文档，在间隔时间内输入的内容都会保存在一篇文档内。</p>
+
+<p>不仅于此，快速笔记功能亦可用于文字、图片素材收集，比如浏览网页时喜欢一段话或图片，就可以选中然后拖拽到菜单栏图标中来完成收集。点击右下角即可插入输入内容和当前时间点到一个文档中，如果要呼出文档界面以浏览收集内容，点击左下角即可。</p>
+
+<p><img src="media/15301955259101/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-06-28%2022.57.07.png" alt="屏幕快照 2018-06-28 22.57.07" style="width:592px;"/></p>
+
+<p><strong>沉浸模式</strong><br/>
+隐藏标题栏和标签栏后，进入沉浸模式，再辅以全屏即可享受无干扰的写作，这是体验良好编辑器的必备功能，MWeb 3.0 终于补足了这点。</p>
+
+<p><img src="media/15301955259101/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-06-24%2013.00.19.png" alt="屏幕快照 2018-06-24 13.00.19"/></p>
+
+<p><strong>固定标签页</strong><br/>
+双击 Tab 可固定标签，非固定标签页在点选其他文档时会被新文档替换。而在 MWeb 2.0 时代，每点选其他文档就会出现新标签页，以至出现大量标签页造成管理混乱。</p>
+
+<h2 id="toc_1">不变的初心</h2>
+
+<blockquote>
+<p>MWeb 名称为 Markdown --&gt; Web ，最初的想法是简单快捷地把 Markdown 写的文档发布到 Web 上。现在也一直在写作和发布到 Web 上优化。解决的是管理知识、写作、发布的问题。然后 MWeb 采用的是 Github Flavored Markdown 语法，一直是如此。</p>
+</blockquote>
+
+<p>MWeb 最令我称道的一点就是其强大的发布功能，MWeb 3.0 中这部分并未有大改动，众多发布和图床服务、静态博客的构建和发布功能，使写作和发布简单到了极致。增加的小功能是导出和导入发布服务，以便于其在新旧版本和不同设备间无缝迁移。</p>
+
+<p><img src="media/15301955259101/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-06-28%2022.43.03.png" alt="屏幕快照 2018-06-28 22.43.03"/></p>
+
+<p>个人维基知识库也是 MWeb 3.0 的拿手好戏，全局搜索和标签过滤使知识库的查询和管理更加便捷，唯一的不足是不能直接拖移文档到另一文档内来生成文档引用链接。但可以这样讲，MWeb 3.0 是现阶段最好的本地维基编辑器。Bear 曾是我的选择之一，但它不像 MWeb、印象笔记一样可以同时用标签和层级结构管理文档，而是由标签自动生成层级结构；MarkEditor 也曾是我的选择之一，它可以拖移文档到另一文档内来生成文档引用链接，但不支持全局搜索和标签。</p>
+
+<h2 id="toc_2">更多的期望</h2>
+
+<p>对 MWeb 3.0 的后续更新，我最大的期望有两点：</p>
+
+<ol>
+<li>颜值。虽然 MWeb 3.0 编辑界面的颜值尚好，但偏好设置界面的设计就有些杂乱了，对于我这样挑剔的人来说，更期待条理感和细节美的改进。</li>
+<li>编辑体验。我觉着现阶段编辑体验最好的 Markdown 应用是 MarkEditor 2.0，倘若 MWeb 3.0 多少向它致敬些，比如也支持中英文之间自动添加空格等，那就再好不过了。</li>
+</ol>
+
+<p><a href="http://zh.mweb.im/mweb3-release-note.html">官网</a> 声明 MWeb 3.0 将于下周发布，首发限时半价，60 元，非 Mac App Store 购买的用户如果是在 2018 年 5 月 1 号之后购买了 MWeb 2.x，可邮件联系开发者更换为 3.0 版。MWeb 3.0 的后续更新会有更多的可能，一次买断，且预计持续更新 3 年以上，如有兴趣，不妨和我一样趁着下周首发半价入手……</p>
 
 
     
@@ -144,16 +200,13 @@
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="15250954210141.html" 
-          title="Previous Post: 该不该训练打字姿势">&laquo; 该不该训练打字姿势</a>
-      
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="15250940334832.html" 
-          title="Next Post: Office 365 如何按需安装">Office 365 如何按需安装 &raquo;</a>
+          <a  href="15274094359218.html" 
+          title="Next Post: 当被 diss 之后">当被 diss 之后 &raquo;</a>
       
       </p>
         </div>
