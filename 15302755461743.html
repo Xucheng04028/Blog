@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  探究 MacBook Pro 变慢的原因及解决方案 - 唐小筑
+  每周分享第 4 期 - 唐小筑
   
   </title>
   
@@ -106,17 +106,19 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>探究 MacBook Pro 变慢的原因及解决方案</h1>
+          <h1>每周分享第 4 期</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2017/8/27</span>
+          <span class="date">2018/6/29</span>
 
+          <span>posted in&nbsp;</span> 
           
+              <span class="posted-in"><a href='%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html'>每周分享</a></span>
            
          
           <span class="comments">
             
-              <a href="https://blog.tangxiaozhu.com/15250958564749.html#disqus_thread">comments</a>
+              <a href="https://blog.tangxiaozhu.com/15302755461743.html#disqus_thread">comments</a>
             
 
             
@@ -126,21 +128,47 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <p>MacBook Pro Late 2013 变慢后内存占用状况：</p>
+      <ul>
+<li>
+<a href="#toc_0">案例</a>
+<ul>
+<li>
+<a href="#toc_1">Visual Studio Code Error</a>
+</li>
+</ul>
+</li>
+</ul>
 
-<pre><code class="language-text">虚拟内存 3 GB
-kernel_task ? root
-WindowsServer ? _windowserver
-</code></pre>
 
-<p>重启后内存占用状况：</p>
+<h2 id="toc_0">案例</h2>
 
-<pre><code class="language-text">虚拟内存 1 GB
-kernel_task 700 MB root
-WindowsServer 65 MB _windowserver
-</code></pre>
+<h3 id="toc_1">Visual Studio Code Error</h3>
 
-<p>解决方案：如果开启了 Parallel Desktop 虚拟机，务必重启；平时最好每过数天重启，当然最好的解决方案时购买新 MacBook Pro……</p>
+<p>如何解决 Visual Studio Code Error: <code>Linter pylint is not installed</code>（数据库引擎 Python 代码分析插件没有安装）？</p>
+
+<p>如果不需要可以关掉，在用户设置里输入 <code>python.linting.pylintEnabled&quot;: false</code> 即可。</p>
+
+<p>或以此命令 <code>sudo -H pip install pylint</code> 安装…… </p>
+
+<p>⚠️ 点击 install 安装失败的根源在于 pip 安装似乎无法依靠 socks 代理，只要将终端代理改为 https 的方式，一切都正常了！这也是本问题解决的最佳方式。<a href="https://blog.kelu.org/tech/2017/08/06/python-socks-support.html">方法来源</a></p>
+
+<p><strong>无效方法</strong><br/>
+如果使用 python3，则在用户设置中覆盖 <code>“python.pythonPath”: “python3”</code>然后点击弹框的 install，VS Code 会安装好 pylint 等一系列东西：安装还是失败。<a href="https://blog.csdn.net/superzmy/article/details/80455070">方法来源</a></p>
+
+<hr/>
+
+<p><strong>macOS sudo 参数</strong><br/>
+<code>-b</code>：在后台执行指令。<br/>
+<code>-h</code>：显示帮助。<br/>
+<code>-H</code>：将 HOME 环境变量设为新身份的 HOME 环境变量。<br/>
+<code>-k</code>：结束密码的有效期限，也就是下次再执行 sudo 时便需要输入密码。<br/>
+<code>-l</code>：列出目前用户可执行与无法执行的指令。<br/>
+<code>-p</code>：改变询问密码的提示符号。<br/>
+<code>-s</code>：执行指定的 shell。<br/>
+<code>-v</code>：延长密码有效期限 5 分钟。<br/>
+<code>-V</code>：显示版本信息。<br/>
+<code>-S</code>：从标准输入流替代终端来获取密码<br/>
+<code>-u &lt;用户&gt;</code>：以指定的用户作为新的身份。若不加上此参数，则预设以 root 作为新的身份。</p>
 
 
     
@@ -151,16 +179,16 @@ WindowsServer 65 MB _windowserver
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="15250958886575.html" 
-          title="Previous Post: 为何 Office for Mac 字体总变为 M S 明朝">&laquo; 为何 Office for Mac 字体总变为 M S 明朝</a>
+          <a href="15428737284655.html" 
+          title="Previous Post: 自学 Python 第 2 期">&laquo; 自学 Python 第 2 期</a>
       
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="15250958303004.html" 
-          title="Next Post: 如何解绑飞猪的酒店会员卡">如何解绑飞猪的酒店会员卡 &raquo;</a>
+          <a  href="15301955259101.html" 
+          title="Next Post: 大版本更新，这次 MWeb 3.0 又带来了什么">大版本更新，这次 MWeb 3.0 又带来了什么 &raquo;</a>
       
       </p>
         </div>
