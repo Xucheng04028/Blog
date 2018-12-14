@@ -77,6 +77,8 @@
     <li><label>Categories</label></li>
 
         
+            <li><a href="%E6%91%98%E5%BD%95.html">摘录</a></li>
+        
             <li><a href="%E5%B0%91%E6%95%B0%E6%B4%BE.html">少数派</a></li>
         
             <li><a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html">每周分享</a></li>
@@ -103,6 +105,491 @@
 	<div class="large-8 medium-8 columns">
 		<div class="markdown-body home-categories">
 		
+			<div class="article">
+                <a class="clearlink" href="15250940334832.html">
+                
+                  <h1>Office 365 如何按需安装</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>为了减少设定上的麻烦，Windows 上微软采用了 C2R（Click To Run）方式以安装 Office 365 或 2016 等，但同时我们失去了选择的权利。比如，订阅了 Office 365 家庭版，安装过程中会自动将 <code>Word</code> <code>Excel</code> <code>PowerPoint</code> <code>OneNote</code> <code>Outlook</code> <code>Publisher</code> <code>Access</code> 全家桶全部装到电脑，而我们许多人只需要前三者。总之，按需安装既可以节省电脑储存空间，又可以安抚好强迫症患者，比如我。</p>
+
+<p>macOS 上无法按需安装，但在安装完以后可以将不需要的应用拖到废纸篓，也达到了相同目的。</p>
+
+<h2 id="toc_0">Windows</h2>
+
+<ol>
+<li>打开 <a href="http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html">官方配置编辑器</a>，在 <code>Add Product</code> 中选择相应信息，语言选择后点击 <code>Add</code>，最后点击 <code>Add Product</code>； </li>
+<li>在 <code>Exclude Programs</code> 中取消勾选拒绝安装的应用，点击 <code>Save</code>；</li>
+<li>在输出栏上侧点击 <code>Export</code>，然后点击 <code>Download Office Deployment Tool</code>，感谢 iamCristYe 提供的信息；</li>
+<li>在包含 <code>setup.exe</code>以及 <code>configuration.xml</code> 的文件夹上按右键的同时按着 ⇧ 键选择在此打开命令窗口，复制以下命令到命令窗口并回车以执行，就会跳出下图所示的窗口，大功告成。</li>
+</ol>
+
+<pre><code class="language-text">setup.exe /configure configuration.xml 
+</code></pre>
+
+<p><img src="media/15250940334832/15250940622671.png" alt=""/></p>
+
+<p>可能的错误信息：</p>
+
+<blockquote>
+<p>找不到命令 setup.exe，但它确实存在于当前位置。默认情况下，Windows PowerShell 不会从当前位置加载命令。如果信任此命令，请改为键入“.\setup.exe”。</p>
+</blockquote>
+
+<p>按照提示修改命令即可：</p>
+
+<pre><code class="language-text">.\setup.exe /configure configuration.xml 
+</code></pre>
+
+<p><em>以下是本质相同的旧教程</em></p>
+
+<ol>
+<li>下载 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117">Office 2016 部署工具</a>，双击，根据提示解压到桌面</li>
+<li>记事本打开 <code>configuration.xml</code> 并删除全部内容</li>
+<li>复制以下内容到 <code>configuration.xml</code></li>
+</ol>
+
+<pre><code class="language-text">&lt;Configuration&gt;
+&lt;Add SourcePath=&quot;&quot; OfficeClientEdition=&quot;32&quot;&gt;
+&lt;Product ID=&quot;O365ProPlusRetail&quot;&gt;
+&lt;Language ID=&quot;zh-cn&quot; /&gt;
+&lt;ExcludeApp ID=&quot;Access&quot; /&gt;
+&lt;ExcludeApp ID=&quot;Publisher&quot; /&gt;
+&lt;ExcludeApp ID=&quot;OneNote&quot; /&gt;
+&lt;ExcludeApp ID=&quot;Outlook&quot; /&gt;
+&lt;ExcludeApp ID=&quot;Groove&quot; /&gt;
+&lt;ExcludeApp ID=&quot;Lync&quot; /&gt;
+&lt;/Product&gt;
+&lt;/Add&gt;
+&lt;/Configuration&gt;
+</code></pre>
+
+<p>在包含 <code>setup.exe</code>以及 <code>configuration.xml</code> 的文件夹上按右键的同时按着 Shift 选择在此打开命令窗口，复制以下命令到命令窗口并回车以执行，就会跳出下图所示的窗口，大功告成。</p>
+
+<pre><code class="language-text">setup.exe /configure configuration.xml 
+</code></pre>
+
+<p><img src="media/15250940334832/15250953095687.png" alt=""/></p>
+
+<h2 id="toc_1">教程解释</h2>
+
+<p>或观阅 <a href="https://technet.microsoft.com/zh-cn/library/jj219422.aspx">微软官方提供的教程</a></p>
+
+<pre><code class="language-text">&lt;Configuration&gt;
+&lt;Add SourcePath=&quot;&quot; OfficeClientEdition=&quot;32&quot;&gt;  
+    // SourcePath - 镜像文件的位置，保留空白意味着会自动下载安装包
+    // OfficeClientEdition - 安装 32 或 64 位，微软通常建议安装 32 位
+&lt;Product ID=&quot;O365ProPlusRetail&quot;&gt;
+    // 指 Office 的产品 ID 如 O365ProPlusRetail、HomeStudentRetail，详细参阅产品 ID 说明
+&lt;Language ID=&quot;zh-cn&quot; /&gt;
+    // 语言版本：简体中文（zh-cn） 繁体中文（zh-tw） 
+&lt;ExcludeApp ID=&quot;Access&quot; /&gt;
+&lt;ExcludeApp ID=&quot;Publisher&quot; /&gt;
+&lt;ExcludeApp ID=&quot;OneNote&quot; /&gt;
+&lt;ExcludeApp ID=&quot;Outlook&quot; /&gt;
+&lt;ExcludeApp ID=&quot;Groove&quot; /&gt;
+&lt;ExcludeApp ID=&quot;Lync&quot; /&gt;
+    // 不安装的软件列表，软件对应 ID 见下文
+&lt;/Product&gt;
+&lt;/Add&gt;
+&lt;/Configuration&gt;
+</code></pre>
+
+<p><a href="https://support.microsoft.com/zh-tw/kb/2842297">Office 产品 ID 说明</a></p>
+
+<p>产品的对应 ID 如下：</p>
+
+<pre><code class="language-text">ID=&quot;Access&quot;
+ID=&quot;Excel&quot;
+ID=&quot;Groove&quot;
+ID=&quot;InfoPath&quot;
+ID=&quot;Lync&quot;
+ID=&quot;OneDrive&quot;
+ID=&quot;OneNote&quot;
+ID=&quot;Outlook&quot;
+ID=&quot;PowerPoint&quot;
+ID=&quot;Publisher&quot;
+ID=&quot;SharePointDesigner&quot;
+ID=&quot;Visio&quot;
+ID=&quot;Word&quot;
+对于商务用 OneDrive，请使用 Groove
+对于商务用 Skype，请使用 Lync
+</code></pre>
+
+<p>微软提供的详细解释，请移步此处：<a href="https://technet.microsoft.com/zh-cn/library/jj219426.aspx#%E4%B8%AD%E5%9B%BD%EF%BC%88%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%EF%BC%89">Office 部署工具的配置选项</a></p>
+
+<p>文中的旧教程主要参照：<a href="https://www.senao.com.tw/%5BOffice%5D-%E3%80%8C%E7%94%A8%E4%B8%8D%E5%88%B0%E7%9A%84%E5%B0%B1%E4%B8%8D%E8%A6%81%E3%80%8D%E5%A6%82%E4%BD%95%E8%AE%93-Office-365-%E5%83%85%E5%AE%89%E8%A3%9D%E6%89%80%E9%9C%80%E8%BB%9F%E9%AB%94/976.html">神腦國際達人觀點編輯群</a></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/18</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250940334832.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250938938696.html">
+                
+                  <h1>全平台 Outlook 指南</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>iCloud 曾经是我的主力平台，通讯录、备注、提醒事项、日历等都由 iCloud 同步。但是 iCloud 最大的问题就是封闭，无法做到跨平台同样的体验。从前我的打算是只使用 Apple 设备，但现在来看这并不太可能了。因为微软的二合一设备对我就有很大的吸引力，安卓手机也偶尔使用。</p>
+
+<p>Outlook 是一款很优秀的产品，最重要的特性是一个应用可以解决所有平台的问题。Outlook 的五大功能：邮件、日历、人脉、任务、便签，使我们对学习和工作都应对自如。只是 Outlook 似乎没有得到微软的重视，有许多细节体验让人心碎。本文的目的是介绍作者的 Outlook 全平台使用经验。</p>
+
+<p>Outlook for macOS 的联系人、任务、便签使用起来并不顺心，为此我同时设置了 Exchange 账户，选择同步邮件、日历、联系人、任务、便签。实际上完全也可以只使用 Exchange，我只是追求 Windows 与 macOS 的无缝衔接。Outlook for macOS 的联系人对中文姓名的优化不太好，而 macOS 的通讯录则优化颇佳；Outlook 的联系人中有许多选项无法更改名称，也有一些不需要的功能，而 macOS 的通讯录功能则简洁且全面。Outlook 的任务和便签仅在新建环节上就让人崩溃，而且新建的便签组会被当作网页版 Outlook 邮箱的文件夹，所以我强烈建议通过 Exchange 使用 macOS 自带的应用。</p>
+
+<p><img src="media/15250938938696/15250939149860.png" alt="" class="mw_img_center" style="width:650px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<p>Outlook for Android 的功能跟 for iOS 一样，但体验差得很远。而且许多安卓手机的 Exchange 无法同步任务和便签。所以在 Android 上我只建议使用一个被称作最佳的 Outlook 客户端：Nine，在谷歌商店中可免费试用，解锁价格大概十刀，在其他应用商店中也许免费提供。Nine 支持同步邮件、日历、人脉、任务和便签，虽有些复杂，但还是比较优美的。</p>
+
+<p><img src="media/15250938938696/15250939257167.png" alt="" class="mw_img_center" style="width:650px;display: block; clear:both; margin: 0 auto;"/></p>
+
+<p>Outlook for iOS 并不会同步任务和便签，所以我只使用了 Exchange 同步邮件、日历、人脉、任务与便签。</p>
+
+<p>Outlook for Windows 就无须介绍了。</p>
+
+<p>总结一下：</p>
+
+<ol>
+<li>macOS 上建议用 Exchange 同步，也可以搭配 Outlook 客户端使用；</li>
+<li>iOS 上建议只用 Exchange 同步；</li>
+<li>Android 上建议使用三方 Outlook 客户端 Nine；</li>
+<li>Windows 根据系统版本考虑，建议使用 Outlook 客户端。</li>
+</ol>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/18</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250938938696.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250937988084.html">
+                
+                  <h1>中国现代反腐制度的深度解析</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>本文致力于阐述中国的现代反腐制度及其运行模式，但由于作者能力着实有限，也非相关专业，故所述内容大多源自网络和相关论文。</p>
+
+<h2 id="toc_0">腐败的定义</h2>
+
+<p>腐败是政治毒瘤，古今中外任何一个政党或政权的垮台都和腐败有关。习近平总书记就曾告诫全党：“大量事实告诉我们，腐败问题越演越烈，最终必然会亡党亡国！”</p>
+
+<p>究竟什么是腐败？</p>
+
+<p>美国政治学家米彻尔·约翰斯顿指出：“在反腐败问题的讨论中，没有哪个问题像腐败的定义这样长期争论不休，也没有哪个问题像腐败的定义这样在那些具有重要意义的讨论中经常占据优先的位置。”</p>
+
+<p>美国政治学家约瑟夫·尼尔认为：“腐败是为私人、家庭成员或私人小圈子获取金钱、身分而背离公共角色的规范职责的行为，或违反那些旨在防止滥用私人影响以谋取私利的规则的行为。腐败包括贿赂（以物质腐蚀某一职位占有者以影响他的判断）、裙带关系（基于私人关系而不是按照人的品德提供庇护）和盗用（为个人目的非法盗用或侵占公共资源）。”</p>
+
+<p>国际货币基金组织和国际透明组织这样定义腐败：滥用公众权力谋取个人或亲近的人的利益。</p>
+
+<p>我国在《刑法》第八章定义了“贪污贿赂罪”，但并没有腐败的定义。第三百八十二条规定：国家工作人员利用职务上的便利，侵吞、窃取、骗取或者以其他手段非法占有公共财物的，是贪污罪。第三百八十五条规定：国家工作人员利用职务上的便利，索取他人财物的，或者非法收受他人财物，为他人谋取利益的，是受贿罪。</p>
+
+<h2 id="toc_1">中国现代反腐制度</h2>
+
+<h3 id="toc_2">反腐制度</h3>
+
+<p>反腐败是从中国共产党执政之日起就被提上议事日程的。反腐领域曾有‘三反’、‘五反’、‘新三反’、‘社教’等诸多实践，它们均以政治运动的形式开展。然而，三番五次的运动在很大程度上并未触动滋生这种贪污腐败现象的根基和土壤，也缺乏持久稳固的约束力。自新中国成立以来，中国从动员式的运动反腐逐渐迈向了主动式的制度反腐——防腐反腐的常态化和长效化，凸显了中国共产党领导并紧紧依靠广大的人民群众厉行廉政、与腐败作长期斗争的坚定决心和理性认识。中国共产党依据宪法和法律领导全中国的反腐工作，下图所示为反腐机构体系。</p>
+
+<p><img src="media/15250937988084/15250938206159.png" alt=""/></p>
+
+<p><img src="media/15250937988084/15250938260953.png" alt=""/></p>
+
+<h4 id="toc_3">中共纪律检查机关</h4>
+
+<p>中共纪律检查机关俗称“纪委”、“纪检委”的中国共产党各级纪律检查委员会，是党内监督的专门机关。</p>
+
+<p>纪委由同级党代会选举产生。其后，纪委举行全体会议，选举常委、书记、副书记。纪委书记在党内是重要职位，中纪委书记是中央政治局常委，省纪委书记一般均为省委常委，市、县亦然。中纪委在党的中央委员会领导下工作，地方各级纪委则要接受双重领导：一重是同级党委会，另一重是上级纪委。</p>
+
+<p>在整套反腐体系中，它是发挥组织协调作用的关键部门。作为党的机关，纪委的监督对象是党员。</p>
+
+<h4 id="toc_4">政府检查机关</h4>
+
+<p>纪委属于党，监察机关则属于政府。在中央一级，国务院组成部门中设有监察部；在省级和市、县级政府，分别设有监察厅和监察局。从中央到地方，纪委和监察机关都采取了“合署办公”的方式。它们用一套工作机构、两个机构名称，履行两种职能。</p>
+
+<p>“合署”也表现在领导上：监察部部长同时是中纪委副书记，地方监察机构的负责人一般也由纪委副书记兼任。</p>
+
+<p>作为政府的机关，主要监察行政机关及其公务员。纪委监督党员，监察机关则监察行政机关及其公务员。换言之，监察机关不能监察党的机关、人大机关、政协机关、审判机关、检察机关及其公务员。</p>
+
+<h4 id="toc_5">审计机关</h4>
+
+<p>审计机关是对经济领域腐败的预防和惩处中不可或缺的一环。</p>
+
+<p>如同纪委，审计机关也实行“双重领导”，同时对本级政府和上级审计机关负责并报告工作，审计业务以上级审计机关领导为主。</p>
+
+<p>从作为国务院组成部门的审计署，到地方政府的审计厅、审计局，这些机构的审计工作对象主要是机构的财务收支，包括国务院各部门、地方各级政府及其部门、国有金融机构和国有企业事业单位等。此外，国家机关等单位的主要负责人个人也是审计的对象。</p>
+
+<h4 id="toc_6">预防腐败局</h4>
+
+<p>这是反腐体系中最年轻的一个部门，它成立至今仅有八年多的时间。除中央层面外，预防腐败局仅在部分省区市成立。</p>
+
+<p>国家预防腐败局属于国务院直属机构，与国家林业局、国家统计局等级别相当。目前，国家预防腐败局的存在形式是在监察部“加挂牌子”,也即在一个实体单位上增加一个名称，由同一套领导班子兼任。其局长由监察部部长兼任，副局长中的一位由监察部副部长兼任，同时另设一位副部级专职副局长主持日常工作。</p>
+
+<p>它的职责是统筹全国的预防腐败工作，并负责预防腐败的国际合作和技术援助。</p>
+
+<h4 id="toc_7">国家司法机关</h4>
+
+<p>在反腐体系中，对腐败行为的惩治，最终要依赖法院和检察院这两大司法机关来实现。法院和检察院也被称为“两院”，与政府的“一府”并称。</p>
+
+<p>法院院长和检察长，均是同级人大选举而来。不过，最高法的院长和最高检的检察长候选人均由中共中央向全国人大主席团建议。</p>
+
+<p>检察院的职责是侦查职务犯罪、代表国家提起公诉，之后法院依法审判。不过，检察院的工作还包括预防职务犯罪等。</p>
+
+<p>此外，这两套部件中的级别最高者即最高人民法院和最高人民检察院，还可以通过司法解释等方式，对贪污贿赂渎职等腐败案件的审判、检察工作进行指导。</p>
+
+<h4 id="toc_8">其他机构</h4>
+
+<p>公安、金融等其他有关部门和机构是相对处于外围但重要的组成部分，它们在自身职责范围内，依法承担反腐败和廉政建设的相关工作。</p>
+
+<h3 id="toc_9">运行模式</h3>
+
+<p>反腐运行模式按照功能可划分为两种:预防和惩治。具体在每一种模式中，又有可以分别供不同的政治和社会力量参与使用的功能分项。</p>
+
+<h4 id="toc_10">预防模式</h4>
+
+<p>近些年来的反腐体系开发思路，越来越强调在启用“惩治“模式之前，首先尽量使用“预防”模式。</p>
+
+<p><strong>教育</strong>。邓小平在回答美国记者提问如何解决少数贪污、腐化和滥用权力的现象时指出:“我们主要通过两个手段来解决，一个是教育，一个是法律。”教育是预防模式中的重要功能，主要发起者是纪委，但参与的角色众多。教育功能是贯穿始终且频繁出现的。廉洁从政教育已经被普遍纳入教学计划，成为各级领导干部的必修课程。在一些地方，领导干部选拔前还需要进行廉政法律法规考试，任用前要进行“廉政谈话”。</p>
+
+<p>实际上，教育功能已经延伸至普通大众当中。也就是说，在一名官员还没有进入体制，甚至还在上学的时候，就会成为反腐教育的对象。</p>
+
+<p><strong>监督</strong>。监督既是预防模式的重要构成部分，又可能成为惩治模式的起点。监督包括党内监督、人大监督、政府内部监督、政协民主监督、司法监督、公民监督、舆论监督、信息公开。</p>
+
+<h4 id="toc_11">惩治模式</h4>
+
+<p>在惩治模式中，各机构之间将发生互动与配合，往往表现为一连串的功能组合。邓小平明确指出：“从党的工作来说，重要是端正党风，但从全面来说，是加强法制，还是要靠法制，法制靠得住些。”法制的一大目的即惩治。</p>
+
+<p><strong>检查机关</strong>。纪委在通过各种监督途径掌握党员违纪线索之后，展开调查，最经常被提及的手段是“双规”，即“要求有关人员在规定的时间、地点就案件所涉及的问题作出说明”。“双规”并非司法程序，仅县级以上纪检部门才可以使用，且有较为严格的启动程序。涉嫌犯罪的党员，则需要移送司法机关处理。</p>
+
+<p><strong>监察机关</strong>。与“双规”相对应的是“双指”，即“责令有违反行政纪律嫌疑的人员在指定的时间、地点对调查事项涉及的问题作出解释和说明”。“双指”由监察机关使用，对象是涉嫌违反纪律的公务人员，基本是中共党外人士。政府监察机关对于违反政纪的监察对象，作出相应政纪处分；同样，涉嫌犯罪的，移送司法机关处理。</p>
+
+<p><strong>执法机关</strong>。公安、审计、行政执法机关也可以启动惩治模式。以审计机关为例，在审查账目、查找漏洞之后发现的腐败线索，将重点予以追踪审计。一旦查实，对审计机关处理权限内的腐败行为，将以下达审计决定的方式直接作出通报批评、罚款和没收非法所得等处理；对处理权限以外的腐败行为，则移送纪检、监察或司法机关处理。</p>
+
+<p><strong>司法机关</strong>。人民法院、人民检察院也能启动惩治模式。当它们在履行的职责过程中发现犯罪嫌疑人涉嫌违犯党纪或政纪的，将有关证据材料移送党的纪检机关或政府监察机关处理。</p>
+
+<h2 id="toc_12">总结</h2>
+
+<p>总体来看，中国现代反腐制度是具备丰富反腐主体的体系，但庞杂、低效、相互冲突等副作用随之而来。在相对完备的反腐制度下，值得深究这样的疑问：为何如此众多的机构或部门都难以堵住腐败？中国现代反腐制度堪称丰富，但制度内部以及制度之间的严密性和制度执行的彻底性都较为欠缺，导致贪腐人员发现制度存在的漏洞并以此行贪腐之欲。</p>
+
+<p>反腐机构的独立性也是影响反腐效果的关键因素。目前，地方各级纪委则要接受同级党委会和上级纪委的双重领导，也即纪委并非独立机构。有两个方式保证纪委的独立性，一是加强纪委的垂直领导，甚至将纪委直接改为仅由上级纪委领导；二是将纪检干部的人事任免权等收归上级纪委掌握，削弱同级党委对纪委独立性的影响。</p>
+
+<p>审计机关也面临本级政府和上级审计机关双重领导而导致独立性欠缺的问题。虽然审计机关可以启动整套惩治流程，但在双重管理制度之下，各级审计机关的领导均由地方政府任免，经费由地方财政供给，因此，当审计发现问题时顾虑重重，整套流程可能遭遇阻力无法启动或难以运行下去。</p>
+
+<p>此外，监察机关的职能是监察行政机关及其公务员，但同时隶属于行政权序列并向同级行政首长负责。作为对行政机关和行政首长开展监察的专门机关，应隶属各级人大，如此其独立性也有了保证。</p>
+
+<p>中国三十多年没走出反腐的困境就是因为搞的都是同体监督，就像再锋利的刀锋也砍不了自己的背，必须通过异体监督才能解决这个问题。异体监督也即监督的主体应是具有独立性的。在香港，一个独立机构廉政公署成为腐败的防火墙。虽然香港模式不适于地广人多的中国大陆，但是可借鉴其保持反腐机构独立的经验。</p>
+
+<p>基于以上论述，可以指出的是，中国现代反腐制度的当务之急是使反腐机构保持独立性和得到充分的授权。</p>
+
+<p>注意，本文许多内容摘自或改自序号为五的参考文献。</p>
+
+<h2 id="toc_13">参考文献</h2>
+
+<p>[1]   孙桂珍. 对完善反腐制度的思考[J]. 经济研究导刊, 2015(6): 321–322.<br/>
+[2]   于风政. 论 “腐败” 的定义[J]. 新视野, 2003(5): 40–42.<br/>
+[3]   胡鞍钢. 中国: 挑战腐败[M]. 浙江人民出版社, 2001.<br/>
+[4]   中华人民共和国法律. 中华人民共和国刑法[J]. 维基文库, 2015.<br/>
+[5]   方可成. 中国式反腐体系说明书[J]. 南方周末, 2013.<br/>
+[6]   陈雷雷. 论当前中国的腐败问题与制度反腐[J]. 经济研究导刊, 2010(1):217–218.<br/>
+[7]   中央纪委宣传教育室. 邓小平论党风廉政建设和反腐败[M]. 中国方正出版社, 1998.<br/>
+[8]   中共中央文献编辑委员会. 邓小平文选[M]. 人民出版社, 1983.<br/>
+[9]   陶卫华. 李永忠: 十年反腐看五年[J]. 中国民商, 2013(6): 44–46.</p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/18</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250937988084.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250937383605.html">
+                
+                  <h1>不仅仅是 Markdown 写作工具</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<h2 id="toc_0"><a href="http://zrey.com/app/markeditor">MarkEditor</a></h2>
+
+<p>支持平台：macOS &amp; Windows<br/>
+观看教程：<a href="http://7xt5br.com1.z0.glb.clouddn.com/_book/index.html">点击这里</a></p>
+
+<p>难得的是功能众多，仍不失优雅。情不自禁折服于 Z.R.E.Y 的审美水平，之前为 Farbox 倾心，现在 MarkEditor 亦如此。</p>
+
+<p>在此，仅介绍我常用的功能。</p>
+
+<ol>
+<li>Markdown 写作模式<br/>
+这是 MarkEditor 的灵魂技能，开启 Markdown 写作模式以后，会自动将 Markdown 语法涉及的中文符号转换为英文符号，从此不必切换输入法。</li>
+<li>工作目录<br/>
+连按两次 <code>command</code> 键可以快速调出设定好的文件目录。</li>
+<li>同步到云端<br/>
+如七牛、Farbox等。设定七牛后，不仅具备了分享功能，还能自动将图片上传并转换为 Markdown 格式，写文章时，一气呵成，再也不必忧虑插入图片的问题，是运营静态博客的利器。</li>
+<li>导出<br/>
+导出功能分为十几项，比较常用的导出为： Wiki 站点 &amp; 电子书 &amp; 微信公众号。Wiki 站点等都可以在局域网内或互联网分享。可以说，MarkEditor 解放了我们的双手。</li>
+</ol>
+
+<h3 id="toc_1">优惠购买</h3>
+
+<p>购买 MarkEditor 授权时，可以输入已购买者的邮箱作为优惠码以享 <strong>七折或八折</strong> 优惠，每个邮箱总使用次数不超过五十次。</p>
+
+<p>如果是 FarBox 用户：<br/>
+输入 FarBox 中账户邮箱购买 MarkEditor 时，Pro 账户只需 RMB 1 购买 Pro 版，Senior 账户则可购买通用版。Standard 账户购买 MarkEditor，6 折优惠。如果 FarBox 中未绑定邮箱，需要先绑定邮箱。</p>
+
+<p>亦可关注其微信公众号<code>zreysoft</code>或 <a href="http://zrey.com/home">官网</a>，在特殊的日子会有更优惠的折扣。</p>
+
+<p>本以为 MarkEditor 足以，但最近越来越依赖 Windows 平台，而 MarkEditor 在 Windows 下的高清屏显示效果令我倍感无奈，还好无意间邂逅的 Typora 使我顿时舒心颜。</p>
+
+<blockquote>
+<p>Windows 版的高清屏下显示效果很糟？</p>
+
+<p>MarkEditor 对 Windows 版下的高清屏支持是有限的，可以通过设置内调节日间、夜间的样式，里面涉及文字大小、尺寸相关的，尝试放大 2 倍或者其它合适的数值。<br/>
+但是 ME 对 Windows 下的高清屏支持是有限的，请慎重购买。</p>
+</blockquote>
+
+<h2 id="toc_2"><a href="http://www.typora.io/">Typora</a></h2>
+
+<p>支持平台：macOS &amp; Windows &amp; Linux</p>
+
+<p>Typora 最大的特点是即时预览，不同于其他编辑器的双栏写作与预览，Typora 有 Word 的感觉，似乎有点偏离 Markdown 的本意。只有光标放置的位置才会显示出 Markdown 语法结构。</p>
+
+<p>目前我常用两个功能：</p>
+
+<ol>
+<li>插入链接<br/>
+选中需要插入链接的文字，按<code>Ctrl + K</code>即可自动插入剪贴板中的网址。</li>
+<li>标题等级<br/>
+ 标题等级可以用快捷键进行切换。</li>
+</ol>
+
+<p><img src="https://user-images.githubusercontent.com/9845703/29439110-18ac455e-83ee-11e7-9f6c-2a81a7d545ff.png" alt=""/></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/18</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250937383605.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250935165757.html">
+                
+                  <h1>旧 iPhone 焕发生机</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>所谓焕发生机就是换块电池，网购一枚还赠送工具。注意，一定要找个指导视频照着做。换电池时，顺便清理一下手机，都完工后确实焕然一新，令人心情愉悦。</p>
+
+<p>我遇到的尴尬事：</p>
+
+<ul>
+<li>把旧电池线扯断了，但没啥影响；</li>
+</ul>
+
+<p><img src="media/15250935165757/15250936355115.jpg" alt="" style="width:400px;"/></p>
+
+<ul>
+<li>小螺钉不小心沾到电脑电源接口位置，比较难取出。</li>
+</ul>
+
+<p><img src="media/15250935165757/15250936113084.jpg" alt="" style="width:400px;"/></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/18</span>
+                    
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250935165757.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
 			<div class="article">
                 <a class="clearlink" href="15250934649161.html">
                 
@@ -404,401 +891,6 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="15250930048334.html">
-                
-                  <h1>关于维基百科的编辑</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>MediaWiki 的前世今生在 <a href="https://zh.wikipedia.org/wiki/MediaWiki">其词条</a> 中已有详细的描述。了解维基百科，我强烈推荐仔细阅读 <a href="http://www.tsima.org.tw/wiki/dian-zi-qi-kan/semantic-mediawiki">Semantic MediaWiki</a> 中的一系列文章。</p>
-
-<p>不论是 Markdown 还是 WikiPedia 语法最终都是被解析为 HTML 语法，所以它们都可以与 HTML 语法混用，但也有 <a href="https://zh.wikipedia.org/wiki/Help:HTML">一些限制</a>。</p>
-
-<p>关于如何编辑维基百科和其语法可在 <a href="https://zh.wikipedia.org/wiki/Help:%E7%BC%96%E8%BE%91%E9%A1%B5%E9%9D%A2">帮助：编辑页面</a> 得到充足的信息。当然也最好看看 <a href="https://zh.wikipedia.org/wiki/Wikipedia:%E6%A0%BC%E5%BC%8F%E6%89%8B%E5%86%8C">维基百科：格式手册</a>，这有助于编写出符合维基风格的词条。</p>
-
-<h3 id="toc_0">签名</h3>
-
-<p>最初我一直不懂签名是什么意思，写下自己的用户名？后来发现留下签名一般就是留下四个波浪号 <code>~~~~</code>，它会被自动解析为 <code>签名 + 时间</code>；而三个波浪号 <code>~~~</code> 只被解析为签名；五个波浪号 <code>~~~~~</code> 只被解析为时间。</p>
-
-<h3 id="toc_1">解析方式</h3>
-
-<p>有时我们不想输入的文本被解析和格式化，那么可以使用 <code>&lt;pre&gt; &lt;/pre&gt;</code> 标签；如果不想被解析但想被格式化，可用 <code>&lt;nowiki&gt; &lt;/nowiki&gt;</code> 标签。</p>
-
-<h3 id="toc_2">对应关系</h3>
-
-<p>维基百科使用 MediaWiki 语法，而我这只小白用户只熟悉 Markdown 语法。在编辑维基百科时总是要查询或者切换可视化编辑器，在这里总结下 MediaWiki 语法。</p>
-
-<p><code>## 二级标题</code> == 二级标题 ==<br/>
-<code>### 三级标题</code> === 三级标题 ===</p>
-
-<p><code>1. 有序列表</code> # 有序列表<br/>
-<code>2. 无序列表</code> # 有序列表</p>
-
-<p><code>- 无序列表</code> * 无序列表</p>
-
-<p><code>[文字](http://www.test.com)</code> <br/>
-<code>[http://www.test.com 文字]</code></p>
-
-<p><code>![图片](http://www.test.com)</code> <br/>
-<code>[[File:Wiki.png]]</code></p>
-
-<p>MediaWiki 语法中代码使用 HTML 标签表示：<code>&lt;code&gt;代码&lt;/code&gt;</code></p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/18</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15250930048334.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15250928793081.html">
-                
-                  <h1>教育优惠与节日优惠</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>许多优秀的产品都对学生有较大的优惠，虽然国内一些人爱钻空子并滥用致使一些产品取消了 EDU.CN 邮箱的认证，或者不接受国内的申请。但仍然有许多优惠。</p>
-
-<h3 id="toc_0">教育免费</h3>
-
-<ol>
-<li><a href="http://www.originlab.com/OriginProLearning.aspx">Origin</a></li>
-<li>AutoCAD</li>
-</ol>
-
-<h3 id="toc_1">教育优惠</h3>
-
-<ol>
-<li><a href="https://estore.onthehub.com">OnTheHub</a></li>
-<li><a href="http://shop.edu.cn/">赛尔校园先锋</a>：支持支付宝与网银</li>
-</ol>
-
-<h3 id="toc_2">节日优惠</h3>
-
-<p>这里与教育优惠无关，但优惠力度超过教育优惠。</p>
-
-<p><strong>双十一半价</strong>：</p>
-
-<ol>
-<li>Parallels Desktop：358 ---&gt; 179</li>
-<li>Office 365 个人版：399 ---&gt; 199 ---&gt; 99</li>
-<li>优酷会员半价：198 -&gt; 99</li>
-</ol>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/18</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15250928793081.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15250926629285.html">
-                
-                  <h1>我的 macOS 使用心得</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>之前做了大量关于 macOS 的使用笔记，有些确实很有参考价值，但也许是误删导致丢失了。现在我的文档管理已经相当有条理了，丢失的现象也不会再发生。重新记录 macOS 的使用心得及遇到的问题。</p>
-
-<h2 id="toc_0">阅读和写作</h2>
-
-<p>阅读电子书我一般使用 Kindle 或者 iBook 客户端，而 PDF Expert（预览 -&gt; Skim -&gt; Foxit -&gt; PDFelement -&gt; PDF Expert）是我心里在 macOS 上最好的 PDF 阅读器。</p>
-
-<p>写短篇文章几乎任何文字处理程序都可以胜任，但胜任长篇甚至是大型电子书写作的就不多了。考虑过写小说的我试过以下应用，但后来不再试着写小说。</p>
-
-<ul>
-<li>iBook Author，可以说是功能最为齐全的写作工具，这也使它比较重；</li>
-<li>小黑屋，可惜颜值不高；</li>
-<li>GitBook，可以与 GitHub 仓库绑定，可以协作写书和发表， 最新版对中文字体的支持也已改善；</li>
-<li>Type.im（已改名为妙笔），是一款很轻也很美的写作工具，支持 Markdown，独特的是支持为每个文件添加备注。</li>
-<li>壹写作，全平台，支持大纲、人物关系图示、发布到诸多如腾讯文学的小说网站。</li>
-</ul>
-
-<p>我无事就会写写博客，目前最常用 MWeb（Mou -&gt; MacDown -&gt; Typora -&gt; MarkEditor -&gt; MWeb），这是横空出世的重量级产品！但 MarkEditor 对文件的排序更聪明，也有其他的好功能，虽然它只支持到二级目录，但它还是我的常用工具。</p>
-
-<h2 id="toc_1">游戏和娱乐</h2>
-
-<p><a href="http://www.openra.net/">经典红色警戒</a> macOS &amp; Windows &amp; Linux<br/>
-魔兽争霸之冰封王座 macOS &amp; Windows<br/>
-Steam macOS &amp; Windows<br/>
-战网 macOS &amp; Windows</p>
-
-<h2 id="toc_2">技巧</h2>
-
-<p>三指滑动可以选择文本……</p>
-
-<p><strong>快捷键</strong>，有时候觉着 macOS 没有 Windows 方便，但其实是没发现 macOS 不易被发现的便利：</p>
-
-<ol>
-<li>复制文件路径 <code>option + command + c</code></li>
-<li>锁屏 <code>control + shift + power</code></li>
-<li>显示与隐藏文件 <code>shift + command + .</code></li>
-<li>先复制再剪切 <code>command + option + v</code> </li>
-</ol>
-
-<p><strong>替身、软硬链接</strong>：<a href="http://h2appy.blog.51cto.com/609721/1354001">这篇文章</a> 详细阐述了各自的特点。总的来说，<strong>替身</strong>，移动源文件位置替身依旧有效，但是替身并不包含路径信息，即应用并不能识别替身；对于<strong>软连接</strong>，如果移动了源文件那么这个链接也就无效了，但是软链接可以被应用识别，比如你将应用的资料文件移到同步盘，然后生成软链接并放在原来资料文件所在的位置，这时应用仍能识别；硬链接的使用情景很少，就不做介绍。</p>
-
-<p>生成软链接：<code>ln -s 源文件路径 软链接路径</code></p>
-
-<p><strong>验证哈希值</strong>：</p>
-
-<ol>
-<li>计算 MD5 值：<code>md5 &lt;文件路径&gt;</code> </li>
-<li>计算 SHA1 值：<code>shasum -a 1 &lt;文件路径&gt;</code> </li>
-<li>计算 SHA256 值：<code>shasum -a 256 &lt;文件路径&gt;</code> </li>
-</ol>
-
-<p><strong>安卓共享网络</strong>：由于缺乏驱动，安卓手机一般是无法与 Macintosh 通过数据线共享网络的。幸好 <a href="http://joshuawise.com/">Joshua Wise</a> 的作品 <a href="http://joshuawise.com/horndis">HoRNDIS</a> 使 Macintosh 具备了这项能力。</p>
-
-<h2 id="toc_3">问题</h2>
-
-<ul>
-<li><p>SciDAVis 1.14 行数字显示不全；SciDAVis 1.D8 行数字显示正常。</p></li>
-<li><p>Chrome 更新失败。Chrome 更新失败（错误 11，12）确认可通过此方法解决。退出 Chrome 浏览器, 并进入到指定目录。我直接复制命令到终端提示不存在这样的目录，但可以直接从 Finder 前往此目录。然后在 <code>Resources</code> 下执行以下命令。参考了 <a href="http://www.v1en.com/2016/04/26/chrome_for_mac_update_err_11/">梦寒</a> 文章。</p></li>
-</ul>
-
-<pre><code class="language-text">cd /Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/Contents/Resources/GoogleSoftwareUpdateAgent.app/Contents/Resources/
-
-卸载 KeyStone：sudo ./ksinstall --uninstall
-删除 chrome 更新目录：sudo rm -rf /Library/Google/GoogleSoftwareUpdate/
-</code></pre>
-
-<ul>
-<li><p>无法响应。更新系统之后，在主系统打开许多应用，然后打开 Windows 10 虚拟机，机器就基本死机了，只能缓慢动弹。原因未知。此问题在最近又自己消失了……</p></li>
-<li><p>长期待机将会导致 macOS 睡眠和虚拟内存文件庞大起来，建议每月关机一次释放空间。而且，关机以后才会触发 FileVault 硬盘加密，这意味着如果没有关机而电脑被偷走，是有被破解的可能，关机杜绝了这个可能。 </p></li>
-</ul>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/18</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15250926629285.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15250920685912.html">
-                
-                  <h1>删除此电脑中的六个文件</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>强迫症总要为一些奇葩的问题奔波，Windows 系统让强迫症抓狂……</p>
-
-<p><img src="media/15250920685912/15250920907321.png" alt=""/></p>
-
-<h2 id="toc_0">方法一</h2>
-
-<p>使用注册表删除法，复制粘贴一下内容，保存为 REG 文件，双击，确定，即可。可以全部删除，也可以部分删除。</p>
-
-<h3 id="toc_1">Windows 8.1 &amp; 10 1507 及之前</h3>
-
-<pre><code class="language-text">同样适用于旧版本 WIN 10
-========= 复制下面内容 ========= 去除减号 &#39;-&#39; 再运行即可还原
-Windows Registry Editor Version 5.00
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{374DE290-123F-4565-9164-39C4925E467B}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
-</code></pre>
-
-<h3 id="toc_2">Windows 10 1511 及之后</h3>
-
-<pre><code class="language-text">适用于的新版本 WIN 10 （自 2015 年 12 月后）
-========= 复制下面内容 ========= 去除减号 &#39;-&#39; 再运行即可还原
-Windows Registry Editor Version 5.00
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{d3162b92-9365-467a-956b-92703aca08af}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}]
-</code></pre>
-
-<h2 id="toc_3">方法二</h2>
-
-<p>在搜索框输入 “regedit” 进入注册表编辑器，找到 <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions</code>之后，再找到下列六项，分别将 <code>PropertyBag</code>中的 <code>ThisPCPolicy</code> 由 <code>show</code> 改为 <code>Hide</code> 即可。若要还原再改回 <code>show</code> 即可。</p>
-
-<pre><code class="language-text">　&gt; “图片”：{0ddd015d-b06c-45d5-8c4c-f59713854639}\PropertyBag
-　&gt; “视频”：{35286a68-3c57-41a1-bbb1-0eae73d76c95}\PropertyBag
-　&gt; “下载”：{7d83ee9b-2244-4e70-b1f5-5393042af1e4}\PropertyBag
-　&gt; “音乐”：{a0c69a99-21c8-4671-8703-7934162fcf1d}\PropertyBag
-　&gt; “桌面”：{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}\PropertyBag
-　&gt; “文档”：{f42ee2d3-909f-4907-8871-4c22fc0bf756}\PropertyBag
-</code></pre>
-
-<p><img src="media/15250920685912/15250921882531.png" alt=""/></p>
-
-<p>方法一源自：<a href="http://www.myxzy.com/post-431.html">星知苑</a><br/>
-方法二源自：<a href="http://www.pconline.com.cn/win10/741/7412340.html">太平洋电脑网</a></p>
-
-<p>此两种方法风险极小，注册表可保持完整，网上也有其他涉及到删除指定注册表的方法，若要采用务必备份注册表以防意外。</p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/18</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15250920685912.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15250925649984.html">
-                
-                  <h1>警惕爱国主义</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<h2 id="toc_0">国家的定义</h2>
-
-<p>在谈论爱国时，不免对“国”之定义有疑惑。</p>
-
-<p>西方思想家西塞罗给出了一个国家定义：国家是人民的事业，但人民不是某种随意聚集在一起的人的集合体，而是大量的民众基于法的一致和利益的共同而结合起来的联合体。他的定义有这样的特征，以人民为中心，以正义与合法为准则。但是西塞罗所谓的正义是倾向于自然正义，也即弱者应该服从强者。</p>
-
-<p>基督教思想家奥古斯丁以神的正义替代了自然的正义，而神是至高的，神的正义也即真正的正义，而这却是极为艰难的，与社会主义的最终走向是趋于一致的。奥古斯丁这样定义国家：国家是人民的事业，但人民不是某种随意聚集在一起的人的集合体，而是由某种一致拥有的爱的对象而联系在一起的理性动物的集合体。</p>
-
-<p>在近代历史上，马克思这样论述国家：国家是阶级统治的机关，是一个阶级压迫另一个阶级的机关。而社会主义国家是人民当家作主，即多数人对少数人进行阶级压迫，这相较于少数人压迫多数人是一种巨大的进步。但是，难道没有一个国家是全部公民共同管理也即消除阶级的存在？</p>
-
-<h2 id="toc_1">爱国的定义</h2>
-
-<p>爱国是人类长远以来一种美好的情感。对中国人民来说，爱国既表现在对祖国大好河山、悠久文化历史的热爱，也体现在把这种热爱之情融入到建设社会主义现代化的实践中。故乡之情、乡土之情乃至爱国之情是人类难以避免的人之常情。</p>
-
-<p><img src="media/15250925649984/15250925984190.png" alt=""/></p>
-
-<p>由于涉及文化、地理和政治等，对爱国主义下定义是一件极难的事情，多数定义边界模糊。《韦伯斯特大词典》将爱国主义定义为对国家的热爱或奉献。《简明牛津政治辞典》中，爱国主义一般被定义为对祖国的热爱或保卫祖国利益的热情，但并不一定会形成具体行动。此两种定义倾向于对己国家利益的维护。《布莱克韦尔政治思想百科全书》将爱国主义定义为更多的是对所生活的土地或其生活方式的忠诚，而较少关心民族主义的核心问题即抽象的国家概念。此种定义倾向于人类对己所生活及己土地的热爱之情，这种情感是人类的天性所生，并不强调对国之热爱和维护。</p>
-
-<p>关于爱国主义，列宁也有一些描述。爱国主义是由于千百年来各自的祖国彼此隔离而形成的一种极其深厚的感情。列宁在这里指出了爱国主义局限性的一面，即由于各自的祖国千百年来彼此隔离，从而形成了人们极其深厚的爱国感情。而列宁对这种深厚情感的态度是“如果你是一个社会主义者，你就应当为了国际革命而牺牲自己的一切爱国主义情感”。列宁阐释说“爱国主义，这正是小私有者的经济生活条件造成的一种情感”。小私有者的经济是封闭的自然经济，一直以来都是自给自足，眼中只看到自己那一片天地。且由于自己的经济地位，小资产阶级相较于资产阶级和无产阶级都更加爱国。列宁这里所谓爱国是爱己国，是维护其稳定以保障自身的利益或生活的稳定，列宁对此是倾向于持批判态度的。</p>
-
-<h2 id="toc_2">爱国主义之利弊</h2>
-
-<p>爱国有狭义与广义之分。爱国主义在《布莱克韦尔政治思想百科全书》中的定义也应是狭义的，它倾向于拜土地，此为第一种狭义爱国。列宁所指应当是狭义的爱国，即由于祖国彼此隔离、生活环境封闭而产生的爱国情感，此为第二种狭义爱国。而广义的爱国，不应当只是爱己国，也应是爱异国，是倾向于博爱的，是对全人类共同命运的担忧。</p>
-
-<p>第一种狭义爱国主义，因其由人拜土地天性而形成，是一种极私人的情感。</p>
-
-<p>第二种狭义爱国主义，是由各自祖国长久彼此隔离而形成。爱己国的主体必然是一群人，而非少数个人。由于隔离而导致相互无知，产生了敌视或向往心理。</p>
-
-<p>社会主义核心价值观所倡导的爱国，倾向于是第二种狭义爱国主义。多数中国人民与外国人民交流及对外国了解皆甚少。这一方面导致了对日本、韩国等有历史积怨国家的偏见，另一方面部分增长了对美国等发达国家的向往或偏见。社会所倡导的爱国，过于强调爱己国，构建了爱国边界。这有助于提高自我对祖国的热爱与自豪感，但也有助于爱国主义的泛滥。伴随爱国主义增长的也许是对其他国家或民族的轻视和歧视或自卑和自艾。美国政治家塞缪尔·约翰逊这样评述爱国主义：爱国主义是流氓无赖的最后藏身所。约翰逊主要针对滥用爱国主义的政党和政客，但这也在提醒警惕爱国主义。</p>
-
-<p>广义的爱国主义，是对地球上所有国度皆有爱，这已经升华到对人类共同命运的担忧，是全人类和谐相处和全人类文明得以保存的福音。</p>
-
-<h2 id="toc_3">应有之态度</h2>
-
-<p>国家应秉承维护世界和平之信念，在社会主义核心价值观中对爱国进行更多的阐述。在中国梦之实现和中华民族之崛起过程中，拥有对其他国家或民族的真切关怀。资本主义所产生的倾向利益至上思想应为国家所警惕，国与国之间的重要纽带不仅仅是利益关系。</p>
-
-<p>爱国是美好的感情，不仅仅是爱己国，爱异国也是一种美好的情感。</p>
-
-<p>社会应逐渐持有宽阔的包容之心。勿争辩爱国否，而互扣帽子。勿将社会主义核心价值观作为武器。而现在在现实和网络中，社会舆论是倾向于偏激的。对于个人尤其是名人说出或做出有悖于爱国主义的话或事，社会舆论几乎一边倒地去指责。 </p>
-
-<p>个人应逐渐持有敬畏之心。警惕教条主义，勿将话语捧为真理，也勿蔑视话语。警惕爱国主义，警惕对异国异族的偏见，警惕被煽动。多存疑惑，思虑何为爱国，何为爱国主义。爱国主义种类繁多，意大利人发明的法西斯主义是爱国主义的一种，法国人发明的大国沙文主义是爱国主义的一种，德国人的纳粹主义虽然严格说是民族主义，但也可以归纳为一种爱国主义，还有一个在西方延续了两千多年的军国主义也是一种爱国主义。这些爱国主义相对极端，但皆是由第二种狭义爱国发展而来。</p>
-
-<p>个人而言，应该主动消除相互无知的困扰。可以主动了解异域异邦，了解那里的历史和文化，和那里的人民成为朋友。这时，广义的爱国主义，也不是那么难真正接受了。</p>
-
-<h2 id="toc_4">参考文献</h2>
-
-<p>[1] 陈秀丽．社会主义核心价值观的凝练[J]．求知，2014 (2)：15-17．<br/>
-[2] 沈蕾．浅谈社会主义核心价值观[J]．新疆社科论坛，2007(4)：8-10．<br/>
-[3] 王汉文．以社会主义核心价值观引领大学生思想政治教育[J]．江汉大学学报(社会科学版)，2010(2)：72-75．<br/>
-[4] 西塞罗．论国家[A]．王焕生译．论共和国论法律[C]．北京：中国政法大学出版社，1997．<br/>
-[5] 王晓朝．论西方古代国家定义的演进[J]．西北师大学报(社会科学版)，2010(1)：1-6．<br/>
-[6] Webster’s Revised Unabridged Dictionary, MICRA Inc. , 1998.<br/>
-[7] Mclean and McMillan eds. , The Concise Oxford Dictionary of Politics, p.400.<br/>
-[8] David Miller eds. , The Blackwell Encyclopedia of Political Thought, London: Blackwell Reference, 1987, p.369.</p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/17</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15250925649984.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -853,6 +945,8 @@ Windows Registry Editor Version 5.00
 
       	<p class="cat-list">
         
+            <a href="%E6%91%98%E5%BD%95.html"><strong>摘录</strong></a>
+        
             <a href="%E5%B0%91%E6%95%B0%E6%B4%BE.html"><strong>少数派</strong></a>
         
             <a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html"><strong>每周分享</strong></a>
@@ -874,31 +968,31 @@ Windows Registry Editor Version 5.00
 	      
 		      
 			      <li class="post">
+			        <a href="15447773011519.html">同步微博至 Twitter 的新方式（图文教程）</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15447762122595.html">同步微博至 Twitter 的新方式</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15439954845114.html">每周分享第 5 期</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15428737284655.html">自学 Python 第 2 期</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15302755461743.html">每周分享第 4 期</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15301955259101.html">大版本更新，这次 MWeb 3.0 又带来了什么</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15274094359218.html">当被 diss 之后</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15273912309333.html">关于效率的思考</a>
+			        <a href="15401048488526.html">我的时间管理道与术</a>
 			      </li>
 		     
 		  

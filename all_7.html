@@ -48,7 +48,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,13 +68,16 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
+        
+            <li><a href="%E6%91%98%E5%BD%95.html">摘录</a></li>
         
             <li><a href="%E5%B0%91%E6%95%B0%E6%B4%BE.html">少数派</a></li>
         
@@ -103,43 +106,49 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
-                <a class="clearlink" href="15250933142243.html">
+                <a class="clearlink" href="15250967114712.html">
                 
-                  <h1>作恶的知网</h1>
+                  <h1>如何优雅地在 macOS 上彻底移除应用</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<p><a href="http://vipcard.cnki.net/ec/tj/about-caj.html">官网</a> 这样声明：</p>
-
-<blockquote>
-<p>每一版本的 CAJViewer 都是经过长期需求调查，充分吸取市场上各种同类主流产品的优点研究设计而成。</p>
-
-<p>它兼容 CNKI 格式和 PDF 格式文档，可不需下载直接在线阅读原文，也可以阅读下载后的 CNKI 系列文献全文，并且它的打印效果与原版的效果一致，逐渐成为人们查阅学术文献不可或缺的阅读工具。</p>
+                        	<blockquote>
+<p>本文被少数派精选并推荐至首页：<a href="https://sspai.com/post/39055">点此查看</a></p>
 </blockquote>
 
-<p>给我讲讲“充分吸取各种同类主流产品的优点”究竟是哪些点？自己强行推广 CAJ 然后又说“兼容 CNKI 格式和 PDF 格式文档”，这种凭借垄断地位使 CAJViewer “成为人们查阅学术文献不可或缺的阅读工具” 的行为姑且不谈，问题是 CAJViewer 这样一款上世纪风格的软件你们真不打算重制么？</p>
+<p>这篇文章是为这样的人所准备：如果你跟我一样有点轻度洁癖，难以忍受电脑应用残余的各种文件，总寻思着如何以优雅的方式彻底移除各类应用。这是我在少数派的第二篇文章，而今天的主角是 <a href="https://freemacsoft.net/appcleaner/">AppCleaner</a>，在 <a href="https://sspai.com/post/28012">以往的文章</a> 中 iTumbledSea 也简单提到过。</p>
 
-<p>我愿意支持自主格式（CAJ，Chinese Academy Journal）的发展，但这种牺牲用户体验而强行推广自主格式的行为不啻于是在作恶。为何不致力于提升 CAJ 格式文献的使用体验？</p>
+<p>本文的目的绝不是测评，也不是只为了介绍如何彻底移除应用（动词移除更符合本文提到的操作方式），而是推荐一种优雅的方式来做这件事。</p>
 
-<h2 id="toc_0">知网下载 PDF 格式的方法</h2>
+<blockquote>
+<p>AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.</p>
+</blockquote>
 
-<p>我现在使用脚本法在知网（CNKI）下载 PDF 格式文献。但注意学位论文的 PDF 格式是没有目录的，我都是在需要的地方自己添加目录，比如每章的大标题和小结。万恶的知网。</p>
+<p><img src="media/15250967114712/15250967530101.png" alt=""/></p>
 
-<h3 id="toc_1">脚本法</h3>
+<p>优雅就在于「Drop your apps here」功能，我们只需要做的就是在 Launchpad 中 <strong>将要移除的应用拖拽到 AppCleaner 图标上</strong>，然后点击 Remove 即可。同时我建议将 AppCleaner 保留在 Dock 中，而且最好放置在 Finder 旁边，当需要彻底移除应用时只要拖拽到图标上即可，多么优雅的操作……</p>
 
-<p><a href="http://blog.yuelong.info/post/cnki-pdf-js.html">http://blog.yuelong.info/post/cnki-pdf-js.html</a></p>
+<p><img src="media/15250967114712/15250967671386.png" alt=""/></p>
 
-<p>首先推荐脚本法，因为很便捷。</p>
+<p>但有些文件需要勾选确认才可删除，因为 AppCleaner 可能关联了不相干的文件。我从没遇到过这种情况，一般而言，文件名字包含应用名字即为相干。如果错误删除了某些文件，只需要 <code>command + z</code> 撤销即可。</p>
 
-<h3 id="toc_2">手动法</h3>
+<p>AppCleaner 还有如下图的其他细节功能，但 SmartDelete 功能并不特别智能，似乎只能识别在 Finder 应用程序文件中将应用移到废纸篓的操作。</p>
 
-<p><a href="http://www.zjy.name/archives/download-pdf-from-cnki.html">http://www.zjy.name/archives/download-pdf-from-cnki.html</a></p>
+<p><img src="media/15250967114712/15250967845629.png" alt=""/></p>
 
-<p>Chrome：在下载按钮右键选择检查，会出现下面这段代码。双击代码，将 <code>nhdown</code> 改为 <code>pdfdown</code> 即可。 </p>
+<p>文章到这里其实已经结束了…… 好吧，你告诉我还有点不放心，觉着还有残留，那么可以使用 EasyFind 搜索相应应用并删除相干文件…… 系统自带的搜索功能并不好用。</p>
 
-<pre><code>http://www.cnki.net/KCMS/download.aspx?filename=r5WM5JUdRVUeZRTbyMlZGRTQopXQvIzMmFmb2VmTMt0R55GZTJDRUR2UXRTSFBDa1ZnQycEaMxWeuhFUxdzbPNTNxYGN2U2ZVNEUQ5GazZES3E0Qz10aUt2T5ADVJp1MJhzQ6JHUkFEZNdDa5pVdq9UU3MHMLVjN&amp;dflag=nhdown&amp;tablename=CMFD2007
-</code></pre>
+<p><img src="media/15250967114712/15250967956163.png" alt=""/></p>
+
+<p>什么？怎么彻底删除 EasyFind 的残留文件？</p>
+
+<p>……</p>
+<br>
+<blockquote>
+<p>本文应用版本：<br/>
+AppCleaner 3.4.0 for macOS </p>
+</blockquote>
 
                         
                       </div>
@@ -148,12 +157,16 @@
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2017/8/18</span>
-                    
+                    <span class="date">2017/5/5</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='%E5%B0%91%E6%95%B0%E6%B4%BE.html'>少数派</a></span>
           				   
                   </div>
                   <div class="more-right right">
                   <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250967114712.html#disqus_thread">comments</a>
                       
 
                        
@@ -163,16 +176,25 @@
               </div><!-- article -->
         
 			<div class="article">
-                <a class="clearlink" href="15250932456564.html">
+                <a class="clearlink" href="15242849335257.html">
                 
-                  <h1>Windows 下验证哈希值</h1>
+                  <h1>关于独立博客的想法</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<p>Windows 自带的文件校验和完整性验证程序（FCIV）可用于计算一个文件的 MD5 或 sha-1 哈希值。在命令行键入命令 <code>FCIV-md5-sha1 path\filename.ext</code> 以验证，比如 <code>FCIV-md5-sha1 c:\windows\system32\shdocvw.dll</code>。</p>
+                        	<p>在 GitHub Issues 写博客也面临数个问题：</p>
 
-<p><a href="https://github.com/wetxz/blog.github.io/issues/1">iamCristYe</a>：如果提示错误，建议使用 <code>certutil -hashfile eg.ext SHA1</code> 或 <code>Get-FileHash eg.ext -Algorithm SHA1</code>（后者需 PowerShell）安装相应工具。</p>
+<ol>
+<li>图片的插入，采用第三方 Issues 客户端时图片并不会上传至 GitHub 服务器，而是三方客户端的服务器，这显然增加了图片丢失风险；</li>
+<li>借助 Mirror 呈现内容在博客 <code>blog.tangxiaozhu.com</code> 地址，但搜索引擎只能检索到 Issues，这并不是我想要的；</li>
+<li>数据的备份也是个问题，虽然利用 IFTTT 进行备份，但格式错乱且只能备份每一篇 Issues 第一次发布时的内容。</li>
+</ol>
+
+<p>因此，我决定重启 GitHub Pages，并将博客同步到多个平台，原来不愿意这样做是手工太累，但现在可以一键同步的工具越来越多，也越加好用。</p>
+
+<p>此外，我决定不再随意修改已发布文章，这也是最后一次更新本文。今后对待每一篇博客都要严肃认真，要做到我之出品，必为精品，一旦发布除非有错别字、格式错误等问题，绝不修改。内容过时问题是我之前担忧所在，现在我也有了新的想法：写文章时标注好内容适用范围，即便未来过时了，也不失为一种历史参考资料，代表了过去的回忆。</p>
+
 
                         
                       </div>
@@ -180,13 +202,15 @@
                 </a>
                 <div class="read-more clearfix">
                   <div class="more-left left">
-                  
-                    <span class="date">2017/8/18</span>
+                   <a href="15242849335257.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2017/4/21</span>
                     
           				   
                   </div>
                   <div class="more-right right">
                   <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15242849335257.html#disqus_thread">comments</a>
                       
 
                        
@@ -196,60 +220,68 @@
               </div><!-- article -->
         
 			<div class="article">
-                <a class="clearlink" href="15250930999934.html">
+                <a class="clearlink" href="15270770828099.html">
                 
-                  <h1>解决 GitHub for macOS 的出错信息</h1>
+                  <h1>理解正交试验的空白列等问题</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<p>很久之前在 segmentfault 回答的问题，但现在要停用此账号。</p>
+                        	<h2 id="toc_0">如何理解空白列</h2>
 
-<p>出错信息：</p>
+<p>在对正交试验做方差分析时，必须估计随机误差，而随机误差是通过正交表上空白列得到的。由于空白列中没有因素作用，因此正好反映随机因素所引起的误差，所以空白列在方差分析中常被称为误差列。 实际上空列并不空，实际上是被未考察的交互作用和其他未知影响因素的综合列。由空白列得到的误差包含了试验和交互作用的综合误差，是一种估算值。比如操作者是多位的话就会产生试验误差，但可将人作为因素考虑，将其置于空白列上，该列水平 1，2，3 分别代表由第一、二、三位做试验，这样可以避免人员变动的误差。</p>
 
-<pre><code>2014-11-19 20:41:30.130 GitHub for Mac Login[2595:326257] AskPass with arguments: (
-    &quot;/Applications/GitHub.app/Contents/MacOS/GitHub for Mac Login&quot;,
-    &quot;Username for &#39;https://github.com&#39;: &quot;
-)
-2014-11-19 20:41:30.200 GitHub for Mac Login[2596:326280] AskPass with arguments: (
-    &quot;/Applications/GitHub.app/Contents/MacOS/GitHub for Mac Login&quot;,
-    &quot;Password for &#39;https://tcitry@github.com&#39;: &quot;
-)
-fatal: unable to access &#39;https://github.com/tcitry/tcitry.github.io.git/&#39;: Empty reply from server
- (128)
-</code></pre>
+<p>若交互作用不存在，用综合误差估计试验误差是可行的；若因素间存在交互作用，则综合误差会夸大试验误差，有可能掩盖考察因素的显著性。这时，试验误差应通过重复试验值来估计。所以，进行正交试验最好能有二次以上的重复。重复试验就是将同一试验重复若干次，从而得到同一条件下的若干次试验数据。</p>
 
-<h2 id="toc_0">解决方案</h2>
+<p>若正交表的各列都已安排满因素或交互作用，没有空列，为了估价试验误差和进行方差分析，需要进行重复试验或或者选择离差平方和中最小者做近似估计；正交表的列虽未安排满，但为了提高统计分析精确性和可靠性，往往也进行重复试验。重复试验的方差分析与无重复试验的方差分析没有本质区别，除误差平方和、自由度的计算有所不同，其余各项计算基本相同。</p>
 
-<ol>
-<li>检查远程库地址
-进入客户端设置（Settings）检查远程库地址，应该是类似这样的地址：<code>https://github.com/～.git</code></li>
-<li>修改远程库地址
-按着此格式 <code>git@github.com:～.git</code> 修改远程库地址，然后点击 <code>Update Remote</code></li>
-<li>提交
-注意使用终端提交的同样修改提交地址即可。</li>
-</ol>
+<p>而在做正交试验方差分析时，正交表的表头中必须留下空白列，以确定随机误差引起的离差平方和。当空白列多于一列时，随机误差平方和等于所有空白列的离差平方和之和，而其自由度也等于各空白列自由度的总和。</p>
 
-<h2 id="toc_1">问题分析</h2>
+<h2 id="toc_1">为何试验顺序随机</h2>
 
-<p>这应该不是 SSH KEY 的问题，应该也不是升级系统的原因。使用 HTTPS 连接会要求输入账户密码（这是加密连接，有些公司内网只支持此种连接方式）。但是，必须确保此时的公钥与私钥是正确对应的，尤其是经过诸多测试后。</p>
+<p>试验顺序随机是为了避免其他因素对试验的影响。比如操作者熟练度的影响：随着试验的进行，操作者对试验的流程越加熟练，试验效果有变好的趋势，如果按顺序试验就会高估后面水平的影响。</p>
 
-<p><strong>确认秘钥</strong><br/>
-请看 <a href="https://help.github.com/articles/error-permission-denied-publickey/">官方帮助文档</a> 提供的故障排除详细指南。如果问题仍在，那应该是没仔细观阅。</p>
+<h2 id="toc_2">正交试验的设计与分析</h2>
 
-<p>尤其注意 <code>ssh -vT git@github.com</code> 命令的运行结果：</p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNbRwly1fdpkre98tuj30yn0q1mz1.jpg" alt="2016-11-22:blog-01.png"/></p>
 
-<pre><code>Offering RSA public key: /Users/you/.ssh/id_rsa 说明调用的 KEY
+<p><img src="https://ww3.sinaimg.cn/large/006tNbRwly1fdpkrgb0w0j30yp0q2gof.jpg" alt="2016-11-22:blog-02.png"/></p>
 
-Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
-</code></pre>
+<p>图片来源于某 PPT（其来源无法确定）</p>
 
-<p>注意 GitHub客户端会自动生成 KEY（github_rsa &amp; github_rsa.pub）并自动添加公钥。所以不必再生成 KEY 了。</p>
+<h2 id="toc_3">参考资料及评价</h2>
 
-<p>即使再生成也没有影响，两者默认命名是不同的，不会覆盖。</p>
+<p><a href="https://books.google.com.hk/books?id=kuhoBTmWxlcC&amp;printsec=frontcover&amp;hl=zh-CN&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false">应用统计学</a>：P187（第八章 正交实验设计）<strong>推荐此书</strong><br/>
+P189：从向量角度理解正交；<br/>
+P190：提到各因素水平次序最好随机排列。我认为试验顺序随机后，水平次序按顺序也无妨。</p>
 
-<p><strong>郁闷</strong><br/>
-但是我的的客户端昨天还好好的，今天就得改下远程库地址连接方式才能提交。好诡异。寻找原因中。愿与诸位共讨论。</p>
+<p><a href="https://books.google.com.hk/books?id=iXpQvcDTW_gC&amp;printsec=frontcover&amp;hl=zh-CN#v=onepage&amp;q&amp;f=false">试验设计与分析</a>：P72</p>
+
+<p><a href="https://books.google.com.hk/books?id=xaM5o_8BHFoC&amp;printsec=frontcover&amp;hl=zh-CN#v=onepage&amp;q&amp;f=false">实验设计</a>：P64</p>
+
+<p>P66：提到正交表的每一列都可以不同数字之间都可以任意交换（称为水平置换）。虽然交换后依旧正交，但这就破坏了整齐可比性（正交表的第二条性质），所以我认为不可以任意交换；</p>
+
+<p>P66：作者表达有歧义，作者的意思应该是某一列中的 1 可以换为 2，2 换为 3，3 换为 1，这样仍为正交表。</p>
+
+<h2 id="toc_4">试验与实验的区别</h2>
+
+<p><strong>实验</strong></p>
+
+<ul>
+<li>汉典词语解释：设计来检验一个理论或证实一种假设而进行的一系列操作或活动。</li>
+<li>汉典国语辞典：科学上为了要阐明某种现象或验证某种理论，用种种人为的方法，加以反覆试验，并观察其变化。</li>
+<li>维基百科：实验是在科学研究中，在设定的条件下，用来检验某种假设，或者验证或质疑某种已经存在的理论而进行的操作。</li>
+</ul>
+
+<p><strong>试验</strong></p>
+
+<ul>
+<li>汉典词语解释：为了解某物的性能或某事的结果而进行的尝试性活动</li>
+<li>汉典国语辞典：实际察看某种事物，进而明了它的功用。</li>
+<li>维基百科：试验指的是在已知某种事物的时候，为了了解它的性能或者结果而进行的试用操作。</li>
+</ul>
+
+<p>因此，实验是为了阐明、检验、证实一种理论或假设，比如知道这是苹果，也知道其味道，尝一尝以验证其味道；而试验，侧重于“试”，是一种尝试性活动，比如知道这是苹果，但不知道其味，就试吃以了解味道。</p>
 
                         
                       </div>
@@ -258,134 +290,14 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2017/8/18</span>
+                    <span class="date">2016/11/22</span>
                     
           				   
                   </div>
                   <div class="more-right right">
                   <span class="comments">
                       
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15250930048334.html">
-                
-                  <h1>关于维基百科的编辑</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>MediaWiki 的前世今生在 <a href="https://zh.wikipedia.org/wiki/MediaWiki">其词条</a> 中已有详细的描述。了解维基百科，我强烈推荐仔细阅读 <a href="http://www.tsima.org.tw/wiki/dian-zi-qi-kan/semantic-mediawiki">Semantic MediaWiki</a> 中的一系列文章。</p>
-
-<h2 id="toc_0">维基语法</h2>
-
-<p>不论是 Markdown 还是 WikiPedia 语法最终都是被解析为 HTML 语法，所以它们都可以与 HTML 语法混用，但也有 <a href="https://zh.wikipedia.org/wiki/Help:HTML">一些限制</a>。</p>
-
-<p>关于如何编辑维基百科和其语法可在 <a href="https://zh.wikipedia.org/wiki/Help:%E7%BC%96%E8%BE%91%E9%A1%B5%E9%9D%A2">帮助：编辑页面</a> 得到充足的信息。当然也最好看看 <a href="https://zh.wikipedia.org/wiki/Wikipedia:%E6%A0%BC%E5%BC%8F%E6%89%8B%E5%86%8C">维基百科：格式手册</a>，这有助于编写出符合维基风格的词条。</p>
-
-<h3 id="toc_1">签名</h3>
-
-<p>最初我一直不懂签名是什么意思，写下自己的用户名？后来发现留下签名一般就是留下四个波浪号 <code>~~~~</code>，它会被自动解析为 <code>签名 + 时间</code>；而三个波浪号 <code>~~~</code> 只被解析为签名；五个波浪号 <code>~~~~~</code> 只被解析为时间。</p>
-
-<h3 id="toc_2">解析方式</h3>
-
-<p>有时我们不想输入的文本被解析和格式化，那么可以使用 <code>&lt;pre&gt; &lt;/pre&gt;</code> 标签；如果不想被解析但想被格式化，可用 <code>&lt;nowiki&gt; &lt;/nowiki&gt;</code> 标签。</p>
-
-<h3 id="toc_3">对应关系</h3>
-
-<p>维基百科使用 MediaWiki 语法，而我这只小白用户只熟悉 Markdown 语法。在编辑维基百科时总是要查询或者切换可视化编辑器，在这里总结下 MediaWiki 语法。</p>
-
-<p><code>## 二级标题</code> == 二级标题 ==<br/>
-<code>### 三级标题</code> === 三级标题 ===</p>
-
-<p><code>1. 有序列表</code> # 有序列表<br/>
-<code>2. 无序列表</code> # 有序列表</p>
-
-<p><code>- 无序列表</code> * 无序列表</p>
-
-<p><code>[文字](http://www.test.com)</code> <br/>
-<code>[http://www.test.com 文字]</code></p>
-
-<p><code>![图片](http://www.test.com)</code> <br/>
-<code>[[File:Wiki.png]]</code></p>
-
-<p>MediaWiki 语法中代码使用 HTML 标签表示：<code>&lt;code&gt;代码&lt;/code&gt;</code></p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/18</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15250928793081.html">
-                
-                  <h1>教育优惠与节日优惠</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>许多优秀的产品都对学生有较大的优惠，虽然国内一些人爱钻空子并滥用致使一些产品取消了 EDU.CN 邮箱的认证，或者不接受国内的申请。但仍然有许多优惠。</p>
-
-<h2 id="toc_0">教育免费</h2>
-
-<ol>
-<li><a href="http://www.originlab.com/OriginProLearning.aspx">Origin</a></li>
-<li>AutoCAD</li>
-</ol>
-
-<h2 id="toc_1">教育优惠</h2>
-
-<ol>
-<li><a href="https://estore.onthehub.com">OnTheHub</a></li>
-<li><a href="http://shop.edu.cn/">赛尔校园先锋</a>：支持支付宝与网银</li>
-</ol>
-
-<h2 id="toc_2">节日优惠</h2>
-
-<p>这里与教育优惠无关，但优惠力度超过教育优惠。</p>
-
-<h3 id="toc_3">双十一半价</h3>
-
-<ol>
-<li>Parallels Desktop：358 ---&gt; 179</li>
-<li>Office 365 个人版：399 ---&gt; 199</li>
-<li>优酷会员半价：198 -&gt; 99</li>
-</ol>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/18</span>
-                    
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
+                        <a href="https://blog.tangxiaozhu.com/15270770828099.html#disqus_thread">comments</a>
                       
 
                        
@@ -405,7 +317,7 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
 			  </div>
 			  <div class="large-6 columns">
 			<p class="text-right" style="padding-top:25px;">
-			 <a href="all_8.html">&raquo; Next Page</a> 
+			
 			</p>
 			  </div>
 			</div>
@@ -420,7 +332,7 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">个人博客</div>
                 <div class="social">
 
 <a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
@@ -428,7 +340,7 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
 
 
 <a target="_blank" class="quora" href="https://www.quora.com/profile/TANG-XIAOZHU" title="Quora">Quora</a>
-<a target="_blank" class="instagram" href="https://www.instagram.com/heytxz/" title="Instagram">Instagram</a>
+
 <a target="_blank" class="weibo" href="https://weibo.com/u/6502478659" title="weibo">Weibo</a>
 <a target="_blank" class="twitter" target="_blank" href="https://twitter.com/heytxz" title="Twitter">Twitter</a>
 <a target="_blank" class="github" target="_blank" href="https://github.com/heytxz" title="GitHub">GitHub</a>
@@ -447,6 +359,8 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
                 <div class="side-content">
 
       	<p class="cat-list">
+        
+            <a href="%E6%91%98%E5%BD%95.html"><strong>摘录</strong></a>
         
             <a href="%E5%B0%91%E6%95%B0%E6%B4%BE.html"><strong>少数派</strong></a>
         
@@ -469,31 +383,31 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
 	      
 		      
 			      <li class="post">
-			        <a href="15254917496629.html">每周分享第 2 期</a>
+			        <a href="15447773011519.html">同步微博至 Twitter 的新方式（图文教程）</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15251484115051.html">自学 Python 第 1 期</a>
+			        <a href="15447762122595.html">同步微博至 Twitter 的新方式</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15250509803819.html">关于我 2018</a>
+			        <a href="15439954845114.html">每周分享第 5 期</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15246446693895.html">每周分享第 1 期</a>
+			        <a href="15428737284655.html">自学 Python 第 2 期</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15250965271937.html">输入法的选择</a>
+			        <a href="15401048488526.html">我的时间管理道与术</a>
 			      </li>
 		     
 		  
@@ -538,9 +452,8 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -548,6 +461,27 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -567,7 +501,7 @@ Trying private key: /Users/you/.ssh/id_rsa 说明 KEY 不存在
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
