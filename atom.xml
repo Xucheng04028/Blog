@@ -4,7 +4,7 @@
   <title><![CDATA[唐小筑]]></title>
   <link href="https://blog.tangxiaozhu.com/atom.xml" rel="self"/>
   <link href="https://blog.tangxiaozhu.com/"/>
-  <updated>2018-12-14T20:27:35+08:00</updated>
+  <updated>2018-12-15T00:08:13+08:00</updated>
   <id>https://blog.tangxiaozhu.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -145,7 +145,7 @@
 
 <h3 id="toc_2">设置 Integromat</h3>
 
-<p>接收 IFTTT 请求，过滤微博，触发文字微博和附图微博的 Webhooks 规则。用文字描述这个过程较为抽象，可在这里查阅 <a href="https://xiaomingplus.com/note/weibo-filter-to-other-platform/">文字教程</a>。图文教程，或者直接导入我的配置并加以修改：</p>
+<p>接收 IFTTT 请求，过滤微博，触发文字微博和附图微博的 Webhooks 规则。用文字描述这个过程较为抽象，可查阅 <a href="https://xiaomingplus.com/note/weibo-filter-to-other-platform/">文字教程</a>，或者更为直观的 <a href="https://blog.tangxiaozhu.com/15447773011519.html">图文教程</a>，或者直接导入 <a href="https://gist.github.com/heytxz/ef223634d9177bf43f6cd2bcda4448bc">我的配置</a> 并加以修改：</p>
 
 <ol>
 <li>导入 <code>blueprint.json</code> 后的样子：<img src="media/15447762122595/2018-12-14-18.53.35.png" alt=""/></li>
