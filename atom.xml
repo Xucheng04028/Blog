@@ -4,7 +4,7 @@
   <title><![CDATA[唐小筑]]></title>
   <link href="https://blog.tangxiaozhu.com/atom.xml" rel="self"/>
   <link href="https://blog.tangxiaozhu.com/"/>
-  <updated>2018-12-14T19:42:17+08:00</updated>
+  <updated>2018-12-14T19:43:54+08:00</updated>
   <id>https://blog.tangxiaozhu.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -21,6 +21,8 @@
 <p><img src="media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-12-14%2016.55.14.png" alt=""/></p>
 
 <p><img src="media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-12-14%2018.20.49.png" alt=""/></p>
+
+<span id="more"></span><!-- more -->
 
 <p><img src="media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-12-14%2016.57.52.png" alt=""/></p>
 
@@ -218,6 +220,8 @@
     <id>https://blog.tangxiaozhu.com/15428737284655.html</id>
     <content type="html"><![CDATA[
 <p><a href="15251484115051.html">自学 Python 第 1 期</a> 中以 pyenv 安装和管理 Python 版本，并且全局启用了 Python 3.6.5 版本，正式敲代码的时间到来，编辑器选择 Visual Studio Code，简称 VS Code，由微软出品，虽然我英语基础还凑合，但巨头出品且支持中文的编辑器无疑最便捷。</p>
+
+<span id="more"></span><!-- more -->
 
 <p>VS Code 功能强大，插件众多，完全熟悉需要一些时间，先大概了解下自己的编辑器，让代码编写有个更好的开始，<a href="https://jeasonstudio.gitbooks.io/vscode-cn-doc/content/">VS Code 官方文档中文版</a></p>
 
