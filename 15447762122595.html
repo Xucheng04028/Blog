@@ -173,12 +173,27 @@
 
 <p>接收 IFTTT 请求，过滤微博，触发文字微博和附图微博的 Webhooks 规则。用文字描述这个过程较为抽象，可查阅 <a href="https://xiaomingplus.com/note/weibo-filter-to-other-platform/">文字教程</a>，或者更为直观的 <a href="https://blog.tangxiaozhu.com/15447773011519.html">图文教程</a>，或者直接导入 <a href="https://gist.github.com/heytxz/ef223634d9177bf43f6cd2bcda4448bc">我的配置</a> 并加以修改：</p>
 
+<p>① 导入 <code>blueprint.json</code> 后的样子：</p>
+
+<p><img src="media/15447762122595/2018-12-14-18.53.35.png" alt=""/></p>
+
+<p>② 创建同名 Webhook（因为 Webhook 链接相同，故需要以新创建的方式变更链接）：</p>
+
+<p><img src="media/15447762122595/2018-12-14-18.54.49.png" alt=""/></p>
+
+<p>③ 设置 Data structure：</p>
+
+<p><img src="media/15447762122595/2018-12-14-19.03.05.png" alt=""/></p>
+
+<p>④ 变更 <code>HTTP 8</code> 链接红圈部分（即设置 IFTTT 时的 Key）：</p>
+
+<p><img src="media/15447762122595/2018-12-14-19.00.17.png" alt=""/></p>
+
+<p>⑥ 变更 <code>HTTP 9</code> 链接红圈部分（即设置 IFTTT 时的 Key）：</p>
+
+<p><img src="media/15447762122595/2018-12-14-19.01.39.png" alt=""/></p>
+
 <ol>
-<li>导入 <code>blueprint.json</code> 后的样子：<img src="media/15447762122595/2018-12-14-18.53.35.png" alt=""/></li>
-<li>创建同名 Webhook（因为 Webhook 链接相同，故需要以新创建的方式变更链接）：<img src="media/15447762122595/2018-12-14-18.54.49.png" alt=""/></li>
-<li>设置 Data structure：<img src="media/15447762122595/2018-12-14-19.03.05.png" alt=""/></li>
-<li>变更 <code>HTTP 8</code> 链接红圈部分（即设置 IFTTT 时的 Key）：<img src="media/15447762122595/2018-12-14-19.00.17.png" alt=""/></li>
-<li>变更 <code>HTTP 9</code> 链接红圈部分（即设置 IFTTT 时的 Key）：<img src="media/15447762122595/2018-12-14-19.01.39.png" alt=""/></li>
 <li>保存并启用。</li>
 </ol>
 
