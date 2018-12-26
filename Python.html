@@ -86,13 +86,17 @@
     <li><label>Categories</label></li>
 
         
-            <li><a href="%E6%91%98%E5%BD%95.html">摘录</a></li>
+            <li><a href="%E6%A1%88%E4%BE%8B.html">案例</a></li>
+        
+            <li><a href="%E6%97%A5%E8%AE%B0.html">日记</a></li>
+        
+            <li><a href="%E6%B2%89%E6%80%9D%E5%BD%95.html">沉思录</a></li>
         
             <li><a href="%E5%B0%91%E6%95%B0%E6%B4%BE.html">少数派</a></li>
         
-            <li><a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html">每周分享</a></li>
-        
             <li><a href="Python.html">Python</a></li>
+        
+            <li><a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html">每周分享</a></li>
          
 
       </ul>
@@ -114,6 +118,150 @@
 	<div class="large-8 medium-8 columns">
 		<div class="markdown-body home-categories">
 		
+			<div class="article">
+                <a class="clearlink" href="15445348045839.html">
+                
+                  <h1>自学 Python 第 3 期</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>从第 3 期开始进入实战，因为实战才能激发兴趣……</p>
+
+<p><strong>Python 编写 Web App 实战（1）：搭建开发环境</strong></p>
+
+<p>实战目标为搭建一个博客网站，包含日志、用户和评论三大部分，教材为 <a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432170876125c96f6cc10717484baea0c6da9bee2be4000">廖雪峰实战教程</a>。</p>
+
+<p>安装 Web App 开发所需要的第三方库</p>
+
+<h2 id="toc_0">安装异步框架 aiohttp</h2>
+
+<p>如何理解异步框架 aiohttp？</p>
+
+<p><a href="https://baike.baidu.com/item/%E6%A1%86%E6%9E%B6/1212667">框架</a>（Framework）是整个或部分系统的可重用设计，表现为一组抽象构件及构件实例间交互的方法，是某种应用的半成品，或者说是一组组件，供你选用完成你自己的系统。简单说就是使用别人搭好的舞台，你来做表演。</p>
+
+<p>简单搜索并没发现解释同步、异步框架的含义，作为小白总是很苦恼，但我想或许要结合 IO（Input/Output）来理解。廖雪峰教程 IO 编程这节这样说：</p>
+
+<blockquote>
+<p>由于程序和运行时数据是在内存中驻留，由 CPU 这个超快的计算核心来执行，涉及到数据交换的地方，通常是磁盘、网络等，就需要 IO 接口。</p>
+
+<p>比如你打开浏览器，访问新浪首页，浏览器这个程序就需要通过网络 IO 获取新浪的网页。浏览器首先会发送数据给新浪服务器，告诉它我想要首页的 HTML，这个动作是往外发数据，叫 Output，随后新浪服务器把网页发过来，这个动作是从外面接收数据，叫 Input。</p>
+
+<p>所以，通常程序完成 IO 操作会有 Input 和 Output 两个数据流。当然也有只用一个的情况，比如，从磁盘读取文件到内存，就只有 Input 操作，反过来，把数据写到磁盘文件里，就只是一个 Output 操作。</p>
+
+<p>IO 编程中，Stream（流）是一个很重要的概念，可以把流想象成一个水管，数据就是水管里的水，但是只能单向流动。Input Stream 就是数据从外面（磁盘、网络）流进内存，Output Stream 就是数据从内存流到外面去。对于浏览网页来说，浏览器和新浪服务器之间至少需要建立两根水管，才可以既能发数据，又能收数据。</p>
+
+<p>由于 CPU 和内存的速度远远高于外设的速度，所以，在 IO 编程中，就存在速度严重不匹配的问题。举个例子来说，比如要把 100M 的数据写入磁盘，CPU 输出 100M 的数据只需要 0.01 秒，可是磁盘要接收这 100M 数据可能需要 10 秒，怎么办呢？有两种办法：</p>
+
+<p>第一种是 CPU 等着，也就是程序暂停执行后续代码，等 100M 的数据在 10 秒后写入磁盘，再接着往下执行，这种模式称为同步 IO；</p>
+
+<p>另一种方法是 CPU 不等待，只是告诉磁盘，「您老慢慢写，不着急，我接着干别的事去了」，于是，后续代码可以立刻接着执行，这种模式称为异步 IO。</p>
+
+<p>同步和异步的区别就在于是否等待 IO 执行的结果。好比你去麦当劳点餐，你说来个汉堡，服务员告诉你，对不起，汉堡要现做，需要等 5 分钟，于是你站在收银台前面等了 5 分钟，拿到汉堡再去逛商场，这是同步 IO。</p>
+
+<p>你说来个汉堡，服务员告诉你，汉堡需要等 5 分钟，你可以先去逛商场，等做好了，我们再通知你，这样你可以立刻去干别的事情（逛商场），这是异步 IO。</p>
+
+<p>很明显，使用异步 IO 来编写程序性能会远远高于同步 IO，但是异步 IO 的缺点是编程模型复杂。想想看，你得知道什么时候通知你汉堡做好了，而通知你的方法也各不相同。如果是服务员跑过来找到你，这是回调模式，如果服务员发短信通知你，你就得不停地检查手机，这是轮询模式。总之，异步 IO 的复杂度远远高于同步 IO。</p>
+</blockquote>
+
+<p><a href="https://aiohttp.readthedocs.io/en/stable/">aiohttp</a>（a-io-http）是基于 asyncio 实现的 HTTP 框架。<a href="https://segmentfault.com/a/1190000008814676">asyncio</a> 是并发（concurrency）的一种方式。对 Python 来说，并发还可以通过线程（threading）和多进程（multiprocessing）来实现。</p>
+
+<p><a href="https://docs.python.org/3/library/asyncio.html">asyncio</a>（a-sync-io）是 asynchronous（异步）I/O，一个使用 async/ await 语法编写并发代码的库。</p>
+
+<p><a href="http://python.jobbole.com/88291/">深入理解 Python 异步编程</a> 和 <a href="https://www.cnblogs.com/wongbingming/p/9095243.html">Python 并发编程之初识异步 IO 框架：asyncio 篇</a> 的解释也比较有参考性。</p>
+
+<p>安装异步框架 aiohttp：<code>pip install aiohttp</code></p>
+
+<h2 id="toc_1">安装前端模板引擎 jinja2</h2>
+
+<p>选择 Jinja 作为名字是因为 Jinja 是日本寺庙的名称，并且 temple 和 template 的发音类似。它并不是以乌干达的金贾市（Jinja）命名的。</p>
+
+<p>安装前端模板引擎 jinja2：<code>pip install jinja2</code></p>
+
+<h2 id="toc_2">安装数据库</h2>
+
+<blockquote>
+<p>程序运行的时候，数据都是在内存中的。当程序终止的时候，通常都需要将数据保存到磁盘上，无论是保存到本地磁盘，还是通过网络保存到服务器上，最终都会将数据写入磁盘文件。而如何定义数据的存储格式就是一个大问题。</p>
+
+<p>为了便于程序保存和读取数据，而且，能直接通过条件快速查询到指定的数据，就出现了数据库（Database）这种专门用于集中存储和查询的软件。数据库软件诞生的历史非常久远，早在 1950 年数据库就诞生了。经历了网状数据库，层次数据库，我们现在广泛使用的关系数据库是 20 世纪 70 年代基于关系模型的基础上诞生的。</p>
+</blockquote>
+
+<p>在 <a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432010325987131e75bf6b3543429a2975f88ce8ffa9000">访问数据库 - 廖雪峰教程</a> 了解更多相关知识。</p>
+
+<p>付费数据库：Oracle、MS SQL Server、IBM DB2、Sybase；免费开源数据库：MySQL、PostgreSQL、sqlite。MySQL（SQL，Structured Query Language，结构化查询语言），是最流行的免费数据库。</p>
+
+<p>在 <a href="https://www.yiibai.com/mysql/what-is-mysql.html">MySQL 是什么</a> 了解更多相关知识。</p>
+
+<p>由于教程是 5.x.x 版本 MySQL，所以我在 <a href="https://dev.mysql.com/downloads/mysql/5.7.html#downloads">官网</a> 下载安装了最新版本 5.7.24 for macOS，安装时需要记住提供的初始密码：<br/>
+<img src="media/15445348045839/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-12-16%2010.49.10.png" alt="屏幕快照 2018-12-16 10.49.10"/></p>
+
+<p>安装完毕，终端输入 <code>mysql -u root -p</code>，出现以下提示表示正常。</p>
+
+<pre><code class="language-text">$ mysql -u root -p // 连接数据库
+Enter password: 
+Welcome to the MySQL monitor...
+</code></pre>
+
+<p>如果提示：<code>mysql: command not found</code>，则需要添加环境变量，在 <code>.bash_profile</code> 文件中增加以下指令：</p>
+
+<pre><code class="language-text">export PATH=${PATH}:/usr/local/mysql/bin
+</code></pre>
+
+<p>最后，修改初始密码，必须修改初始密码才允许执行命令：</p>
+
+<pre><code class="language-text">$ mysql -u root -p // 连接数据库
+Enter password: 
+Welcome to the MySQL monitor...
+
+mysql&gt; SET PASSWORD FOR &#39;root&#39;@&#39;localhost&#39; = PASSWORD(&#39;你的密码&#39;);
+</code></pre>
+
+<h2 id="toc_3">安装 MySQL 异步驱动程序 aiomysql</h2>
+
+<p>aiomysql 是基于 asyncio 框架以访问 MySQL 数据库的软件库。</p>
+
+<p>安装 MySQL 异步驱动程序 aiomysql：</p>
+
+<pre><code class="language-text">pip install aiomysql
+</code></pre>
+
+<h2 id="toc_4">本期小结</h2>
+
+<p><a href="https://docs.python.org/3/library/asyncio.html">asyncio</a>（a-sync-io）是 asynchronous（异步）I/O，一个使用 async/ await 语法编写并发代码的库。</p>
+
+<p><a href="https://aiohttp.readthedocs.io/en/stable/">aiohttp</a>（a-io-http）是基于 asyncio 实现的 HTTP 框架。</p>
+
+<p>aiomysql（a-io-mysql）是基于 asyncio 框架以访问 MySQL 数据库的软件库。</p>
+
+<p>前端模板引擎 jinja2，数据库是 MySQL 5.7.24。</p>
+
+<p>作为小白，我对这些概念感到陌生，但不要紧，我们是以实战的方式学习 Python，后续实际用到时会详细讲解。</p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2018/12/11</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='Python.html'>Python</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15445348045839.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
 			<div class="article">
                 <a class="clearlink" href="15428737284655.html">
                 
@@ -214,7 +362,7 @@
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">个人博客</div>
+                <div class="site-des">少数派作者 & 个人博客</div>
                 <div class="social">
 
 
@@ -242,13 +390,17 @@
 
       	<p class="cat-list">
         
-            <a href="%E6%91%98%E5%BD%95.html"><strong>摘录</strong></a>
+            <a href="%E6%A1%88%E4%BE%8B.html"><strong>案例</strong></a>
+        
+            <a href="%E6%97%A5%E8%AE%B0.html"><strong>日记</strong></a>
+        
+            <a href="%E6%B2%89%E6%80%9D%E5%BD%95.html"><strong>沉思录</strong></a>
         
             <a href="%E5%B0%91%E6%95%B0%E6%B4%BE.html"><strong>少数派</strong></a>
         
-            <a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html"><strong>每周分享</strong></a>
-        
             <a href="Python.html"><strong>Python</strong></a>
+        
+            <a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html"><strong>每周分享</strong></a>
          
         </p>
 
@@ -265,6 +417,12 @@
 	      
 		      
 			      <li class="post">
+			        <a href="15457917956800.html">摘录</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15447773011519.html">同步微博至 Twitter 的新方式（图文教程）</a>
 			      </li>
 		     
@@ -277,19 +435,13 @@
 		  
 		      
 			      <li class="post">
+			        <a href="15445348045839.html">自学 Python 第 3 期</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15439954845114.html">每周分享第 5 期</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15428737284655.html">自学 Python 第 2 期</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15401048488526.html">我的时间管理道与术</a>
 			      </li>
 		     
 		  

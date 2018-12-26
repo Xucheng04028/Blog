@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  唐小筑
+  案例 - 唐小筑
   
   </title>
   
@@ -119,49 +119,45 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
-                <a class="clearlink" href="15250967114712.html">
+                <a class="clearlink" href="15250893927841.html">
                 
-                  <h1>如何优雅地在 macOS 上彻底移除应用</h1>
+                  <h1>下载何须迅雷</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<blockquote>
-<p>本文被少数派精选并推荐至首页：<a href="https://sspai.com/post/39055">点此查看</a></p>
-</blockquote>
+                        	<p>通常浏览器下载就可以满足日常需求。迅雷也一直是一个很好的加速下载工具，但是它有些笨重了。本次介绍下载利器 <code>curl</code> 这个免费开源工具。本文灵感来源于此谷歌博客：<a href="http://yyq123.blogspot.com/2009/09/curl.html">语虚</a>。</p>
 
-<p>这篇文章是为这样的人所准备：如果你跟我一样有点轻度洁癖，难以忍受电脑应用残余的各种文件，总寻思着如何以优雅的方式彻底移除各类应用。这是我在少数派的第二篇文章，而今天的主角是 <a href="https://freemacsoft.net/appcleaner/">AppCleaner</a>，在 <a href="https://sspai.com/post/28012">以往的文章</a> 中 iTumbledSea 也简单提到过。</p>
+<h2 id="toc_0"><a href="https://curl.haxx.se/">curl</a></h2>
 
-<p>本文的目的绝不是测评，也不是只为了介绍如何彻底移除应用（动词移除更符合本文提到的操作方式），而是推荐一种优雅的方式来做这件事。</p>
+<p>使用 <a href="https://ec.haxx.se/usingcurl-downloads.html">终端命令</a>：比如 <code>cd</code> 到桌面目录，输入 <code>curl -O https://www.jianguoyun.com/p/DeQRYFYQ--fwBRju_h4</code> 回车即可在桌面得到名为 <code>DeQRYFYQ--fwBRju_h4</code> 的文件。大写字母 <code>o</code> 意为 <code>remote-name</code>。如果想要自定义文件名可以输入 <code>curl -o 自定义.名字 https://www.jianguoyun.com/p/DeQRYFYQ--fwBRju_h4</code>。</p>
 
-<blockquote>
-<p>AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.</p>
-</blockquote>
+<p>更多命令及讲解可 <a href="https://ec.haxx.se/usingcurl-downloads.html">看这里</a>。<code>curl</code> 更多功能，比如还支持断点下载、使用代理下载、限制文件大小或网速等等，具体可看 <a href="https://ec.haxx.se/usingcurl.html">这里</a>。</p>
 
-<p><img src="media/15250967114712/15250967530101.png" alt=""/></p>
+<p><code>curl</code> 虽然可满足日常的下载需求，但是比如 PT 资源也需要其他工具。</p>
 
-<p>优雅就在于「Drop your apps here」功能，我们只需要做的就是在 Launchpad 中 <strong>将要移除的应用拖拽到 AppCleaner 图标上</strong>，然后点击 Remove 即可。同时我建议将 AppCleaner 保留在 Dock 中，而且最好放置在 Finder 旁边，当需要彻底移除应用时只要拖拽到图标上即可，多么优雅的操作……</p>
+<h3 id="toc_1">其他工具</h3>
 
-<p><img src="media/15250967114712/15250967671386.png" alt=""/></p>
+<p><strong>PT 下载工具</strong><br/>
+两者均免费开源且无广告的 BT 下载工具。</p>
 
-<p>但有些文件需要勾选确认才可删除，因为 AppCleaner 可能关联了不相干的文件。我从没遇到过这种情况，一般而言，文件名字包含应用名字即为相干。如果错误删除了某些文件，只需要 <code>command + z</code> 撤销即可。</p>
+<ul>
+<li><a href="https://www.transmissionbt.com/">Transmission</a>  Macintosh &amp; Linux</li>
+<li><a href="http://www.qbittorrent.org/">qBittorrent</a>  Macintosh &amp; Windows</li>
+</ul>
 
-<p>AppCleaner 还有如下图的其他细节功能，但 SmartDelete 功能并不特别智能，似乎只能识别在 Finder 应用程序文件中将应用移到废纸篓的操作。</p>
+<p><strong>评价</strong></p>
 
-<p><img src="media/15250967114712/15250967845629.png" alt=""/></p>
+<ul>
+<li>flox<br/>
+号称 Macintosh 下最好的下载器，但是我并没有发现特别的亮点，通常用浏览器下载就行了。</li>
+<li>迅雷<br/>
+搞个迅雷会员来下载某些资源确实挺给力，但日常需求完全不需要用它。不简洁的软件就是不喜欢。Windows 上有迷你版，Macintosh 却没有。</li>
+<li>电驴<br/>
+似乎是在 2016 年重出江湖。确实是神器，在备用的 Windows 中使用，资源大多比较污。</li>
+</ul>
 
-<p>文章到这里其实已经结束了…… 好吧，你告诉我还有点不放心，觉着还有残留，那么可以使用 EasyFind 搜索相应应用并删除相干文件…… 系统自带的搜索功能并不好用。</p>
-
-<p><img src="media/15250967114712/15250967956163.png" alt=""/></p>
-
-<p>什么？怎么彻底删除 EasyFind 的残留文件？</p>
-
-<p>……</p>
-<br>
-<blockquote>
-<p>本文应用版本：<br/>
-AppCleaner 3.4.0 for macOS </p>
-</blockquote>
+<p>命令行最大的劣势就是不直观，但熟悉了也就「直观」了，况且如此简洁且强大，值得一学。但我几乎只使用浏览器下载，如果有要下载的特殊资源，会在虚拟机中开迅雷或 QQ 旋风下载。</p>
 <center>
 <p><img src="media/wxcode.jpg" alt=""/><br/>
 扫一扫即可关注微信公众号<br/>
@@ -174,16 +170,16 @@ AppCleaner 3.4.0 for macOS </p>
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2017/5/5</span>
+                    <span class="date">2017/8/17</span>
                     <span>posted in&nbsp;</span> 
           				  
-          					    <span class="posted-in"><a href='%E5%B0%91%E6%95%B0%E6%B4%BE.html'>少数派</a></span>
+          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
           				   
                   </div>
                   <div class="more-right right">
                   <span class="comments">
                       
-                        <a href="https://blog.tangxiaozhu.com/15250967114712.html#disqus_thread">comments</a>
+                        <a href="https://blog.tangxiaozhu.com/15250893927841.html#disqus_thread">comments</a>
                       
 
                        
@@ -193,25 +189,44 @@ AppCleaner 3.4.0 for macOS </p>
               </div><!-- article -->
         
 			<div class="article">
-                <a class="clearlink" href="15242849335257.html">
+                <a class="clearlink" href="15250545534760.html">
                 
-                  <h1>关于独立博客的想法</h1>
+                  <h1>关于文字排版</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<p>在 GitHub Issues 写博客也面临数个问题：</p>
+                        	<p><a href="https://github.com/mzlogin/chinese-copywriting-guidelines">中文文案排版指北</a> 和 <a href="https://sspai.com/post/37815">少数派写作排版指南</a> 是我主要的参照。</p>
+
+<p>指北中讲到，如「豆瓣FM」等产品名词按照官方所定义的格式书写，但哪有「豆瓣 FM」好看，所以我不能认同，除非产生歧义，否则还是因该遵循中英文间加空格。</p>
+
+<p>指北中讲到，数字与单位之间无需增加空格，度和百分比与数字之间也不需要。这点我也不完全赞同，因为数字和单位之间有些类似数字和中文之间，我认为应该加，但度和百分比除外。</p>
+
+<p>确定一套优美的写作规范是一个漫长的过程，还要考虑到不同应用或网站的解析效果，我尽量统一自己的规范，但愿能给大家一些参考。</p>
+
+<blockquote>
+<p>Microsoft 有个 -ms-text-autospace 的 CSS 属性可以实现自动为中英文之间增加空白。不过目前并未普及，另外在其他应用场景，例如 OS X、iOS 的用户界面目前并不存在这个特性，所以请继续保持随手加空格的习惯。</p>
+</blockquote>
+
+<h3 id="toc_0">博客写作规范</h3>
 
 <ol>
-<li>图片的插入，采用第三方 Issues 客户端时图片并不会上传至 GitHub 服务器，而是三方客户端的服务器，这显然增加了图片丢失风险；</li>
-<li>借助 Mirror 呈现内容在博客 <code>blog.tangxiaozhu.com</code> 地址，但搜索引擎只能检索到 Issues，这并不是我想要的；</li>
-<li>数据的备份也是个问题，虽然利用 IFTTT 进行备份，但格式错乱且只能备份每一篇 Issues 第一次发布时的内容。</li>
+<li>中文、英文之间加空格；</li>
+<li>中文、数字之间加空格。这点我还没有完全说服自己，比如年月日之间加空格太稀疏，但不加也不合适；</li>
+<li>符号、数字之间加空格，专有名词之间不加；</li>
+<li>超链接文字两边加空格，除非前后都是标点符号。</li>
 </ol>
 
-<p>因此，我决定重启 GitHub Pages，并将博客同步到多个平台，原来不愿意这样做是手工太累，但现在可以一键同步的工具越来越多，也越加好用。</p>
+<h3 id="toc_1">论文写作规范</h3>
 
-<p>此外，我决定不再随意修改已发布文章，这也是最后一次更新本文。今后对待每一篇博客都要严肃认真，要做到我之出品，必为精品，一旦发布除非有错别字、格式错误等问题，绝不修改。内容过时问题是我之前担忧所在，现在我也有了新的想法：写文章时标注好内容适用范围，即便未来过时了，也不失为一种历史参考资料，代表了过去的回忆。</p>
-
+<ol>
+<li>数字、单位之间加空格，除非单位是温度和百分号，也有出版社认为温度是单位故需加空格；</li>
+<li>中文、数字之间加空格，具体要依据出版社要求。</li>
+</ol>
+<center>
+<p><img src="media/wxcode.jpg" alt=""/><br/>
+扫一扫即可关注微信公众号<br/>
+</center></p>
 
                         
                       </div>
@@ -219,17 +234,145 @@ AppCleaner 3.4.0 for macOS </p>
                 </a>
                 <div class="read-more clearfix">
                   <div class="more-left left">
-                   <a href="15242849335257.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/4/21</span>
+                  
+                    <span class="date">2017/8/17</span>
                     <span>posted in&nbsp;</span> 
           				  
-          					    <span class="posted-in"><a href='%E6%B2%89%E6%80%9D%E5%BD%95.html'>沉思录</a></span>
+          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
           				   
                   </div>
                   <div class="more-right right">
                   <span class="comments">
                       
-                        <a href="https://blog.tangxiaozhu.com/15242849335257.html#disqus_thread">comments</a>
+                        <a href="https://blog.tangxiaozhu.com/15250545534760.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250542406068.html">
+                
+                  <h1>系统安装记录及问题解决</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>系统的安装常常会出现一些问题。此文记录了用 U 盘安装系统的经验，但并非详细的教程，操作步骤随意搜索即可得到。</p>
+
+<h2 id="toc_0">安装 Ubuntu</h2>
+
+<p>2016 年 11 月份在旧联想本安装其最新版本。</p>
+
+<p><strong>报错信息</strong></p>
+
+<ul>
+<li>对不起。发生了一个错误，不能在指定的位置安装启动引导程序。</li>
+<li>无法将 grub-pc 软件包安装到 /target/ 中。如果没有 GRUB 启动引导器，所安装的系统将无法启动。</li>
+</ul>
+
+<p>搜索到的解决方案：</p>
+
+<ol>
+<li>重新使用 <a href="https://rufus.akeo.ie/?locale=zh_CN">Rufus</a> 烧录镜像</li>
+<li>在电脑 BIOS 关闭 UEFI</li>
+<li>安装过程中保持联网</li>
+</ol>
+
+<p>搜索到的解决方案，基本都只用了其中一步就可以解决问题。我第一步完成后，依旧报错，把二三步设置好就一路畅通。并不知道二和三步谁是必不可少，还是说都是必须设置的。</p>
+
+<h2 id="toc_1">安装 Windows XP</h2>
+
+<p>由于 Ubuntu 过于小众且难以塑造良好的生产环境，故在2016年12月份在旧联想本安装原版 Windows XP with SP3，工具使用  WinSetupFromUSB，似乎也只能借助这个软件才能使用 U 盘安装 XP，具体过程请 <a href="http://blog.csdn.net/littlefang/article/details/6851864">参照这里</a>。</p>
+
+<p>实际上，我建议使用 Ghost XP 安装，无人值守并且集成驱动确实可以省却很多功夫。之前我只安装原版系统，但 XP 无疑是较为适合使用 Ghost XP 来安装。虽然我通过 WinSetupFromUSB 成功安装了原版 XP 但遇到了一些棘手的问题，比如鼠标驱动无法安装。后来使用深度 Ghost XP 的本地硬盘安装方式重装了 XP，体验让我满意。</p>
+
+<p><strong>那么 Ghost 系统是何含义</strong><br/>
+即先把系统安装在制作者电脑上，制作者进行修改或优化，然后把安装系统的硬盘分区用 Norton Ghost 进行完全备份，此备份就称之为 Ghost 系统。但也要注意，推广者或许会安装自家全家桶软件，恶意者甚至会留下后门。故，虽然 Ghost 系统的安装实际上就是还原，速度会很快，也免去了诸多配置，但也要小心使用网上流传的 Ghost 系统。另外，多数 Ghost 系统自身集成了多数硬件的驱动，故增加了不兼容故障的可能性。</p>
+
+<p>Ghost 是 General Hardware Oriented System Transfer（通用硬体导向系统转移）的简写，作为单词的含义为幽灵。其英文全称为 Norton Ghost（Symantec Ghost），中文全称为诺顿（赛门铁克）克隆精灵。Ghost 是硬盘克隆程序，可快速而完整地备份和还原整个硬盘或分区。赛门铁克于 2014 年 6 月 30 日后不再提供 Ghost 的支持服务，2010 年发布的 Ghost 15 是最终的版本。其建议转移使用的新软件 Symantec System Recovery（赛门铁克系统恢复）与 Ghost 使用的备份引擎相同，可视为 Ghost 16 版本。</p>
+
+<p><strong>原版系统安装过程中的问题</strong></p>
+
+<ul>
+<li>没有检测到大容量硬盘<br/>
+也即没有识别出硬盘。不要急，此时重启，在选择 <code>First part of Windows XP Professional setup</code>界面时，应该有四个选项，其中第三个是 <code>First part of Windows XP Professional setup</code>。选择第一个，回车键执行以后会识别出硬盘，如果第一个不起作用可以选择第二个选项。之后再选择 <code>First part of Windows XP Professional setup</code> 按照原教程进行安装。</li>
+<li>安装程序无法复制文件
+<img src="media/15250542406068/15250543195776.png" alt=""/></li>
+</ul>
+
+<p>全部按 <code>ESC</code> 跳过就可以成功安装 XP 系统。但是后续可能出现兼容问题，比如我遇到鼠标无法识别的问题，而且无论是借助驱动人生还是手动方式都无法成功安装相应驱动。</p>
+
+<p><strong>失败的安装经历</strong></p>
+
+<ol>
+<li>选用成功安装 Ubuntu 的工具：Rufus<br/>
+选择 U 盘启动但没有进入安装界面。Rufus 设置信息：MBR 分区方案 用于 BIOS 或 UEFI-CSM 的计算机。当文件系统设置为 FAT 时电脑无法识别，也即没有任何反应就进入了原系统；设置为 NTFS 时，刻录会出现 %s 未知错误。</li>
+<li>选用本科时重装 Windows 7 的必用工具：UltraISO<br/>
+报错信息 <code>INF file txtsetup.sif is corrupt or missing, Status 18</code>，原因是 U 盘被误当 C 盘，也只有在安装 XP 时会遇到这个问题。</li>
+</ol>
+
+<h2 id="toc_2">安装 Windows 7</h2>
+
+<p>Windows 7 及更高版本系统的安装随意选择烧录工具即可用 U 盘正常安装。</p>
+
+<h2 id="toc_3">安装 Windows 10</h2>
+
+<p>2017 年 8 月 5 日安装 Windows 10 系统，电脑型号为 Dell M301Z，这是一款变态的电脑：</p>
+
+<ol>
+<li>易升下载了三遍还要继续重新下载，这是微软的锅，弃用；</li>
+<li>采用微软官方 Windows 10 下载安装器（意外发现除了易升还有它），但安装过程中却提示出错信息 <code>Windows Could Not Configure one or components</code>，停留在此界面按照油管上的解决方案也许可以解决，可我已经关闭电脑了……</li>
+<li>为此我还是采用 U 盘安装的方式，但使用 Rufus、软碟通烧制的启动器都出现问题：Rufus 是从 U 盘无法启动；软碟通则是直接卡在 Windows 10 Logo 界面，无法弹出安装界面；</li>
+<li>使用 WinSetupFromUSB 烧录镜像，一切正常。</li>
+</ol>
+
+<p><strong>Rufus、软碟通失败原因推测</strong>：也许因为 U 盘是 NIFT 格式，而 WinSetupFromUSB 将 U 盘格式化为 FAT 格式。</p>
+
+<p>结论：不论是安装 Windows 10 还是其他 Windows 系统，WinSetupFromUSB 应该是最佳的选择，这是我遇到的出现 BUG 机率最低的应用。而 Linux 系统最好选择 Rufus，安装 macOS 只需按照官方教程即可。</p>
+
+<h2 id="toc_4">安装 macOS</h2>
+
+<p>安装官方教程轻松安装，全程只需依照教程输入数句命令。</p>
+
+<h2 id="toc_5">相关知识</h2>
+
+<h3 id="toc_6">分区方案</h3>
+
+<p><strong>MBR 分区方案</strong><br/>
+MBR（Master Boot Record）即主引导记录，也称为主引导扇区。其硬盘分区表仅有 64 个字节，而每个分区信息需要 16 个字节，所以采用 MBR 分区的硬盘最多只能识别 4 个主要分区。也因为 MBR 分区方案使用 4 个字节（32 个比特）存储分区的总扇区数，最大能表示 2<sup>32</sup> 个扇区，硬盘驱动器（HDD）每扇区为 512 字节，故每个分区最大不能超过 2 TB。</p>
+
+<p><strong>GPT 分区方案</strong><br/>
+GPT（Globally Unique Identifier Partition Table Format）即 GUID 分区表、全局唯一标识分区表。其为源于 EFI （Extensible Firmware Interface，可扩展固件接口 ） 标准的一种较新的磁盘分区表。这种分区方式大大突破了 MBR 分区的限制，而且也做了其他优化。唯一的缺点就是旧设备也许不支持使用 GPT 分区的磁盘。</p>
+
+<h3 id="toc_7">引导模式</h3>
+
+<p>UEFI BIOS 支持两种引导模式：Legacy BIOS 引导模式和 UEFI 引导模式。某些设备和操作系统尚不支持基于 UEFI 的 BIOS，因此只能从 Legacy BIOS 引导模式引导。较新的设备提供了 CSM（Compatibility support Module）选项，其表示兼容模块，开启 CSM 使设备支持 UEFI 启动和非 UEFI 启动。</p>
+<center>
+<p><img src="media/wxcode.jpg" alt=""/><br/>
+扫一扫即可关注微信公众号<br/>
+</center></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/17</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250542406068.html#disqus_thread">comments</a>
                       
 
                        
@@ -337,7 +480,7 @@ P190：提到各因素水平次序最好随机排列。我认为试验顺序随�
 			<div class="row">
 			  <div class="large-6 columns">
 			  <p class="text-left" style="padding-top:25px;">
-			   <a href="all_6.html">&laquo; Prev Page</a>  
+			   <a href="案例_2.html">&laquo; Prev Page</a>  
 			  </p>
 			  </div>
 			  <div class="large-6 columns">
