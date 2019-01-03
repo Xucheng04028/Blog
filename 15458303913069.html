@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  人究竟是否孤独 - 唐小筑
+  静态博客第三方评论系统的探索 - 唐小筑
   
   </title>
   
@@ -25,6 +25,15 @@
     return true;
   }
 </script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5534298415663110",
+    enable_page_level_ads: true
+  });
+</script>
+
   </head>
   <body class="antialiased hide-extras">
     
@@ -48,7 +57,7 @@
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
     <input type="hidden" id="search_q" name="q" value="" />
     <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
@@ -68,19 +77,26 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
         
+            <li><a href="%E6%A1%88%E4%BE%8B.html">案例</a></li>
+        
+            <li><a href="%E6%97%A5%E8%AE%B0.html">日记</a></li>
+        
+            <li><a href="%E6%B2%89%E6%80%9D%E5%BD%95.html">沉思录</a></li>
+        
             <li><a href="%E5%B0%91%E6%95%B0%E6%B4%BE.html">少数派</a></li>
         
-            <li><a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html">每周分享</a></li>
-        
             <li><a href="Python.html">Python</a></li>
+        
+            <li><a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html">每周分享</a></li>
          
 
       </ul>
@@ -103,15 +119,19 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>人究竟是否孤独</h1>
+          <h1>静态博客第三方评论系统的探索</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2017/8/20</span>
+          <span class="date">2018/12/26</span>
 
+          <span>posted in&nbsp;</span> 
           
+              <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
            
          
           <span class="comments">
+            
+              <a href="https://blog.tangxiaozhu.com/15458303913069.html#disqus_thread">comments</a>
             
 
             
@@ -121,15 +141,29 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <p>绝大多数时候，我一直认为人生而孤独，充其量在某些具体事物的看法可以一致，但绝不会在大多数时候思想上达到共鸣。可也得承认，常常也会产生错觉，比如在高铁上、滴滴上常遇到很聊得来的人，难免感慨人生亦有知我者。</p>
+      <p>在 GitHub Issues 上写了大半年博客后，感觉不太对，<a href="15242849335257.html">关于独立博客的想法</a> 一文中提到了原因。总之，我要转回静态博客，无论是 Hexo 还是 Jekyll 等，那首要考虑的问题就是三方评论系统。当初决定使用 Issues 写博客的原因之一就是评论系统，多说、Disqus、来必力、畅言、网易云跟帖、友言、Facebook comments 等均不能使我满意，尤其是多说、网易云跟帖停止服务更让我对数据缺乏安全感，很难完美转移评论数据，颜值也欠缺。我不建议各位使用以上及类似的三方评论系统。</p>
 
-<p>所以，此时此刻，我想哭，但眼睛湿了，却又不会落泪。这样的感觉多了，却也流不下泪了。</p>
+<p>转回静态博客的决定，意味着我解决了用哪个评论系统的问题，两个选择：基于 GitHub Issues 的 Gitment，基于 GitHub Repo 的 Staticman 评论系统。以上两个选择要求博客必须托管在 GitHub Pages 上，若你使用 Coding Pages，也可以试试基于 LeanCloud 的 <a href="https://valine.js.org">Valine</a>，颜值和稳定性都是上上之选。  </p>
 
-<p>我想到了女友，这是我喜爱的人儿，所以我在想是否要分手。察觉到在想法上难以有很多的沟通，绝大多数的沟通都只是在爱情或琐事等，每天一个电话也就没了它重大的意义。如果不分手，我岂不是要辜负这样一个好女孩？爱她柔弱的孩子气，爱她纤细的身材与精致的脸蛋，可仅是这样，可以长久地做她的知心人么？可以呵护她不受一点委屈么？事实上，我们也已经因为类似的原因闹过矛盾了。</p>
+<h3 id="toc_0"><a href="https://github.com/imsun/gitment">Gitment</a>：基于 GitHub Issues 的评论系统</h3>
 
-<p>想起高铁上、滴滴上与路人聊得来的情形，多么舒爽的感觉。但理智告诉我，一旦深交，必然不如初见，出于这份恐惧，我从不主动留联系方式。人究竟孤独与否，这问题其实不必要一问再问，因为答案从始至终都是确定的……</p>
+<p>Gitment 在我使用 GitHub Issues 写博客前就尝试过，惊艳之感记忆犹新，但彼时铁了心用 Issues，而且 Gitment 颜值细节还有提升空间。 Gitalk 也是基于 Issues 的评论系统，颜值尚可但功能还有待完善。相对而言，Gitment 已经是比较成熟的方案了，根据 <a href="https://imsun.net/posts/gitment-introduction/">官方文档</a> 很快就能轻松成功部署。 </p>
 
-<p>只是这答案是让我淡然，还是让我茫然？</p>
+<h3 id="toc_1"><a href="https://staticman.net">Staticman</a>：基于 GitHub Repo 的静态评论系统</h3>
+
+<p>关于 Staticman 的介绍是本文的重点。我是无意间在博客 <a href="https://blog.shuiba.co/comment-systems-recommendation">水八口记</a> 得知的静态评论系统 <a href="https://github.com/eduardoboucas/staticman">Staticman</a>，这与静态博客系统相得益彰。事实上我认为 Staticman 的部署也应该是简单的过程，但其作者 <a href="https://github.com/eduardoboucas">eduardoboucas</a> 没有写清楚文档。一个非技术人员去搞清楚 Staticman 是挺难的，但好奇心促使我搞明白它。</p>
+
+<h4 id="toc_2">评论效果</h4>
+
+<p><a href="https://eduardoboucas.com/blog/2017/05/15/test-feature-requests.html">第一种评论效果</a> &amp;&amp; <a href="https://github.com/eduardoboucas/eduardoboucas.github.io/tree/master/_data/comments">评论数据储存位置和方式</a><br/>
+<a href="http://popcorn.staticman.net/">第二种评论效果</a> &amp;&amp; <a href="https://github.com/eduardoboucas/popcorn/tree/gh-pages/_data/reviews">评论数据储存位置和方式</a><br/>
+<a href="http://lisandroct.com/blog/2017/11/14/hello-world.html">第三种评论效果</a> &amp;&amp; <a href="https://github.com/lisandroct/lisandroct.github.io/commit/0844fe68ffa73c4ff7a39f2e4dc39a8c42e3100c">评论数据储存位置和方式</a></p>
+
+<p><a href="https://github.com/eduardoboucas/staticman#sites-using-staticman">更多评论效果</a></p>
+
+<p><a href="https://gist.github.com/heytxz/e3007fa5618a365d38efcd64dd55d55b">第一种评论效果 staticman.yml 文件</a><br/>
+<a href="https://gist.github.com/heytxz/da727782819d3c73181451f0b0f2a1d2">第二种评论效果 staticman.yml 文件</a><br/>
+<a href="https://gist.github.com/heytxz/d33fb245712cac5dd7d5a049d2e37fa8">第三种评论效果 staticman.yml 文件</a></p>
 
 
     
@@ -140,16 +174,16 @@
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="15250955628409.html" 
-          title="Previous Post: iCloud 设备备份数据 180 天后会删除么">&laquo; iCloud 设备备份数据 180 天后会删除么</a>
+          <a href="15458305176391.html" 
+          title="Previous Post: 再谈 iPad Pro 的学术生产力">&laquo; 再谈 iPad Pro 的学术生产力</a>
       
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="15250954681963.html" 
-          title="Next Post: 魔兽争霸 III 各类比赛">魔兽争霸 III 各类比赛 &raquo;</a>
+          <a  href="15458299839572.html" 
+          title="Next Post: AirPods 蓝牙显示名称自动改名">AirPods 蓝牙显示名称自动改名 &raquo;</a>
       
       </p>
         </div>
@@ -173,6 +207,8 @@ gitment.render('container')
 </script>
 
           
+            <div id="disqus_thread"></div>
+          
 
           
         </div>
@@ -191,15 +227,15 @@ gitment.render('container')
                 <div class="site-a-logo"><img src="logo.jpg" /></div>
             
                 <h1>唐小筑</h1>
-                <div class="site-des">唐小筑的个人博客</div>
+                <div class="site-des">少数派作者 & 个人博客</div>
                 <div class="social">
 
-<a target="_blank" class="google" href="https://plus.google.com/u/0/111912601651902488905" rel="author" title="Google+">Google+</a>
+
 
 
 
 <a target="_blank" class="quora" href="https://www.quora.com/profile/TANG-XIAOZHU" title="Quora">Quora</a>
-<a target="_blank" class="instagram" href="https://www.instagram.com/heytxz/" title="Instagram">Instagram</a>
+
 <a target="_blank" class="weibo" href="https://weibo.com/u/6502478659" title="weibo">Weibo</a>
 <a target="_blank" class="twitter" target="_blank" href="https://twitter.com/heytxz" title="Twitter">Twitter</a>
 <a target="_blank" class="github" target="_blank" href="https://github.com/heytxz" title="GitHub">GitHub</a>
@@ -219,11 +255,17 @@ gitment.render('container')
 
       	<p class="cat-list">
         
+            <a href="%E6%A1%88%E4%BE%8B.html"><strong>案例</strong></a>
+        
+            <a href="%E6%97%A5%E8%AE%B0.html"><strong>日记</strong></a>
+        
+            <a href="%E6%B2%89%E6%80%9D%E5%BD%95.html"><strong>沉思录</strong></a>
+        
             <a href="%E5%B0%91%E6%95%B0%E6%B4%BE.html"><strong>少数派</strong></a>
         
-            <a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html"><strong>每周分享</strong></a>
-        
             <a href="Python.html"><strong>Python</strong></a>
+        
+            <a href="%E6%AF%8F%E5%91%A8%E5%88%86%E4%BA%AB.html"><strong>每周分享</strong></a>
          
         </p>
 
@@ -240,31 +282,31 @@ gitment.render('container')
 	      
 		      
 			      <li class="post">
-			        <a href="15254917496629.html">每周分享第 2 期</a>
+			        <a href="15458307303169.html">我的购物省钱心得</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15251484115051.html">自学 Python 第 1 期</a>
+			        <a href="15458305176391.html">再谈 iPad Pro 的学术生产力</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15250509803819.html">关于我 2018</a>
+			        <a href="15458303913069.html">静态博客第三方评论系统的探索</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15246446693895.html">每周分享第 1 期</a>
+			        <a href="15458299839572.html">AirPods 蓝牙显示名称自动改名</a>
 			      </li>
 		     
 		  
 		      
 			      <li class="post">
-			        <a href="15250965271937.html">输入法的选择</a>
+			        <a href="15457917956800.html">摘录</a>
 			      </li>
 		     
 		  
@@ -309,9 +351,8 @@ gitment.render('container')
 
  <div class="page-bottom clearfix">
   <div class="row">
-   <p class="copyright">Copyright &copy; 2018 唐小筑  
-<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-</p>
+   <p class="copyright">Copyright &copy; 2018 CC BY-NC-SA 4.0
+   </p>
   </div>
 </div>
 
@@ -319,6 +360,27 @@ gitment.render('container')
       </div>
     </div>
 
+
+<script type="text/javascript">
+    var disqus_shortname = 'tangxiaozhu'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = 'tangxiaozhu'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
   
     
 
@@ -338,7 +400,7 @@ gitment.render('container')
       });
      
     </script>
-    
+
     
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

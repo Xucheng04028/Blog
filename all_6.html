@@ -119,6 +119,736 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
+                <a class="clearlink" href="15250922329733.html">
+                
+                  <h1>使用 Hexo 搭建博客的深度优化与定制</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<ul>
+<li>
+<a href="#toc_0">深度优化</a>
+<ul>
+<li>
+<a href="#toc_1">文章链接唯一化</a>
+</li>
+<li>
+<a href="#toc_2">语法优化</a>
+<ul>
+<li>
+<a href="#toc_3">引用</a>
+</li>
+<li>
+<a href="#toc_4">折叠代码或文字</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_5">搜索引擎优化</a>
+<ul>
+<li>
+<a href="#toc_6">添加网站地图</a>
+</li>
+<li>
+<a href="#toc_7">添加蜘蛛协议</a>
+</li>
+<li>
+<a href="#toc_8">限制出站链接</a>
+</li>
+<li>
+<a href="#toc_9">主动推送新链接</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_10">启用 https</a>
+</li>
+<li>
+<a href="#toc_11">加速国内访问</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_12">深度定制</a>
+<ul>
+<li>
+<a href="#toc_13">每篇文章后面加文字</a>
+</li>
+<li>
+<a href="#toc_14">修改链接文字样式</a>
+</li>
+<li>
+<a href="#toc_15">目录默认全展开</a>
+</li>
+<li>
+<a href="#toc_16">删除上下篇按钮</a>
+</li>
+<li>
+<a href="#toc_17">修改授权协议图标</a>
+</li>
+<li>
+<a href="#toc_18">添加其他分享</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_19">一键图床</a>
+</li>
+<li>
+<a href="#toc_20">错误信息</a>
+<ul>
+<li>
+<a href="#toc_21">LF will be replaced</a>
+</li>
+<li>
+<a href="#toc_22">无法生成 html</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_23">题外话</a>
+<ul>
+<li>
+<a href="#toc_24">标题优化</a>
+</li>
+<li>
+<a href="#toc_25">为何要使用图床</a>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>由于操作失误出现未知错误，不得不重新来过，同时也萌发写教程的打算。关于 Hexo 建立博客的文章数不胜数，本文只是简要介绍这点，重点是深度优化与定制部分。</p>
+
+<p>移除：卸载 Git 和 Node 后，删除所有博客文件即为移除。如果遭遇文件夹无法删除的情况，使用命令 <code>rd/s/q</code> 可强制删除。</p>
+
+<p>安装：利用基于 Node.js 的 Hexo 可以快速搭建一个博客网站。搭建前必须安装 <a href="https://nodejs.org/en/">Node.js</a> 和 <a href="https://git-scm.com/">Git</a>。Node.js 是一款开源且跨平台的服务器端和网络应用，使用 JavaScript 开发。Git 是一款免费、开源的分布式版本控制系统。安装过程中全点下一步即可。之后，请参照 <a href="https://hexo.io/zh-cn/docs/index.html">官方中文文档</a> 进行 Hexo 的安装。</p>
+
+<p>网站初始化：在指定文件夹初始化网站文件。在你想存储网站文件的文件夹中，鼠标右键后，打开 <code>Git Bash Here</code>，然后输入 <code>hexo init blog</code>，<code>blog</code> 是文件名，可任意取。成功后会出现 <code>INFO  Start blogging with Hexo!</code> 提示信息。Windows 用户由于自带的记事本简陋难用，故建议安装 <a href="https://notepad-plus-plus.org/">Notepad++</a> 以编辑 .yml 文件。</p>
+
+<p>主题：在此建议使用最受欢迎的 NexT 主题，参照其 <a href="http://theme-next.iissnan.com/getting-started.html">官方文档</a> 可轻易完成配置。安装插件的命令要在博客根目录下执行。</p>
+
+<h2 id="toc_0">深度优化</h2>
+
+<h3 id="toc_1">文章链接唯一化</h3>
+
+<p>也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。安装此插件后，不要在 <code>hexo s</code> 模式下更改文章文件名，否则文章将成空白。</p>
+
+<pre><code class="language-text">npm install hexo-abbrlink --save
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中查找代码 <code>permalink:</code>，将其更改为:</p>
+
+<pre><code class="language-text">permalink: posts/:abbrlink/  # “posts/” 可自行更换 
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中添加如下代码：</p>
+
+<pre><code class="language-text"># abbrlink config
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32 
+  rep: hex    # 进制：dec(default) and hex
+</code></pre>
+
+<p>可参照样例以选择：</p>
+
+<pre><code class="language-text">crc16 &amp; hex
+https://post.zz173.com/posts/66c8.html
+
+crc16 &amp; dec
+https://post.zz173.com/posts/65535.html
+
+crc32 &amp; hex
+https://post.zz173.com/posts/8ddf18fb.html
+
+crc32 &amp; dec
+https://post.zz173.com/posts/1690090958.html
+</code></pre>
+
+<h3 id="toc_2">语法优化</h3>
+
+<h4 id="toc_3">引用</h4>
+
+<p>默认的语法无法添加角标（footnotes）以注明引用，这种可来回跳转的引用还是挺有用处的。</p>
+
+<pre><code class="language-text">npm install hexo-footnotes --save
+</code></pre>
+
+<p>安装完毕请确认是否生效，如不生效，在 <code>站点配置文件</code> 中添加如下代码以手动启用：</p>
+
+<pre><code class="language-text">plugins:
+  - hexo-footnotes
+</code></pre>
+
+<p><img src="media/15250922329733/15250923179919.jpg" alt=""/></p>
+
+<h4 id="toc_4">折叠代码或文字</h4>
+
+<p><code>&lt;head&gt;</code> 后添加一下代码：</p>
+
+<pre><code class="language-text">  &lt;script&gt;
+    function ishidden(odiv){
+      var vdiv = document.getElementById(odiv);
+      vdiv.style.display = (vdiv.style.display == &#39;none&#39;)?&#39;block&#39;:&#39;none&#39;;
+    }
+  &lt;/script&gt;
+</code></pre>
+
+<pre><code class="language-text">&lt;div onclick=&quot;ishidden(&#39;X&#39;)&quot;&gt;点击此处展开内容&lt;/div&gt;
+&lt;div id=&quot;X&quot; style=&quot;display:none;&quot;&gt;需要折叠的代码或文字放在这里&lt;/div&gt;
+</code></pre>
+
+<p>X 为标记，任意设置，在同一文章中，各不相同即可。</p>
+
+<h3 id="toc_5">搜索引擎优化</h3>
+
+<p>我在简书同步发布文章，搜索结果里简书排在首位，我的独立博客可能找不到，必须要进行 SEO 优化。</p>
+
+<h4 id="toc_6">添加网站地图</h4>
+
+<pre><code class="language-text">npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中添加如下代码。</p>
+
+<pre><code class="language-text"># hexo sitemap 
+sitemap:
+path: sitemap.xml
+baidusitemap:
+path: baidusitemap.xml
+</code></pre>
+
+<p>配置成功后，会生成 <code>sitemap.xml</code> 和 <code>baidusitemap.xml</code>，前者适合提交给谷歌搜素引擎，后者适合提交百度搜索引擎。其次，在 <code>robots.txt</code> 中添加下面的一段代码：</p>
+
+<pre><code class="language-text">Sitemap: http://blog.tangxiaozhu.com/sitemap.xml
+Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
+</code></pre>
+
+<h4 id="toc_7">添加蜘蛛协议</h4>
+
+<p><code>robots.txt</code> 放置在 <code>\source</code>  目录下。</p>
+
+<pre><code class="language-text">#hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://blog.tangxiaozhu.com/search.xml
+
+Sitemap: http://blog.tangxiaozhu.com/sitemap.xml
+Sitemap: http://blog.tangxiaozhu.com/baidusitemap.xml
+</code></pre>
+
+<p>此协议内容上与其他相比，增加了 <code>Sitemap: http://blog.tangxiaozhu.com/search.xml</code>，当然我也忘了为何增加。</p>
+
+<h4 id="toc_8">限制出站链接</h4>
+
+<p>网络爬虫会在当前页面搜索所有的链接，故有可能跳到别的网站。<code>nofollow</code> 标签是由谷歌领头创新的一个 “反垃圾链接” 的标签，并被各大搜索引擎广泛支持，引用 <code>nofollow</code> 标签的目的是：用于指示搜索引擎不要追踪（即抓取）网页上的带有 <code>nofollow</code> 属性的任何出站链接，以减少垃圾链接的分散网站权重。</p>
+
+<pre><code class="language-text">npm install hexo-autonofollow --save
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中添加如下代码。</p>
+
+<pre><code class="language-text">nofollow:
+    enable: true
+    exclude: # 例外的链接，可将友情链接放置此处
+    - exclude1.com
+    - exclude2.com
+</code></pre>
+
+<h4 id="toc_9">主动推送新链接</h4>
+
+<p>解决百度爬虫被禁止访问的问题，提升网站收录质量和速度。</p>
+
+<pre><code class="language-text">npm install hexo-baidu-url-submit --save
+</code></pre>
+
+<p>在 <code>站点配置文件</code> 中添加如下代码。</p>
+
+<pre><code class="language-text">baidu_url_submit:
+  count: 5 ## 比如3，代表提交最新的三个链接
+  host: blog.tangxiaozhu.com ## 在百度站长平台中注册的域名
+  token:  ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+</code></pre>
+
+<h3 id="toc_10">启用 https</h3>
+
+<p>注册 <a href="https://www.cloudflare.com">CloudFlare</a>，然后添加网站地址（顶级域名），会提示将 DNS 换为：</p>
+
+<pre><code class="language-text">charles.ns.cloudflare.com
+ivy.ns.cloudflare.com
+</code></pre>
+
+<p>DNSPod 等不能与 CloudFlare 混用，为减少麻烦，一次使用一个 Name Server 比较好。此时等待一段时间 <code>Overview</code> 中状态会变为 <code>Active</code>。然后在 <code>Page Rules</code> 中设置总是使用 <code>https</code>，如图所示。</p>
+
+<p><img src="media/15250922329733/15250924123144.png" alt=""/></p>
+
+<p>但是在搞定以后，却无法变成小绿锁，因为七牛的图床外链是 <code>http</code>，似乎收费或者绑定自定义域名并备案才可以申请使用 <code>https</code>，<a href="https://github.com/Suxiaogang/WeiboPicBed">新浪微博图床</a> 支持返回 <code>https</code> 安全协议的图片地址。但最终我又用回 <code>http</code>，因为不确认微博图床的可靠性，然后最好清除下浏览器缓存。</p>
+
+<p><img src="media/15250922329733/15250924310356.png" alt=""/></p>
+
+<h3 id="toc_11">加速国内访问</h3>
+
+<p>同时部署到 <code>Coding.net</code>，在 DnsPod 设置默认访问 <code>you.coding.me</code>，国外访问 <code>you.github.io</code>即可。</p>
+
+<h2 id="toc_12">深度定制</h2>
+
+<p>也许只适用于 NexT 主题，而深度优化是通用的。所有内容是 NexT 主题 <a href="http://theme-next.iissnan.com/getting-started.html">官方文档</a> 所没有的。</p>
+
+<h3 id="toc_13">每篇文章后面加文字</h3>
+
+<p><code>layout/_macro/post.swig</code> 修改：</p>
+
+<pre><code class="language-text"> {{ post.content }}
+          {% endif %}
+        {% endif %}
+      {% else %}
+        {{ post.content }}
+        
+# 大家好，这里是 NexT 主题下的文章内容底部位置
+# 既然来啦，写点什么这里吧，写上去，所有文章底部都看到哦
+        
+      {% endif  %}
+</code></pre>
+
+<h3 id="toc_14">修改链接文字样式</h3>
+
+<p>将链接文本设置为蓝色，鼠标划过时文字颜色加深，并显示下划线。</p>
+
+<p><code>themes\next\source\css\_common\components\post\post.styl</code> 添加以下代码：</p>
+
+<pre><code class="language-text">.post-body p a{
+  color: #0593d3;
+  border-bottom: none;
+
+  &amp;:hover {
+    color: #0477ab;
+    text-decoration: underline;
+  }
+}
+</code></pre>
+
+<p>选择 <code>.post-body</code> 是为了不影响标题，选择 <code>p</code> 是为了不影响首页“阅读全文”的显示样式。</p>
+
+<p>参考：<a href="http://www.wuxubj.cn/2016/08/Hexo-nexT-build-personal-blog/">http://www.wuxubj.cn/2016/08/Hexo-nexT-build-personal-blog/</a></p>
+
+<h3 id="toc_15">目录默认全展开</h3>
+
+<p><code>~/themes/next/source/css/_custom/custom.styl</code> 中添加以下代码：</p>
+
+<pre><code class="language-text">.post-toc .nav .nav-child { display: block; }
+</code></pre>
+
+<p>这样会导致目录太长，以至于在一个页面中无法全部显示。不过并不会影响阅读体验。</p>
+
+<h3 id="toc_16">删除上下篇按钮</h3>
+
+<p><code>themes\next\layout\_macro\post</code></p>
+
+<pre><code class="language-text"> rel=&quot;tag&quot;&gt;#{{ tag.name }}&lt;/a&gt;
+          {% endfor %}
+        &lt;/div&gt;
+      {% endif %}
+
+删除开始    {% if not is_index and (post.prev or post.next) and not navlessPost %}
+        &lt;div class=&quot;post-nav&quot;&gt;
+          &lt;div class=&quot;post-nav-next post-nav-item&quot;&gt;
+            {% if post.next %}
+              &lt;a href=&quot;{{ url_for(post.next.path) }}&quot; rel=&quot;next&quot; title=&quot;{{ post.next.title }}&quot;&gt;
+                &lt;i class=&quot;fa fa-chevron-left&quot;&gt;&lt;/i&gt; {{ post.next.title }}
+              &lt;/a&gt;
+            {% endif %}
+          &lt;/div&gt;
+
+          &lt;div class=&quot;post-nav-prev post-nav-item&quot;&gt;
+            {% if post.prev %}
+              &lt;a href=&quot;{{ url_for(post.prev.path) }}&quot; rel=&quot;prev&quot; title=&quot;{{ post.prev.title }}&quot;&gt;
+                {{post.prev.title}} &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            {% endif %}
+          &lt;/div&gt;
+        &lt;/div&gt;
+结束    {% endif %}
+&lt;/div&gt;
+</code></pre>
+
+<p>注意：利用最上方的代码可以定位，如果后悔可再添加删除的代码。</p>
+
+<h3 id="toc_17">修改授权协议图标</h3>
+
+<p>在 <a href="https://creativecommons.org/about/downloads/">授权协议官网</a> 下载想要的矢量图片，替换即可。</p>
+
+<h3 id="toc_18">添加其他分享</h3>
+
+<p>添加跟我博客同样的分享条，请看 <a href="http://wiki.mob.com/sharesdk-for-web%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90/">官方文档</a>，具体的操作方式请看 <a href="http://https://segmentfault.com/a/1190000004979461">Magicer 的教程</a>。</p>
+
+<pre><code class="language-text">&lt;!--MOB SHARE BEGIN--&gt;
+&lt;div class=&quot;-mob-share-ui-button -mob-share-open&quot;&gt;分享&lt;/div&gt;
+&lt;div class=&quot;-mob-share-ui&quot; style=&quot;display: none&quot;&gt;
+    &lt;ul class=&quot;-mob-share-list&quot;&gt;
+        &lt;li class=&quot;-mob-share-weibo&quot;&gt;&lt;p&gt;新浪微博&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-tencentweibo&quot;&gt;&lt;p&gt;腾讯微博&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-qzone&quot;&gt;&lt;p&gt;QQ空间&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-qq&quot;&gt;&lt;p&gt;QQ好友&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-renren&quot;&gt;&lt;p&gt;人人网&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-kaixin&quot;&gt;&lt;p&gt;开心网&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-douban&quot;&gt;&lt;p&gt;豆瓣&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-facebook&quot;&gt;&lt;p&gt;Facebook&lt;/p&gt;&lt;/li&gt;
+        &lt;li class=&quot;-mob-share-twitter&quot;&gt;&lt;p&gt;Twitter&lt;/p&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;-mob-share-close&quot;&gt;取消&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;-mob-share-ui-bg&quot;&gt;&lt;/div&gt;
+&lt;script id=&quot;-mob-share&quot; src=&quot;http://f1.webshare.mob.com/code/mob-share.js?appkey=你的appkey&quot;&gt;&lt;/script&gt;
+&lt;!--MOB SHARE END--&gt;  
+</code></pre>
+
+<p>注意 <code>appkey</code> 要修改为自己的。</p>
+
+<h2 id="toc_19">一键图床</h2>
+
+<p>适用于两种平台的免费软件，可以一键上传图片到七牛等服务器，同时获取外链。没有提供自动压缩功能实在遗憾，可惜我又不会编程。</p>
+
+<ol>
+<li>macOS 平台：<a href="http://www.lzqup.com/">U 图床</a> &amp; <a href="https://github.com/liufsd/PhotoCloud">PhotoCloud</a> &amp; iPic</li>
+<li>Windows 平台：<a href="http://mpic.lzhaofu.cn/">MPic</a></li>
+</ol>
+
+<h2 id="toc_20">错误信息</h2>
+
+<h3 id="toc_21">LF will be replaced</h3>
+
+<p>Windows 提交命令的时候出现 <code>warning: LF will be replaced by CRLF in XXXXXXXXXXXXXX</code> 的警告。输入命令：</p>
+
+<pre><code class="language-text">git config --global core.autocrlf false
+</code></pre>
+
+<h3 id="toc_22">无法生成 html</h3>
+
+<p>输入<code>Hexo g</code> 后没有生成 <code>html</code> 文件，此时只需将根目录下 <code>package.json</code> 中 <code>dependencies</code> 的所有项都添加 <code>站点配置文件</code> 的 <code>plugins</code> 下。网上并没有相应的解决办法，知乎上也有提问却并没有回答，我也是不断试错，最后明白有时候手动启用插件才是正途。比如：</p>
+
+<pre><code class="language-text">plugins: 
+  - hexo
+  - hexo-abbrlink
+  - hexo-baidu-url-submit
+  - hexo-deployer-git
+  - hexo-footnotes
+  - hexo-generator-archive
+  - hexo-generator-baidu-sitemap
+  - hexo-generator-category
+  - hexo-generator-feed
+  - hexo-generator-index
+  - hexo-generator-searchdb
+  - hexo-generator-sitemap
+  - hexo-generator-tag
+  - hexo-renderer-ejs
+  - hexo-renderer-marked
+  - hexo-renderer-stylus
+  - hexo-server
+</code></pre>
+
+<h2 id="toc_23">题外话</h2>
+
+<h3 id="toc_24">标题优化</h3>
+
+<p>将标题、关键字、描述连在一起，固然有利于 SEO 但并不美观，故我拒绝。</p>
+
+<h3 id="toc_25">为何要使用图床</h3>
+
+<p>GitHub 建议 Pages 网站总量不要超过 1 GB，如果超过会发送邮件要求缩减体积，只是你也可以无视这个提醒，但过度使用的话一定会被限制的。GitHub 提供每月 100 GB 的流量。从这个角度来看，使用 GitHub 本身作为图床确实没问题，也即将图片放在 <code>source</code> 下再引用是完全可行的。甚至有人利用 GitHub 开发图床服务。</p>
+
+<p>然而还要考虑这些问题。首先，国内与 GitHub 的连接是比较缓慢的，故会减缓网站访问速度和增加部署时间；其次，总量越来越大，如果网络是计流量的话将难以承担。</p>
+<center>
+<p><img src="media/wxcode.jpg" alt=""/><br/>
+扫一扫即可关注微信公众号<br/>
+</center></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/17</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250922329733.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250919948770.html">
+                
+                  <h1>风险的词源</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>写一篇论文涉及到了风险二字，突然好奇风险这个词的来历。熟悉的字词不知其背后的故事岂不是憾事？</p>
+
+<p><a href="http://www.zdic.net/c/e/15f/356920.htm">风险</a>：危险；遭受损失、伤害、不利或毁灭的可能性。<a href="http://www.zdic.net/c/e/15f/356920.htm">風險</a>：危險、危機。</p>
+
+<p><a href="http://www.zdic.net/z/28/xs/98CE.htm">风</a>，本意为空气流动的现象；动词意为刮风，风干，走逸，嬉戏；形容词意为传说的，放荡的；作副词时通“凡”。<a href="http://www.zdic.net/z/27/xs/9669.htm">险</a> ，本意为地势高低悬殊，名词意为险要之地，副词意为几乎。</p>
+
+<p>维基百科：<strong>风险</strong> 是相对某有机体的，指某可能发生的事件（辞源于 <strong>航海者</strong>），如果发生，能阻碍有机体的发展，甚至走向衰亡，<strong>风险</strong> 是指事件发生与否的不确定性。危险﹑危机。</p>
+
+<p>百度百科：<strong>航海者</strong> 是 <a href="https://book.douban.com/subject/4881511/">伊索寓言全集</a> 中第 307 个故事：有几个人乘船出海。大海的气候变化万千，船刚驶入海面时，恰恰碰上了狂风巨浪，船几乎被巨浪吞没。有个人撕破衣服，大声悲惨地痛哭，祈求庇护神，许愿说如能得救，定当还愿报恩。过了不久，风暴过去了，大海恢复了往日的平静，大家为幸免于难而互相祝福，手舞足蹈，高兴极了。老实的舵工却对他们说道：“朋友们，幸免于难确实值得高兴庆贺。但我们还必须勇敢地去面对说不定还会再来的狂风巨浪。”</p>
+
+<p>由此，我做出简要的结论：风险之所以为风险，源于海上狂风的危险。</p>
+<center>
+<p><img src="media/wxcode.jpg" alt=""/><br/>
+扫一扫即可关注微信公众号<br/>
+</center></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/17</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='%E6%B2%89%E6%80%9D%E5%BD%95.html'>沉思录</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250919948770.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250918783638.html">
+                
+                  <h1>我的密码管理心得</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>我现在全面使用 1Password 来管理我的账号密码及密保、软件许可等信息，在此简要地介绍 1Password 的优点：</p>
+
+<ol>
+<li>全平台且优美；</li>
+<li>支持指纹解锁；</li>
+<li>数据库可备份在自己的云盘，如 Dropbox 等；</li>
+<li>支持安全检查，如密码已使用时间、弱密码等；</li>
+<li>集成了二步验证系统。 </li>
+</ol>
+
+<hr/>
+
+<p>四年前我更换了手机号，尝到了帐号找回或重注册的种种烦恼，比如网易，我甚至上传了身份证照片以找回安全信息，后来也颇有后悔之意，因为我并不常用网易邮箱。如京东之类的帐号就删除订单记录等再重注册。且愿我的隐私信息还能称之为隐私。这段经历使我痛定思痛，又联想到更久远的时间丢失的帐号。于是，我就有了现在这一密码、密保等信息的管理方式，省心且放心。</p>
+
+<p>必须告诉诸位，这一方式极其容易上手，所要做的不过是 <strong>安装几个应用</strong>，只是录入信息较为消耗时间。也许大部分女同胞及部分男同学并不在乎账户的相关问题，无非再注册的事情。可将我们的虚拟财产加以适当的保护至少是件听着还不错的事，所以即使你的帐号、密码等大同小异，也不妨记录下来，尤其是密保信息。</p>
+
+<p><img src="media/15250918783638/15250919124376.png" alt=""/></p>
+
+<h2 id="toc_0">MacPass</h2>
+
+<p><a href="https://github.com/mstarke/MacPass">MacPass</a> 是 <a href="http://keepass.info/">KeePass</a> 官方推荐的第三方开源且免费的 Mac KeePass 客户端。<a href="https://minikeepass.github.io/">MiniKeePass</a> 是第三方开源且免费的 iOS KeePass 客户端。</p>
+
+<p>MacPass 默认是只保护密码，我则点选了保护所有项目。因为为了方便我会在<code>注释</code>里存储许多重要信息，并不使用<code>自定义</code>等功能。加密轮次可以点击测试，会自动推荐一个值。但实际上我并不了解这样做是否更安全。</p>
+
+<p>密码数据库后设置密码，任选一文件作为密钥文件或者新生成。将数据库存储在网盘同步盘，将密钥文件存储在另一网盘，分离存储也加强了安全性。若完全不愿意借助云，则可以存储在移动介质。</p>
+
+<h2 id="toc_1">MiniKeePass</h2>
+
+<p>在 iPhone 上使用 MiniKeePass 应用：在 Mac 上更新密码后，在 iPhone 上将网盘新同步的密码库导出到 MiniKeePass 中打开，原密码库将被覆盖。</p>
+
+<p>另外，可以在 MiniKeePass 中再新建一个数据库，在 iPhone 上注册新账号时，可以纪录用户名，并生成密码。之后，再在 Mac 上录入原数据库。<strong>不建议</strong> 在 MiniKeePass 中的原数据库（即网盘同步的数据库）纪录 iPhone 上注册的帐号，虽然从 MiniKeePass 可以导入到网盘，但有的网盘会自动覆盖掉原数据库，可能会丢失 Mac 上还没来得及同步的数据。</p>
+
+<h2 id="toc_2">辅助方案</h2>
+
+<p>iPhone 上也可使用 1Password 作两点用途：</p>
+
+<ol>
+<li>记录常用帐号密码，诸多应用已支持自动输入，但密保信息仅纪录在 KeePass 中；</li>
+<li>许多应用以支持 1Password 自动创建新账号和密码，而后在电脑上录入到 KeePass 客户端。</li>
+</ol>
+
+<p>在 Mac 上可以使用浏览器或扩展如 LastPass 记住常用密码，但不要纪录密保信息等。这个帐号管理方法我已尝试两年有余，方法安全且主要涉及的应用均免费开源。我几乎不再记忆任何密码，也再也不担忧丢失帐号信息。而且部分网站的密保系统再复杂我也可以轻松应对。</p>
+
+<p>最近，又对每次都要复制粘贴密码感到烦了。于是，我将自己的账号分为三个等级：</p>
+
+<ol>
+<li>第一序列：涉及到财产的账号；</li>
+<li>第二序列：不直接涉及财产但较为重要的；</li>
+<li>第三序列：一般账号。</li>
+</ol>
+
+<p>然后针对每一序列设计不同的密码规则，包含大小写字母、符号、数字，这样我就记住了所有密码。而 KeePass 最大的作用就是记录密保等关键信息。</p>
+
+<p>诗云：安能摧眉折腰记密码，使我不得开心颜！</p>
+
+<p><a href="http://mstarke.github.io/MacPass/">KeePass for Mac</a><br/>
+<a href="https://itunes.apple.com/us/app/minikeepass-secure-password/id451661808?mt=8">KeePass for iOS</a> <br/>
+<a href="http://keepass.info/download.html">KeePass for Windows</a><br/>
+<a href="http://www.keepassdroid.com/">KeePass for Android</a></p>
+<center>
+<p><img src="media/wxcode.jpg" alt=""/><br/>
+扫一扫即可关注微信公众号<br/>
+</center></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/17</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250918783638.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250917271061.html">
+                
+                  <h1>MacBook 升级方案</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>我持有的设备是 MacBook Pro，但是升级方案一般是通用的。我更建议在购买时一步到位，虽然贵很多，但后续升级要承担风险，并会失去保修资格。</p>
+
+<p>注意，2013 之后内存是无法升级的，除非完全更换主板，但价格、风险总体上高于收益。</p>
+
+<p>磁盘的扩容主要有三个途径：</p>
+
+<ol>
+<li>直接更换 SSD：<a href="https://eshop.macsales.com/shop/ssd/owc/macbook-pro-retina-display/2013-2014-2015">OWC Macsales</a>；</li>
+<li>装载 SD 卡：淘宝，<a href="http://www.dgtle.com/article-9657-1.html">Nifty</a>，<a href="https://cn.transcend-info.com/apple/jetdrivelite/">创见</a> ；</li>
+<li>装载 SD 融合卡：<a href="https://www.tardisk.com/pages/buy">TarDisk</a>。</li>
+</ol>
+<center>
+<p><img src="media/wxcode.jpg" alt=""/><br/>
+扫一扫即可关注微信公众号<br/>
+</center></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/17</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250917271061.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250914805050.html">
+                
+                  <h1>快速切换 Apple App Store 账号</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>Mac App Store：</p>
+
+<ol>
+<li>mas，<a href="https://sspai.com/post/40382">终端上的 Mac App Store「mas」让应用的安装与更新无比轻松</a>；</li>
+<li>Switcher，<a href="https://github.com/X140Yu/Switcher">Switcher for macOS</a>；</li>
+<li>Keyboard Maestro，<a href="http://readful.com/post/77044128470/%E5%88%A9%E7%94%A8-keyboard-maestro-%E5%88%87%E6%8D%A2-appstore-%E5%B8%90%E6%88%B7">利用 Keyboard Maestro 切换 Appstore 帐户</a>；</li>
+<li>Alfred，<a href="http://www.packal.org/workflow/apple-account-switcher">Apple Account Switcher</a>；</li>
+<li>AppleScript，找不到了……</li>
+</ol>
+
+<p>iOS App Store：</p>
+
+<ul>
+<li>使用 Workflow 换区。</li>
+</ul>
+<center>
+<p><img src="media/wxcode.jpg" alt=""/><br/>
+扫一扫即可关注微信公众号<br/>
+</center></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/17</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250914805050.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
                 <a class="clearlink" href="15250906941645.html">
                 
                   <h1>关于天大北洋苹果店的郁闷经历</h1>
@@ -428,588 +1158,6 @@
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="15250545534760.html">
-                
-                  <h1>关于文字排版</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p><a href="https://github.com/mzlogin/chinese-copywriting-guidelines">中文文案排版指北</a> 和 <a href="https://sspai.com/post/37815">少数派写作排版指南</a> 是我主要的参照。</p>
-
-<p>指北中讲到，如「豆瓣FM」等产品名词按照官方所定义的格式书写，但哪有「豆瓣 FM」好看，所以我不能认同，除非产生歧义，否则还是因该遵循中英文间加空格。</p>
-
-<p>指北中讲到，数字与单位之间无需增加空格，度和百分比与数字之间也不需要。这点我也不完全赞同，因为数字和单位之间有些类似数字和中文之间，我认为应该加，但度和百分比除外。</p>
-
-<p>确定一套优美的写作规范是一个漫长的过程，还要考虑到不同应用或网站的解析效果，我尽量统一自己的规范，但愿能给大家一些参考。</p>
-
-<blockquote>
-<p>Microsoft 有个 -ms-text-autospace 的 CSS 属性可以实现自动为中英文之间增加空白。不过目前并未普及，另外在其他应用场景，例如 OS X、iOS 的用户界面目前并不存在这个特性，所以请继续保持随手加空格的习惯。</p>
-</blockquote>
-
-<h3 id="toc_0">博客写作规范</h3>
-
-<ol>
-<li>中文、英文之间加空格；</li>
-<li>中文、数字之间加空格。这点我还没有完全说服自己，比如年月日之间加空格太稀疏，但不加也不合适；</li>
-<li>符号、数字之间加空格，专有名词之间不加；</li>
-<li>超链接文字两边加空格，除非前后都是标点符号。</li>
-</ol>
-
-<h3 id="toc_1">论文写作规范</h3>
-
-<ol>
-<li>数字、单位之间加空格，除非单位是温度和百分号，也有出版社认为温度是单位故需加空格；</li>
-<li>中文、数字之间加空格，具体要依据出版社要求。</li>
-</ol>
-<center>
-<p><img src="media/wxcode.jpg" alt=""/><br/>
-扫一扫即可关注微信公众号<br/>
-</center></p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/17</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15250545534760.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15250542406068.html">
-                
-                  <h1>系统安装记录及问题解决</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>系统的安装常常会出现一些问题。此文记录了用 U 盘安装系统的经验，但并非详细的教程，操作步骤随意搜索即可得到。</p>
-
-<h2 id="toc_0">安装 Ubuntu</h2>
-
-<p>2016 年 11 月份在旧联想本安装其最新版本。</p>
-
-<p><strong>报错信息</strong></p>
-
-<ul>
-<li>对不起。发生了一个错误，不能在指定的位置安装启动引导程序。</li>
-<li>无法将 grub-pc 软件包安装到 /target/ 中。如果没有 GRUB 启动引导器，所安装的系统将无法启动。</li>
-</ul>
-
-<p>搜索到的解决方案：</p>
-
-<ol>
-<li>重新使用 <a href="https://rufus.akeo.ie/?locale=zh_CN">Rufus</a> 烧录镜像</li>
-<li>在电脑 BIOS 关闭 UEFI</li>
-<li>安装过程中保持联网</li>
-</ol>
-
-<p>搜索到的解决方案，基本都只用了其中一步就可以解决问题。我第一步完成后，依旧报错，把二三步设置好就一路畅通。并不知道二和三步谁是必不可少，还是说都是必须设置的。</p>
-
-<h2 id="toc_1">安装 Windows XP</h2>
-
-<p>由于 Ubuntu 过于小众且难以塑造良好的生产环境，故在2016年12月份在旧联想本安装原版 Windows XP with SP3，工具使用  WinSetupFromUSB，似乎也只能借助这个软件才能使用 U 盘安装 XP，具体过程请 <a href="http://blog.csdn.net/littlefang/article/details/6851864">参照这里</a>。</p>
-
-<p>实际上，我建议使用 Ghost XP 安装，无人值守并且集成驱动确实可以省却很多功夫。之前我只安装原版系统，但 XP 无疑是较为适合使用 Ghost XP 来安装。虽然我通过 WinSetupFromUSB 成功安装了原版 XP 但遇到了一些棘手的问题，比如鼠标驱动无法安装。后来使用深度 Ghost XP 的本地硬盘安装方式重装了 XP，体验让我满意。</p>
-
-<p><strong>那么 Ghost 系统是何含义</strong><br/>
-即先把系统安装在制作者电脑上，制作者进行修改或优化，然后把安装系统的硬盘分区用 Norton Ghost 进行完全备份，此备份就称之为 Ghost 系统。但也要注意，推广者或许会安装自家全家桶软件，恶意者甚至会留下后门。故，虽然 Ghost 系统的安装实际上就是还原，速度会很快，也免去了诸多配置，但也要小心使用网上流传的 Ghost 系统。另外，多数 Ghost 系统自身集成了多数硬件的驱动，故增加了不兼容故障的可能性。</p>
-
-<p>Ghost 是 General Hardware Oriented System Transfer（通用硬体导向系统转移）的简写，作为单词的含义为幽灵。其英文全称为 Norton Ghost（Symantec Ghost），中文全称为诺顿（赛门铁克）克隆精灵。Ghost 是硬盘克隆程序，可快速而完整地备份和还原整个硬盘或分区。赛门铁克于 2014 年 6 月 30 日后不再提供 Ghost 的支持服务，2010 年发布的 Ghost 15 是最终的版本。其建议转移使用的新软件 Symantec System Recovery（赛门铁克系统恢复）与 Ghost 使用的备份引擎相同，可视为 Ghost 16 版本。</p>
-
-<p><strong>原版系统安装过程中的问题</strong></p>
-
-<ul>
-<li>没有检测到大容量硬盘<br/>
-也即没有识别出硬盘。不要急，此时重启，在选择 <code>First part of Windows XP Professional setup</code>界面时，应该有四个选项，其中第三个是 <code>First part of Windows XP Professional setup</code>。选择第一个，回车键执行以后会识别出硬盘，如果第一个不起作用可以选择第二个选项。之后再选择 <code>First part of Windows XP Professional setup</code> 按照原教程进行安装。</li>
-<li>安装程序无法复制文件
-<img src="media/15250542406068/15250543195776.png" alt=""/></li>
-</ul>
-
-<p>全部按 <code>ESC</code> 跳过就可以成功安装 XP 系统。但是后续可能出现兼容问题，比如我遇到鼠标无法识别的问题，而且无论是借助驱动人生还是手动方式都无法成功安装相应驱动。</p>
-
-<p><strong>失败的安装经历</strong></p>
-
-<ol>
-<li>选用成功安装 Ubuntu 的工具：Rufus<br/>
-选择 U 盘启动但没有进入安装界面。Rufus 设置信息：MBR 分区方案 用于 BIOS 或 UEFI-CSM 的计算机。当文件系统设置为 FAT 时电脑无法识别，也即没有任何反应就进入了原系统；设置为 NTFS 时，刻录会出现 %s 未知错误。</li>
-<li>选用本科时重装 Windows 7 的必用工具：UltraISO<br/>
-报错信息 <code>INF file txtsetup.sif is corrupt or missing, Status 18</code>，原因是 U 盘被误当 C 盘，也只有在安装 XP 时会遇到这个问题。</li>
-</ol>
-
-<h2 id="toc_2">安装 Windows 7</h2>
-
-<p>Windows 7 及更高版本系统的安装随意选择烧录工具即可用 U 盘正常安装。</p>
-
-<h2 id="toc_3">安装 Windows 10</h2>
-
-<p>2017 年 8 月 5 日安装 Windows 10 系统，电脑型号为 Dell M301Z，这是一款变态的电脑：</p>
-
-<ol>
-<li>易升下载了三遍还要继续重新下载，这是微软的锅，弃用；</li>
-<li>采用微软官方 Windows 10 下载安装器（意外发现除了易升还有它），但安装过程中却提示出错信息 <code>Windows Could Not Configure one or components</code>，停留在此界面按照油管上的解决方案也许可以解决，可我已经关闭电脑了……</li>
-<li>为此我还是采用 U 盘安装的方式，但使用 Rufus、软碟通烧制的启动器都出现问题：Rufus 是从 U 盘无法启动；软碟通则是直接卡在 Windows 10 Logo 界面，无法弹出安装界面；</li>
-<li>使用 WinSetupFromUSB 烧录镜像，一切正常。</li>
-</ol>
-
-<p><strong>Rufus、软碟通失败原因推测</strong>：也许因为 U 盘是 NIFT 格式，而 WinSetupFromUSB 将 U 盘格式化为 FAT 格式。</p>
-
-<p>结论：不论是安装 Windows 10 还是其他 Windows 系统，WinSetupFromUSB 应该是最佳的选择，这是我遇到的出现 BUG 机率最低的应用。而 Linux 系统最好选择 Rufus，安装 macOS 只需按照官方教程即可。</p>
-
-<h2 id="toc_4">安装 macOS</h2>
-
-<p>安装官方教程轻松安装，全程只需依照教程输入数句命令。</p>
-
-<h2 id="toc_5">相关知识</h2>
-
-<h3 id="toc_6">分区方案</h3>
-
-<p><strong>MBR 分区方案</strong><br/>
-MBR（Master Boot Record）即主引导记录，也称为主引导扇区。其硬盘分区表仅有 64 个字节，而每个分区信息需要 16 个字节，所以采用 MBR 分区的硬盘最多只能识别 4 个主要分区。也因为 MBR 分区方案使用 4 个字节（32 个比特）存储分区的总扇区数，最大能表示 2<sup>32</sup> 个扇区，硬盘驱动器（HDD）每扇区为 512 字节，故每个分区最大不能超过 2 TB。</p>
-
-<p><strong>GPT 分区方案</strong><br/>
-GPT（Globally Unique Identifier Partition Table Format）即 GUID 分区表、全局唯一标识分区表。其为源于 EFI （Extensible Firmware Interface，可扩展固件接口 ） 标准的一种较新的磁盘分区表。这种分区方式大大突破了 MBR 分区的限制，而且也做了其他优化。唯一的缺点就是旧设备也许不支持使用 GPT 分区的磁盘。</p>
-
-<h3 id="toc_7">引导模式</h3>
-
-<p>UEFI BIOS 支持两种引导模式：Legacy BIOS 引导模式和 UEFI 引导模式。某些设备和操作系统尚不支持基于 UEFI 的 BIOS，因此只能从 Legacy BIOS 引导模式引导。较新的设备提供了 CSM（Compatibility support Module）选项，其表示兼容模块，开启 CSM 使设备支持 UEFI 启动和非 UEFI 启动。</p>
-<center>
-<p><img src="media/wxcode.jpg" alt=""/><br/>
-扫一扫即可关注微信公众号<br/>
-</center></p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/17</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15250542406068.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15249731448826.html">
-                
-                  <h1>再谈 Homebrew Cask 在 macOS 上的应用安装</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<blockquote>
-<p>本文被少数派精选：<a href="https://sspai.com/post/40321">点此查看</a></p>
-</blockquote>
-
-<p>以新手的视角说说 Homebrew Cask，通过此文，希望同为新手的我们可以更加理解 Homebrew Cask，也更频繁地使用它安装不上架 Mac App Store 的应用，让生活少一些繁琐。</p>
-
-<p>Homebrew 是一款开源的软件包管理系统，用以简化 macOS 上的软件安装过程，可以类比于 Windows 上软件管家的一键安装。Homebrew 在 2009 年由马克斯·霍威尔（Max Howell）写成，它在 GitHub 上拥有大量贡献者，目前仍处于活跃状态。</p>
-
-<p>Homebrew Cask 是 Homebrew 的扩展，借助它可以方便地在 macOS 上安装图形界面程序，即我们常用的各类应用。Homebrew 中文含义为自制、自酿酒，Cask 中文含义为桶、木桶，桶装酒是一种成品，也就是说每一个 <code>homebrew cask</code> 都可以直接使用的，比如 Atom 的 Cask 名称为 atom，那么就可以使用如下命令安装：</p>
-
-<pre><code class="language-text">brew cask install atom
-</code></pre>
-
-<p><img src="media/15249731448826/15249752711518.gif" alt="from homebrew-cask"/></p>
-
-<p>甚至也可以提交新的 Cask，比如假设有桌面客户端少数派，则用 <code>brew cask create sspai</code> 创建新的名称为 <code>sspai</code> 的 Cask，当然还要提供官网下载链接、官方主页、应用版本等信息，可以参照 <a href="https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md">官方教程</a>，此处就不再细说。</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="15249731448826.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/8/12</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E5%B0%91%E6%95%B0%E6%B4%BE.html'>少数派</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15249731448826.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15243553635986.html">
-                
-                  <h1>终端上的 Mac App Store「mas」让应用的安装与更新无比轻松</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<blockquote>
-<p>本文被少数派精选并推荐至首页：<a href="https://sspai.com/post/40382">点此查看</a></p>
-</blockquote>
-
-<p>以下这 3 点是不是你在用 Mac App Store 时想要的？</p>
-
-<ol>
-<li>不想再忍受 Mac App Store 缓慢的打开速度； </li>
-<li>批量安装或更新 Mac App Store 应用；</li>
-<li>快速切换 Mac App Store 账号。</li>
-</ol>
-
-<p>如果是的话，你必须得试试终端上的 Mac App Store —— <a href="https://github.com/mas-cli/mas">mas</a>。</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="15243553635986.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/8/12</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E5%B0%91%E6%95%B0%E6%B4%BE.html'>少数派</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15243553635986.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15249605684127.html">
-                
-                  <h1>PDF 应用评测：Adobe Acrobat VS PDF Expert VS PDFelement</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<blockquote>
-<p>本文被少数派精选：<a href="https://sspai.com/post/40293">点此查看</a></p>
-</blockquote>
-
-<p>我一直有考虑如何选择一个无可挑剔的 PDF 应用，这也许是一个强迫症的自我修养，因为总想以一个优美、简洁、全能的应用完成作业。如果你觉得 CAJ Viewer 等即能满足需求，而且没有感到任何不妥，那么本文可能并不适合您。</p>
-
-<p>经过一番思考，我选择了 Adobe Acrobat、PDF Expert、PDFelement 三者进行横向分析。Adobe Acrobat 是鼻祖，谈到 PDF 就不能绕过它；PDF Expert 是 macOS 上最受欢迎的 PDF 应用，其为 Mac App Store 编辑精选、2015 年最佳应用、收费应用冠军；PDFelement 是我 <a href="https://sspai.com/post/38950">之前推荐</a> 的全能型应用，其开发者最近向我约了一份稿《Adobe Acrobat VS PDFelement》并愿意支付稿费，我愉快地接受了约稿，但拒绝了稿费，虽然 PDFelement 是我欣赏的应用，也解决了我遇到的一些问题，可我写文章一向是基于个人喜好的公正，暂时不需要稿费来改善生活。当然我很乐意再次推荐 PDFelement，因为新版 PDFelement 是参与活动所赠……</p>
-
-<p>本文以两份中文 PDF 文件为例，平台为 macOS，其中 Adobe Acrobat、PDFelement 也提供 Windows 版本。福昕阅读器 macOS 版本的功能较为基础，在 Windows 下虽然很强大，比如有一些插件，但因其个人用户免费的策略也难免会有欠缺美感的广告，这也是福昕没有入选本文的原因，其他应用如预览、Skim 等要么功能太基础，要么美感不够，如果还有别的令人惊艳的 PDF 应用还望告知。本文选取的应用均是个人认为的代表之作，目的是彻底解决 PDF 的相关问题，也让自己少一个密切关注的问题。 </p>
-
-<h2 id="toc_0">价格</h2>
-
-<p>免费的优秀应用实在太少，绝大多数 PDF 免费应用更是让我难以忍受，较好的免费应用比如福昕也有致命缺点，比如 macOS 版无法编辑 PDF。原来我倾向于使用免费应用，现在倾向于使用相对便宜的收费应用，如 Parallel Desktop 这类难以替代的应用也只能忍痛掏钱。Adobe Acrobat、PDF Expert、PDFelement 在低需求下可以相互替代，但这三者的原本定价都不便宜，还好有中国特价、周年庆、教育优惠、代理商城优惠，也可关注赠码活动。比如 PDF Expert 官方十周年五折优惠与教育优惠叠加后约 101 元，这只是特殊时期的价格。</p>
-
-<p><strong>Adobe Acrobat</strong> <br/>
-<a href="https://acrobat.adobe.com/cn/zh-Hans/pricing/pricing.html">官网价格</a>：标准版约 ¥ 2018 &amp; 专业版约 ¥ 3030<br/>
-<a href="http://shop.adobe.com/store/adbesttw/list/categoryID.63641600/ThemeID.30575500?id=HomeOffersPage&amp;SiteID=adbesttw">官网教育优惠</a>：专业版约 ¥  1077</p>
-
-<p><strong>PDF Expert</strong> <br/>
-Mac App Store 价格：¥ 396<br/>
-<a href="https://pdfexpert.com/zh/store">中国官网特价</a>：¥ 139.99<br/>
-<a href="https://item.taobao.com/item.htm?id=539462360053">数码荔枝商城</a>：¥ 129</p>
-
-<p><strong>PDFelement</strong> <br/>
-Mac App Store 价格：标准版 ¥ 198 &amp; 专业版 ¥ 648<br/>
-<a href="https://pdf.wondershare.cn/store/buy-pdfelement-mac.html">中国官方特价</a>：标准版 ¥ 199 &amp; 专业版 ¥ 299<br/>
-<a href="https://item.taobao.com/item.htm?id=549281178145">数码荔枝商城</a>：标准版 ¥ 129 &amp; 专业版 ¥ 199 <br/>
-<a href="https://turnpage.com/wondershare-pdfelement">翻页软件商城</a>：标准版 ¥ 129 &amp; 专业版 ¥ 199</p>
-
-<p>PDF Expert 也有教育优惠，但还没有中国官网便宜，在中网并没有教育优惠入口。PDFelement 也可以申请批量教育优惠许可证，我所使用的大多数应用，其开发者都提供教育优惠（独立开发者一般没有），通常优惠五折，甚至免费。而且，虽然我所购应用均为自费，但再给我一次机会的话，我会考虑找导师报销…… 相当不满意目前的报销制度，比如不能开发票的小东西，积少成多也是一笔巨款。如果我做导师，会想办法解决学生的一切学术所需之费用，包括正版软件、无法开具发票的物品与部分话费等。</p>
-
-<h2 id="toc_1">界面</h2>
-
-<p>在界面上，三者的左面板有些区别。对 Adobe Acrobat 与 PDFelement 来说，书签是 PDF 的目录大纲；在 PDF Expert 中书签是自定义的书签，点击页面右上角的标志即可添加书签，而大纲才是目录大纲，这对阅读书籍类 PDF 相当友好。</p>
-
-<p><img src="media/15249605684127/15249735904213.jpg" alt=""/></p>
-
-<h2 id="toc_2">功能</h2>
-
-<p>Adobe Acrobat、PDF Expert、PDFelement 三者安装完毕后的大小分别约为 990 MB、37 MB、31 MB（可选 OCR 插件约为 550 MB），Acrobat 虽然庞大也确实有其强大之处。 Adobe Acrobat 可以说是超级型 PDF 应用，PDF Expert 是通用型 PDF 应用，PDFelement 是全能型 PDF 应用。</p>
-
-<p>我认为的核心功能：① 阅读与批注；② 搜索；③ 可编辑；④ OCR；⑤ 云服务。在「独到之处」部分也会阐述令人耳目一新的功能，不过倒是可以先介绍 PDFelement 提供的 <a href="https://pdf.wondershare.com/templates/">PDF 模版库</a>，此处有大量免费与收费模版并划为数十分类，其中最受欢迎的简历模版还确实挺好看。</p>
-
-<h3 id="toc_3">阅读与批注</h3>
-
-<p>在此方面，Acrobat 的表现最差，PDF Expert 的表现最令我满意，PDFelement 的表现中规中矩：</p>
-
-<p>① 只有 Acrobat 不支持多标签页；<br/>
-② 只有 Acrobat 不能方便地使用不同颜色批注，即使将「注释」工具打开也较为不便；<br/>
-③ 放大倍数较大时，PDFelement 滑动页面的流畅度下降。</p>
-
-<p>批注功能没有多少可说的内容，三者的差别较小，阅读体验方面是我关注的重点。使用快捷键快速调整视图，这是阅读方面不可或缺的重要功能，而三者的视图快捷键也略有不同：</p>
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center">缩放</th>
-<th style="text-align: center">Acrobat</th>
-<th style="text-align: center">PDF Expert</th>
-<th style="text-align: center">PDFelement</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align: center">放大</td>
-<td style="text-align: center">⌘+</td>
-<td style="text-align: center">⌘+</td>
-<td style="text-align: center">⌘+</td>
-</tr>
-<tr>
-<td style="text-align: center">缩小</td>
-<td style="text-align: center">⌘-</td>
-<td style="text-align: center">⌘-</td>
-<td style="text-align: center">⌘-</td>
-</tr>
-<tr>
-<td style="text-align: center">实际大小</td>
-<td style="text-align: center">⌘1</td>
-<td style="text-align: center">无</td>
-<td style="text-align: center">⌘1</td>
-</tr>
-<tr>
-<td style="text-align: center">适合宽度</td>
-<td style="text-align: center">⌘2</td>
-<td style="text-align: center">⌘9</td>
-<td style="text-align: center">⌘2</td>
-</tr>
-<tr>
-<td style="text-align: center">适合高度</td>
-<td style="text-align: center">⌘3</td>
-<td style="text-align: center">无</td>
-<td style="text-align: center">⌘3</td>
-</tr>
-<tr>
-<td style="text-align: center">适合页面</td>
-<td style="text-align: center">⌘0</td>
-<td style="text-align: center">⌘8</td>
-<td style="text-align: center">⌘4</td>
-</tr>
-</tbody>
-</table>
-
-<p>当然也有些独特功能更好地服务了阅读的目的，这在细节上改善了阅读体验，也带给我惊喜，只不过 PDFelement 在此方面仅有基础功能。</p>
-
-<p>Acrobat：<br/>
-① 重排（⌘4），根据应用界面大小重新排列 PDF 内容，类似于多看阅读的重排效果；<br/>
-② 比较文档：可显示 PDF 两个版本之间的差异，可自定义选项（如页数、内容类型）来显示比较结果。</p>
-
-<p>PDF Expert：<br/>
-① 拆分视图（水平 ⌘5；垂直 ⌘6）：在同一页面阅览两份 PDF 文档，以左右或上下（水平或垂直）的布局；<br/>
-② 缩放到 100%（⌘0）：个人认为这是一个贴心的小功能；<br/>
-③ 主题：有日间（⌥⌘W）、纸质（⌥⌘S）、夜间（⌥⌘N）三种模式。</p>
-
-<h3 id="toc_4">搜索</h3>
-
-<p>搜索功能也是服务于阅读的，但考虑到这是一项关键功能，故而单独说道说道。</p>
-
-<p>Adobe Acrobat、PDF Expert、PDFelement 三者中仅 PDFelement 不支持「多文档」搜索，PDF Expert 支持搜索所有打开的 PDF 文件，而 Acrobat 甚至支持搜索指定目录下的所有 PDF 文件。但在搜索时，Acrobat 滑动页面的操作变慢；PDFelement 搜索完毕才能进行操作，这是一个亟待解决的问题；而 PDF Expert 可如常使用。</p>
-
-<p><img src="media/15249605684127/15249746935309.png" alt="Adobe Acrobat" class="mw_img_center" style="width:300px;display: block; clear:both; margin: 0 auto;"/></p>
-
-<h3 id="toc_5">编辑</h3>
-
-<p>这部分没有太多可说的，三者的编辑体验类似，但 Adobe Acrobat 与 PDF Expert 都遇到了问题。Acrobat 提示当前字体不可用，转为系统字体；PDF Expert 编辑后字体发生变化。 </p>
-
-<h3 id="toc_6">OCR</h3>
-
-<p>Adobe Acrobat 支持 42 种语言，PDF Expert 不支持 OCR，PDFelement 支持 25 种语言。与其搜索功能一样，Acrobat 也可以识别多文档，PDFelement 也可。Acrobat 有一处令我满意的功能：如果文档是扫描件，试图编辑某页内容时，Acrobat 会提示是否将本页转为可编辑的文本。PDFelement 的做法是当打开扫描件时，它会提示是否进行 OCR 操作，我认为 Acrobat 的逻辑更人性化。 </p>
-
-<p>在识别时，Acrobat 只能选择一种语言，PDFelement 在识别文件时可以选择多语言，但若一份 PDF 中文里夹杂着少量英文的话，同时选中文、英文与只选中文也没有区别。借助 PDFelement 转换功能将 OCR 前与后的译言页面转为图像，合并如图进行比较：Acrobat 的识别效果实在是惊人，不仅识别完全准确，与原文档相比也几乎没有任何区别；PDFelement 在识别少见字体的文字方面还是力不足。</p>
-
-<p><img src="media/15249605684127/15249750585983.jpg" alt=""/></p>
-
-<h3 id="toc_7">云服务</h3>
-
-<p>我认为桌面端并不太需要云服务，电脑上的文件管理方式削减了对云服务的需求。但不可否认的是，在没有安装云盘客户端的情况下，应用直接支持云服务还是比较便利的。Acrobat 支持 Adobe Document Cloud、Adobe Creative Cloud、Box、Dropbox、OneDrive、SharePoint 站点；PDFelement 支持 Dropbox；PDF Expert 桌面版不支持任何云服务。不过移动端的云服务支持才是最重要的部分，这方面 PDF Expert 是表现最好的，它完美地集成了 iCloud 云服务，也可以将其他云盘中的文件夹设为「同步文件夹」以保持内容的一致。</p>
-
-<h3 id="toc_8">应用打分</h3>
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center">项目</th>
-<th style="text-align: center">阅读与批注</th>
-<th style="text-align: center">搜索</th>
-<th style="text-align: center">编辑</th>
-<th style="text-align: center">OCR</th>
-<th style="text-align: center">云服务</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align: center">Acrobat</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★★☆☆</td>
-</tr>
-<tr>
-<td style="text-align: center">PDF Expert</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★★★☆</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">☆☆☆☆☆</td>
-<td style="text-align: center">★★★★★</td>
-</tr>
-<tr>
-<td style="text-align: center">PDFelement</td>
-<td style="text-align: center">★★★★☆</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★☆☆</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="toc_9">独到之处</h2>
-
-<p>Adobe Acrobat 在批处理方面表现优异，PDF Expert 在阅读体验方面表现优异，PDFelement 在格式转换与部分批处理方面的表现优异。</p>
-
-<h3 id="toc_10">Adobe Acrobat</h3>
-
-<p>Acrobat 的功能实在是太多，而且很细致，无愧于一款超级型 PDF 应用。如果遇到其他应用无法解决的问题，那么 Adobe Acrobat 应该可以解决，只是也许会需要高级技巧。如借助「动作向导」工具可以批量完成各类任务，甚至可以在<a href="https://acrobatusers.com/actions-exchange?trackingid=JZXYQ">更多动作</a>下载一些 Actions，如 Delete all Comments、Convert PDF to PowerPoint、Convert PDF File to PS File、Optimize PDF for SEO、Find, Highlight, and Extract Words 等。如果有更复杂的需求，可以借助「JavaScript」工具完成。</p>
-
-<p><img src="media/15249605684127/15249750922498.jpg" alt=""/></p>
-
-<h3 id="toc_11">PDF Expert</h3>
-
-<p>PDF Expert 的功能实在是太少，但是它在阅读与批注方面的体验无人能及。可以这样说，它就是最好的 PDF 阅读器的样子。在设备协同方面做到了业界第一：Readdle Transfer 可以将 iOS 与 macOS 设备无缝连接；iOS 端云服务支持方面的工作也独树一帜，给了我完美的体验。</p>
-
-<h3 id="toc_12">PDFelement</h3>
-
-<p>格式转换，可将 PDF 或其选定页面转为 Word、Excel、PowerPoint、图像、ePub、纯文本、Pages、Html、RTF 文件，如转换为图像就可以方便地在文章中使用。Adobe Acrobat 虽然也可完成格式转换，但过程不易，而且部分格式的转换可能需要自造轮子。</p>
-
-<p>批处理功能，如批量格式转换、批量去除水印、批量数据提取等，其中「批量数据提取」功能若使用 Adobe Acrobat 就比较麻烦，PDFelemnt 的优点就在于优化了这个过程。比如，当遇到大量报名表、发票等文件，如果非 PDF 格式则使用「批量格式转换」功能将其转为 PDF 文件，那么所有 PDF 文档的结构是相同的，数据提取时选定部分区域（所有文档的区域都是相同位置）即可将所有数据提取到 Excel 表单中。<a href="http://weibo.com/ttarticle/p/show?id=2309404097926317129991">在这里</a>可以查看使用方式与效果。</p>
-
-<p><img src="media/15249605684127/15249751064950.jpg" alt=""/></p>
-
-<h2 id="toc_13">总结</h2>
-
-<p>Adobe Acrobat 在功能上无人能及，但阅读体验较差，价格太贵；PDF Expert 在阅读体验上独领风骚，也是最懂 Apple 风格的应用，只是缺一些专业的功能；PDFelement 则是各方面中规中矩，在批处理方面稍突出，但它没有鲜明的长短处，如果有一坐标轴，Acrobat 在最左，PDF Expert 在最右，那么 PDFelement 位于中间再稍偏右的位置。</p>
-
-<p>如果只是想选择一个 PDF 阅读器的话，那么「编辑目录」的功能不可或缺，这点就将许多应用拒之门外。若要免费，似乎只能选择福昕阅读器。若要付费：</p>
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center">项目</th>
-<th style="text-align: center">阅读体验</th>
-<th style="text-align: center">功能</th>
-<th style="text-align: center">价格</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align: center">Adobe Acrobat</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★☆☆☆</td>
-</tr>
-<tr>
-<td style="text-align: center">PDF Expert</td>
-<td style="text-align: center">★★★★★</td>
-<td style="text-align: center">★★★☆☆</td>
-<td style="text-align: center">★★★★☆</td>
-</tr>
-<tr>
-<td style="text-align: center">PDFelement</td>
-<td style="text-align: center">★★★★☆</td>
-<td style="text-align: center">★★★★☆</td>
-<td style="text-align: center">★★★★☆</td>
-</tr>
-</tbody>
-</table>
-
-<p>① 若更追求完美的阅读体验：只能选择 PDF Expert；<br/>
-② 若更在意一些专业功能，也要求较好的阅读体验：只能选择 PDFelement；<br/>
-③ 若极其在意功能的完备性：只能选择 Adobe Acrobat。</p>
-
-<p><strong>天下之大，何时才会出现一款全五星的 PDF 应用？</strong></p>
-<br>
-<blockquote>
-<p>本文应用版本：<br/>
-Adobe Acrobat Pro DC 2015.006.30306 for macOS <br/>
-PDF Expert 2.2.1 for macOS <br/>
-PDFelement 6 Pro 6.2.0.2988 for macOS </p>
-</blockquote>
-<center>
-<p><img src="media/wxcode.jpg" alt=""/><br/>
-扫一扫即可关注微信公众号<br/>
-</center></p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/9</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E5%B0%91%E6%95%B0%E6%B4%BE.html'>少数派</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15249605684127.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -1091,31 +1239,31 @@ PDFelement 6 Pro 6.2.0.2988 for macOS </p>
 	      
 		      
 			      <li class="post">
+			        <a href="15458307303169.html">我的购物省钱心得</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15458305176391.html">再谈 iPad Pro 的学术生产力</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15458303913069.html">静态博客第三方评论系统的探索</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15458299839572.html">AirPods 蓝牙显示名称自动改名</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15457917956800.html">摘录</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15447773011519.html">同步微博至 Twitter 的新方式（图文教程）</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15447762122595.html">同步微博至 Twitter 的新方式</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15445348045839.html">自学 Python 第 3 期</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15439954845114.html">每周分享第 5 期</a>
 			      </li>
 		     
 		  
