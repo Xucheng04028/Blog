@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  iCloud 设备备份数据 180 天后会删除么 - 唐小筑
+  案例 - 唐小筑
   
   </title>
   
@@ -110,116 +110,124 @@
        
 
  <script type="text/javascript">
-  $(function(){
-    $('#menu_item_index').addClass('is_active');
-  });
+	$(function(){
+		$('#menu_item_index').addClass('is_active');
+	});
 </script>
 <div class="row">
-  <div class="large-8 medium-8 columns">
-      <div class="markdown-body article-wrap">
-       <div class="article">
-          
-          <h1>iCloud 设备备份数据 180 天后会删除么</h1>
-     
-        <div class="read-more clearfix">
-          <span class="date">2017/8/27</span>
+	<div class="large-8 medium-8 columns">
+		<div class="markdown-body home-categories">
+		
+			<div class="article">
+                <a class="clearlink" href="15270770828099.html">
+                
+                  <h1>理解正交试验的空白列等问题</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<h2 id="toc_0">如何理解空白列</h2>
 
-          <span>posted in&nbsp;</span> 
-          
-              <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
-           
-         
-          <span class="comments">
-            
-              <a href="https://blog.tangxiaozhu.com/15250955628409.html#disqus_thread">comments</a>
-            
+<p>在对正交试验做方差分析时，必须估计随机误差，而随机误差是通过正交表上空白列得到的。由于空白列中没有因素作用，因此正好反映随机因素所引起的误差，所以空白列在方差分析中常被称为误差列。 实际上空列并不空，实际上是被未考察的交互作用和其他未知影响因素的综合列。由空白列得到的误差包含了试验和交互作用的综合误差，是一种估算值。比如操作者是多位的话就会产生试验误差，但可将人作为因素考虑，将其置于空白列上，该列水平 1，2，3 分别代表由第一、二、三位做试验，这样可以避免人员变动的误差。</p>
 
-            
-          </span>
+<p>若交互作用不存在，用综合误差估计试验误差是可行的；若因素间存在交互作用，则综合误差会夸大试验误差，有可能掩盖考察因素的显著性。这时，试验误差应通过重复试验值来估计。所以，进行正交试验最好能有二次以上的重复。重复试验就是将同一试验重复若干次，从而得到同一条件下的若干次试验数据。</p>
 
-        </div>
-      </div><!-- article -->
+<p>若正交表的各列都已安排满因素或交互作用，没有空列，为了估价试验误差和进行方差分析，需要进行重复试验或或者选择离差平方和中最小者做近似估计；正交表的列虽未安排满，但为了提高统计分析精确性和可靠性，往往也进行重复试验。重复试验的方差分析与无重复试验的方差分析没有本质区别，除误差平方和、自由度的计算有所不同，其余各项计算基本相同。</p>
 
-      <div class="article-content">
-      <p>我的 iPhone、iPad 都备份到了 iCloud，但惊闻如果 180 天以内没有更新备份，数据可能会被删除…… 被删除又意味着什么呢？我仔细考虑了下，这对多数用户并没有影响。</p>
+<p>而在做正交试验方差分析时，正交表的表头中必须留下空白列，以确定随机误差引起的离差平方和。当空白列多于一列时，随机误差平方和等于所有空白列的离差平方和之和，而其自由度也等于各空白列自由度的总和。</p>
 
-<p>但也有一个情景可能会比较苦恼：更换设备，但上任设备已经坏掉或丢失，且 180 以内没有备份，所以只能当作全新设备使用，但谁又会想设备回到 180 天以前的状态呢？不过，对一些人来说 iCloud 中 180 天前的照片应该值得恢复。但无论怎样，180 天后可能会删除数据还是让我不爽…… 因为空间足够储存这些数据，无论有没有用都不应该删除不是么？</p>
+<h2 id="toc_1">为何试验顺序随机</h2>
 
-<p>查询 <a href="https://www.apple.com/legal/internet-services/icloud/cn_si/terms.html">iCloud 条款和条件</a> 得知：如果设备的备份数据半年内没有更新，那么确实可能会被删除。<a href="http://www.thepaper.cn/newsDetail_forward_1704407">澎湃新闻的报道</a> 也说明了确实有人的备份数据被删除，关于这个问题，我与 Apple 客服有一个有意思的电话。</p>
+<p>试验顺序随机是为了避免其他因素对试验的影响。比如操作者熟练度的影响：随着试验的进行，操作者对试验的流程越加熟练，试验效果有变好的趋势，如果按顺序试验就会高估后面水平的影响。</p>
 
-<blockquote>
-<p>如装置未备份至 iCloud 已达一百八十（180）天，苹果公司保留删除与该装置相关的备份的权利。备份仅限于装置设置、装置特性、照片和视频、文件、信息（iMessage、短信和彩信）、铃声、应用程序数据（包括 Health 应用程序数据）、位置设置（例如您所设置的基于位置的提醒）以及主页屏幕和应用程序组织。</p>
-</blockquote>
+<h2 id="toc_2">正交试验的设计与分析</h2>
 
-<p>Apple 高级顾问表示：</p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNbRwly1fdpkre98tuj30yn0q1mz1.jpg" alt="2016-11-22:blog-01.png"/></p>
 
-<blockquote>
-<p>免费用户拥有 5 G 空间，只要在设备上登陆了 Apple 账号，那么即使断网搁置半年，数据也将永久保存。如果此 Apple 账号没有在任何设备上登陆，那么 Apple 可能删除数据。</p>
+<p><img src="https://ww3.sinaimg.cn/large/006tNbRwly1fdpkrgb0w0j30yp0q2gof.jpg" alt="2016-11-22:blog-02.png"/></p>
 
-<p>有关付费用户的情况需要咨询高级工程师，后面再回复于我。</p>
-</blockquote>
+<p>图片来源于某 PPT（其来源无法确定）</p>
 
-<p>至于 <a href="https://www.apple.com/legal/internet-services/icloud/cn_si/terms.html">iCloud 条款和条件</a> 的陈述，Apple 高级顾问表示此条款表达的意思与她告诉我的含义是一致的，也即只有 Apple 账号没有在任意设备上登陆，半年后数据才可能被删除。</p>
+<h2 id="toc_3">参考资料及评价</h2>
 
-<p>但由 <a href="http://www.thepaper.cn/newsDetail_forward_1704407">澎湃新闻的报道</a> 的描述知，此用户的 Apple 账号应该在 iPhone 或 iPad 登陆着：</p>
+<p><a href="https://books.google.com.hk/books?id=kuhoBTmWxlcC&amp;printsec=frontcover&amp;hl=zh-CN&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false">应用统计学</a>：P187（第八章 正交实验设计）<strong>推荐此书</strong><br/>
+P189：从向量角度理解正交；<br/>
+P190：提到各因素水平次序最好随机排列。我认为试验顺序随机后，水平次序按顺序也无妨。</p>
 
-<blockquote>
-<p>一次清理存储空间过程中，浦女士偶然发现她去年 11 月份存储在 iCloud 的一部分数据不见了…… 再次查看自己的 iCloud 备份时，她发现，iPad 的备份由于超过 180 天未更新，也在她不知情的情况下被删除了。</p>
-</blockquote>
+<p><a href="https://books.google.com.hk/books?id=iXpQvcDTW_gC&amp;printsec=frontcover&amp;hl=zh-CN#v=onepage&amp;q&amp;f=false">试验设计与分析</a>：P72</p>
 
-<p>对此，Apple 高级顾问表示其他网站的内容，其真实度不可靠。也即，客服认定如果 Apple 账号在设备上登陆了，备份数据是不可能被删除的。我也只能相信她的说法。</p>
+<p><a href="https://books.google.com.hk/books?id=xaM5o_8BHFoC&amp;printsec=frontcover&amp;hl=zh-CN#v=onepage&amp;q&amp;f=false">实验设计</a>：P64</p>
 
-<p>至此正文已结束，关于付费用户的情况后面得到回复再补充。我为什么说这个电话有意思呢？在一个小时的通话过程中，客服小姐姐表示自己刚来，很多业务不熟悉，麻烦我耐心等待…… 一番沟通后，最后她表示需要转接高级顾问来回答我的问题，等待时会播放音乐，但可能是系统故障，我竟然偶尔听到了她说话：</p>
+<p>P66：提到正交表的每一列都可以不同数字之间都可以任意交换（称为水平置换）。虽然交换后依旧正交，但这就破坏了整齐可比性（正交表的第二条性质），所以我认为不可以任意交换；</p>
 
-<blockquote>
-<p>使用条款 ... 服气 ... 连这 ... </p>
-</blockquote>
+<p>P66：作者表达有歧义，作者的意思应该是某一列中的 1 可以换为 2，2 换为 3，3 换为 1，这样仍为正交表。</p>
 
-<p>我只确定记得这些词，总共只听见了两次说话，第一次的完全不记得了。我只能说：新来的小姐姐，你也许第一次就遇到了我，我只想说，其实这是你的福气啊 🌝 </p>
+<h2 id="toc_4">试验与实验的区别</h2>
+
+<p><strong>实验</strong></p>
+
+<ul>
+<li>汉典词语解释：设计来检验一个理论或证实一种假设而进行的一系列操作或活动。</li>
+<li>汉典国语辞典：科学上为了要阐明某种现象或验证某种理论，用种种人为的方法，加以反覆试验，并观察其变化。</li>
+<li>维基百科：实验是在科学研究中，在设定的条件下，用来检验某种假设，或者验证或质疑某种已经存在的理论而进行的操作。</li>
+</ul>
+
+<p><strong>试验</strong></p>
+
+<ul>
+<li>汉典词语解释：为了解某物的性能或某事的结果而进行的尝试性活动</li>
+<li>汉典国语辞典：实际察看某种事物，进而明了它的功用。</li>
+<li>维基百科：试验指的是在已知某种事物的时候，为了了解它的性能或者结果而进行的试用操作。</li>
+</ul>
+
+<p>因此，实验是为了阐明、检验、证实一种理论或假设，比如知道这是苹果，也知道其味道，尝一尝以验证其味道；而试验，侧重于“试”，是一种尝试性活动，比如知道这是苹果，但不知道其味，就试吃以了解味道。</p>
 <center>
 <p><img src="media/wxcode.jpg" alt=""/><br/>
 扫一扫即可关注微信公众号<br/>
 </center></p>
 
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2016/11/22</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15270770828099.html#disqus_thread">comments</a>
+                      
 
-    
-
-      </div>
-
-      <div class="row">
-        <div class="large-6 columns">
-        <p class="text-left" style="padding:15px 0px;">
-      
-          <a href="15250958303004.html" 
-          title="Previous Post: 如何解绑飞猪的酒店会员卡">&laquo; 如何解绑飞猪的酒店会员卡</a>
-      
-        </p>
-        </div>
-        <div class="large-6 columns">
-      <p class="text-right" style="padding:15px 0px;">
-      
-          <a  href="15250954681963.html" 
-          title="Next Post: 魔兽争霸 III 各类比赛">魔兽争霸 III 各类比赛 &raquo;</a>
-      
-      </p>
-        </div>
-      </div>
-      <div class="comments-wrap">
-        <div class="share-comments">
-          
-
-          
-            <div id="disqus_thread"></div>
-          
-
-          
-        </div>
-      </div>
-    </div><!-- article-wrap -->
-  </div><!-- large 8 -->
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+              
 
 
-
+			<div class="row">
+			  <div class="large-6 columns">
+			  <p class="text-left" style="padding-top:25px;">
+			   <a href="案例_3.html">&laquo; Prev Page</a>  
+			  </p>
+			  </div>
+			  <div class="large-6 columns">
+			<p class="text-right" style="padding-top:25px;">
+			
+			</p>
+			  </div>
+			</div>
+		</div>
+	</div><!-- large 8 -->
 
  <div class="large-4 medium-4 columns">
   <div class="hide-for-small">
