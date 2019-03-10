@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>https://blog.tangxiaozhu.com/</loc>
-  <lastmod>2019-01-18T20:07:48+08:00</lastmod>
+  <lastmod>2019-03-10T22:48:44+08:00</lastmod>
+</url>
+
+<url>
+  <loc>https://blog.tangxiaozhu.com/15522283621444.html</loc>
+  <lastmod>2019-03-10T22:32:42+08:00</lastmod>
 </url>
 
 <url>
@@ -26,13 +31,13 @@
 </url>
 
 <url>
-  <loc>https://blog.tangxiaozhu.com/15457917956800.html</loc>
-  <lastmod>2018-12-26T10:36:35+08:00</lastmod>
+  <loc>https://blog.tangxiaozhu.com/15456637662157.html</loc>
+  <lastmod>2018-12-24T23:02:46+08:00</lastmod>
 </url>
 
 <url>
-  <loc>https://blog.tangxiaozhu.com/15456637662157.html</loc>
-  <lastmod>2018-12-24T23:02:46+08:00</lastmod>
+  <loc>https://blog.tangxiaozhu.com/15453500088150.html</loc>
+  <lastmod>2018-12-21T07:53:28+08:00</lastmod>
 </url>
 
 <url>
@@ -396,6 +401,10 @@
 </url>
 
 
+
+<url>
+  <loc>https://blog.tangxiaozhu.com/%E5%B9%B4%E5%BA%A6.html</loc>
+</url>
 
 <url>
   <loc>https://blog.tangxiaozhu.com/%E6%A1%88%E4%BE%8B.html</loc>
