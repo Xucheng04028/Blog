@@ -121,6 +121,203 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
+                <a class="clearlink" href="15250926629285.html">
+                
+                  <h1>我的 macOS 使用心得</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>之前做了大量关于 macOS 的使用笔记，有些确实很有参考价值，但也许是误删导致丢失了。现在我的文档管理已经相当有条理了，丢失的现象也不会再发生。重新记录 macOS 的使用心得及遇到的问题。</p>
+
+<h2 id="toc_0">阅读和写作</h2>
+
+<p>阅读电子书我一般使用 Kindle 或者 iBook 客户端，而 PDF Expert（预览 -&gt; Skim -&gt; Foxit -&gt; PDFelement -&gt; PDF Expert）是我心里在 macOS 上最好的 PDF 阅读器。</p>
+
+<p>写短篇文章几乎任何文字处理程序都可以胜任，但胜任长篇甚至是大型电子书写作的就不多了。考虑过写小说的我试过以下应用，但后来不再试着写小说。</p>
+
+<ul>
+<li>iBook Author，可以说是功能最为齐全的写作工具，这也使它比较重；</li>
+<li>小黑屋，可惜颜值不高；</li>
+<li>GitBook，可以与 GitHub 仓库绑定，可以协作写书和发表， 最新版对中文字体的支持也已改善；</li>
+<li>Type.im（已改名为妙笔），是一款很轻也很美的写作工具，支持 Markdown，独特的是支持为每个文件添加备注。</li>
+<li>壹写作，全平台，支持大纲、人物关系图示、发布到诸多如腾讯文学的小说网站。</li>
+</ul>
+
+<p>我无事就会写写博客，目前最常用 MWeb（Mou -&gt; MacDown -&gt; Typora -&gt; MarkEditor -&gt; MWeb），这是横空出世的重量级产品！但 MarkEditor 对文件的排序更聪明，也有其他的好功能，虽然它只支持到二级目录，但它还是我的常用工具。</p>
+
+<h2 id="toc_1">游戏和娱乐</h2>
+
+<p><a href="http://www.openra.net/">经典红色警戒</a> macOS &amp; Windows &amp; Linux<br/>
+魔兽争霸之冰封王座 macOS &amp; Windows<br/>
+Steam macOS &amp; Windows<br/>
+战网 macOS &amp; Windows</p>
+
+<h2 id="toc_2">技巧</h2>
+
+<p>三指滑动可以选择文本……</p>
+
+<p><strong>快捷键</strong>，有时候觉着 macOS 没有 Windows 方便，但其实是没发现 macOS 不易被发现的便利：</p>
+
+<ol>
+<li>复制文件路径 <code>option + command + c</code></li>
+<li>锁屏 <code>control + shift + power</code></li>
+<li>显示与隐藏文件 <code>shift + command + .</code></li>
+<li>先复制再剪切 <code>command + option + v</code> </li>
+</ol>
+
+<p><strong>替身、软硬链接</strong>：<a href="http://h2appy.blog.51cto.com/609721/1354001">这篇文章</a> 详细阐述了各自的特点。总的来说，<strong>替身</strong>，移动源文件位置替身依旧有效，但是替身并不包含路径信息，即应用并不能识别替身；对于<strong>软连接</strong>，如果移动了源文件那么这个链接也就无效了，但是软链接可以被应用识别，比如你将应用的资料文件移到同步盘，然后生成软链接并放在原来资料文件所在的位置，这时应用仍能识别；硬链接的使用情景很少，就不做介绍。</p>
+
+<p>生成软链接：<code>ln -s 源文件路径 软链接路径</code></p>
+
+<p><strong>验证哈希值</strong>：</p>
+
+<ol>
+<li>计算 MD5 值：<code>md5 &lt;文件路径&gt;</code> </li>
+<li>计算 SHA1 值：<code>shasum -a 1 &lt;文件路径&gt;</code> </li>
+<li>计算 SHA256 值：<code>shasum -a 256 &lt;文件路径&gt;</code> </li>
+</ol>
+
+<p><strong>安卓共享网络</strong>：由于缺乏驱动，安卓手机一般是无法与 Macintosh 通过数据线共享网络的。幸好 <a href="http://joshuawise.com/">Joshua Wise</a> 的作品 <a href="http://joshuawise.com/horndis">HoRNDIS</a> 使 Macintosh 具备了这项能力。</p>
+
+<h2 id="toc_3">问题</h2>
+
+<ul>
+<li><p>SciDAVis 1.14 行数字显示不全；SciDAVis 1.D8 行数字显示正常。</p></li>
+<li><p>Chrome 更新失败。Chrome 更新失败（错误 11，12）确认可通过此方法解决。退出 Chrome 浏览器, 并进入到指定目录。我直接复制命令到终端提示不存在这样的目录，但可以直接从 Finder 前往此目录。然后在 <code>Resources</code> 下执行以下命令。参考了 <a href="http://www.v1en.com/2016/04/26/chrome_for_mac_update_err_11/">梦寒</a> 文章。</p></li>
+</ul>
+
+<pre><code class="language-text">cd /Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/Contents/Resources/GoogleSoftwareUpdateAgent.app/Contents/Resources/
+
+卸载 KeyStone：sudo ./ksinstall --uninstall
+删除 chrome 更新目录：sudo rm -rf /Library/Google/GoogleSoftwareUpdate/
+</code></pre>
+
+<ul>
+<li><p>无法响应。更新系统之后，在主系统打开许多应用，然后打开 Windows 10 虚拟机，机器就基本死机了，只能缓慢动弹。原因未知。此问题在最近又自己消失了……</p></li>
+<li><p>长期待机将会导致 macOS 睡眠和虚拟内存文件庞大起来，建议每月关机一次释放空间。而且，关机以后才会触发 FileVault 硬盘加密，这意味着如果没有关机而电脑被偷走，是有被破解的可能，关机杜绝了这个可能。 </p></li>
+</ul>
+<center>
+<p><img src="media/wxcode.jpg" alt=""/><br/>
+扫一扫即可关注微信公众号<br/>
+</center></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/18</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250926629285.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15250920685912.html">
+                
+                  <h1>删除此电脑中的六个文件</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>强迫症总要为一些奇葩的问题奔波，Windows 系统让强迫症抓狂……</p>
+
+<p><img src="media/15250920685912/15250920907321.png" alt=""/></p>
+
+<h2 id="toc_0">方法一</h2>
+
+<p>使用注册表删除法，复制粘贴一下内容，保存为 REG 文件，双击，确定，即可。可以全部删除，也可以部分删除。</p>
+
+<h3 id="toc_1">Windows 8.1 &amp; 10 1507 及之前</h3>
+
+<pre><code class="language-text">同样适用于旧版本 WIN 10
+========= 复制下面内容 ========= 去除减号 &#39;-&#39; 再运行即可还原
+Windows Registry Editor Version 5.00
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{374DE290-123F-4565-9164-39C4925E467B}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
+</code></pre>
+
+<h3 id="toc_2">Windows 10 1511 及之后</h3>
+
+<pre><code class="language-text">适用于的新版本 WIN 10 （自 2015 年 12 月后）
+========= 复制下面内容 ========= 去除减号 &#39;-&#39; 再运行即可还原
+Windows Registry Editor Version 5.00
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{d3162b92-9365-467a-956b-92703aca08af}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}]
+</code></pre>
+
+<h2 id="toc_3">方法二</h2>
+
+<p>在搜索框输入 “regedit” 进入注册表编辑器，找到 <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions</code>之后，再找到下列六项，分别将 <code>PropertyBag</code>中的 <code>ThisPCPolicy</code> 由 <code>show</code> 改为 <code>Hide</code> 即可。若要还原再改回 <code>show</code> 即可。</p>
+
+<pre><code class="language-text">　&gt; “图片”：{0ddd015d-b06c-45d5-8c4c-f59713854639}\PropertyBag
+　&gt; “视频”：{35286a68-3c57-41a1-bbb1-0eae73d76c95}\PropertyBag
+　&gt; “下载”：{7d83ee9b-2244-4e70-b1f5-5393042af1e4}\PropertyBag
+　&gt; “音乐”：{a0c69a99-21c8-4671-8703-7934162fcf1d}\PropertyBag
+　&gt; “桌面”：{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}\PropertyBag
+　&gt; “文档”：{f42ee2d3-909f-4907-8871-4c22fc0bf756}\PropertyBag
+</code></pre>
+
+<p><img src="media/15250920685912/15250921882531.png" alt=""/></p>
+
+<p>方法一源自：<a href="http://www.myxzy.com/post-431.html">星知苑</a><br/>
+方法二源自：<a href="http://www.pconline.com.cn/win10/741/7412340.html">太平洋电脑网</a></p>
+
+<p>此两种方法风险极小，注册表可保持完整，网上也有其他涉及到删除指定注册表的方法，若要采用务必备份注册表以防意外。</p>
+<center>
+<p><img src="media/wxcode.jpg" alt=""/><br/>
+扫一扫即可关注微信公众号<br/>
+</center></p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2017/8/18</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://blog.tangxiaozhu.com/15250920685912.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
                 <a class="clearlink" href="15250925649984.html">
                 
                   <h1>警惕爱国主义</h1>
@@ -1054,158 +1251,6 @@ ivy.ns.cloudflare.com
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="15250898742649.html">
-                
-                  <h1>关于宗教的疑问与思考</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>关于基督教的两个疑问和想法</p>
-
-<pre><code class="language-text">神唯一么
-</code></pre>
-
-<p>圣经：创世纪第四章叙述亚当的次子该隐杀了哥哥亚伯，耶和华要把他赶走，该隐害怕凡遇见我的必杀我，耶和华就给该隐一个记号，免得人遇见他就杀他。【创 4:15】</p>
-
-<p>问题：当时地上只有亚当一家，只传了一代，哪里来的别人？该隐到外地以后娶妻生子，又是娶的谁呢？那些可能杀该隐的人，那个在该隐流浪时作了他的妻子的女人，是否是别的神造出来的人。</p>
-
-<p>朋友：创世纪只记载了该隐和亚伯，并不是说亚当一家没有别的后代。当时人们寿命很长约九百年，后代又繁衍后代，所以可能杀该隐的以及该隐娶的人都源自后代。</p>
-
-<p>我：以现代人观念和寿命去推理会陷入误区。</p>
-
-<pre><code class="language-text">耶稣尸体埋的天数
-</code></pre>
-
-<p>圣经：耶酥说，他要在土里给埋三天三夜，【太 12:40】。耶酥在第周六晚上被埋的，过了安息日也就是周一的清早坟墓就空了，共一天两夜，【可 15:42】、【约 20:1】。</p>
-
-<p>朋友：犹太历周五晚上太阳落山到周六晚上太阳落山是安息日。我们现在周日礼拜是主日。星期日是七日的第一天。</p>
-
-<p>我：按这样理解，耶酥在第周六（现在的周五）晚上被埋的，过了安息日（周五晚至周六晚）也就是周一（现在的周日）的清早坟墓就空了，周五晚上到周日早上还是一天两夜？</p>
-
-<pre><code class="language-text">简要的想法
-</code></pre>
-
-<p>我很难想象这世界存在着一个人格化的神，但所接触的基督徒大都有良好的知识素养和善良的品格，故我不信基督，却愿意与基督徒适当交流。</p>
-
-<h2 id="toc_0">阿尔伯特·爱因斯坦：我的世界观</h2>
-
-<blockquote>
-<p>我们这些总有一死的人的命运多么奇特！我们每个人在这个世界上都只作一个短暂的逗留；目的何在，却无从知道，尽管有时自以为对此若有所感。但是，不必深思，只要从日常生活就可以明白：人是为别人而生存的——首先是为那样一些人，我们的幸福全部依赖于他们的喜悦和健康；其次是为许多我们所不认识的人，他们的命运通过同情的纽带同我们密切结合在一起。我每天上百次的提醒自己：我的精神生活和物质生活都是以别人（包括生者和死者）的劳动为基础的，我必须尽力以同样的分量来报偿我所领受了的和至今还在领受着的东西。我强烈地向往着俭朴的生活。并且时常发觉自己占用了同胞的过多劳动而难以忍受。我认为阶级的区分是不合理的，它最后所凭借的是以暴力为根据。我也相信，简单淳朴的生活，无论在身体上还是在精神上，对每个人都是有益的。</p>
-
-<p>我完全不相信人类会有那种在哲学意义上的自由。每一个人的行为不仅受着外界的强制，而且要适应内在的必然。叔本华说：“人虽然能够做他所想做的，但不能要他所想要的。”这句格言从我青年时代起就给了我真正的启示；在我自己和别人的生活面临困难的时候，它总是使我们得到安慰，并且是宽容的持续不断的源泉。这种体会可以宽大为怀地减轻那种容易使人气馁的责任感，也可以防止我们过于严肃地对待自己和别人；它导致一种特别给幽默以应有地位的人生观。</p>
-
-<p>要追究一个人自己或一切生物生存的意义或目的，从客观的观点看来，我总觉得是愚蠢可笑的。可是每个人都有一些理想，这些理想决定着他的努力和判断的方向。就在这个意义上，我从来不把安逸和享乐看作生活目的本身——我把这种伦理基础叫做猪栏的理想。照亮我的道路，是善、美和真。要是没有志同道合者之间的亲切感情，要不是全神贯注于客观世界——那个在艺术和科学工作领域里永远达不到的对象，那么在我看来，生活就会是空虚的。我总觉得，人们所努力追求的庸俗目标——财产、虚荣、奢侈的生活——都是可鄙的。</p>
-
-<p>我有强烈的社会正义感和社会责任感，但我又明显地缺乏与别人和社会直接接触的要求，这两者总是形成古怪的对照。我实在是一个“孤独的旅客”，我未曾全心全意地属于我的国家、我的家庭、我的朋友，甚至我最为接近的亲人；在所有这些关系面前，我总是感觉到一定距离而且需要保持孤独——而这种感受正与年俱增。人们会清楚地发觉，同别人的相互了解和协调一致是有限度的，但这不值得惋惜。无疑，这样的人在某种程度上会失去他的天真无邪和无忧无虑的心境；但另一方面，他却能够在很大程度上不为别人的意见、习惯和判断所左右，并且能够避免那种把他的内心平衡建立在这样一些不可靠的基础之上的诱惑。</p>
-
-<p>我的政治理想是民主政体。让每一个人都作为个人而受到尊重，而不让任何人成为被崇拜的偶像。我自己一直受到同代人的过分的赞扬和尊敬，这不是由于我自己的过错，也不是由于我自己的功劳，而实在是一种命运的嘲弄。其原因大概在于人们有一种愿望，想理解我以自已微薄的绵力，通过不断的斗争所获得的少数几个观念，而这种愿望有很多人却未能实现。我完全明白，一个组织要实现它的目的，就必须有一个人去思考，去指挥、并且全面担负起责任来。但是被领导的人不应当受到强迫，他们必须能够选择自己的领袖。在我看来，强迫的专制制度很快就会腐化堕落。因为暴力所招引来的总是一些品德低劣的人，而且我相信，天才的暴君总是由无赖来继承的，这是一条千古不易的规律。就是由于这个缘故，我总强烈地反对今天在意大利和俄国所见到的那种制度。像欧洲今天所存在的情况，已使得民主形式受到怀疑，这不能归咎于民主原则本身，而是由于政府的不稳定和选举制度中与个人无关的特征。我相信美国在这方面已经找到了正确的道路。他们选出了一个任期足够长的总统，他有充分的权力来真正履行他的职责。另一方面，在德国政治制度中，为我所看重的是它为救济患病或贫困的人作出了可贵的广泛的规定。在人生的丰富多彩的表演中，我觉得真正可贵的，不是政治上的国家，而是有创造性的、有感情的个人，是人格；只有个人才能创造出高尚的和卓越的东西，而群众本身在思想上总是迟钝的，在感觉上也总是迟钝的。</p>
-
-<p>讲到这里，我想起了群众生活中最坏的一种表现，那就是使我厌恶的军事制度。一个人能够洋洋得意的随着军乐队在四列纵队里行进，单凭这一点就足以使我对他鄙夷不屑。他所以长了一个大脑，只是出于误会；光是骨髓就可满足他的全部需要了。文明的这种罪恶的渊薮，应当尽快加以消灭。任人支配的英雄主义、冷酷无情的暴行，以及在爱国主义名义下的一切可恶的胡闹，所有这些都使我深恶痛绝！在我看来，战争是多么卑鄙、下流！我宁愿被千刀万剐，也不愿参与这种可憎的勾当。尽管如此，我对人类的评价还是十分高的，我相信，要是人民的健康感情没有遭到那些通过学校和报纸而起作用的商业利益和政治利益的蓄意败坏，那么战争这个妖魔早就该绝迹了。</p>
-
-<p>我们所能有的最美好的经验是奥秘的经验。它是坚守在真正艺术和真正科学发源地上的基本感情。谁要体验不到它，谁要是不再有好奇心，也不再有惊讶的感觉，谁就无异于行尸走肉，他的眼睛便是模糊不清的。就是这样奥秘的经验——虽然掺杂着恐惧——产生了宗教。我们认识到有某种为我们所不能洞察的东西存在，感觉到那种只能以其最原始的形式接近我们的心灵的最深奥的理性和最灿烂的美——正是这种认识和这种情感构成了真正的宗教感情；在这个意义上，而且也只是在这个意义上，我才是一个具有深挚的宗教感情的人。我无法想象存在这样一个上帝，它会对自己的创造物加以赏罚，会具有我们在自己身上所体验到的那种意志。我不能也不愿去想象一个人在肉体死亡以后还会继续活着；让那些脆弱的灵魂，由于恐惧或者由于可笑的唯我论，去拿这种思想当宝贝吧！我自己只求满足于生命永恒的奥秘，满足于觉察现存世界的神奇结构，窥见它的一鳞半爪，并且以诚挚的努力去领悟在自然界中显示出来的那个理性的一部分，倘若真能如此，即使只领悟其极小的一部分，我也就心满意足了。</p>
-</blockquote>
-<center>
-<p><img src="media/wxcode.jpg" alt=""/><br/>
-扫一扫即可关注微信公众号<br/>
-</center></p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/17</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E6%B2%89%E6%80%9D%E5%BD%95.html'>沉思录</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15250898742649.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15250893927841.html">
-                
-                  <h1>下载何须迅雷</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>通常浏览器下载就可以满足日常需求。迅雷也一直是一个很好的加速下载工具，但是它有些笨重了。本次介绍下载利器 <code>curl</code> 这个免费开源工具。本文灵感来源于此谷歌博客：<a href="http://yyq123.blogspot.com/2009/09/curl.html">语虚</a>。</p>
-
-<h2 id="toc_0"><a href="https://curl.haxx.se/">curl</a></h2>
-
-<p>使用 <a href="https://ec.haxx.se/usingcurl-downloads.html">终端命令</a>：比如 <code>cd</code> 到桌面目录，输入 <code>curl -O https://www.jianguoyun.com/p/DeQRYFYQ--fwBRju_h4</code> 回车即可在桌面得到名为 <code>DeQRYFYQ--fwBRju_h4</code> 的文件。大写字母 <code>o</code> 意为 <code>remote-name</code>。如果想要自定义文件名可以输入 <code>curl -o 自定义.名字 https://www.jianguoyun.com/p/DeQRYFYQ--fwBRju_h4</code>。</p>
-
-<p>更多命令及讲解可 <a href="https://ec.haxx.se/usingcurl-downloads.html">看这里</a>。<code>curl</code> 更多功能，比如还支持断点下载、使用代理下载、限制文件大小或网速等等，具体可看 <a href="https://ec.haxx.se/usingcurl.html">这里</a>。</p>
-
-<p><code>curl</code> 虽然可满足日常的下载需求，但是比如 PT 资源也需要其他工具。</p>
-
-<h3 id="toc_1">其他工具</h3>
-
-<p><strong>PT 下载工具</strong><br/>
-两者均免费开源且无广告的 BT 下载工具。</p>
-
-<ul>
-<li><a href="https://www.transmissionbt.com/">Transmission</a>  Macintosh &amp; Linux</li>
-<li><a href="http://www.qbittorrent.org/">qBittorrent</a>  Macintosh &amp; Windows</li>
-</ul>
-
-<p><strong>评价</strong></p>
-
-<ul>
-<li>flox<br/>
-号称 Macintosh 下最好的下载器，但是我并没有发现特别的亮点，通常用浏览器下载就行了。</li>
-<li>迅雷<br/>
-搞个迅雷会员来下载某些资源确实挺给力，但日常需求完全不需要用它。不简洁的软件就是不喜欢。Windows 上有迷你版，Macintosh 却没有。</li>
-<li>电驴<br/>
-似乎是在 2016 年重出江湖。确实是神器，在备用的 Windows 中使用，资源大多比较污。</li>
-</ul>
-
-<p>命令行最大的劣势就是不直观，但熟悉了也就「直观」了，况且如此简洁且强大，值得一学。但我几乎只使用浏览器下载，如果有要下载的特殊资源，会在虚拟机中开迅雷或 QQ 旋风下载。</p>
-<center>
-<p><img src="media/wxcode.jpg" alt=""/><br/>
-扫一扫即可关注微信公众号<br/>
-</center></p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2017/8/17</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E6%A1%88%E4%BE%8B.html'>案例</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="https://blog.tangxiaozhu.com/15250893927841.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -1289,6 +1334,12 @@ ivy.ns.cloudflare.com
 	      
 		      
 			      <li class="post">
+			        <a href="15530813745899.html">左与右的理解</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15522283621444.html">我想好好度过每一小时每一天</a>
 			      </li>
 		     
@@ -1308,12 +1359,6 @@ ivy.ns.cloudflare.com
 		      
 			      <li class="post">
 			        <a href="15458303913069.html">静态博客第三方评论系统的探索</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15458299839572.html">AirPods 蓝牙显示名称自动改名</a>
 			      </li>
 		     
 		  
